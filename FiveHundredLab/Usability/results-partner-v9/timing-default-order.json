@@ -1,0 +1,60 @@
+{
+  "Schema": "same-observation-profile-v1",
+  "Games": 2,
+  "DecisionLimitPerPhase": 32,
+  "InputSha256": "5227BBB618BA29499ACCFCAFC7AEB83E4A35B6918DE712DC3EDBACDDCF301B81",
+  "Profiles": {
+    "visibility-fast-v8": {
+      "bid": {
+        "Count": 32,
+        "MeanMs": 0.18650937499999998,
+        "P50Ms": 0.1037,
+        "P95Ms": 0.8597,
+        "MeanBytes": 92077,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 15,
+        "MeanMs": 16.060160000000003,
+        "P50Ms": 14.6959,
+        "P95Ms": 36.9843,
+        "MeanBytes": 21609934.933333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 32,
+        "MeanMs": 13.963043749999997,
+        "P50Ms": 3.9818,
+        "P95Ms": 69.2107,
+        "MeanBytes": 9820095.25,
+        "Changes": 0
+      }
+    },
+    "partner-fast-v9": {
+      "bid": {
+        "Count": 32,
+        "MeanMs": 0.09523750000000003,
+        "P50Ms": 0.0893,
+        "P95Ms": 0.1331,
+        "MeanBytes": 92862.25,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 15,
+        "MeanMs": 13.240440000000001,
+        "P50Ms": 11.871,
+        "P95Ms": 19.803,
+        "MeanBytes": 20095396.266666666,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 32,
+        "MeanMs": 4.9241093750000005,
+        "P50Ms": 2.5656,
+        "P95Ms": 15.9685,
+        "MeanBytes": 9645323.75,
+        "Changes": 0
+      }
+    }
+  }
+}

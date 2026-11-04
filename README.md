@@ -25,3 +25,11 @@ Documentation on the classes and interfaces used by the bots can be viewed at ht
 ## Testing
 
 Unit testing is done using the TestBots project. These are the tests that will run automatically against any pull requests. You can use the Testing tab in VS Code to run the full suite or individual tests on your own machine. 
+
+## FiveHundred battle testing
+
+[FiveHundredArena](FiveHundredArena/README.md) provides a four-player Australian-rule match runner, weak/medium/strong/random-legal players, paired strategy comparisons, full JSONL game logs, statistics, and replay validation.
+
+## FiveHundred performance experiments
+
+[FiveHundredLab](FiveHundredLab/README.md) keeps previous bots frozen and adds versioned speed/quality profiles, phase profiling, matched-observation timing, and small paired-match experiments. Pretraining is deferred.

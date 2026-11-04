@@ -1,0 +1,100 @@
+{
+  "A": "partner-fast-v9",
+  "B": "medium-v1",
+  "Seed": 2701001,
+  "Pairs": 8,
+  "Games": 16,
+  "AWins": 9,
+  "BWins": 7,
+  "Truncated": 0,
+  "Deals": 115,
+  "CompletedPairs": 8,
+  "PairedWinRate": 0.5625,
+  "PairStandardError": 0.14752421108802058,
+  "ElapsedSeconds": 6.0760274,
+  "MixedPartner": true,
+  "TimingA": {
+    "bid": {
+      "Count": 136,
+      "MeanMs": 0.09914779411764706,
+      "P50Ms": 0.0567,
+      "P95Ms": 0.3041,
+      "MeanBytes": 94240.05882352941,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 28,
+      "MeanMs": 16.800349999999998,
+      "P50Ms": 11.4571,
+      "P95Ms": 48.8166,
+      "MeanBytes": 21911563.42857143,
+      "Changes": 13
+    },
+    "play": {
+      "Count": 1050,
+      "MeanMs": 4.846918476190476,
+      "P50Ms": 0.0892,
+      "P95Ms": 21.4044,
+      "MeanBytes": 7502338.308571429,
+      "Changes": 78
+    }
+  },
+  "TimingB": {
+    "bid": {
+      "Count": 274,
+      "MeanMs": 0.0791689781021898,
+      "P50Ms": 0.0513,
+      "P95Ms": 0.1988,
+      "MeanBytes": 96127.24087591241,
+      "Changes": 0
+    },
+    "play": {
+      "Count": 2100,
+      "MeanMs": 0.04030676190476189,
+      "P50Ms": 0.022,
+      "P95Ms": 0.0953,
+      "MeanBytes": 64099.34857142857,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 51,
+      "MeanMs": 0.10047450980392157,
+      "P50Ms": 0.0231,
+      "P95Ms": 0.0691,
+      "MeanBytes": 16462.43137254902,
+      "Changes": 0
+    }
+  },
+  "TimingAPartner": {
+    "bid": {
+      "Count": 137,
+      "MeanMs": 0.08180656934306571,
+      "P50Ms": 0.0517,
+      "P95Ms": 0.2068,
+      "MeanBytes": 96055.47445255474,
+      "Changes": 0
+    },
+    "play": {
+      "Count": 1050,
+      "MeanMs": 0.04120104761904763,
+      "P50Ms": 0.0217,
+      "P95Ms": 0.0965,
+      "MeanBytes": 65284.015238095235,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 26,
+      "MeanMs": 0.030273076923076923,
+      "P50Ms": 0.0231,
+      "P95Ms": 0.0783,
+      "MeanBytes": 18901.23076923077,
+      "Changes": 0
+    }
+  },
+  "Runtime": "8.0.28",
+  "AssemblySha256": {
+    "FiveHundredLab": "6DCA98CBC026DB1C6D81104D51CD606C494E4DD44BD8BA3D9687E84E71AB6C50",
+    "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+    "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+  }
+}

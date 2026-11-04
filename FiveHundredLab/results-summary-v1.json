@@ -1,0 +1,484 @@
+{
+  "SameObservation": {
+    "Schema": "same-observation-profile-v1",
+    "Games": 1,
+    "DecisionLimitPerPhase": 16,
+    "InputSha256": "426EF69ED591A0B177B001F78B493EBB1DE2E9713EBCF727E34AF73718CEFA13",
+    "Profiles": {
+      "strong-v1": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 66.953275,
+          "P50Ms": 65.29,
+          "P95Ms": 96.8324,
+          "MeanBytes": 149931483.5,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 115.65224444444442,
+          "P50Ms": 113.0153,
+          "P95Ms": 126.1439,
+          "MeanBytes": 271454422.2222222,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 40.58885,
+          "P50Ms": 37.3883,
+          "P95Ms": 84.4393,
+          "MeanBytes": 93757616,
+          "Changes": 0
+        }
+      },
+      "visibility-fast-v6": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 0.06316875000000001,
+          "P50Ms": 0.0534,
+          "P95Ms": 0.1436,
+          "MeanBytes": 96698,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 12.093933333333332,
+          "P50Ms": 12.4574,
+          "P95Ms": 12.9669,
+          "MeanBytes": 21734132.444444444,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 7.996543750000001,
+          "P50Ms": 6.2952,
+          "P95Ms": 23.8179,
+          "MeanBytes": 11614586.5,
+          "Changes": 0
+        }
+      },
+      "visibility-quality-v7": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 14.748768749999998,
+          "P50Ms": 14.502,
+          "P95Ms": 19.3434,
+          "MeanBytes": 26602658,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 38.34484444444444,
+          "P50Ms": 38.9482,
+          "P95Ms": 43.3549,
+          "MeanBytes": 74402523.55555555,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 18.59838125,
+          "P50Ms": 17.3157,
+          "P95Ms": 61.5477,
+          "MeanBytes": 34715933.5,
+          "Changes": 0
+        }
+      }
+    }
+  },
+  "FastBenchmark": {
+    "A": "visibility-fast-v6",
+    "B": "medium-v1",
+    "Seed": 2101001,
+    "Pairs": 10,
+    "Games": 20,
+    "AWins": 13,
+    "BWins": 7,
+    "Truncated": 0,
+    "Deals": 155,
+    "CompletedPairs": 10,
+    "PairedWinRate": 0.65,
+    "PairStandardError": 0.07637626158259733,
+    "ElapsedSeconds": 13.2111881,
+    "MixedPartner": false,
+    "TimingA": {
+      "bid": {
+        "Count": 382,
+        "MeanMs": 0.06328089005235601,
+        "P50Ms": 0.0483,
+        "P95Ms": 0.1375,
+        "MeanBytes": 93319.43455497382,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 2940,
+        "MeanMs": 3.989171360544216,
+        "P50Ms": 0.0331,
+        "P95Ms": 15.9306,
+        "MeanBytes": 7158895.703401361,
+        "Changes": 147
+      },
+      "discard": {
+        "Count": 72,
+        "MeanMs": 12.438480555555559,
+        "P50Ms": 10.9879,
+        "P95Ms": 31.7018,
+        "MeanBytes": 21907547.777777776,
+        "Changes": 18
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 382,
+        "MeanMs": 0.07215104712041889,
+        "P50Ms": 0.0471,
+        "P95Ms": 0.2052,
+        "MeanBytes": 96148.58638743455,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 75,
+        "MeanMs": 0.12514266666666665,
+        "P50Ms": 0.0227,
+        "P95Ms": 0.0674,
+        "MeanBytes": 18194.346666666668,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 2940,
+        "MeanMs": 0.0376015646258503,
+        "P50Ms": 0.0207,
+        "P95Ms": 0.0782,
+        "MeanBytes": 64974.68571428571,
+        "Changes": 0
+      }
+    },
+    "TimingAPartner": {},
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "4B9165F63A41333CF1C8F4A9CF80DAD1F1D3A99D6A7929F008B176DDC24DDE59",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  },
+  "Direct": {
+    "A": "visibility-fast-v6",
+    "B": "strong-v1",
+    "Seed": 2301001,
+    "Pairs": 4,
+    "Games": 8,
+    "AWins": 4,
+    "BWins": 4,
+    "Truncated": 0,
+    "Deals": 67,
+    "CompletedPairs": 4,
+    "PairedWinRate": 0.5,
+    "PairStandardError": 0.2041241452319315,
+    "ElapsedSeconds": 49.4392897,
+    "MixedPartner": false,
+    "TimingA": {
+      "bid": {
+        "Count": 173,
+        "MeanMs": 0.06558381502890172,
+        "P50Ms": 0.0578,
+        "P95Ms": 0.1155,
+        "MeanBytes": 95063.44508670521,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 1320,
+        "MeanMs": 3.512043030303028,
+        "P50Ms": 0.0297,
+        "P95Ms": 14.6059,
+        "MeanBytes": 6790397.133333334,
+        "Changes": 64
+      },
+      "discard": {
+        "Count": 16,
+        "MeanMs": 11.6037125,
+        "P50Ms": 11.3161,
+        "P95Ms": 14.9406,
+        "MeanBytes": 22708325,
+        "Changes": 5
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 206,
+        "MeanMs": 63.49948398058252,
+        "P50Ms": 62.9661,
+        "P95Ms": 80.4245,
+        "MeanBytes": 144440879.49514562,
+        "Changes": 88
+      },
+      "discard": {
+        "Count": 50,
+        "MeanMs": 112.48421600000002,
+        "P50Ms": 111.4548,
+        "P95Ms": 126.5393,
+        "MeanBytes": 271316701.92,
+        "Changes": 18
+      },
+      "play": {
+        "Count": 1320,
+        "MeanMs": 19.43932219696968,
+        "P50Ms": 11.8972,
+        "P95Ms": 71.0304,
+        "MeanBytes": 46300524.38181818,
+        "Changes": 94
+      }
+    },
+    "TimingAPartner": {},
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "4B9165F63A41333CF1C8F4A9CF80DAD1F1D3A99D6A7929F008B176DDC24DDE59",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  },
+  "Mixed": {
+    "A": "visibility-fast-v6",
+    "B": "medium-v1",
+    "Seed": 2401001,
+    "Pairs": 4,
+    "Games": 8,
+    "AWins": 6,
+    "BWins": 2,
+    "Truncated": 0,
+    "Deals": 61,
+    "CompletedPairs": 4,
+    "PairedWinRate": 0.75,
+    "PairStandardError": 0.14433756729740643,
+    "ElapsedSeconds": 3.9931388,
+    "MixedPartner": true,
+    "TimingA": {
+      "bid": {
+        "Count": 72,
+        "MeanMs": 0.09872083333333333,
+        "P50Ms": 0.0751,
+        "P95Ms": 0.2339,
+        "MeanBytes": 92974.22222222222,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 570,
+        "MeanMs": 5.854693684210529,
+        "P50Ms": 1.1285,
+        "P95Ms": 24.6825,
+        "MeanBytes": 8327995.059649123,
+        "Changes": 37
+      },
+      "discard": {
+        "Count": 18,
+        "MeanMs": 14.030577777777777,
+        "P50Ms": 11.2889,
+        "P95Ms": 36.008,
+        "MeanBytes": 21802330.222222224,
+        "Changes": 6
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 152,
+        "MeanMs": 0.08909539473684212,
+        "P50Ms": 0.0635,
+        "P95Ms": 0.2245,
+        "MeanBytes": 95819.36842105263,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 27,
+        "MeanMs": 0.09458518518518517,
+        "P50Ms": 0.0235,
+        "P95Ms": 0.0816,
+        "MeanBytes": 13399.111111111111,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 1140,
+        "MeanMs": 0.05146149122807015,
+        "P50Ms": 0.0228,
+        "P95Ms": 0.1075,
+        "MeanBytes": 63087.55087719298,
+        "Changes": 0
+      }
+    },
+    "TimingAPartner": {
+      "bid": {
+        "Count": 78,
+        "MeanMs": 0.11148205128205128,
+        "P50Ms": 0.0786,
+        "P95Ms": 0.3715,
+        "MeanBytes": 95967.89743589744,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 570,
+        "MeanMs": 0.06915982456140353,
+        "P50Ms": 0.0226,
+        "P95Ms": 0.1417,
+        "MeanBytes": 65118.86315789474,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 12,
+        "MeanMs": 0.37856666666666666,
+        "P50Ms": 0.0386,
+        "P95Ms": 4.0808,
+        "MeanBytes": 18644,
+        "Changes": 0
+      }
+    },
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "4B9165F63A41333CF1C8F4A9CF80DAD1F1D3A99D6A7929F008B176DDC24DDE59",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  },
+  "PriorStrong100": {
+    "A": "strong-v1",
+    "B": "medium-v1",
+    "Seed": 2101001,
+    "Pairs": 50,
+    "Games": 100,
+    "AWins": 51,
+    "BWins": 49,
+    "Truncated": 0,
+    "Deals": 974,
+    "CompletedPairs": 50,
+    "PairedWinRate": 0.51,
+    "PairStandardError": 0.05048742013449225,
+    "ElapsedSeconds": 631.8552462,
+    "TimingA": {
+      "bid": {
+        "Count": 3081,
+        "MeanMs": 62.6809866277183,
+        "P50Ms": 60.7226,
+        "P95Ms": 75.9727,
+        "MeanBytes": 145608466.53683868,
+        "Changes": 1477
+      },
+      "play": {
+        "Count": 19140,
+        "MeanMs": 18.621127251828646,
+        "P50Ms": 11.3669,
+        "P95Ms": 68.0586,
+        "MeanBytes": 45193270.914524555,
+        "Changes": 1376
+      },
+      "discard": {
+        "Count": 714,
+        "MeanMs": 111.94604565826327,
+        "P50Ms": 111.1196,
+        "P95Ms": 122.8139,
+        "MeanBytes": 273647810.92436975,
+        "Changes": 167
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 2518,
+        "MeanMs": 0.0547698173153295,
+        "P50Ms": 0.0496,
+        "P95Ms": 0.0753,
+        "MeanBytes": 97916.0095313741,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 243,
+        "MeanMs": 0.011822633744855975,
+        "P50Ms": 0.0129,
+        "P95Ms": 0.0163,
+        "MeanBytes": 17078.057613168723,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 19140,
+        "MeanMs": 0.024757946708464148,
+        "P50Ms": 0.0165,
+        "P95Ms": 0.0671,
+        "MeanBytes": 58746.901985370954,
+        "Changes": 0
+      }
+    },
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "976BA3A5656A22D3369E3E665C9897C79F5803653CCC517F8E8465F580AEA905",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  },
+  "Quality100": {
+    "A": "selective-quality-v2",
+    "B": "medium-v1",
+    "Seed": 2101001,
+    "Pairs": 50,
+    "Games": 100,
+    "AWins": 67,
+    "BWins": 33,
+    "Truncated": 0,
+    "Deals": 899,
+    "CompletedPairs": 50,
+    "PairedWinRate": 0.67,
+    "PairStandardError": 0.04653284992829239,
+    "ElapsedSeconds": 296.7807326,
+    "TimingA": {
+      "bid": {
+        "Count": 2927,
+        "MeanMs": 15.022292415442463,
+        "P50Ms": 14.4887,
+        "P95Ms": 18.5338,
+        "MeanBytes": 32089317.086436626,
+        "Changes": 1247
+      },
+      "play": {
+        "Count": 17700,
+        "MeanMs": 12.605497005649728,
+        "P50Ms": 3.3619,
+        "P95Ms": 51.8695,
+        "MeanBytes": 26884071.497853108,
+        "Changes": 1176
+      },
+      "discard": {
+        "Count": 655,
+        "MeanMs": 41.22462320610683,
+        "P50Ms": 41.5532,
+        "P95Ms": 46.4973,
+        "MeanBytes": 93709284.55572519,
+        "Changes": 172
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 2372,
+        "MeanMs": 0.05481863406408086,
+        "P50Ms": 0.0484,
+        "P95Ms": 0.0802,
+        "MeanBytes": 97292.53625632377,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 230,
+        "MeanMs": 0.015583913043478267,
+        "P50Ms": 0.0165,
+        "P95Ms": 0.0199,
+        "MeanBytes": 16789.043478260868,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 17700,
+        "MeanMs": 0.028023254237288093,
+        "P50Ms": 0.0206,
+        "P95Ms": 0.0694,
+        "MeanBytes": 58641.10192090395,
+        "Changes": 0
+      }
+    },
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "976BA3A5656A22D3369E3E665C9897C79F5803653CCC517F8E8465F580AEA905",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  }
+}

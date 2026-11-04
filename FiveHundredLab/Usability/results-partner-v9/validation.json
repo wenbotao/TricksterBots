@@ -1,0 +1,36 @@
+{
+  "Schema": "partner-fast-v9-validation-v1",
+  "TestsPassed": 475,
+  "TestsFailed": 0,
+  "TestsSkipped": 0,
+  "FrozenFilesVerified": 43,
+  "FullGamesReplayed": 48,
+  "UxDecisions": 544,
+  "UxTechnicalErrors": 0,
+  "Assemblies": {
+    "FiveHundredLab": "6DCA98CBC026DB1C6D81104D51CD606C494E4DD44BD8BA3D9687E84E71AB6C50",
+    "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+    "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+  },
+  "TimingRuntimeConfig": {
+    "timing-default-*.json": "inherited runtime defaults",
+    "timing-optimized-*.json": {
+      "DOTNET_TieredCompilation": "0"
+    }
+  },
+  "FilesSha256": {
+    "REPORT.md": "fe4d092cdaf2126eeedd2de720b069875647dd4ec8f3ead184e905ffdb6c1c9b",
+    "head-to-head-games.jsonl.gz": "8ecf10afaf020f9d6059e686277abbf9845c875588c44a1fc9fe1ccbfb6ba50f",
+    "head-to-head-summary.json": "c83fa7711fc64b5b858607d78b652f47ef3d8c92ebb21c132fe3b5a792158e3d",
+    "mixed-fast-games.jsonl.gz": "63fda26ea25e30a4695e35dd5f646b1ef5629298badb3581377264ec1d64af06",
+    "mixed-fast-summary.json": "d612f9fbf637d36f01727702210b45ef66038fd3314a5dda7382eccda2ab1fd3",
+    "mixed-new-games.jsonl.gz": "e020fc89c32206aabb0ec0e09582b214a805e718123aeb25dd79f4e05828fcee",
+    "mixed-new-summary.json": "773a2e9ac7d876ea4c506cd587aebf3df40e59fa6be1397096b665ab0c139f6e",
+    "timing-default-order.json": "245810e6c614c575fd6164a21d4df00e58311118c85ae3ce7c0e1e81a95a4c77",
+    "timing-default-reverse.json": "806b9a7c49db640badf0bbb730bd877ca2526868cdb0cf15f9151378c7ab7eb1",
+    "timing-optimized-order.json": "fe1e185d4eed1dc3f56b9de23ad4192e39aefc66b94f3033776ac7628310c21d",
+    "timing-optimized-reverse.json": "a7297f1c739d74fc7698769974bd7994b7e0f8d4bf4d97f1007494d5c76c1ba7",
+    "trials.jsonl": "0f46870cc916c2eba6270caf410d406caf9bf6b206139b4433f6f4d951f2c486",
+    "ux-results.json": "ce46074cb9ea8ee2db8c0b149d6d14f87dcc6ac440f365576a18df462d938995"
+  }
+}

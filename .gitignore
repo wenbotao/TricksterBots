@@ -335,3 +335,12 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+# Default FiveHundred experiment output (contains full hidden-card logs)
+arena-results/
+
+# Default local research experiment output
+lab-results/
+
+# Default local human-partner experience evaluation output
+ux-results/

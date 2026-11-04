@@ -43,6 +43,8 @@
   </Choose>
   <ItemGroup>
     <ProjectReference Include="..\TricksterBots\TricksterBots.csproj" />
+    <ProjectReference Include="..\FiveHundredArena\FiveHundredArena.csproj" />
+    <ProjectReference Include="..\FiveHundredLab\FiveHundredLab.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <!--<PreBuildEvent>$(ProjectDir).bin\CleanPBN.exe $(ProjectDir)Bridge\SAYC</PreBuildEvent>-->

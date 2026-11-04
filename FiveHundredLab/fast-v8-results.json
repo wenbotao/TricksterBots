@@ -1,0 +1,238 @@
+{
+  "Timing": {
+    "Schema": "same-observation-profile-v1",
+    "Games": 1,
+    "DecisionLimitPerPhase": 16,
+    "InputSha256": "426EF69ED591A0B177B001F78B493EBB1DE2E9713EBCF727E34AF73718CEFA13",
+    "Profiles": {
+      "strong-v1": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 63.58073750000001,
+          "P50Ms": 61.9322,
+          "P95Ms": 91.3242,
+          "MeanBytes": 149931483.5,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 108.51992222222222,
+          "P50Ms": 106.1141,
+          "P95Ms": 118.0411,
+          "MeanBytes": 271454422.2222222,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 38.891662499999995,
+          "P50Ms": 36.0897,
+          "P95Ms": 81.4666,
+          "MeanBytes": 93757616,
+          "Changes": 0
+        }
+      },
+      "visibility-fast-v6": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 0.05972499999999999,
+          "P50Ms": 0.0503,
+          "P95Ms": 0.1022,
+          "MeanBytes": 96698,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 11.241955555555556,
+          "P50Ms": 11.243,
+          "P95Ms": 13.1709,
+          "MeanBytes": 21734132.444444444,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 7.7561124999999995,
+          "P50Ms": 6.8836,
+          "P95Ms": 23.0621,
+          "MeanBytes": 11614586.5,
+          "Changes": 0
+        }
+      },
+      "visibility-fast-v8": {
+        "bid": {
+          "Count": 16,
+          "MeanMs": 0.0535125,
+          "P50Ms": 0.0476,
+          "P95Ms": 0.0793,
+          "MeanBytes": 96714,
+          "Changes": 0
+        },
+        "discard": {
+          "Count": 9,
+          "MeanMs": 10.453177777777778,
+          "P50Ms": 10.9565,
+          "P95Ms": 11.5279,
+          "MeanBytes": 21700205.333333332,
+          "Changes": 0
+        },
+        "play": {
+          "Count": 16,
+          "MeanMs": 6.191968749999999,
+          "P50Ms": 6.3695,
+          "P95Ms": 16.8566,
+          "MeanBytes": 11865479.5,
+          "Changes": 0
+        }
+      }
+    }
+  },
+  "VsMedium": {
+    "A": "visibility-fast-v8",
+    "B": "medium-v1",
+    "Seed": 2101001,
+    "Pairs": 10,
+    "Games": 20,
+    "AWins": 12,
+    "BWins": 8,
+    "Truncated": 0,
+    "Deals": 143,
+    "CompletedPairs": 10,
+    "PairedWinRate": 0.6,
+    "PairStandardError": 0.06666666666666668,
+    "ElapsedSeconds": 12.7559762,
+    "MixedPartner": false,
+    "TimingA": {
+      "bid": {
+        "Count": 357,
+        "MeanMs": 0.0718843137254902,
+        "P50Ms": 0.0492,
+        "P95Ms": 0.1654,
+        "MeanBytes": 93413.91596638656,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 2760,
+        "MeanMs": 4.110181992753621,
+        "P50Ms": 0.2835,
+        "P95Ms": 16.4755,
+        "MeanBytes": 7320481.657971014,
+        "Changes": 140
+      },
+      "discard": {
+        "Count": 70,
+        "MeanMs": 12.152115714285715,
+        "P50Ms": 11.1945,
+        "P95Ms": 18.1702,
+        "MeanBytes": 21886709.942857143,
+        "Changes": 18
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 356,
+        "MeanMs": 0.07405308988764041,
+        "P50Ms": 0.0494,
+        "P95Ms": 0.1532,
+        "MeanBytes": 96189.48314606742,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 68,
+        "MeanMs": 0.12936029411764705,
+        "P50Ms": 0.024,
+        "P95Ms": 0.0895,
+        "MeanBytes": 18617.882352941175,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 2760,
+        "MeanMs": 0.038431521739130434,
+        "P50Ms": 0.0213,
+        "P95Ms": 0.0819,
+        "MeanBytes": 64575.92753623189,
+        "Changes": 0
+      }
+    },
+    "TimingAPartner": {},
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "F06FDD5BDF540FE68F4807ABD5A7C148D41AD1D74C65CB1BC49BEE75CFCE30EE",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  },
+  "VsStrong": {
+    "A": "visibility-fast-v8",
+    "B": "strong-v1",
+    "Seed": 2301001,
+    "Pairs": 4,
+    "Games": 8,
+    "AWins": 3,
+    "BWins": 5,
+    "Truncated": 0,
+    "Deals": 64,
+    "CompletedPairs": 4,
+    "PairedWinRate": 0.375,
+    "PairStandardError": 0.125,
+    "ElapsedSeconds": 46.561339,
+    "MixedPartner": false,
+    "TimingA": {
+      "bid": {
+        "Count": 170,
+        "MeanMs": 0.06147117647058823,
+        "P50Ms": 0.0569,
+        "P95Ms": 0.0863,
+        "MeanBytes": 95823.05882352941,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 1260,
+        "MeanMs": 3.442442698412698,
+        "P50Ms": 0.0553,
+        "P95Ms": 14.1262,
+        "MeanBytes": 6841820.565079365,
+        "Changes": 55
+      },
+      "discard": {
+        "Count": 14,
+        "MeanMs": 10.749099999999999,
+        "P50Ms": 10.7747,
+        "P95Ms": 13.9165,
+        "MeanBytes": 21794740.57142857,
+        "Changes": 3
+      }
+    },
+    "TimingB": {
+      "bid": {
+        "Count": 208,
+        "MeanMs": 62.074442788461525,
+        "P50Ms": 60.785,
+        "P95Ms": 75.4826,
+        "MeanBytes": 144988126.5,
+        "Changes": 86
+      },
+      "discard": {
+        "Count": 49,
+        "MeanMs": 110.15004489795919,
+        "P50Ms": 107.8658,
+        "P95Ms": 118.6849,
+        "MeanBytes": 271573545.63265306,
+        "Changes": 18
+      },
+      "play": {
+        "Count": 1260,
+        "MeanMs": 18.67576706349207,
+        "P50Ms": 11.3564,
+        "P95Ms": 69.3906,
+        "MeanBytes": 45511590.08888889,
+        "Changes": 94
+      }
+    },
+    "TimingAPartner": {},
+    "Runtime": "8.0.28",
+    "AssemblySha256": {
+      "FiveHundredLab": "F06FDD5BDF540FE68F4807ABD5A7C148D41AD1D74C65CB1BC49BEE75CFCE30EE",
+      "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+      "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+    }
+  }
+}

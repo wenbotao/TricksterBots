@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../FiveHundredArena/FiveHundredArena.csproj" /></ItemGroup>
+  <ItemGroup><None Update="frozen-baselines-v1.json" CopyToOutputDirectory="PreserveNewest" /><None Update="frozen-profiles-*.json" CopyToOutputDirectory="PreserveNewest" /><None Update="models/*.json" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+</Project>

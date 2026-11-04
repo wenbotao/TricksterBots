@@ -1,0 +1,100 @@
+{
+  "A": "visibility-fast-v8",
+  "B": "medium-v1",
+  "Seed": 2701001,
+  "Pairs": 8,
+  "Games": 16,
+  "AWins": 11,
+  "BWins": 5,
+  "Truncated": 0,
+  "Deals": 115,
+  "CompletedPairs": 8,
+  "PairedWinRate": 0.6875,
+  "PairStandardError": 0.13152607020228782,
+  "ElapsedSeconds": 5.9510438,
+  "MixedPartner": true,
+  "TimingA": {
+    "bid": {
+      "Count": 137,
+      "MeanMs": 0.08651313868613138,
+      "P50Ms": 0.053,
+      "P95Ms": 0.2133,
+      "MeanBytes": 93510.65693430656,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 28,
+      "MeanMs": 16.07394642857143,
+      "P50Ms": 11.3613,
+      "P95Ms": 48.6751,
+      "MeanBytes": 22171205.714285713,
+      "Changes": 5
+    },
+    "play": {
+      "Count": 1050,
+      "MeanMs": 4.772247999999998,
+      "P50Ms": 1.0136,
+      "P95Ms": 19.7498,
+      "MeanBytes": 7625458.3009523805,
+      "Changes": 67
+    }
+  },
+  "TimingB": {
+    "bid": {
+      "Count": 273,
+      "MeanMs": 0.0710626373626374,
+      "P50Ms": 0.0502,
+      "P95Ms": 0.1759,
+      "MeanBytes": 96114.98901098901,
+      "Changes": 0
+    },
+    "play": {
+      "Count": 2100,
+      "MeanMs": 0.03723657142857145,
+      "P50Ms": 0.0209,
+      "P95Ms": 0.0881,
+      "MeanBytes": 64096.03428571428,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 50,
+      "MeanMs": 0.10792,
+      "P50Ms": 0.0201,
+      "P95Ms": 0.0697,
+      "MeanBytes": 16346.56,
+      "Changes": 0
+    }
+  },
+  "TimingAPartner": {
+    "bid": {
+      "Count": 137,
+      "MeanMs": 0.07222262773722629,
+      "P50Ms": 0.0515,
+      "P95Ms": 0.1802,
+      "MeanBytes": 96008.58394160584,
+      "Changes": 0
+    },
+    "play": {
+      "Count": 1050,
+      "MeanMs": 0.03831400000000002,
+      "P50Ms": 0.0205,
+      "P95Ms": 0.0962,
+      "MeanBytes": 65739.69523809524,
+      "Changes": 0
+    },
+    "discard": {
+      "Count": 27,
+      "MeanMs": 0.026633333333333335,
+      "P50Ms": 0.0226,
+      "P95Ms": 0.0599,
+      "MeanBytes": 19025.48148148148,
+      "Changes": 0
+    }
+  },
+  "Runtime": "8.0.28",
+  "AssemblySha256": {
+    "FiveHundredLab": "6DCA98CBC026DB1C6D81104D51CD606C494E4DD44BD8BA3D9687E84E71AB6C50",
+    "FiveHundredArena": "2AED6819DE9BAD5A5823E499056F913DC9F63AB8B0959B2390C46E1DB03DB0E9",
+    "TricksterBots": "7700F0AD3E025CD5C21139EBF29E37909C5C7433BED18F93D78C40CC3533AB0F"
+  }
+}
