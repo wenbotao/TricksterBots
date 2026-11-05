@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "scope": "Behavior-preserving consolidation of six formal bots",
+  "tests": {
+    "total": 514,
+    "passed": 514,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "ruleDecisionSnapshots": 36,
+  "defaultForcedCompleteDealComparisons": 18,
+  "experienceFixtureActionComparisons": 204,
+  "fingerprintEntries": 72,
+  "originalFiveHundredBotModified": false,
+  "mediumCallsOrInheritsOriginalFiveHundredBot": false,
+  "strategyParametersChanged": false,
+  "limitations": [
+    "Finite regression coverage is not a formal proof of equivalence",
+    "Historical profiles and Arena compatibility entry points retain the frozen implementations",
+    "No new win-rate or timing claims"
+  ]
+}

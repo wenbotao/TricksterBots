@@ -83,3 +83,7 @@ Lab的引擎、被测bot及mixed搭档都使用同一份配置。新格式下停
 这些测试关注正确导入、合法执行、行为响应和信息隔离，不构成强度不下降的证明。
 
 最终验证：完整套件492项通过，无失败或跳过；45项冻结指纹验证通过。机器可读汇总见 `bot-validation-report.json`。
+
+## 正式策略主体整合
+
+六种正式类的判断现已迁入各自 bot 文件，共享计算和续演仍复用。默认路径使用迁入的历史等价策略，正式 Medium 不再调用原 FiveHundredBot。本文前述预算、配置行为与测试边界不变；源码导航见 [正式 bot](../FiveHundredLab/Bots/FiveHundred/README.md)。旧 RuleAwarePlayer 保留为历史/CLI/Adapt 兼容实现。

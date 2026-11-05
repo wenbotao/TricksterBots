@@ -1,0 +1,13 @@
+{
+  "FiveHundredLab/Bots/FiveHundred/ConfiguredRollout.cs": "997e8c0ec3ef0c1a0555138e6103f25589f5a695f336ff5427cb42fe8ea25348",
+  "FiveHundredLab/Bots/FiveHundred/DefaultRollout.cs": "a22f941cf24c429a1464b458385f251a63637dc4b52cd42d164edf9ea0d89683",
+  "FiveHundredLab/Bots/FiveHundred/FastBot.cs": "6067097761a56a695ff8519c4b082decc486cb1946459e9c44fd224d75bded33",
+  "FiveHundredLab/Bots/FiveHundred/FiveHundredRuleBot.cs": "b32c8d4af3a61bbef545af1f4089e03d6e8d43b83149313aa2b8fbbcf323baf3",
+  "FiveHundredLab/Bots/FiveHundred/MediumBot.cs": "aa659b6edd558a1b29a98d01f72727bf8b3af8149dd83d6386d450cf05347787",
+  "FiveHundredLab/Bots/FiveHundred/PartnerBot.cs": "4a5cd7a9ae3f57c3fa6de15cc1d37c4bdf762de2173da5d70c461a370d3c98dc",
+  "FiveHundredLab/Bots/FiveHundred/RandomBot.cs": "eb100375c047a6c5c6bbc0950f5ac2a8e1897aa435650852c09d394399cb7cfb",
+  "FiveHundredLab/Bots/FiveHundred/RuleBotEvaluation.cs": "739ba759805cf7058de33b25345a979e4840d56a0ff2229dd36bdfa8ce37185d",
+  "FiveHundredLab/Bots/FiveHundred/StrongBot.cs": "685a815c5aed074051564c20dc4b60353e5884d85de3c16cb971cc60ad9f4dc6",
+  "FiveHundredLab/Bots/FiveHundred/WeakBot.cs": "651193b14626586837bc2e5834c90410fd4d1943c79a5cab916bcc1e9ba92372",
+  "FiveHundredArena/AssemblyInfo.cs": "07593be0cb283f6c1f1bae23cbc94538fb40f7d1649338d80e10157dbdc67ce7"
+}

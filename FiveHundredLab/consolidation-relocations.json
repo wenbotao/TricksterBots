@@ -1,0 +1,10 @@
+{
+  "FiveHundredLab/Bots/FiveHundred/Legacy/LegacyFeaturesV1.cs": "FiveHundredLab/Archive/Strategies/LegacyFeaturesV1.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/CardFrameV1.cs": "FiveHundredLab/Bots/FiveHundred/Shared/CardFrame.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/VisibilityMediumV5.cs": "FiveHundredLab/Archive/Strategies/VisibilityMediumV5.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/VisibilityFastV8.cs": "FiveHundredLab/Archive/Strategies/VisibilityFastV8.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/VisibilityForwardV5.cs": "FiveHundredLab/Archive/Strategies/VisibilityForwardV5.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/FastPruningV8.cs": "FiveHundredLab/Archive/Strategies/FastPruningV8.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/PartnerPolicyV9.cs": "FiveHundredLab/Archive/Strategies/PartnerPolicyV9.cs",
+  "FiveHundredLab/Bots/FiveHundred/Legacy/PartnerFastV9.cs": "FiveHundredLab/Archive/Strategies/PartnerFastV9.cs"
+}
