@@ -1,0 +1,65 @@
+{
+  "schema": "adapt-strong-validation-v1",
+  "testsPassed": 506,
+  "testsFailed": 0,
+  "frozenFilesVerified": 50,
+  "games": 40,
+  "matchedCases": 20,
+  "commonDealsVerified": 65,
+  "allGamesReplayed": true,
+  "statistics": {
+    "Adapt": {
+      "wins": 14,
+      "losses": 6,
+      "truncated": 0,
+      "meanTeamScore": 59.5,
+      "meanMargin": 130.0,
+      "meanDeals": 4.85,
+      "decisions": 1123,
+      "meanDecisionMs": 44.15271184327694,
+      "totalDecisionSeconds": 49.5834954,
+      "bidUpdates": 367,
+      "playUpdates": 31
+    },
+    "Strong": {
+      "wins": 14,
+      "losses": 6,
+      "truncated": 0,
+      "meanTeamScore": 73.0,
+      "meanMargin": 181.0,
+      "meanDeals": 4.05,
+      "decisions": 934,
+      "meanDecisionMs": 40.43554785867237,
+      "totalDecisionSeconds": 37.766801699999995,
+      "bidUpdates": 0,
+      "playUpdates": 0
+    }
+  },
+  "pairedOutcomes": {
+    "bothWin": 13,
+    "bothLose": 5,
+    "adaptOnlyWin": 1,
+    "strongOnlyWin": 1,
+    "exactTwoSidedP": 1
+  },
+  "otherSeatAssignments": {
+    "weak-v1": 6,
+    "partner-fast-v9": 7,
+    "strong-v1": 8,
+    "medium-v1": 16,
+    "random-legal-v1": 15,
+    "visibility-fast-v8": 8
+  },
+  "sourceSha256": {
+    "FiveHundredLab/Adapt.cs": "ed51a9f06a790b905c3d5a6bb58716eacd2bf27120a1d2f5e79235d508e134e5",
+    "FiveHundredLab/AdaptComparison.cs": "1962f410a26c43ccfef273565f7c5cc288f2c617240b8bbda230cf633c994b80"
+  },
+  "testTrxSha256": "8f869eb529eef19a14d3b891f3b58990c3679198939bc0cdfb33ebdceaa0ffa0",
+  "artifactsSha256": {
+    "plan.json": "963d9ac53941f7729b65e70d587debe6bb3fa638d810f2c504f3b2e65a2105c3",
+    "results.json": "9ea4aed2a49e1f5dead005bb6857f9fe088dd2e6b7e320e7cd406a61ddbc1a44",
+    "REPORT.md": "9c5966bc26a68b8d3a5a7eda85d342547c7cfa30cbd7801dd948ee4b8479e50c",
+    "summary.json": "7b4b6d92fbb853ca6a7c81c006fa6edacca5676b64c2535e84bcbda38c4c8535",
+    "games.jsonl.gz": "c11751b4875c8382fbdc8a566accc12dae9cac9c33c5eafebf4f146903d48c45"
+  }
+}

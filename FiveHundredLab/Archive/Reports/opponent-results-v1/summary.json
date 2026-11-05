@@ -1,0 +1,606 @@
+{
+  "Schema": "opponent-strong-check-v1",
+  "seed": 2707001,
+  "pairs": 1,
+  "maxRounds": 60,
+  "Rules": {
+    "$type": "resolved-v1",
+    "Document": "{\n  \u0022schemaVersion\u0022: 1,\n  \u0022metadata\u0022: {\n    \u0022id\u0022: \u0022legacy-au-4p-v1\u0022,\n    \u0022version\u0022: 1,\n    \u0022name\u0022: \u0022\u539F\u6709\u6FB3\u5F0F\u56DB\u4EBA\u9ED8\u8BA4\uFF08\u517C\u5BB9\u5FEB\u7167\uFF09\u0022,\n    \u0022kind\u0022: \u0022preset\u0022,\n    \u0022basedOn\u0022: null,\n    \u0022sources\u0022: [\n      \u0022repository:FiveHundredArena/Rules.cs\u0022,\n      \u0022repository:FiveHundredArena/Engine.cs\u0022\n    ],\n    \u0022projectChoices\u0022: [\n      \u0022\u5B8C\u6574\u4FDD\u7559\u73B0\u6709\u9ED8\u8BA4\u884C\u4E3A\uFF0C\u4E0D\u5C06\u6587\u6863\u53C2\u8003\u65B9\u6848\u8986\u76D6\u5230\u65E7\u9ED8\u8BA4\u3002\u0022,\n      \u0022\u666E\u901A\u5408\u7EA6\u5206\u503C\u53D6 normalTable\uFF1Bcontracts.normal.points \u4E3A\u4FDD\u7559\u5B57\u6BB5\uFF0C\u4E0D\u53C2\u4E0E\u7ED3\u7B97\u3002\u0022,\n      \u0022\u65E0\u5B9A\u7EA6\u548C\u5176\u4ED6\u672A\u542F\u7528\u5206\u652F\u7684\u503C\u4E5F\u663E\u5F0F\u4FDD\u5B58\uFF1B\u4EC5\u6FC0\u6D3B\u76F8\u5E94\u6A21\u5F0F\u65F6\u751F\u6548\u3002\u0022\n    ],\n    \u0022integrationStatus\u0022: \u0022specification-only\u0022\n  },\n  \u0022table\u0022: {\n    \u0022players\u0022: 4,\n    \u0022teams\u0022: [\n      [\n        0,\n        2\n      ],\n      [\n        1,\n        3\n      ]\n    ],\n    \u0022direction\u0022: \u0022clockwise\u0022\n  },\n  \u0022deck\u0022: {\n    \u0022cards\u0022: [\n      \u00225S\u0022,\n      \u00226S\u0022,\n      \u00227S\u0022,\n      \u00228S\u0022,\n      \u00229S\u0022,\n      \u002210S\u0022,\n      \u0022JS\u0022,\n      \u0022QS\u0022,\n      \u0022KS\u0022,\n      \u0022AS\u0022,\n      \u00225C\u0022,\n      \u00226C\u0022,\n      \u00227C\u0022,\n      \u00228C\u0022,\n      \u00229C\u0022,\n      \u002210C\u0022,\n      \u0022JC\u0022,\n      \u0022QC\u0022,\n      \u0022KC\u0022,\n      \u0022AC\u0022,\n      \u00224D\u0022,\n      \u00225D\u0022,\n      \u00226D\u0022,\n      \u00227D\u0022,\n      \u00228D\u0022,\n      \u00229D\u0022,\n      \u002210D\u0022,\n      \u0022JD\u0022,\n      \u0022QD\u0022,\n      \u0022KD\u0022,\n      \u0022AD\u0022,\n      \u00224H\u0022,\n      \u00225H\u0022,\n      \u00226H\u0022,\n      \u00227H\u0022,\n      \u00228H\u0022,\n      \u00229H\u0022,\n      \u002210H\u0022,\n      \u0022JH\u0022,\n      \u0022QH\u0022,\n      \u0022KH\u0022,\n      \u0022AH\u0022,\n      \u0022X1\u0022\n    ],\n    \u0022jokerOrderHighToLow\u0022: [\n      \u0022X1\u0022\n    ]\n  },\n  \u0022deal\u0022: {\n    \u0022handSize\u0022: 10,\n    \u0022kittySize\u0022: 3,\n    \u0022firstDealer\u0022: \u0022fixed\u0022,\n    \u0022fixedDealer\u0022: 3,\n    \u0022rotation\u0022: \u0022every_deal\u0022,\n    \u0022method\u0022: \u0022round_robin\u0022,\n    \u0022packets\u0022: [],\n    \u0022kittyPosition\u0022: \u0022after_hands\u0022,\n    \u0022redealRequest\u0022: {\n      \u0022mode\u0022: \u0022none\u0022,\n      \u0022requiresPartnerConsent\u0022: true\n    }\n  },\n  \u0022auction\u0022: {\n    \u0022mode\u0022: \u0022multi_round\u0022,\n    \u0022normalMinimumByPosition\u0022: [\n      6,\n      6,\n      6,\n      6\n    ],\n    \u0022normalMaximum\u0022: 10,\n    \u0022strains\u0022: [\n      \u0022S\u0022,\n      \u0022C\u0022,\n      \u0022D\u0022,\n      \u0022H\u0022,\n      \u0022NT\u0022\n    ],\n    \u0022passReentry\u0022: \u0022never\u0022,\n    \u0022selfRaise\u0022: \u0022forbidden\u0022,\n    \u0022selfRaiseReopens\u0022: false,\n    \u0022finish\u0022: \u0022all_other_seats_withdrawn\u0022,\n    \u0022allPass\u0022: {\n      \u0022action\u0022: \u0022redeal\u0022,\n      \u0022dealerOnRedeal\u0022: \u0022advance\u0022,\n      \u0022forcedContractIds\u0022: [],\n      \u0022noContractKitty\u0022: \u0022untouched\u0022,\n      \u0022noContractLead\u0022: \u0022left_of_dealer\u0022,\n      \u0022noContractPointsPerTrick\u0022: 10\n    },\n    \u0022inkle\u0022: {\n      \u0022enabled\u0022: false,\n      \u0022allowedPositions\u0022: [\n        0,\n        1\n      ],\n      \u0022strains\u0022: [\n        \u0022S\u0022,\n        \u0022C\u0022,\n        \u0022D\u0022,\n        \u0022H\u0022,\n        \u0022NT\u0022\n      ],\n      \u0022countsAsNormalHistory\u0022: false,\n      \u0022mayBecomeContract\u0022: false\n    },\n    \u0022orderLowToHigh\u0022: [\n      \u00226S\u0022,\n      \u00226C\u0022,\n      \u00226D\u0022,\n      \u00226H\u0022,\n      \u00226NT\u0022,\n      \u00227S\u0022,\n      \u00227C\u0022,\n      \u00227D\u0022,\n      \u00227H\u0022,\n      \u00227NT\u0022,\n      \u0022misere\u0022,\n      \u00228S\u0022,\n      \u00228C\u0022,\n      \u00228D\u0022,\n      \u00228H\u0022,\n      \u00228NT\u0022,\n      \u00229S\u0022,\n      \u00229C\u0022,\n      \u00229D\u0022,\n      \u00229H\u0022,\n      \u00229NT\u0022,\n      \u002210S\u0022,\n      \u002210C\u0022,\n      \u002210D\u0022,\n      \u002210H\u0022,\n      \u0022open_misere\u0022,\n      \u002210NT\u0022\n    ]\n  },\n  \u0022contracts\u0022: {\n    \u0022normal\u0022: {\n      \u0022enabled\u0022: true,\n      \u0022target\u0022: \u0022team_at_least\u0022,\n      \u0022activeSeats\u0022: \u0022all_four\u0022,\n      \u0022control\u0022: \u0022individual\u0022,\n      \u0022partnerVisibility\u0022: \u0022hidden\u0022,\n      \u0022kitty\u0022: \u0022take_and_discard\u0022,\n      \u0022firstLead\u0022: \u0022declarer\u0022,\n      \u0022exposure\u0022: {\n        \u0022timing\u0022: \u0022never\u0022,\n        \u0022hands\u0022: \u0022declarer\u0022,\n        \u0022includeDiscards\u0022: false\n      },\n      \u0022eligibility\u0022: {\n        \u0022minimumPriorNormalLevel\u0022: null,\n        \u0022scope\u0022: \u0022any_player\u0022\n      },\n      \u0022points\u0022: null,\n      \u0022joker\u0022: {\n        \u0022predeclare\u0022: \u0022none\u0022,\n        \u0022declaredBehavior\u0022: \u0022highest_in_named_suit_only\u0022,\n        \u0022follow\u0022: \u0022only_when_void\u0022,\n        \u0022forceWhenVoid\u0022: false,\n        \u0022leadSuits\u0022: \u0022any\u0022,\n        \u0022noEligibleSuit\u0022: \u0022forbid_until_last_trick_then_any\u0022,\n        \u0022unassignedRank\u0022: \u0022highest\u0022,\n        \u0022leadDeclarationRequired\u0022: true\n      }\n    },\n    \u0022misere\u0022: {\n      \u0022enabled\u0022: true,\n      \u0022target\u0022: \u0022declarer_zero\u0022,\n      \u0022activeSeats\u0022: \u0022exclude_declarer_partner\u0022,\n      \u0022control\u0022: \u0022individual\u0022,\n      \u0022partnerVisibility\u0022: \u0022hidden\u0022,\n      \u0022kitty\u0022: \u0022take_and_discard\u0022,\n      \u0022firstLead\u0022: \u0022declarer\u0022,\n      \u0022exposure\u0022: {\n        \u0022timing\u0022: \u0022never\u0022,\n        \u0022hands\u0022: \u0022declarer\u0022,\n        \u0022includeDiscards\u0022: false\n      },\n      \u0022eligibility\u0022: {\n        \u0022minimumPriorNormalLevel\u0022: 7,\n        \u0022scope\u0022: \u0022any_player\u0022\n      },\n      \u0022points\u0022: 250,\n      \u0022joker\u0022: {\n        \u0022predeclare\u0022: \u0022none\u0022,\n        \u0022declaredBehavior\u0022: \u0022highest_in_named_suit_only\u0022,\n        \u0022follow\u0022: \u0022only_when_void\u0022,\n        \u0022forceWhenVoid\u0022: false,\n        \u0022leadSuits\u0022: \u0022any\u0022,\n        \u0022noEligibleSuit\u0022: \u0022forbid_until_last_trick_then_any\u0022,\n        \u0022unassignedRank\u0022: \u0022highest\u0022,\n        \u0022leadDeclarationRequired\u0022: true\n      }\n    },\n    \u0022open_misere\u0022: {\n      \u0022enabled\u0022: true,\n      \u0022target\u0022: \u0022declarer_zero\u0022,\n      \u0022activeSeats\u0022: \u0022exclude_declarer_partner\u0022,\n      \u0022control\u0022: \u0022individual\u0022,\n      \u0022partnerVisibility\u0022: \u0022hidden\u0022,\n      \u0022kitty\u0022: \u0022take_and_discard\u0022,\n      \u0022firstLead\u0022: \u0022declarer\u0022,\n      \u0022exposure\u0022: {\n        \u0022timing\u0022: \u0022after_first_trick\u0022,\n        \u0022hands\u0022: \u0022declarer\u0022,\n        \u0022includeDiscards\u0022: false\n      },\n      \u0022eligibility\u0022: {\n        \u0022minimumPriorNormalLevel\u0022: 8,\n        \u0022scope\u0022: \u0022any_player\u0022\n      },\n      \u0022points\u0022: 500,\n      \u0022joker\u0022: {\n        \u0022predeclare\u0022: \u0022none\u0022,\n        \u0022declaredBehavior\u0022: \u0022highest_in_named_suit_only\u0022,\n        \u0022follow\u0022: \u0022only_when_void\u0022,\n        \u0022forceWhenVoid\u0022: false,\n        \u0022leadSuits\u0022: \u0022any\u0022,\n        \u0022noEligibleSuit\u0022: \u0022forbid_until_last_trick_then_any\u0022,\n        \u0022unassignedRank\u0022: \u0022highest\u0022,\n        \u0022leadDeclarationRequired\u0022: true\n      }\n    },\n    \u0022double_nullo\u0022: {\n      \u0022enabled\u0022: false,\n      \u0022target\u0022: \u0022team_zero\u0022,\n      \u0022activeSeats\u0022: \u0022all_four\u0022,\n      \u0022control\u0022: \u0022individual\u0022,\n      \u0022partnerVisibility\u0022: \u0022hidden\u0022,\n      \u0022kitty\u0022: \u0022take_and_discard\u0022,\n      \u0022firstLead\u0022: \u0022declarer\u0022,\n      \u0022exposure\u0022: {\n        \u0022timing\u0022: \u0022never\u0022,\n        \u0022hands\u0022: \u0022declarer\u0022,\n        \u0022includeDiscards\u0022: false\n      },\n      \u0022eligibility\u0022: {\n        \u0022minimumPriorNormalLevel\u0022: null,\n        \u0022scope\u0022: \u0022any_player\u0022\n      },\n      \u0022points\u0022: 510,\n      \u0022joker\u0022: {\n        \u0022predeclare\u0022: \u0022none\u0022,\n        \u0022declaredBehavior\u0022: \u0022highest_in_named_suit_only\u0022,\n        \u0022follow\u0022: \u0022only_when_void\u0022,\n        \u0022forceWhenVoid\u0022: false,\n        \u0022leadSuits\u0022: \u0022any\u0022,\n        \u0022noEligibleSuit\u0022: \u0022forbid_until_last_trick_then_any\u0022,\n        \u0022unassignedRank\u0022: \u0022highest\u0022,\n        \u0022leadDeclarationRequired\u0022: true\n      }\n    },\n    \u0022grand_nullo\u0022: {\n      \u0022enabled\u0022: false,\n      \u0022target\u0022: \u0022team_zero\u0022,\n      \u0022activeSeats\u0022: \u0022all_four\u0022,\n      \u0022control\u0022: \u0022individual\u0022,\n      \u0022partnerVisibility\u0022: \u0022hidden\u0022,\n      \u0022kitty\u0022: \u0022take_and_discard\u0022,\n      \u0022firstLead\u0022: \u0022declarer\u0022,\n      \u0022exposure\u0022: {\n        \u0022timing\u0022: \u0022never\u0022,\n        \u0022hands\u0022: \u0022declarer\u0022,\n        \u0022includeDiscards\u0022: false\n      },\n      \u0022eligibility\u0022: {\n        \u0022minimumPriorNormalLevel\u0022: null,\n        \u0022scope\u0022: \u0022any_player\u0022\n      },\n      \u0022points\u0022: 510,\n      \u0022joker\u0022: {\n        \u0022predeclare\u0022: \u0022none\u0022,\n        \u0022declaredBehavior\u0022: \u0022highest_in_named_suit_only\u0022,\n        \u0022follow\u0022: \u0022only_when_void\u0022,\n        \u0022forceWhenVoid\u0022: false,\n        \u0022leadSuits\u0022: \u0022any\u0022,\n        \u0022noEligibleSuit\u0022: \u0022forbid_until_last_trick_then_any\u0022,\n        \u0022unassignedRank\u0022: \u0022highest\u0022,\n        \u0022leadDeclarationRequired\u0022: true\n      }\n    }\n  },\n  \u0022play\u0022: {\n    \u0022rankHighToLow\u0022: [\n      \u0022A\u0022,\n      \u0022K\u0022,\n      \u0022Q\u0022,\n      \u0022J\u0022,\n      \u002210\u0022,\n      \u00229\u0022,\n      \u00228\u0022,\n      \u00227\u0022,\n      \u00226\u0022,\n      \u00225\u0022,\n      \u00224\u0022\n    ],\n    \u0022rightBower\u0022: true,\n    \u0022leftBower\u0022: true,\n    \u0022jokerIsTrump\u0022: true,\n    \u0022mustFollowEffectiveSuit\u0022: true,\n    \u0022mustTrumpWhenVoid\u0022: false,\n    \u0022mustOvertrump\u0022: false,\n    \u0022finish\u0022: \u0022play_all_tricks\u0022\n  },\n  \u0022scoring\u0022: {\n    \u0022normalTable\u0022: {\n      \u00226\u0022: {\n        \u0022S\u0022: 40,\n        \u0022C\u0022: 60,\n        \u0022D\u0022: 80,\n        \u0022H\u0022: 100,\n        \u0022NT\u0022: 120\n      },\n      \u00227\u0022: {\n        \u0022S\u0022: 140,\n        \u0022C\u0022: 160,\n        \u0022D\u0022: 180,\n        \u0022H\u0022: 200,\n        \u0022NT\u0022: 220\n      },\n      \u00228\u0022: {\n        \u0022S\u0022: 240,\n        \u0022C\u0022: 260,\n        \u0022D\u0022: 280,\n        \u0022H\u0022: 300,\n        \u0022NT\u0022: 320\n      },\n      \u00229\u0022: {\n        \u0022S\u0022: 340,\n        \u0022C\u0022: 360,\n        \u0022D\u0022: 380,\n        \u0022H\u0022: 400,\n        \u0022NT\u0022: 420\n      },\n      \u002210\u0022: {\n        \u0022S\u0022: 440,\n        \u0022C\u0022: 460,\n        \u0022D\u0022: 480,\n        \u0022H\u0022: 500,\n        \u0022NT\u0022: 520\n      }\n    },\n    \u0022contractSuccess\u0022: \u0022award_contract_value\u0022,\n    \u0022failure\u0022: {\n      \u0022contractor\u0022: \u0022lose_contract_value\u0022,\n      \u0022defenders\u0022: \u0022zero\u0022\n    },\n    \u0022defenderTricks\u0022: {\n      \u0022when\u0022: \u0022always\u0022,\n      \u0022pointsPerTrick\u0022: 10\n    },\n    \u0022zeroContractDefenders\u0022: {\n      \u0022basis\u0022: \u0022none\u0022,\n      \u0022pointsPerTrick\u0022: 10,\n      \u0022when\u0022: \u0022only_when_contract_fails\u0022\n    },\n    \u0022slam\u0022: {\n      \u0022mode\u0022: \u0022floor\u0022,\n      \u0022value\u0022: 250,\n      \u0022appliesTo\u0022: \u0022normal_only\u0022,\n      \u0022onlyBelowTenBid\u0022: false\n    },\n    \u0022defensiveScoreCap\u0022: null\n  },\n  \u0022match\u0022: {\n    \u0022mode\u0022: \u0022score_threshold\u0022,\n    \u0022winScore\u0022: 500,\n    \u0022lossScore\u0022: -500,\n    \u0022mustMakeContractToWin\u0022: true,\n    \u0022fixedDeals\u0022: 40,\n    \u0022countRedeals\u0022: true,\n    \u0022check\u0022: \u0022after_deal\u0022,\n    \u0022lossPrecedesWin\u0022: true,\n    \u0022simultaneousWinners\u0022: \u0022contracting_team\u0022,\n    \u0022fixedDealTie\u0022: \u0022draw\u0022\n  }\n}\n",
+    "Id": "legacy-au-4p-v1",
+    "AllowMisere": true,
+    "AllowOpenMisere": true,
+    "MisereRequiresSeven": true,
+    "OpenMisereRequiresEight": true,
+    "MiserePoints": 250,
+    "OpenMiserePoints": 500,
+    "WinScore": 500,
+    "LossScore": -500,
+    "DefenderTrickPoints": 10,
+    "SlamMinimum": 250,
+    "MustContractToWin": true,
+    "PassIsPermanent": true
+  },
+  "Explanation": "Root plus conservative partner versus conventional/aggressive scripted opponents; duplicate deals exchange root team, not a statistical strength study. Default 8 samples/12 discard candidates.",
+  "Games": [
+    {
+      "Stage": "FixedMedium",
+      "pair": 0,
+      "leg": 0,
+      "gameSeed": 2707001,
+      "rootSeat": 0,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 92,
+      "Milliseconds": 5534.996400000001,
+      "BidUpdates": 0,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "FixedMedium",
+      "pair": 0,
+      "leg": 1,
+      "gameSeed": 2707001,
+      "rootSeat": 1,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 4,
+      "Decisions": 45,
+      "Milliseconds": 2011.9693,
+      "BidUpdates": 0,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "FixedMixture",
+      "pair": 0,
+      "leg": 0,
+      "gameSeed": 2707001,
+      "rootSeat": 0,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 93,
+      "Milliseconds": 5037.5135,
+      "BidUpdates": 0,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "FixedMixture",
+      "pair": 0,
+      "leg": 1,
+      "gameSeed": 2707001,
+      "rootSeat": 1,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 9,
+      "Decisions": 104,
+      "Milliseconds": 4947.5547000000015,
+      "BidUpdates": 0,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "Bidding",
+      "pair": 0,
+      "leg": 0,
+      "gameSeed": 2707001,
+      "rootSeat": 0,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 93,
+      "Milliseconds": 4675.748099999999,
+      "BidUpdates": 27,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.22027840905459833,
+          0.6315224746413862,
+          0.1481991163040154
+        ],
+        [
+          0.22785061444316695,
+          0.591361909915745,
+          0.180787475641088
+        ],
+        [
+          0.26532218861629087,
+          0.46210997771162643,
+          0.2725678336720826
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "Bidding",
+      "pair": 0,
+      "leg": 1,
+      "gameSeed": 2707001,
+      "rootSeat": 1,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 21,
+      "Decisions": 247,
+      "Milliseconds": 11178.033299999996,
+      "BidUpdates": 72,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.20353916915673684,
+          0.566183297113235,
+          0.23027753373002818
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.24484757567395585,
+          0.6388878011501404,
+          0.11626462317590376
+        ],
+        [
+          0.21327970062470458,
+          0.5865253580393037,
+          0.2001949413359916
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "Belief",
+      "pair": 0,
+      "leg": 0,
+      "gameSeed": 2707001,
+      "rootSeat": 0,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 93,
+      "Milliseconds": 5543.506399999998,
+      "BidUpdates": 28,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2014305466837797,
+          0.6550556885007108,
+          0.1435137648155094
+        ],
+        [
+          0.23444647366781124,
+          0.655921271904542,
+          0.1096322544276468
+        ],
+        [
+          0.23198944613525493,
+          0.44416475896441154,
+          0.3238457949003335
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "Belief",
+      "pair": 0,
+      "leg": 1,
+      "gameSeed": 2707001,
+      "rootSeat": 1,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 93,
+      "Milliseconds": 5212.9664999999995,
+      "BidUpdates": 28,
+      "PlayUpdates": 0,
+      "BidWeights": [
+        [
+          0.16802658655133587,
+          0.5922489500586663,
+          0.23972446338999784
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.21172481590915201,
+          0.6566877537799259,
+          0.13158743031092196
+        ],
+        [
+          0.29024409806589624,
+          0.5339543678782296,
+          0.1758015340558742
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ]
+      ]
+    },
+    {
+      "Stage": "Play",
+      "pair": 0,
+      "leg": 0,
+      "gameSeed": 2707001,
+      "rootSeat": 0,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 8,
+      "Decisions": 93,
+      "Milliseconds": 5321.8875,
+      "BidUpdates": 27,
+      "PlayUpdates": 5,
+      "BidWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2053956089465829,
+          0.6412186318238801,
+          0.15338575922953718
+        ],
+        [
+          0.2139543396774547,
+          0.5852173848100535,
+          0.20082827551249186
+        ],
+        [
+          0.17307641568562493,
+          0.3136294051333479,
+          0.513294179181027
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.1531207003819853,
+          0.59696301920433,
+          0.24991628041368458
+        ],
+        [
+          0.24594920152735192,
+          0.6396370289193326,
+          0.11441376955331542
+        ],
+        [
+          0.24594920152735192,
+          0.6396370289193326,
+          0.11441376955331542
+        ]
+      ]
+    },
+    {
+      "Stage": "Play",
+      "pair": 0,
+      "leg": 1,
+      "gameSeed": 2707001,
+      "rootSeat": 1,
+      "Winner": 1,
+      "Truncated": false,
+      "Deals": 4,
+      "Decisions": 45,
+      "Milliseconds": 2041.2032,
+      "BidUpdates": 12,
+      "PlayUpdates": 1,
+      "BidWeights": [
+        [
+          0.14347417795494735,
+          0.4263105115913691,
+          0.43021531045368344
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2093475187808107,
+          0.6115014075656594,
+          0.17915107365352984
+        ],
+        [
+          0.21408083255489596,
+          0.6285612554183966,
+          0.15735791202670735
+        ]
+      ],
+      "PlayWeights": [
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2,
+          0.6,
+          0.2
+        ],
+        [
+          0.2261069574383197,
+          0.6277304879794929,
+          0.14616255458218724
+        ]
+      ]
+    }
+  ]
+}

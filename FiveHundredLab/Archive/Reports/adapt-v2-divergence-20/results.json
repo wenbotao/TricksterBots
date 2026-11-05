@@ -1,0 +1,1966 @@
+[
+  {
+    "Index": 0,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 5,
+    "TeamScore": 590,
+    "OpponentScore": -340,
+    "Timing": {
+      "bid": {
+        "Count": 8,
+        "MeanMs": 95.80294999999998,
+        "P50Ms": 89.4891,
+        "P95Ms": 130.8747,
+        "MeanBytes": 160028604,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 50,
+        "MeanMs": 33.07167799999999,
+        "P50Ms": 22.8477,
+        "P95Ms": 107.0584,
+        "MeanBytes": 58736093.28,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 152.90676666666664,
+        "P50Ms": 149.2795,
+        "P95Ms": 163.1994,
+        "MeanBytes": 285843109.3333333,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 20,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 0,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 10,
+    "TeamScore": 680,
+    "OpponentScore": -460,
+    "Timing": {
+      "bid": {
+        "Count": 13,
+        "MeanMs": 85.71513846153847,
+        "P50Ms": 85.126,
+        "P95Ms": 109.5072,
+        "MeanBytes": 151516082.46153846,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 100,
+        "MeanMs": 32.08991499999999,
+        "P50Ms": 25.9428,
+        "P95Ms": 104.673,
+        "MeanBytes": 59108761.44,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 162.90551999999997,
+        "P50Ms": 161.3216,
+        "P95Ms": 194.0519,
+        "MeanBytes": 285113523.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 37,
+    "PlayUpdates": 5
+  },
+  {
+    "Index": 0,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 15,
+    "TeamScore": 140,
+    "OpponentScore": 520,
+    "Timing": {
+      "bid": {
+        "Count": 21,
+        "MeanMs": 86.52843333333333,
+        "P50Ms": 83.4104,
+        "P95Ms": 109.6361,
+        "MeanBytes": 147659732.95238096,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 150,
+        "MeanMs": 24.871171333333326,
+        "P50Ms": 15.5553,
+        "P95Ms": 96.1586,
+        "MeanBytes": 47797730.346666664,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 8,
+        "MeanMs": 148.044075,
+        "P50Ms": 145.741,
+        "P95Ms": 187.5293,
+        "MeanBytes": 283155894,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 1,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -920,
+    "OpponentScore": 50,
+    "Timing": {
+      "bid": {
+        "Count": 5,
+        "MeanMs": 64.32448000000001,
+        "P50Ms": 79.6106,
+        "P95Ms": 83.9205,
+        "MeanBytes": 120810104,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 34.327535,
+        "P50Ms": 23.7117,
+        "P95Ms": 95.99,
+        "MeanBytes": 59169174,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 8,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 1,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": -520,
+    "OpponentScore": 30,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 41.70965,
+        "P50Ms": 0.045,
+        "P95Ms": 83.3743,
+        "MeanBytes": 75709984,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 26.573410000000003,
+        "P50Ms": 19.9231,
+        "P95Ms": 74.3437,
+        "MeanBytes": 50669775.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 1,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -920,
+    "OpponentScore": 50,
+    "Timing": {
+      "bid": {
+        "Count": 5,
+        "MeanMs": 67.92994000000002,
+        "P50Ms": 74.1956,
+        "P95Ms": 104.8409,
+        "MeanBytes": 123083132.8,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 34.075895,
+        "P50Ms": 22.3212,
+        "P95Ms": 85.8153,
+        "MeanBytes": 59168924.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 9,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 2,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -920,
+    "OpponentScore": 120,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 73.2811,
+        "P50Ms": 75.8043,
+        "P95Ms": 105.1992,
+        "MeanBytes": 118565584,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 17.759075,
+        "P50Ms": 12.1575,
+        "P95Ms": 42.3828,
+        "MeanBytes": 31064296,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 2,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 3,
+    "TeamScore": -820,
+    "OpponentScore": 180,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 86.66633333333333,
+        "P50Ms": 83.7098,
+        "P95Ms": 101.8348,
+        "MeanBytes": 149737868,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 30,
+        "MeanMs": 28.523383333333335,
+        "P50Ms": 19.8402,
+        "P95Ms": 88.2422,
+        "MeanBytes": 47045391.733333334,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 11,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 2,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 3,
+    "TeamScore": -820,
+    "OpponentScore": 180,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 100.04053333333331,
+        "P50Ms": 99.2266,
+        "P95Ms": 108.9993,
+        "MeanBytes": 147778950.66666666,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 30,
+        "MeanMs": 29.778163333333335,
+        "P50Ms": 22.9465,
+        "P95Ms": 93.9373,
+        "MeanBytes": 47011071.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 11,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 3,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 9,
+    "TeamScore": -90,
+    "OpponentScore": 560,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 82.94779,
+        "P50Ms": 82.1427,
+        "P95Ms": 94.6939,
+        "MeanBytes": 148348086.4,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 90,
+        "MeanMs": 32.55162111111112,
+        "P50Ms": 19.3661,
+        "P95Ms": 108.7624,
+        "MeanBytes": 58890845.51111111,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 149.71112,
+        "P50Ms": 153.2188,
+        "P95Ms": 159.0079,
+        "MeanBytes": 283615395.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 31,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 3,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 5,
+    "TeamScore": 520,
+    "OpponentScore": 310,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 77.10301666666668,
+        "P50Ms": 75.6721,
+        "P95Ms": 87.5262,
+        "MeanBytes": 143737421.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 50,
+        "MeanMs": 32.991942,
+        "P50Ms": 22.3269,
+        "P95Ms": 112.9472,
+        "MeanBytes": 60547904.96,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 152.96756666666667,
+        "P50Ms": 144.5531,
+        "P95Ms": 173.9415,
+        "MeanBytes": 276299880,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 16,
+    "PlayUpdates": 2
+  },
+  {
+    "Index": 3,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 5,
+    "TeamScore": 570,
+    "OpponentScore": 190,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 71.84718333333335,
+        "P50Ms": 71.664,
+        "P95Ms": 76.4261,
+        "MeanBytes": 137090953.33333334,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 130.06313333333333,
+        "P50Ms": 131.5841,
+        "P95Ms": 132.7808,
+        "MeanBytes": 258713229.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 50,
+        "MeanMs": 26.956538000000002,
+        "P50Ms": 15.4386,
+        "P95Ms": 95.4759,
+        "MeanBytes": 53813411.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 4,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 100,
+    "OpponentScore": -740,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 84.02709999999999,
+        "P50Ms": 76.8326,
+        "P95Ms": 91.2216,
+        "MeanBytes": 156796264,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 19.524440000000002,
+        "P50Ms": 19.0379,
+        "P95Ms": 39.5764,
+        "MeanBytes": 37933126.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 11,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 4,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 100,
+    "OpponentScore": -740,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 75.44425,
+        "P50Ms": 74.5257,
+        "P95Ms": 76.3628,
+        "MeanBytes": 152629264,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 14.55705,
+        "P50Ms": 13.8536,
+        "P95Ms": 33.4653,
+        "MeanBytes": 30916924,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 4,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 100,
+    "OpponentScore": -740,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 82.0083,
+        "P50Ms": 80.4578,
+        "P95Ms": 83.5588,
+        "MeanBytes": 158462864,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 19.801804999999998,
+        "P50Ms": 19.0517,
+        "P95Ms": 41.0388,
+        "MeanBytes": 38373916.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 11,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 5,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 3,
+    "TeamScore": 500,
+    "OpponentScore": 40,
+    "Timing": {
+      "bid": {
+        "Count": 4,
+        "MeanMs": 78.385225,
+        "P50Ms": 77.437,
+        "P95Ms": 94.1452,
+        "MeanBytes": 157263062,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 138.34744999999998,
+        "P50Ms": 134.8434,
+        "P95Ms": 141.8515,
+        "MeanBytes": 259669700,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 35.742335000000004,
+        "P50Ms": 17.0286,
+        "P95Ms": 95.5855,
+        "MeanBytes": 68280088.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 5,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 620,
+    "OpponentScore": 510,
+    "Timing": {
+      "bid": {
+        "Count": 12,
+        "MeanMs": 90.56715833333334,
+        "P50Ms": 84.0503,
+        "P95Ms": 118.2994,
+        "MeanBytes": 165876912,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 4,
+        "MeanMs": 145.5711,
+        "P50Ms": 139.6831,
+        "P95Ms": 156.1314,
+        "MeanBytes": 278235222,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 70,
+        "MeanMs": 32.49242428571429,
+        "P50Ms": 21.0942,
+        "P95Ms": 106.2624,
+        "MeanBytes": 59484857.37142857,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 32,
+    "PlayUpdates": 3
+  },
+  {
+    "Index": 5,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 620,
+    "OpponentScore": 510,
+    "Timing": {
+      "bid": {
+        "Count": 12,
+        "MeanMs": 86.93415,
+        "P50Ms": 75.3386,
+        "P95Ms": 123.1563,
+        "MeanBytes": 164263548,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 4,
+        "MeanMs": 138.5294,
+        "P50Ms": 137.115,
+        "P95Ms": 147.6884,
+        "MeanBytes": 275220284,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 70,
+        "MeanMs": 30.35092142857142,
+        "P50Ms": 19.492,
+        "P95Ms": 98.4887,
+        "MeanBytes": 59469097.25714286,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 31,
+    "PlayUpdates": 3
+  },
+  {
+    "Index": 6,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 100,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 70.67375,
+        "P50Ms": 43.9802,
+        "P95Ms": 97.3673,
+        "MeanBytes": 119502584,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 22.540680000000002,
+        "P50Ms": 12.9828,
+        "P95Ms": 68.4845,
+        "MeanBytes": 38701692,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 6,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 100,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 68.69015,
+        "P50Ms": 53.4224,
+        "P95Ms": 83.9579,
+        "MeanBytes": 117724940,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 20.35904,
+        "P50Ms": 14.2699,
+        "P95Ms": 58.2278,
+        "MeanBytes": 38455452,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 6,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 100,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 54.5882,
+        "P50Ms": 23.4255,
+        "P95Ms": 85.7509,
+        "MeanBytes": 99803292,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 15.73801,
+        "P50Ms": 8.5112,
+        "P95Ms": 50.0077,
+        "MeanBytes": 32968902.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 7,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 92.5879,
+        "P50Ms": 92.5879,
+        "P95Ms": 92.5879,
+        "MeanBytes": 157170800,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 28.104719999999997,
+        "P50Ms": 10.4631,
+        "P95Ms": 104.7755,
+        "MeanBytes": 50051843.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 5,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 7,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 130,
+    "OpponentScore": -880,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 74.9242,
+        "P50Ms": 80.06,
+        "P95Ms": 85.5593,
+        "MeanBytes": 135741880,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 13.46211,
+        "P50Ms": 6.7759,
+        "P95Ms": 40.5887,
+        "MeanBytes": 25472843.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 7,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 84.747,
+        "P50Ms": 84.747,
+        "P95Ms": 84.747,
+        "MeanBytes": 158301744,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 25.962139999999998,
+        "P50Ms": 10.3445,
+        "P95Ms": 88.9748,
+        "MeanBytes": 50492603.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 5,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 8,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 70,
+    "OpponentScore": 720,
+    "Timing": {
+      "bid": {
+        "Count": 12,
+        "MeanMs": 77.54877499999999,
+        "P50Ms": 73.9679,
+        "P95Ms": 94.3542,
+        "MeanBytes": 147450819.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 70,
+        "MeanMs": 26.921734285714283,
+        "P50Ms": 14.9875,
+        "P95Ms": 92.7092,
+        "MeanBytes": 50250949.02857143,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 135.76603333333333,
+        "P50Ms": 131.5351,
+        "P95Ms": 149.4246,
+        "MeanBytes": 266809154.66666666,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 8,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 10,
+    "TeamScore": -440,
+    "OpponentScore": 770,
+    "Timing": {
+      "bid": {
+        "Count": 17,
+        "MeanMs": 87.70582941176471,
+        "P50Ms": 87.0235,
+        "P95Ms": 102.7548,
+        "MeanBytes": 155165296.47058824,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 90,
+        "MeanMs": 33.15452666666667,
+        "P50Ms": 20.8724,
+        "P95Ms": 109.6612,
+        "MeanBytes": 54689538.755555555,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 171.91566,
+        "P50Ms": 176.982,
+        "P95Ms": 217.5408,
+        "MeanBytes": 286438249.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 46,
+    "PlayUpdates": 5
+  },
+  {
+    "Index": 8,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 13,
+    "TeamScore": -380,
+    "OpponentScore": 770,
+    "Timing": {
+      "bid": {
+        "Count": 18,
+        "MeanMs": 98.32260555555555,
+        "P50Ms": 85.9263,
+        "P95Ms": 169.2347,
+        "MeanBytes": 152943852.8888889,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 120,
+        "MeanMs": 35.294893333333334,
+        "P50Ms": 23.4127,
+        "P95Ms": 111.7547,
+        "MeanBytes": 62440080.4,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 8,
+        "MeanMs": 159.603625,
+        "P50Ms": 161.5897,
+        "P95Ms": 185.4409,
+        "MeanBytes": 289834925,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 53,
+    "PlayUpdates": 7
+  },
+  {
+    "Index": 9,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 83.04866666666668,
+        "P50Ms": 84.156,
+        "P95Ms": 91.8961,
+        "MeanBytes": 140022797.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 17.511945,
+        "P50Ms": 13.757,
+        "P95Ms": 51.396,
+        "MeanBytes": 33170514.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 9,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 78.06113333333333,
+        "P50Ms": 76.5283,
+        "P95Ms": 84.6462,
+        "MeanBytes": 138430736,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 16.931715,
+        "P50Ms": 13.1189,
+        "P95Ms": 50.4671,
+        "MeanBytes": 33071935.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 9,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 80,
+    "OpponentScore": -540,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 71.0466,
+        "P50Ms": 64.2321,
+        "P95Ms": 77.8611,
+        "MeanBytes": 128926284,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 18.11847,
+        "P50Ms": 6.9311,
+        "P95Ms": 67.5166,
+        "MeanBytes": 33838590,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 10,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 600,
+    "OpponentScore": 260,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 84.65155,
+        "P50Ms": 79.9279,
+        "P95Ms": 110.2814,
+        "MeanBytes": 157750813.6,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 80,
+        "MeanMs": 27.961449999999996,
+        "P50Ms": 20.2252,
+        "P95Ms": 87.4699,
+        "MeanBytes": 53033057.6,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 149.5377,
+        "P50Ms": 138.5503,
+        "P95Ms": 160.5251,
+        "MeanBytes": 287621420,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 26,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 10,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 4,
+    "TeamScore": 510,
+    "OpponentScore": 190,
+    "Timing": {
+      "bid": {
+        "Count": 7,
+        "MeanMs": 79.97399999999998,
+        "P50Ms": 73.886,
+        "P95Ms": 97.4857,
+        "MeanBytes": 143430411.42857143,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 40,
+        "MeanMs": 25.423915,
+        "P50Ms": 16.769,
+        "P95Ms": 97.6494,
+        "MeanBytes": 47315417.2,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 139.61365,
+        "P50Ms": 132.8795,
+        "P95Ms": 146.3478,
+        "MeanBytes": 262613932,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 10,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 600,
+    "OpponentScore": 260,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 84.74423999999999,
+        "P50Ms": 82.3714,
+        "P95Ms": 113.988,
+        "MeanBytes": 159751712.8,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 80,
+        "MeanMs": 27.342593750000002,
+        "P50Ms": 19.9861,
+        "P95Ms": 92.852,
+        "MeanBytes": 53134706.2,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 149.50529999999998,
+        "P50Ms": 148.6753,
+        "P95Ms": 150.3353,
+        "MeanBytes": 288233312,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 26,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 11,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -960,
+    "OpponentScore": 80,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 38.8127,
+        "P50Ms": 31.5355,
+        "P95Ms": 70.1514,
+        "MeanBytes": 82609426.66666667,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 9.430679999999999,
+        "P50Ms": 7.2906,
+        "P95Ms": 28.3192,
+        "MeanBytes": 21187679.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 11,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -940,
+    "OpponentScore": 140,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 56.16589999999999,
+        "P50Ms": 39.7694,
+        "P95Ms": 72.5624,
+        "MeanBytes": 115514296,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 17.028325000000002,
+        "P50Ms": 12.2148,
+        "P95Ms": 37.3324,
+        "MeanBytes": 33410511.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 7,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 11,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -940,
+    "OpponentScore": 140,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 57.5378,
+        "P50Ms": 37.2723,
+        "P95Ms": 77.8033,
+        "MeanBytes": 114092800,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 17.79555,
+        "P50Ms": 12.5833,
+        "P95Ms": 40.2165,
+        "MeanBytes": 33199850.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 7,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 12,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -560,
+    "OpponentScore": 60,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 76.93889999999999,
+        "P50Ms": 76.0922,
+        "P95Ms": 81.585,
+        "MeanBytes": 146170266.66666666,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 21.59496,
+        "P50Ms": 16.7773,
+        "P95Ms": 75.7819,
+        "MeanBytes": 42335686.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 12,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -560,
+    "OpponentScore": 60,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 76.32786666666667,
+        "P50Ms": 78.3555,
+        "P95Ms": 80.1806,
+        "MeanBytes": 144009242.66666666,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 22.27964,
+        "P50Ms": 17.8322,
+        "P95Ms": 71.6278,
+        "MeanBytes": 42335770,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 12,
+    "Bot": "Strong",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": -980,
+    "OpponentScore": 60,
+    "Timing": {
+      "bid": {
+        "Count": 4,
+        "MeanMs": 54.5689,
+        "P50Ms": 44.9523,
+        "P95Ms": 80.645,
+        "MeanBytes": 104692750,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 1,
+        "MeanMs": 139.2994,
+        "P50Ms": 139.2994,
+        "P95Ms": 139.2994,
+        "MeanBytes": 285016184,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 32.08711,
+        "P50Ms": 15.5985,
+        "P95Ms": 86.3577,
+        "MeanBytes": 58569678,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 13,
+    "Bot": "Adapt",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 5,
+    "TeamScore": -90,
+    "OpponentScore": 510,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 80.74838333333334,
+        "P50Ms": 75.1732,
+        "P95Ms": 100.3376,
+        "MeanBytes": 158811532,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 50,
+        "MeanMs": 25.405292,
+        "P50Ms": 15.3758,
+        "P95Ms": 87.6371,
+        "MeanBytes": 50272423.36,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 129.66095,
+        "P50Ms": 127.3272,
+        "P95Ms": 131.9947,
+        "MeanBytes": 276859840,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 18,
+    "PlayUpdates": 2
+  },
+  {
+    "Index": 13,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 15,
+    "TeamScore": 550,
+    "OpponentScore": 550,
+    "Timing": {
+      "bid": {
+        "Count": 20,
+        "MeanMs": 82.795535,
+        "P50Ms": 81.6326,
+        "P95Ms": 101.2921,
+        "MeanBytes": 156552107.6,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 150,
+        "MeanMs": 30.24105533333333,
+        "P50Ms": 19.5682,
+        "P95Ms": 98.1373,
+        "MeanBytes": 58670854.50666667,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 11,
+        "MeanMs": 134.34900909090908,
+        "P50Ms": 130.8323,
+        "P95Ms": 162.4024,
+        "MeanBytes": 267904325.0909091,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 13,
+    "Bot": "Adapt-v2",
+    "Won": false,
+    "Truncated": false,
+    "Deals": 5,
+    "TeamScore": -380,
+    "OpponentScore": 530,
+    "Timing": {
+      "bid": {
+        "Count": 6,
+        "MeanMs": 82.66128333333334,
+        "P50Ms": 77.7087,
+        "P95Ms": 93.4755,
+        "MeanBytes": 160276165.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 50,
+        "MeanMs": 27.687688,
+        "P50Ms": 15.8565,
+        "P95Ms": 88.279,
+        "MeanBytes": 50786507.52,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 136.83139999999997,
+        "P50Ms": 129.557,
+        "P95Ms": 144.1058,
+        "MeanBytes": 278674936,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 18,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 14,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 3,
+    "TeamScore": 720,
+    "OpponentScore": 50,
+    "Timing": {
+      "bid": {
+        "Count": 4,
+        "MeanMs": 87.175775,
+        "P50Ms": 78.052,
+        "P95Ms": 109.6871,
+        "MeanBytes": 158477314,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 144.8658,
+        "P50Ms": 150.6532,
+        "P95Ms": 155.3557,
+        "MeanBytes": 273965194.6666667,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 30,
+        "MeanMs": 37.95254666666666,
+        "P50Ms": 26.6079,
+        "P95Ms": 112.8838,
+        "MeanBytes": 69129085.33333333,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 14,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 6,
+    "TeamScore": 790,
+    "OpponentScore": 370,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 95.21153,
+        "P50Ms": 90.9668,
+        "P95Ms": 117.1551,
+        "MeanBytes": 160165818.4,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 143.55874,
+        "P50Ms": 139.2448,
+        "P95Ms": 157.1771,
+        "MeanBytes": 280893902.4,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 60,
+        "MeanMs": 37.96552333333333,
+        "P50Ms": 30.76,
+        "P95Ms": 102.8201,
+        "MeanBytes": 70017614.53333333,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 28,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 14,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 6,
+    "TeamScore": 790,
+    "OpponentScore": 370,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 87.36684,
+        "P50Ms": 83.3242,
+        "P95Ms": 109.2069,
+        "MeanBytes": 157873785.6,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 146.11201999999997,
+        "P50Ms": 149.3894,
+        "P95Ms": 154.7402,
+        "MeanBytes": 278739772.8,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 60,
+        "MeanMs": 38.67132,
+        "P50Ms": 27.1845,
+        "P95Ms": 114.4387,
+        "MeanBytes": 70014268.93333334,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 27,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 15,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 40,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 31.4417,
+        "P50Ms": 31.4417,
+        "P95Ms": 31.4417,
+        "MeanBytes": 45750136,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 41.904939999999996,
+        "P50Ms": 19.1184,
+        "P95Ms": 139.1858,
+        "MeanBytes": 73955864.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 15,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 40,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 25.8425,
+        "P50Ms": 25.8425,
+        "P95Ms": 25.8425,
+        "MeanBytes": 42579576,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 41.46026,
+        "P50Ms": 18.7607,
+        "P95Ms": 126.6348,
+        "MeanBytes": 73722433.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 6,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 15,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 40,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 18.3452,
+        "P50Ms": 18.3452,
+        "P95Ms": 18.3452,
+        "MeanBytes": 32491800,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 35.93075,
+        "P50Ms": 14.5451,
+        "P95Ms": 125.2978,
+        "MeanBytes": 67520108.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 16,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 110,
+    "OpponentScore": -700,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 68.38136666666666,
+        "P50Ms": 76.2386,
+        "P95Ms": 76.3072,
+        "MeanBytes": 133078373.33333333,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 21.93849,
+        "P50Ms": 10.9319,
+        "P95Ms": 81.4468,
+        "MeanBytes": 44089446,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 7,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 16,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 110,
+    "OpponentScore": -700,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 67.89206666666666,
+        "P50Ms": 71.8866,
+        "P95Ms": 82.4815,
+        "MeanBytes": 123727890.66666667,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 22.166715,
+        "P50Ms": 8.6195,
+        "P95Ms": 88.5872,
+        "MeanBytes": 40101746,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 16,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 2,
+    "TeamScore": 110,
+    "OpponentScore": -700,
+    "Timing": {
+      "bid": {
+        "Count": 3,
+        "MeanMs": 83.22973333333333,
+        "P50Ms": 84.8971,
+        "P95Ms": 86.2027,
+        "MeanBytes": 135608093.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 20,
+        "MeanMs": 25.62274,
+        "P50Ms": 10.9496,
+        "P95Ms": 80.6725,
+        "MeanBytes": 44089416.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 7,
+    "PlayUpdates": 1
+  },
+  {
+    "Index": 17,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 2,
+        "MeanMs": 70.2312,
+        "P50Ms": 55.6025,
+        "P95Ms": 84.8599,
+        "MeanBytes": 147012168,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 33.58914,
+        "P50Ms": 24.7512,
+        "P95Ms": 102.4712,
+        "MeanBytes": 62490856.8,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 17,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 92.6282,
+        "P50Ms": 92.6282,
+        "P95Ms": 92.6282,
+        "MeanBytes": 176828760,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 31.596990000000005,
+        "P50Ms": 18.6939,
+        "P95Ms": 82.1602,
+        "MeanBytes": 61979429.6,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 5,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 17,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 1,
+    "TeamScore": 80,
+    "OpponentScore": -520,
+    "Timing": {
+      "bid": {
+        "Count": 1,
+        "MeanMs": 92.7343,
+        "P50Ms": 92.7343,
+        "P95Ms": 92.7343,
+        "MeanBytes": 176778048,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 10,
+        "MeanMs": 32.21924,
+        "P50Ms": 19.3711,
+        "P95Ms": 86.2898,
+        "MeanBytes": 61523287.2,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 5,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 18,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 8,
+    "TeamScore": 650,
+    "OpponentScore": 90,
+    "Timing": {
+      "bid": {
+        "Count": 10,
+        "MeanMs": 82.0728,
+        "P50Ms": 79.2029,
+        "P95Ms": 100.4394,
+        "MeanBytes": 153392828.8,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 80,
+        "MeanMs": 34.18690625,
+        "P50Ms": 21.347,
+        "P95Ms": 116.4208,
+        "MeanBytes": 58115200.2,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 4,
+        "MeanMs": 141.95785,
+        "P50Ms": 139.4994,
+        "P95Ms": 158.3382,
+        "MeanBytes": 282333484,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 27,
+    "PlayUpdates": 2
+  },
+  {
+    "Index": 18,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 9,
+    "TeamScore": 600,
+    "OpponentScore": 100,
+    "Timing": {
+      "bid": {
+        "Count": 12,
+        "MeanMs": 75.03344166666666,
+        "P50Ms": 75.2484,
+        "P95Ms": 83.9726,
+        "MeanBytes": 150298963.33333334,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 90,
+        "MeanMs": 27.824753333333334,
+        "P50Ms": 18.7693,
+        "P95Ms": 103.9145,
+        "MeanBytes": 55750751.91111111,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 134.23693999999998,
+        "P50Ms": 134.7231,
+        "P95Ms": 141.3819,
+        "MeanBytes": 282455878.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 31,
+    "PlayUpdates": 2
+  },
+  {
+    "Index": 18,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 6,
+    "TeamScore": 570,
+    "OpponentScore": 20,
+    "Timing": {
+      "bid": {
+        "Count": 9,
+        "MeanMs": 72.6459888888889,
+        "P50Ms": 68.848,
+        "P95Ms": 88.9383,
+        "MeanBytes": 141823536.8888889,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 60,
+        "MeanMs": 22.54044333333333,
+        "P50Ms": 15.8082,
+        "P95Ms": 78.9268,
+        "MeanBytes": 45200715.6,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 128.7726,
+        "P50Ms": 125.9578,
+        "P95Ms": 131.5874,
+        "MeanBytes": 261374452,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 19,
+    "Bot": "Adapt",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 14,
+    "TeamScore": 500,
+    "OpponentScore": -170,
+    "Timing": {
+      "bid": {
+        "Count": 18,
+        "MeanMs": 85.77568333333335,
+        "P50Ms": 82.2476,
+        "P95Ms": 116.6955,
+        "MeanBytes": 153538884,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 5,
+        "MeanMs": 148.02388000000002,
+        "P50Ms": 146.3966,
+        "P95Ms": 162.5247,
+        "MeanBytes": 282742091.2,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 140,
+        "MeanMs": 29.190974999999998,
+        "P50Ms": 19.9248,
+        "P95Ms": 100.8295,
+        "MeanBytes": 52517643.02857143,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 50,
+    "PlayUpdates": 4
+  },
+  {
+    "Index": 19,
+    "Bot": "Strong",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 4,
+    "TeamScore": 570,
+    "OpponentScore": -310,
+    "Timing": {
+      "bid": {
+        "Count": 7,
+        "MeanMs": 85.86417142857144,
+        "P50Ms": 76.9694,
+        "P95Ms": 132.6005,
+        "MeanBytes": 146981769.14285713,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 2,
+        "MeanMs": 151.85584999999998,
+        "P50Ms": 140.1743,
+        "P95Ms": 163.5374,
+        "MeanBytes": 286558684,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 40,
+        "MeanMs": 23.804017500000004,
+        "P50Ms": 14.6771,
+        "P95Ms": 82.3933,
+        "MeanBytes": 46762786.4,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 0,
+    "PlayUpdates": 0
+  },
+  {
+    "Index": 19,
+    "Bot": "Adapt-v2",
+    "Won": true,
+    "Truncated": false,
+    "Deals": 11,
+    "TeamScore": 560,
+    "OpponentScore": 190,
+    "Timing": {
+      "bid": {
+        "Count": 16,
+        "MeanMs": 84.404825,
+        "P50Ms": 78.8606,
+        "P95Ms": 112.4104,
+        "MeanBytes": 156241555.5,
+        "Changes": 0
+      },
+      "discard": {
+        "Count": 3,
+        "MeanMs": 146.30089999999998,
+        "P50Ms": 143.4507,
+        "P95Ms": 171.9085,
+        "MeanBytes": 274797589.3333333,
+        "Changes": 0
+      },
+      "play": {
+        "Count": 110,
+        "MeanMs": 28.43474727272727,
+        "P50Ms": 18.8796,
+        "P95Ms": 90.0437,
+        "MeanBytes": 53906678.10909091,
+        "Changes": 0
+      }
+    },
+    "BidUpdates": 45,
+    "PlayUpdates": 4
+  }
+]

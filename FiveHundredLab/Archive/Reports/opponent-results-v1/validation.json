@@ -1,0 +1,44 @@
+{
+  "schema": "opponent-strong-validation-v1",
+  "tests": {
+    "total": 504,
+    "executed": 504,
+    "passed": 504,
+    "failed": 0,
+    "error": 0,
+    "timeout": 0,
+    "aborted": 0,
+    "inconclusive": 0,
+    "passedButRunAborted": 0,
+    "notRunnable": 0,
+    "notExecuted": 0,
+    "disconnected": 0,
+    "warning": 0,
+    "completed": 0,
+    "inProgress": 0,
+    "pending": 0
+  },
+  "newTests": 12,
+  "configurations": 6,
+  "stages": 3,
+  "configurationSmokeRuns": 18,
+  "defaultBudgetMatchRuns": 10,
+  "allMatchesReplayed": true,
+  "frozenFilesVerified": 49,
+  "predictiveEvidence": [
+    "Public conservative stream prequential NLL: prior=0.908, adaptive=0.919; actor hand only used by synthetic actor",
+    "Controlled likelihood test NLL: 1.551 -> 0.358; not an actual-player calibration claim"
+  ],
+  "strategySources": {
+    "FiveHundredArena/OpponentStyle.cs": "ee5b41799db4784c2d37312be3b04b9557fcb806dd16817fb9feb8a7fbfd42c4",
+    "FiveHundredArena/OpponentForward.cs": "83f33b8637c55cb00d3923d275c908ff4cf914dfbd30f917f95e5ce4cec56e13",
+    "FiveHundredArena/OpponentStrong.cs": "02a43f2082f396f0205da62015055f5929559f2a4f7ec99590a3e77dff4a8498",
+    "FiveHundredArena/OpponentLearning.cs": "3f1ea9837c310f15dfb77a4e5428827426eaacf53c4071168459c692245f778d"
+  },
+  "testTrxSha256": "3b14c59366175f3ac10380b4960bf87149d65ee2e52f7013d549996768add337",
+  "artifacts": {
+    "REPORT.md": "17798394e033da040b551fe0fc5c83722abbd4c827c0d44a47f651571bd1e817",
+    "summary.json": "649e744ae52529f84f8f89b00c215a1cb63d8d99ef8d010e2f2f8a3bbf14633e",
+    "games.jsonl.gz": "f83bc9507b7745858dd808808c1323c59400dba4f2b97bbde84620fead731534"
+  }
+}

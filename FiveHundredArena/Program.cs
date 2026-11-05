@@ -44,18 +44,24 @@ public static class ArenaCommand
             int pairs = int.Parse(Get("--pairs", "100")), seed = int.Parse(Get("--seed", "1")), maxRounds = int.Parse(Get("--max-rounds", "200"));
             if (pairs < 1 || maxRounds < 1) throw new ArgumentException("pairs and max-rounds must be positive");
             string a = Get("--a", "medium"), b = Get("--b", "random-legal"), output = Path.GetFullPath(Get("--out", "arena-results"));
-            var rules = options.TryGetValue("--rules", out var path) ? JsonSerializer.Deserialize<Rules>(File.ReadAllText(path), Json) ?? throw new ArgumentException("Empty rules") : new Rules();
+            var rules = options.TryGetValue("--rules", out var path) ? RuleConfiguration.Load(path) : new Rules();
             rules.Validate();
             if (options.TryGetValue("--assembly", out var assembly)) Assembly.LoadFrom(Path.GetFullPath(assembly));
             var strongOptions = new StrongBotOptions { Samples = int.Parse(Get("--strong-samples", "8")) };
             strongOptions.Validate();
-            IPlayer Create(string spec, int playerSeed) => spec switch
+            IPlayer Legacy(string spec, int playerSeed) => spec switch
             {
                 "medium" => new MediumBotPlayer(), "weak" => new WeakBot(),
                 "strong" => new StrongBot(playerSeed, strongOptions), "random-legal" => new RandomLegalBot(playerSeed),
                 "existing" => new ExistingBotPlayer(), "random" => new RandomPlayer("random", playerSeed),
                 _ => (IPlayer)(Activator.CreateInstance(AppDomain.CurrentDomain.GetAssemblies().Select(x => x.GetType(spec)).FirstOrDefault(t => t != null) ?? throw new ArgumentException($"Unknown player {spec}")) ?? throw new ArgumentException("Cannot instantiate player"))
             };
+            IPlayer Create(string spec,int playerSeed)
+            {
+                if(rules is not ConfiguredRules)return Legacy(spec,playerSeed);
+                var level=spec switch{"random" or "random-legal"=>RuleBotLevel.Random,"weak"=>RuleBotLevel.Weak,"medium" or "existing"=>RuleBotLevel.Medium,"strong"=>RuleBotLevel.Strong,"fast"=>RuleBotLevel.Fast,"partner"=>RuleBotLevel.Partner,_=>throw new ArgumentException("Unknown rule-aware player "+spec)};
+                return new RuleAwarePlayer(level,playerSeed,spec is "fast" or "partner"?new MediumBotPlayer():Legacy(spec,playerSeed),rules,sampleCount:level==RuleBotLevel.Strong?strongOptions.Samples:null);
+            }
             Directory.CreateDirectory(output);
             string gamesPath = Path.Combine(output, "games.jsonl");
             // Never overwrite a previous experiment, including a partially failed one.
@@ -123,7 +129,7 @@ public static class ArenaCommand
     public static void Replay(GameRecord saved)
     {
         if (saved.SchemaVersion != 1 || saved.EngineVersion != "1") throw new InvalidDataException("Unsupported replay version");
-        if (saved.Rules.GetType() != typeof(Rules)) throw new InvalidDataException("Custom rule subclasses require their own replay resolver");
+        if (saved.Rules.GetType() != typeof(Rules) && saved.Rules is not ConfiguredRules) throw new InvalidDataException("Custom rule subclasses require their own replay resolver");
         var bots = Enumerable.Range(0, 4).Select(s => new ReplayPlayer(saved.Players[s], saved.Rounds.SelectMany(r => r.Decisions).Where(d => d.Seat == s))).ToArray();
         var actual = new Engine(saved.Rules).Run(bots, saved.Seed, saved.MaxRounds, saved.InitialDealer);
         if (bots.Any(b => !b.Complete) || JsonSerializer.Serialize(actual, Json) != JsonSerializer.Serialize(saved, Json)) throw new InvalidDataException("Replay diverged from recorded game");
@@ -135,9 +141,10 @@ public sealed class DecisionTiming
     public long Decisions { get; set; }
     public double Milliseconds { get; set; }
 }
-public sealed class TimedPlayer(IPlayer inner, DecisionTiming timing) : IPlayer
+public sealed class TimedPlayer(IPlayer inner, DecisionTiming timing) : IPlayer, IJokerDeclarationPlayer
 {
     public string Name => inner.Name;
+    public IReadOnlyList<PlayAction> DeclareJokers(Observation view)=>inner is IJokerDeclarationPlayer p?p.DeclareJokers(view):[];
     private T Time<T>(Func<T> action) { var watch = Stopwatch.StartNew(); try { return action(); } finally { timing.Decisions++; timing.Milliseconds += watch.Elapsed.TotalMilliseconds; } }
     public Contract? Bid(Observation v, IReadOnlyList<Contract?> legal) => Time(() => inner.Bid(v, legal));
     public IReadOnlyList<PlayingCard> Discard(Observation v, int count) => Time(() => inner.Discard(v, count));

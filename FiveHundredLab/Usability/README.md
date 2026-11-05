@@ -11,7 +11,7 @@
 
 v1 初次评估时的验证结果：完整测试套件 464 项通过（含新增的 8 项评估器测试），没有跳过或失败；41 个冻结源码/模型文件指纹全部通过。评估运行中无非法动作或异常。
 
-后续新增的人类搭档体验版为 `partner-fast-v9`，改进说明与对照结果见 [PARTNER_FAST_V9.md](../PARTNER_FAST_V9.md) 和 [新旧 Fast 比较矩阵](results-partner-v9/REPORT.md)。原有场景、检查条件、层级与默认五种 profile 没有改变。
+后续新增的人类搭档体验版为 `partner-fast-v9`，改进说明与对照结果见 [PARTNER_FAST_V9.md](../Archive/Reports/PARTNER_FAST_V9.md) 和 [新旧 Fast 比较矩阵](results-partner-v9/REPORT.md)。原有场景、检查条件、层级与默认五种 profile 没有改变。
 
 ## 场景与判定
 

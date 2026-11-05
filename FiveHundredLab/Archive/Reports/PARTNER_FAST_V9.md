@@ -38,7 +38,7 @@
 
 全部通过仅说明满足这些固定局面的要求，不代表通用策略完美、所有战术提示都应强制执行，或真人满意度达到 100%。信号效果依赖人类知道并采用上述约定。
 
-详见 [比较矩阵](Usability/results-partner-v9/REPORT.md)、[局面与动作分布](Usability/results-partner-v9/ux-results.json)、[逐决策记录](Usability/results-partner-v9/trials.jsonl)。新增回归还覆盖不同种子、全部四个座位及同色花色互换、未知 Joker、庄家可躲过、可能需要解封、单张无法支持请求、不应埋 A 保护 K 等反例。
+详见 [比较矩阵](../../Usability/results-partner-v9/REPORT.md)、[局面与动作分布](../../Usability/results-partner-v9/ux-results.json)、[逐决策记录](../../Usability/results-partner-v9/trials.jsonl)。新增回归还覆盖不同种子、全部四个座位及同色花色互换、未知 Joker、庄家可躲过、可能需要解封、单张无法支持请求、不应埋 A 保护 K 等反例。
 
 ## 少量实战回归
 
@@ -52,7 +52,7 @@
 
 直接交手持平，搭档代理对局中新版比旧版少赢两场。这组数据暂未显示明显实力崩塌，但不足以证明统计不劣，也没有证据宣称新版更强。Medium 只是稳定的搭档代理，不能代表真正人类的风格。没有按这 48 场的结果反复调参追求胜率。
 
-逐组汇总及压缩完整牌谱在 [结果目录](Usability/results-partner-v9/)。压缩牌谱供审计，包含隐藏牌；不应在真人局未结束时展示给玩家。
+逐组汇总及压缩完整牌谱在 [结果目录](../../Usability/results-partner-v9)。压缩牌谱供审计，包含隐藏牌；不应在真人局未结束时展示给玩家。
 
 ## 决策成本
 

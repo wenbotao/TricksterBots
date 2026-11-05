@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "status": "specification-cases-not-engine-executed",
+  "runtimeCases": [
+    {
+      "id": "A01",
+      "preset": "legacy-au-4p-v1",
+      "action": "bid",
+      "history": [
+        "open_misere"
+      ],
+      "candidate": "10H",
+      "expected": "not_higher_than_current"
+    },
+    {
+      "id": "A02",
+      "preset": "au-reference-4p-v1",
+      "action": "bid",
+      "history": [
+        "10D"
+      ],
+      "candidate": "open_misere",
+      "expected": "legal"
+    },
+    {
+      "id": "A03",
+      "preset": "au-reference-4p-v1",
+      "action": "bid",
+      "history": [
+        "open_misere"
+      ],
+      "candidate": "10H",
+      "expected": "legal"
+    },
+    {
+      "id": "A04",
+      "preset": "au-reference-4p-v1",
+      "action": "bid",
+      "history": [
+        "6NT"
+      ],
+      "candidate": "misere",
+      "expected": "missing_history_qualification"
+    },
+    {
+      "id": "A05",
+      "preset": "us-single-round-4p-v1",
+      "action": "auction",
+      "sequence": [
+        "inkle:C",
+        "pass",
+        "7H",
+        "pass"
+      ],
+      "expected": "7H_final_no_second_round"
+    },
+    {
+      "id": "A06",
+      "preset": "au-reference-4p-v1",
+      "action": "score",
+      "contract": "6S",
+      "contractorTeamTricks": 10,
+      "expectedDelta": [
+        250,
+        0
+      ]
+    },
+    {
+      "id": "A07",
+      "preset": "au-reference-4p-v1",
+      "action": "score",
+      "contract": "8C",
+      "contractorTeamTricks": 7,
+      "expectedDelta": [
+        -260,
+        30
+      ]
+    },
+    {
+      "id": "A08",
+      "preset": "us-single-round-4p-v1",
+      "action": "score",
+      "contract": "misere",
+      "declarerTricks": 2,
+      "expectedDelta": [
+        -250,
+        20
+      ]
+    },
+    {
+      "id": "A09",
+      "preset": "canadian-platform-reference-4p-v1",
+      "action": "score",
+      "contract": "8C",
+      "contractorTeamTricks": 7,
+      "expectedDelta": [
+        0,
+        260
+      ]
+    },
+    {
+      "id": "A10",
+      "preset": "legacy-au-4p-v1",
+      "action": "joker_follow",
+      "contract": "misere",
+      "voidInLedSuit": true,
+      "holding": [
+        "X1",
+        "5C"
+      ],
+      "candidate": "5C",
+      "expected": "legal"
+    },
+    {
+      "id": "A11",
+      "preset": "au-reference-4p-v1",
+      "action": "joker_follow",
+      "contract": "misere",
+      "voidInLedSuit": true,
+      "holding": [
+        "X1",
+        "5C"
+      ],
+      "candidate": "5C",
+      "expected": "must_play_joker"
+    },
+    {
+      "id": "A12",
+      "preset": "au-reference-4p-v1",
+      "action": "joker_winner",
+      "contract": "6NT",
+      "declaredJokerSuit": "C",
+      "ledSuit": "D",
+      "plays": [
+        "9D",
+        "X1",
+        "8D",
+        "7D"
+      ],
+      "expectedWinningCard": "9D"
+    },
+    {
+      "id": "A13",
+      "preset": "mixed-single-round-au-joker-v1",
+      "action": "defensive_cap",
+      "scoreBefore": 520,
+      "defensiveAward": 20,
+      "expectedScoreAfter": 520
+    },
+    {
+      "id": "A14",
+      "preset": "mixed-single-round-au-joker-v1",
+      "action": "defensive_cap",
+      "scoreBefore": 480,
+      "defensiveAward": 40,
+      "expectedScoreAfter": 490
+    },
+    {
+      "id": "A15",
+      "preset": "legacy-au-4p-v1",
+      "action": "terminal",
+      "scoreBefore": 480,
+      "defensiveAward": 40,
+      "expectedScoreAfter": 520,
+      "expected": "continue"
+    },
+    {
+      "id": "A16",
+      "preset": "au-reference-4p-v1",
+      "action": "bid",
+      "history": [],
+      "candidate": "open_misere",
+      "expected": "legal"
+    }
+  ],
+  "invalidConfigurations": [
+    {
+      "id": "N01",
+      "base": "legacy-au-4p-v1",
+      "replace": {
+        "/deal/kittySize": 5
+      },
+      "expectConstraint": "C01"
+    },
+    {
+      "id": "N02",
+      "base": "legacy-au-4p-v1",
+      "replace": {
+        "/auction/mode": "single_round"
+      },
+      "expectConstraint": "C05"
+    },
+    {
+      "id": "N03",
+      "base": "legacy-au-4p-v1",
+      "replace": {
+        "/contracts/grand_nullo/enabled": true
+      },
+      "expectConstraint": "C04"
+    },
+    {
+      "id": "N04",
+      "base": "legacy-au-4p-v1",
+      "replace": {
+        "/deck/jokerOrderHighToLow": [
+          "X1",
+          "X2"
+        ]
+      },
+      "expectConstraint": "C02"
+    }
+  ]
+}

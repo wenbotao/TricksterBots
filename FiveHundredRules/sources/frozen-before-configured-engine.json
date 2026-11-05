@@ -1,0 +1,17 @@
+{
+  "FiveHundredArena/AssemblyInfo.cs": "c36232daddfc25b8d5da5ceb8686e0a4d73cff7b07abf1787a838419ca7d8b54",
+  "FiveHundredArena/BeliefSampler.cs": "ee9dedeea62f054038831fd1818ccdcfc1ba105d8dce87e3d380132b22186575",
+  "FiveHundredArena/Engine.cs": "7803ed6630a371e169085987f6d957a80fec5850ca11f52bfd4a578a1b2ec34b",
+  "FiveHundredArena/ExistingBotPlayer.cs": "acf5f0afc1fad30b2b557e5c674dba223bfcc5d374df47c2f1e9e1109cbfa164",
+  "FiveHundredArena/ForwardModel.cs": "ea41702a5398588b9168bf688cda50a3a957551ba4be9d10b6d20ade6f048391",
+  "FiveHundredArena/HandEvaluator.cs": "f91f962b909cfa4e5b7b1a583d69f37e1e576518b6d5e91bb6566fc3fa0de0cd",
+  "FiveHundredArena/Model.cs": "5ea4b4a181436a8a17e2a08d6a5d1ecbdacbcbb7b5441ac3d1855cdae24612a9",
+  "FiveHundredArena/Program.cs": "bf1b97d488b689713a59ad2c779f47c1d2adb8759de934ea7790935a9e46f717",
+  "FiveHundredArena/Rules.cs": "09891d07f7ff395f33622b5e70b823b3f2754dcf4fe653675aa2c6af5b2ba378",
+  "FiveHundredArena/SimpleBots.cs": "5030ecdb3e8b75826772c0a75c65ccbd16d21c82a2fc20bc9366ec86f5a6a343",
+  "FiveHundredArena/StrongBot.cs": "69639e9a6a633f5eba035aeb4ea03fbd07b4f7663aecde822c0a44629279c820",
+  "TricksterBots/Bots/BaseBot.cs": "d5fa8b1e68defc94c3cb9c60898951eae7108d5a0f86170b6bc9fd3db87931f7",
+  "TricksterBots/Bots/FiveHundred/FiveHundredBot.cs": "113541bd5454057d4c956d7a0c8423a7cf85fc49028c0205fa012550d1906ebd",
+  "TricksterBots/Bots/FiveHundred/MediumBot.cs": "a5750439aa16d28bd0b41f5458df90ee0e428191aa9a025cbe345727f8a3bbdb",
+  "TricksterBots/Bots/PlayersCollectionBase.cs": "4ce5aae6df759841dc53531b4633ed6de3855a450d6cd71403e3a02beda84f55"
+}

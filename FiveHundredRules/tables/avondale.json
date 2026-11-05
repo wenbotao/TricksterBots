@@ -1,0 +1,43 @@
+{
+  "id": "avondale",
+  "source": "document:FiveHundred_Rules_ZH.md#5.1",
+  "copyTarget": "/scoring/normalTable",
+  "table": {
+    "6": {
+      "S": 40,
+      "C": 60,
+      "D": 80,
+      "H": 100,
+      "NT": 120
+    },
+    "7": {
+      "S": 140,
+      "C": 160,
+      "D": 180,
+      "H": 200,
+      "NT": 220
+    },
+    "8": {
+      "S": 240,
+      "C": 260,
+      "D": 280,
+      "H": 300,
+      "NT": 320
+    },
+    "9": {
+      "S": 340,
+      "C": 360,
+      "D": 380,
+      "H": 400,
+      "NT": 420
+    },
+    "10": {
+      "S": 440,
+      "C": 460,
+      "D": 480,
+      "H": 500,
+      "NT": 520
+    }
+  },
+  "auctionOrderEffect": "none; edit auction.orderLowToHigh explicitly if desired"
+}

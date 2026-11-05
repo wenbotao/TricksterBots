@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "format": "declarative-requirements-not-an-executable-validator",
+  "constraints": [
+    {
+      "id": "C01",
+      "severity": "error",
+      "paths": [
+        "deck",
+        "deal"
+      ],
+      "requirement": "牌数必须等于4×handSize+kittySize；牌不得重复。"
+    },
+    {
+      "id": "C02",
+      "severity": "error",
+      "paths": [
+        "deck.jokerOrderHighToLow"
+      ],
+      "requirement": "必须恰好包含牌组中全部Joker且仅一次；不得给不存在的Joker排位。"
+    },
+    {
+      "id": "C03",
+      "severity": "error",
+      "paths": [
+        "deal"
+      ],
+      "requirement": "packets各cardsEach之和等于10、kittyCards之和等于底牌数；round_robin要求空packets和after_hands。"
+    },
+    {
+      "id": "C04",
+      "severity": "error",
+      "paths": [
+        "auction.orderLowToHigh"
+      ],
+      "requirement": "恰好覆盖启用的普通合约和特殊合约，不包含禁用合约，不得遗漏或重复；Inkle不在此列表。"
+    },
+    {
+      "id": "C05",
+      "severity": "error",
+      "paths": [
+        "auction"
+      ],
+      "requirement": "multi_round不得使用four_opportunities；single_round须four_opportunities、selfRaise=forbidden且selfRaiseReopens=false。"
+    },
+    {
+      "id": "C06",
+      "severity": "error",
+      "paths": [
+        "auction"
+      ],
+      "requirement": "single_round的passReentry必须never；on_contract_change要求all_other_seats_passed_current_contract。"
+    },
+    {
+      "id": "C07",
+      "severity": "error",
+      "paths": [
+        "auction"
+      ],
+      "requirement": "never重入且禁止自加叫须all_other_seats_withdrawn；always重入且禁止自加叫须three_consecutive_passes。"
+    },
+    {
+      "id": "C08",
+      "severity": "error",
+      "paths": [
+        "auction"
+      ],
+      "requirement": "normalMinimumByPosition不超过normalMaximum，至少存在正式普通合约；normal必须启用。"
+    },
+    {
+      "id": "C09",
+      "severity": "error",
+      "paths": [
+        "auction.inkle"
+      ],
+      "requirement": "启用时限single_round且allowedPositions非空；Inkle必须不能成为定约。"
+    },
+    {
+      "id": "C10",
+      "severity": "error",
+      "paths": [
+        "auction.allPass"
+      ],
+      "requirement": "force_dealer的forcedContractIds非空、属于启用合约，且在全员无正式叫牌状态存在至少一个满足庄家资格的合约。其他模式要求forcedContractIds为空。"
+    },
+    {
+      "id": "C11",
+      "severity": "error",
+      "paths": [
+        "contracts"
+      ],
+      "requirement": "declarer_controls_team要求all_four且partnerVisibility=declarer_only；停打搭档必须hidden，不能控制停打手牌。"
+    },
+    {
+      "id": "C12",
+      "severity": "error",
+      "paths": [
+        "contracts"
+      ],
+      "requirement": "team_zero要求all_four；normal要求team_at_least、all_four、individual、hidden、无历史门槛、points=null。"
+    },
+    {
+      "id": "C13",
+      "severity": "error",
+      "paths": [
+        "contracts"
+      ],
+      "requirement": "没有Joker时不得启用预命名或缺门强制Joker。zero目标与普通跟牌仍须遵循有效花色。"
+    },
+    {
+      "id": "C14",
+      "severity": "error",
+      "paths": [
+        "contracts"
+      ],
+      "requirement": "enabled合约的历史门槛须可达：any_player需要至少一个对应普通阶数存在；self在单轮中无法先普通叫牌再叫特殊定约，除非另有已定义流程，当前拒绝。"
+    },
+    {
+      "id": "C15",
+      "severity": "error",
+      "paths": [
+        "contracts.exposure"
+      ],
+      "requirement": "never公开时includeDiscards必须false；否则该值仅在公开事件发生时生效，不提前泄露。"
+    },
+    {
+      "id": "C16",
+      "severity": "error",
+      "paths": [
+        "play"
+      ],
+      "requirement": "mustOvertrump在无将合约不施加将吃义务；任何强制动作组合都不能导致非终局合法动作集合为空。"
+    },
+    {
+      "id": "C17",
+      "severity": "error",
+      "paths": [
+        "match"
+      ],
+      "requirement": "固定副数只决定赛程不触发阈值终局；fixed_deals至少计数一种能结束的副。任何模式若没有可触发终局的路径应拒绝。"
+    },
+    {
+      "id": "C18",
+      "severity": "error",
+      "paths": [
+        "scoring"
+      ],
+      "requirement": "floor/bonus奖励仅用于normal的十墩；none时value必须为0；zeroContractDefenders.basis=none时其pointsPerTrick忽略。"
+    },
+    {
+      "id": "C19",
+      "severity": "error",
+      "paths": [
+        "joker"
+      ],
+      "requirement": "leadDeclarationRequired必须true；领门集合为空又不满足最后一墩例外时禁止该动作，所有合法动作仍为空则配置不可执行。"
+    },
+    {
+      "id": "C20",
+      "severity": "error",
+      "paths": [
+        "metadata"
+      ],
+      "requirement": "每场保存完整展开配置；basedOn不能触发读取母配置；未知字段、未知选项一律拒绝。"
+    },
+    {
+      "id": "C21",
+      "severity": "error",
+      "paths": [
+        "deal",
+        "auction"
+      ],
+      "requirement": "packets必须interleaved_packets；rotation=every_deal时流局重发必须advance，rotation=after_played_deal时流局必须same，避免相互矛盾。"
+    },
+    {
+      "id": "C22",
+      "severity": "error",
+      "paths": [
+        "auction"
+      ],
+      "requirement": "自加叫开启时采用all_other_seats_passed_current_contract；重新开启仅在selfRaiseReopens=true时生效；禁止自加叫时selfRaiseReopens必须false。"
+    },
+    {
+      "id": "C23",
+      "severity": "error",
+      "paths": [
+        "contracts"
+      ],
+      "requirement": "无底牌时kitty=take_and_discard等价取零弃零；不得凭空请求弃牌。"
+    },
+    {
+      "id": "C24",
+      "severity": "error",
+      "paths": [
+        "runtimeCapabilities"
+      ],
+      "requirement": "语义有效不等于旧引擎/旧bot可用。接入方必须检查双Joker、命名、Inkle、双手控制等能力，拒绝任何未实现功能。"
+    }
+  ]
+}

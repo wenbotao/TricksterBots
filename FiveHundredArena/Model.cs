@@ -10,10 +10,10 @@ public readonly record struct PlayingCard(Suit Suit, int Rank)
     public override string ToString() => ToBotCard().StdNotation;
 }
 
-public enum ContractKind { Normal, Misere, OpenMisere }
+public enum ContractKind { Normal, Misere, OpenMisere, Inkle }
 public sealed record Contract(int Tricks, Suit Trump, ContractKind Kind = ContractKind.Normal)
 {
-    public bool IsMisere => Kind != ContractKind.Normal;
+    public bool IsMisere => Kind is ContractKind.Misere or ContractKind.OpenMisere;
     public override string ToString() => IsMisere ? Kind.ToString() : $"{Tricks}{Trump}";
 }
 public sealed record AuctionAction(int Seat, Contract? Bid); // null = pass
@@ -82,4 +82,9 @@ public sealed class SeededRandom(int seed)
         return (int)(x % bound);
     }
     public void Shuffle<T>(IList<T> items) { for (int i = items.Count - 1; i > 0; i--) { int j = Next(i + 1); (items[i], items[j]) = (items[j], items[i]); } }
+}
+
+public interface IJokerDeclarationPlayer
+{
+    IReadOnlyList<PlayAction> DeclareJokers(Observation view);
 }

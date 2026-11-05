@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "tests": {
+    "total": 492,
+    "executed": 492,
+    "passed": 492,
+    "failed": 0,
+    "error": 0,
+    "timeout": 0,
+    "aborted": 0,
+    "inconclusive": 0,
+    "passedButRunAborted": 0,
+    "notRunnable": 0,
+    "notExecuted": 0,
+    "disconnected": 0,
+    "warning": 0,
+    "completed": 0,
+    "inProgress": 0,
+    "pending": 0
+  },
+  "ruleAwareBotFamilies": 6,
+  "resolvedConfigurations": 6,
+  "matrixRuns": 72,
+  "matrixDesign": "36 natural-auction runs capped at 3 deals and 36 forced-auction-context runs capped at 1 deal; all serialized/replayed, not all played to score threshold",
+  "additionalChecks": [
+    "default legacy decision equivalence",
+    "configuration mismatch rejection",
+    "low/high Joker changes discard",
+    "score table changes bids",
+    "six dead cards and public Joker ownership",
+    "distinct Fast/Strong budgets",
+    "Partner UX scenarios",
+    "Arena and Lab CLI round trips",
+    "timing wrapper Joker declarations",
+    "active Misere partner vs opponent goals"
+  ],
+  "frozenManifestEntriesVerified": 45,
+  "newStrategyFiles": {
+    "FiveHundredArena/RuleAwarePlayer.cs": "cbccba82ab2921043272c8fa510b26606abccd77b85e102521f2ccc9295eb81d",
+    "FiveHundredArena/RuleSimulation.cs": "779211cbdf3eb8bd9b326bd8a7ac3bf7865849c4364ea37fa69b9cccb80751c9"
+  },
+  "trxSha256": "94364327c8a28244e20eb5ac6d1f8f986494eec84a800bb22f64bdd530716fbe",
+  "limitations": [
+    "variant win rates and strength ordering not evaluated",
+    "configured Strong bidding uses expected-score heuristic, not original auction rollouts",
+    "engine unsupported configurations remain rejected"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "neuralplay-original",
+  "source": "document:FiveHundred_Rules_ZH.md#10.3",
+  "copyTarget": "/scoring/normalTable",
+  "table": {
+    "6": {
+      "S": 40,
+      "C": 60,
+      "D": 80,
+      "H": 100,
+      "NT": 120
+    },
+    "7": {
+      "S": 80,
+      "C": 120,
+      "D": 160,
+      "H": 200,
+      "NT": 240
+    },
+    "8": {
+      "S": 120,
+      "C": 180,
+      "D": 240,
+      "H": 300,
+      "NT": 360
+    },
+    "9": {
+      "S": 160,
+      "C": 240,
+      "D": 320,
+      "H": 400,
+      "NT": 480
+    },
+    "10": {
+      "S": 200,
+      "C": 300,
+      "D": 400,
+      "H": 500,
+      "NT": 600
+    }
+  },
+  "auctionOrderEffect": "none; edit auction.orderLowToHigh explicitly if desired"
+}

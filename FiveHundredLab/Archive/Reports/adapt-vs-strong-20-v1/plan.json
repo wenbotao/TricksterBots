@@ -1,0 +1,362 @@
+[
+  {
+    "Index": 0,
+    "Seed": 3711004,
+    "RootSeat": 0,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "ROOT",
+      "weak-v1",
+      "partner-fast-v9",
+      "strong-v1"
+    ],
+    "PlayerSeeds": [
+      2711098,
+      2711195,
+      2711292,
+      2711389
+    ]
+  },
+  {
+    "Index": 1,
+    "Seed": 3718923,
+    "RootSeat": 1,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "strong-v1",
+      "ROOT",
+      "medium-v1",
+      "random-legal-v1"
+    ],
+    "PlayerSeeds": [
+      2719017,
+      2719114,
+      2719211,
+      2719308
+    ]
+  },
+  {
+    "Index": 2,
+    "Seed": 3726842,
+    "RootSeat": 2,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "random-legal-v1",
+      "visibility-fast-v8",
+      "ROOT",
+      "partner-fast-v9"
+    ],
+    "PlayerSeeds": [
+      2726936,
+      2727033,
+      2727130,
+      2727227
+    ]
+  },
+  {
+    "Index": 3,
+    "Seed": 3734761,
+    "RootSeat": 3,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "partner-fast-v9",
+      "weak-v1",
+      "medium-v1",
+      "ROOT"
+    ],
+    "PlayerSeeds": [
+      2734855,
+      2734952,
+      2735049,
+      2735146
+    ]
+  },
+  {
+    "Index": 4,
+    "Seed": 3742680,
+    "RootSeat": 0,
+    "Dealer": 1,
+    "OtherProfiles": [
+      "ROOT",
+      "random-legal-v1",
+      "strong-v1",
+      "partner-fast-v9"
+    ],
+    "PlayerSeeds": [
+      2742774,
+      2742871,
+      2742968,
+      2743065
+    ]
+  },
+  {
+    "Index": 5,
+    "Seed": 3750599,
+    "RootSeat": 1,
+    "Dealer": 1,
+    "OtherProfiles": [
+      "medium-v1",
+      "ROOT",
+      "medium-v1",
+      "medium-v1"
+    ],
+    "PlayerSeeds": [
+      2750693,
+      2750790,
+      2750887,
+      2750984
+    ]
+  },
+  {
+    "Index": 6,
+    "Seed": 3758518,
+    "RootSeat": 2,
+    "Dealer": 1,
+    "OtherProfiles": [
+      "medium-v1",
+      "random-legal-v1",
+      "ROOT",
+      "random-legal-v1"
+    ],
+    "PlayerSeeds": [
+      2758612,
+      2758709,
+      2758806,
+      2758903
+    ]
+  },
+  {
+    "Index": 7,
+    "Seed": 3766437,
+    "RootSeat": 3,
+    "Dealer": 1,
+    "OtherProfiles": [
+      "strong-v1",
+      "partner-fast-v9",
+      "random-legal-v1",
+      "ROOT"
+    ],
+    "PlayerSeeds": [
+      2766531,
+      2766628,
+      2766725,
+      2766822
+    ]
+  },
+  {
+    "Index": 8,
+    "Seed": 3774356,
+    "RootSeat": 0,
+    "Dealer": 2,
+    "OtherProfiles": [
+      "ROOT",
+      "visibility-fast-v8",
+      "visibility-fast-v8",
+      "partner-fast-v9"
+    ],
+    "PlayerSeeds": [
+      2774450,
+      2774547,
+      2774644,
+      2774741
+    ]
+  },
+  {
+    "Index": 9,
+    "Seed": 3782275,
+    "RootSeat": 1,
+    "Dealer": 2,
+    "OtherProfiles": [
+      "medium-v1",
+      "ROOT",
+      "random-legal-v1",
+      "weak-v1"
+    ],
+    "PlayerSeeds": [
+      2782369,
+      2782466,
+      2782563,
+      2782660
+    ]
+  },
+  {
+    "Index": 10,
+    "Seed": 3790194,
+    "RootSeat": 2,
+    "Dealer": 2,
+    "OtherProfiles": [
+      "medium-v1",
+      "visibility-fast-v8",
+      "ROOT",
+      "medium-v1"
+    ],
+    "PlayerSeeds": [
+      2790288,
+      2790385,
+      2790482,
+      2790579
+    ]
+  },
+  {
+    "Index": 11,
+    "Seed": 3798113,
+    "RootSeat": 3,
+    "Dealer": 2,
+    "OtherProfiles": [
+      "strong-v1",
+      "random-legal-v1",
+      "strong-v1",
+      "ROOT"
+    ],
+    "PlayerSeeds": [
+      2798207,
+      2798304,
+      2798401,
+      2798498
+    ]
+  },
+  {
+    "Index": 12,
+    "Seed": 3806032,
+    "RootSeat": 0,
+    "Dealer": 3,
+    "OtherProfiles": [
+      "ROOT",
+      "partner-fast-v9",
+      "random-legal-v1",
+      "visibility-fast-v8"
+    ],
+    "PlayerSeeds": [
+      2806126,
+      2806223,
+      2806320,
+      2806417
+    ]
+  },
+  {
+    "Index": 13,
+    "Seed": 3813951,
+    "RootSeat": 1,
+    "Dealer": 3,
+    "OtherProfiles": [
+      "medium-v1",
+      "ROOT",
+      "visibility-fast-v8",
+      "visibility-fast-v8"
+    ],
+    "PlayerSeeds": [
+      2814045,
+      2814142,
+      2814239,
+      2814336
+    ]
+  },
+  {
+    "Index": 14,
+    "Seed": 3821870,
+    "RootSeat": 2,
+    "Dealer": 3,
+    "OtherProfiles": [
+      "medium-v1",
+      "medium-v1",
+      "ROOT",
+      "strong-v1"
+    ],
+    "PlayerSeeds": [
+      2821964,
+      2822061,
+      2822158,
+      2822255
+    ]
+  },
+  {
+    "Index": 15,
+    "Seed": 3829789,
+    "RootSeat": 3,
+    "Dealer": 3,
+    "OtherProfiles": [
+      "random-legal-v1",
+      "random-legal-v1",
+      "random-legal-v1",
+      "ROOT"
+    ],
+    "PlayerSeeds": [
+      2829883,
+      2829980,
+      2830077,
+      2830174
+    ]
+  },
+  {
+    "Index": 16,
+    "Seed": 3837708,
+    "RootSeat": 0,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "ROOT",
+      "random-legal-v1",
+      "medium-v1",
+      "weak-v1"
+    ],
+    "PlayerSeeds": [
+      2837802,
+      2837899,
+      2837996,
+      2838093
+    ]
+  },
+  {
+    "Index": 17,
+    "Seed": 3845627,
+    "RootSeat": 1,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "random-legal-v1",
+      "ROOT",
+      "random-legal-v1",
+      "medium-v1"
+    ],
+    "PlayerSeeds": [
+      2845721,
+      2845818,
+      2845915,
+      2846012
+    ]
+  },
+  {
+    "Index": 18,
+    "Seed": 3853546,
+    "RootSeat": 2,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "weak-v1",
+      "medium-v1",
+      "ROOT",
+      "medium-v1"
+    ],
+    "PlayerSeeds": [
+      2853640,
+      2853737,
+      2853834,
+      2853931
+    ]
+  },
+  {
+    "Index": 19,
+    "Seed": 3861465,
+    "RootSeat": 3,
+    "Dealer": 0,
+    "OtherProfiles": [
+      "strong-v1",
+      "weak-v1",
+      "visibility-fast-v8",
+      "ROOT"
+    ],
+    "PlayerSeeds": [
+      2861559,
+      2861656,
+      2861753,
+      2861850
+    ]
+  }
+]

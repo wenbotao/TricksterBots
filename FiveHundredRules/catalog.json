@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "defaultPreset": "legacy-au-4p-v1",
+  "presets": [
+    {
+      "id": "legacy-au-4p-v1",
+      "file": "presets/legacy-au-4p-v1.json",
+      "name": "原有澳式四人默认（兼容快照）",
+      "status": "specification-only"
+    },
+    {
+      "id": "au-reference-4p-v1",
+      "file": "presets/au-reference-4p-v1.json",
+      "name": "澳式四人参考（文档方案）",
+      "status": "specification-only"
+    },
+    {
+      "id": "us-single-round-4p-v1",
+      "file": "presets/us-single-round-4p-v1.json",
+      "name": "美式四人单轮参考（项目组合）",
+      "status": "specification-only"
+    },
+    {
+      "id": "canadian-platform-reference-4p-v1",
+      "file": "presets/canadian-platform-reference-4p-v1.json",
+      "name": "加拿大式四人参考（NeuralPlay摘要＋项目补全）",
+      "status": "specification-only"
+    }
+  ],
+  "schema": "rules.schema.json",
+  "customTemplate": "custom/custom-4p.template.json",
+  "mixingExample": "examples/mixed-single-round-au-joker-v1.json",
+  "semanticConstraints": "constraints.json",
+  "engineIntegration": "not-implemented",
+  "botIntegration": "not-implemented"
+}

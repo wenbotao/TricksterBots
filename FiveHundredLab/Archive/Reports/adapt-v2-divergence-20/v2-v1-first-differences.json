@@ -1,0 +1,276 @@
+[
+  {
+    "case": 1,
+    "firstDifference": {
+      "round": 3,
+      "decisionIndex": 1,
+      "phase": "bid",
+      "AdaptV2": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "AdaptV1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  },
+  {
+    "case": 2,
+    "firstDifference": null
+  },
+  {
+    "case": 3,
+    "firstDifference": null
+  },
+  {
+    "case": 4,
+    "firstDifference": {
+      "round": 2,
+      "decisionIndex": 33,
+      "phase": "play",
+      "AdaptV2": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "AdaptV1": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    }
+  },
+  {
+    "case": 5,
+    "firstDifference": null
+  },
+  {
+    "case": 6,
+    "firstDifference": {
+      "round": 3,
+      "decisionIndex": 1,
+      "phase": "bid",
+      "AdaptV2": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "AdaptV1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  },
+  {
+    "case": 7,
+    "firstDifference": null
+  },
+  {
+    "case": 8,
+    "firstDifference": null
+  },
+  {
+    "case": 9,
+    "firstDifference": {
+      "round": 5,
+      "decisionIndex": 1,
+      "phase": "bid",
+      "AdaptV2": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "AdaptV1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  },
+  {
+    "case": 10,
+    "firstDifference": null
+  },
+  {
+    "case": 11,
+    "firstDifference": null
+  },
+  {
+    "case": 12,
+    "firstDifference": null
+  },
+  {
+    "case": 13,
+    "firstDifference": null
+  },
+  {
+    "case": 14,
+    "firstDifference": {
+      "round": 4,
+      "decisionIndex": 6,
+      "phase": "play",
+      "AdaptV2": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 9,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "AdaptV1": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Joker",
+            "Rank": 16,
+            "IsJoker": true
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    }
+  },
+  {
+    "case": 15,
+    "firstDifference": null
+  },
+  {
+    "case": 16,
+    "firstDifference": null
+  },
+  {
+    "case": 17,
+    "firstDifference": null
+  },
+  {
+    "case": 18,
+    "firstDifference": null
+  },
+  {
+    "case": 19,
+    "firstDifference": {
+      "round": 2,
+      "decisionIndex": 0,
+      "phase": "bid",
+      "AdaptV2": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "AdaptV1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  },
+  {
+    "case": 20,
+    "firstDifference": {
+      "round": 3,
+      "decisionIndex": 0,
+      "phase": "bid",
+      "AdaptV2": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "AdaptV1": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  }
+]

@@ -112,7 +112,7 @@ public class TestFiveHundredLab
     {
         foreach(var filename in new[]{"ridge-teacher16-v1-g32.json","ridge-phase-v2-g48.json"})
         {
-            string path=Path.Combine(Repo(),"FiveHundredLab/models",filename);var model=ValueModelV1.Load(path);
+            string path=Path.Combine(Repo(),"FiveHundredLab/Archive/Models",filename);var model=ValueModelV1.Load(path);
             Assert.AreEqual(0,model.TrainingSeeds.Intersect(model.ValidationSeeds).Count());Assert.AreNotEqual("unsaved",model.Digest);
             var prediction=model.Predict(View(),"play");Assert.IsTrue(double.IsFinite(prediction.Utility));Assert.IsTrue(prediction.MadeProbability is >=0 and <=1);
             Assert.ThrowsExactly<NotSupportedException>(()=>model.Predict(View() with{Rules=new(){WinScore=1000}},"play"));
@@ -155,7 +155,7 @@ public class TestFiveHundredLab
     [DataRow("selective-quality-v2")] [DataRow("selective-belief-v3")] [DataRow("value-guided-v3")] [DataRow("selective-fast-v4")] [DataRow("visibility-strong-v5")] [DataRow("visibility-fast-v6")] [DataRow("visibility-quality-v7")]
     public void NewNamedStrategiesMakeLegalReproducibleDecisions(string name)
     {
-        var v=View();var r=v.Rules;var legal=r.LegalPlays(v.Hand,[],v.Contract!);var model=Path.Combine(Repo(),"FiveHundredLab/models/ridge-phase-v2-g48.json");
+        var v=View();var r=v.Rules;var legal=r.LegalPlays(v.Hand,[],v.Contract!);var model=Path.Combine(Repo(),"FiveHundredLab/Archive/Models/ridge-phase-v2-g48.json");
         var a=Profiles.Create(name,915,model);var b=Profiles.Create(name,915,model);
         Assert.AreEqual(a.Play(v,legal),b.Play(v,legal));Assert.Contains(a.Play(v,legal),legal);
         if(a is AdaptiveV1 adaptive && adaptive.LastSearch is {Direct:false} report)Assert.IsTrue(report.SamplesUsed<=12&&report.Rollouts<=report.Candidates*report.SamplesUsed);

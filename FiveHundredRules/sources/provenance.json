@@ -1,0 +1,13 @@
+{
+  "document": "FiveHundred_Rules_ZH.md",
+  "sha256": "1a15ea70cba45b839bd26d2f69df2495bfa85b1764ba096304ccbbc8c53ea293",
+  "verification": "Based on user supplied document; external links not independently re-fetched in this task.",
+  "legacySources": [
+    "FiveHundredArena/Rules.cs",
+    "FiveHundredArena/Engine.cs"
+  ],
+  "legacySourceHashes": {
+    "FiveHundredArena/Rules.cs": "09891d07f7ff395f33622b5e70b823b3f2754dcf4fe653675aa2c6af5b2ba378",
+    "FiveHundredArena/Engine.cs": "7803ed6630a371e169085987f6d957a80fec5850ca11f52bfd4a578a1b2ec34b"
+  }
+}

@@ -1,0 +1,4 @@
+# Keep the maintained engine and rule strategies readable without reformatting frozen legacy policies.
+[{Engine.cs,ConfiguredRules.cs,ConfigurationStructure.cs,Bots/FiveHundred/*.cs}]
+csharp_preserve_single_line_blocks = false
+csharp_preserve_single_line_statements = false

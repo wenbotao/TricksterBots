@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "canadian-platform-reference-4p-v1",
+    "version": 1,
+    "name": "加拿大式四人参考（NeuralPlay摘要＋项目补全）",
+    "kind": "preset",
+    "basedOn": null,
+    "sources": [
+      "document:FiveHundred_Rules_ZH.md#8.2"
+    ],
+    "projectChoices": [
+      "根据上传文档 NeuralPlay Canadian 摘要建立，不声称精确复刻平台完整配置。",
+      "摘要没有给出的 Open 分值、序位与门槛采用500、10H之后、随时可叫；这些属于项目选择。",
+      "Joker采用未命名最高牌、缺门可出但不强制、领出任意门；双 Joker 用 X1黑高于X2红。这些为明确补全，不移植法语文献中未补齐的领门限制。",
+      "普通失败只让防守方取得合约分，定约方不扣；关闭防守墩分。",
+      "其他未说明项采用展开配置；具体平台复制需要另有完整依据。"
+    ],
+    "integrationStatus": "specification-only"
+  },
+  "table": {
+    "players": 4,
+    "teams": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "direction": "clockwise"
+  },
+  "deck": {
+    "cards": [
+      "4S",
+      "5S",
+      "6S",
+      "7S",
+      "8S",
+      "9S",
+      "10S",
+      "JS",
+      "QS",
+      "KS",
+      "AS",
+      "4C",
+      "5C",
+      "6C",
+      "7C",
+      "8C",
+      "9C",
+      "10C",
+      "JC",
+      "QC",
+      "KC",
+      "AC",
+      "4D",
+      "5D",
+      "6D",
+      "7D",
+      "8D",
+      "9D",
+      "10D",
+      "JD",
+      "QD",
+      "KD",
+      "AD",
+      "4H",
+      "5H",
+      "6H",
+      "7H",
+      "8H",
+      "9H",
+      "10H",
+      "JH",
+      "QH",
+      "KH",
+      "AH",
+      "X1",
+      "X2"
+    ],
+    "jokerOrderHighToLow": [
+      "X1",
+      "X2"
+    ]
+  },
+  "deal": {
+    "handSize": 10,
+    "kittySize": 6,
+    "firstDealer": "fixed",
+    "fixedDealer": 3,
+    "rotation": "every_deal",
+    "method": "round_robin",
+    "packets": [],
+    "kittyPosition": "after_hands",
+    "redealRequest": {
+      "mode": "none",
+      "requiresPartnerConsent": true
+    }
+  },
+  "auction": {
+    "mode": "single_round",
+    "normalMinimumByPosition": [
+      7,
+      7,
+      7,
+      7
+    ],
+    "normalMaximum": 10,
+    "strains": [
+      "S",
+      "C",
+      "D",
+      "H",
+      "NT"
+    ],
+    "passReentry": "never",
+    "selfRaise": "forbidden",
+    "selfRaiseReopens": false,
+    "finish": "four_opportunities",
+    "allPass": {
+      "action": "redeal",
+      "dealerOnRedeal": "advance",
+      "forcedContractIds": [],
+      "noContractKitty": "untouched",
+      "noContractLead": "left_of_dealer",
+      "noContractPointsPerTrick": 10
+    },
+    "inkle": {
+      "enabled": false,
+      "allowedPositions": [
+        0,
+        1
+      ],
+      "strains": [
+        "S",
+        "C",
+        "D",
+        "H",
+        "NT"
+      ],
+      "countsAsNormalHistory": false,
+      "mayBecomeContract": false
+    },
+    "orderLowToHigh": [
+      "7S",
+      "7C",
+      "7D",
+      "7H",
+      "7NT",
+      "8S",
+      "8C",
+      "8D",
+      "8H",
+      "8NT",
+      "9S",
+      "9C",
+      "9D",
+      "9H",
+      "9NT",
+      "10S",
+      "10C",
+      "10D",
+      "10H",
+      "open_misere",
+      "10NT"
+    ]
+  },
+  "contracts": {
+    "normal": {
+      "enabled": true,
+      "target": "team_at_least",
+      "activeSeats": "all_four",
+      "control": "individual",
+      "partnerVisibility": "hidden",
+      "kitty": "take_and_discard",
+      "firstLead": "declarer",
+      "exposure": {
+        "timing": "never",
+        "hands": "declarer",
+        "includeDiscards": false
+      },
+      "eligibility": {
+        "minimumPriorNormalLevel": null,
+        "scope": "any_player"
+      },
+      "points": null,
+      "joker": {
+        "predeclare": "none",
+        "declaredBehavior": "highest_in_named_suit_only",
+        "follow": "only_when_void",
+        "forceWhenVoid": false,
+        "leadSuits": "any",
+        "noEligibleSuit": "forbid_until_last_trick_then_any",
+        "unassignedRank": "highest",
+        "leadDeclarationRequired": true
+      }
+    },
+    "misere": {
+      "enabled": false,
+      "target": "declarer_zero",
+      "activeSeats": "exclude_declarer_partner",
+      "control": "individual",
+      "partnerVisibility": "hidden",
+      "kitty": "take_and_discard",
+      "firstLead": "declarer",
+      "exposure": {
+        "timing": "never",
+        "hands": "declarer",
+        "includeDiscards": false
+      },
+      "eligibility": {
+        "minimumPriorNormalLevel": 7,
+        "scope": "any_player"
+      },
+      "points": 250,
+      "joker": {
+        "predeclare": "none",
+        "declaredBehavior": "highest_in_named_suit_only",
+        "follow": "only_when_void",
+        "forceWhenVoid": false,
+        "leadSuits": "any",
+        "noEligibleSuit": "forbid_until_last_trick_then_any",
+        "unassignedRank": "highest",
+        "leadDeclarationRequired": true
+      }
+    },
+    "open_misere": {
+      "enabled": true,
+      "target": "declarer_zero",
+      "activeSeats": "exclude_declarer_partner",
+      "control": "individual",
+      "partnerVisibility": "hidden",
+      "kitty": "take_and_discard",
+      "firstLead": "declarer",
+      "exposure": {
+        "timing": "after_first_trick",
+        "hands": "declarer",
+        "includeDiscards": false
+      },
+      "eligibility": {
+        "minimumPriorNormalLevel": null,
+        "scope": "any_player"
+      },
+      "points": 500,
+      "joker": {
+        "predeclare": "none",
+        "declaredBehavior": "highest_in_named_suit_only",
+        "follow": "only_when_void",
+        "forceWhenVoid": false,
+        "leadSuits": "any",
+        "noEligibleSuit": "forbid_until_last_trick_then_any",
+        "unassignedRank": "highest",
+        "leadDeclarationRequired": true
+      }
+    },
+    "double_nullo": {
+      "enabled": false,
+      "target": "team_zero",
+      "activeSeats": "all_four",
+      "control": "individual",
+      "partnerVisibility": "hidden",
+      "kitty": "take_and_discard",
+      "firstLead": "declarer",
+      "exposure": {
+        "timing": "never",
+        "hands": "declarer",
+        "includeDiscards": false
+      },
+      "eligibility": {
+        "minimumPriorNormalLevel": null,
+        "scope": "any_player"
+      },
+      "points": 510,
+      "joker": {
+        "predeclare": "none",
+        "declaredBehavior": "highest_in_named_suit_only",
+        "follow": "only_when_void",
+        "forceWhenVoid": false,
+        "leadSuits": "any",
+        "noEligibleSuit": "forbid_until_last_trick_then_any",
+        "unassignedRank": "highest",
+        "leadDeclarationRequired": true
+      }
+    },
+    "grand_nullo": {
+      "enabled": false,
+      "target": "team_zero",
+      "activeSeats": "all_four",
+      "control": "individual",
+      "partnerVisibility": "hidden",
+      "kitty": "take_and_discard",
+      "firstLead": "declarer",
+      "exposure": {
+        "timing": "never",
+        "hands": "declarer",
+        "includeDiscards": false
+      },
+      "eligibility": {
+        "minimumPriorNormalLevel": null,
+        "scope": "any_player"
+      },
+      "points": 510,
+      "joker": {
+        "predeclare": "none",
+        "declaredBehavior": "highest_in_named_suit_only",
+        "follow": "only_when_void",
+        "forceWhenVoid": false,
+        "leadSuits": "any",
+        "noEligibleSuit": "forbid_until_last_trick_then_any",
+        "unassignedRank": "highest",
+        "leadDeclarationRequired": true
+      }
+    }
+  },
+  "play": {
+    "rankHighToLow": [
+      "A",
+      "K",
+      "Q",
+      "J",
+      "10",
+      "9",
+      "8",
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "rightBower": true,
+    "leftBower": true,
+    "jokerIsTrump": true,
+    "mustFollowEffectiveSuit": true,
+    "mustTrumpWhenVoid": false,
+    "mustOvertrump": false,
+    "finish": "play_all_tricks"
+  },
+  "scoring": {
+    "normalTable": {
+      "6": {
+        "S": 40,
+        "C": 60,
+        "D": 80,
+        "H": 100,
+        "NT": 120
+      },
+      "7": {
+        "S": 140,
+        "C": 160,
+        "D": 180,
+        "H": 200,
+        "NT": 220
+      },
+      "8": {
+        "S": 240,
+        "C": 260,
+        "D": 280,
+        "H": 300,
+        "NT": 320
+      },
+      "9": {
+        "S": 340,
+        "C": 360,
+        "D": 380,
+        "H": 400,
+        "NT": 420
+      },
+      "10": {
+        "S": 440,
+        "C": 460,
+        "D": 480,
+        "H": 500,
+        "NT": 520
+      }
+    },
+    "contractSuccess": "award_contract_value",
+    "failure": {
+      "contractor": "zero",
+      "defenders": "gain_contract_value"
+    },
+    "defenderTricks": {
+      "when": "never",
+      "pointsPerTrick": 10
+    },
+    "zeroContractDefenders": {
+      "basis": "none",
+      "pointsPerTrick": 10,
+      "when": "only_when_contract_fails"
+    },
+    "slam": {
+      "mode": "floor",
+      "value": 250,
+      "appliesTo": "normal_only",
+      "onlyBelowTenBid": false
+    },
+    "defensiveScoreCap": null
+  },
+  "match": {
+    "mode": "score_threshold",
+    "winScore": 1000,
+    "lossScore": -1000,
+    "mustMakeContractToWin": true,
+    "fixedDeals": 40,
+    "countRedeals": true,
+    "check": "after_deal",
+    "lossPrecedesWin": true,
+    "simultaneousWinners": "contracting_team",
+    "fixedDealTie": "draw"
+  }
+}

@@ -1,0 +1,1827 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trickster:fivehundred:rules:1",
+  "title": "Four-player Five Hundred resolved rules v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "metadata",
+    "table",
+    "deck",
+    "deal",
+    "auction",
+    "contracts",
+    "play",
+    "scoring",
+    "match"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "name",
+        "kind",
+        "basedOn",
+        "sources",
+        "projectChoices",
+        "integrationStatus"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "preset",
+            "custom",
+            "example"
+          ]
+        },
+        "basedOn": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "projectChoices": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "integrationStatus": {
+          "const": "specification-only"
+        }
+      }
+    },
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "players",
+        "teams",
+        "direction"
+      ],
+      "properties": {
+        "players": {
+          "const": 4
+        },
+        "teams": {
+          "const": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "direction": {
+          "const": "clockwise"
+        }
+      }
+    },
+    "deck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cards",
+        "jokerOrderHighToLow"
+      ],
+      "properties": {
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?:[4-9]|10|J|Q|K|A)[SCDH]$|^X[12]$"
+          },
+          "minItems": 40,
+          "maxItems": 46,
+          "uniqueItems": true
+        },
+        "jokerOrderHighToLow": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "X1",
+              "X2"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 2,
+          "uniqueItems": true
+        }
+      }
+    },
+    "deal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "handSize",
+        "kittySize",
+        "firstDealer",
+        "fixedDealer",
+        "rotation",
+        "method",
+        "packets",
+        "kittyPosition",
+        "redealRequest"
+      ],
+      "properties": {
+        "handSize": {
+          "const": 10
+        },
+        "kittySize": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "firstDealer": {
+          "enum": [
+            "random",
+            "fixed"
+          ]
+        },
+        "fixedDealer": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "rotation": {
+          "enum": [
+            "every_deal",
+            "after_played_deal"
+          ]
+        },
+        "method": {
+          "enum": [
+            "round_robin",
+            "packets"
+          ]
+        },
+        "packets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "cardsEach",
+              "kittyCards"
+            ],
+            "properties": {
+              "cardsEach": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10
+              },
+              "kittyCards": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 6
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 10
+        },
+        "kittyPosition": {
+          "enum": [
+            "after_hands",
+            "interleaved_packets"
+          ]
+        },
+        "redealRequest": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "requiresPartnerConsent"
+          ],
+          "properties": {
+            "mode": {
+              "enum": [
+                "none",
+                "ace_no_face"
+              ]
+            },
+            "requiresPartnerConsent": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "auction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "normalMinimumByPosition",
+        "normalMaximum",
+        "strains",
+        "passReentry",
+        "selfRaise",
+        "selfRaiseReopens",
+        "finish",
+        "allPass",
+        "inkle",
+        "orderLowToHigh"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "multi_round",
+            "single_round"
+          ]
+        },
+        "normalMinimumByPosition": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 6,
+            "maximum": 10
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "normalMaximum": {
+          "type": "integer",
+          "minimum": 6,
+          "maximum": 10
+        },
+        "strains": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "S",
+              "C",
+              "D",
+              "H",
+              "NT"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "passReentry": {
+          "enum": [
+            "never",
+            "always",
+            "on_contract_change"
+          ]
+        },
+        "selfRaise": {
+          "enum": [
+            "forbidden",
+            "after_others_pass"
+          ]
+        },
+        "selfRaiseReopens": {
+          "type": "boolean"
+        },
+        "finish": {
+          "enum": [
+            "all_other_seats_withdrawn",
+            "three_consecutive_passes",
+            "four_opportunities",
+            "all_other_seats_passed_current_contract"
+          ]
+        },
+        "allPass": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "action",
+            "dealerOnRedeal",
+            "forcedContractIds",
+            "noContractKitty",
+            "noContractLead",
+            "noContractPointsPerTrick"
+          ],
+          "properties": {
+            "action": {
+              "enum": [
+                "redeal",
+                "force_dealer",
+                "play_no_contract_nt"
+              ]
+            },
+            "dealerOnRedeal": {
+              "enum": [
+                "advance",
+                "same"
+              ]
+            },
+            "forcedContractIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "noContractKitty": {
+              "enum": [
+                "untouched",
+                "dealer_takes"
+              ]
+            },
+            "noContractLead": {
+              "enum": [
+                "left_of_dealer",
+                "dealer"
+              ]
+            },
+            "noContractPointsPerTrick": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            }
+          }
+        },
+        "inkle": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "allowedPositions",
+            "strains",
+            "countsAsNormalHistory",
+            "mayBecomeContract"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "allowedPositions": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "minItems": 0,
+              "maxItems": 4,
+              "uniqueItems": true
+            },
+            "strains": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "S",
+                  "C",
+                  "D",
+                  "H",
+                  "NT"
+                ]
+              },
+              "minItems": 1,
+              "maxItems": 5,
+              "uniqueItems": true
+            },
+            "countsAsNormalHistory": {
+              "type": "boolean"
+            },
+            "mayBecomeContract": {
+              "const": false
+            }
+          }
+        },
+        "orderLowToHigh": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?:[6-9]|10)(?:S|C|D|H|NT)$|^(?:misere|open_misere|double_nullo|grand_nullo)$"
+          },
+          "minItems": 1,
+          "maxItems": 29,
+          "uniqueItems": true
+        }
+      }
+    },
+    "contracts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "normal",
+        "misere",
+        "open_misere",
+        "double_nullo",
+        "grand_nullo"
+      ],
+      "properties": {
+        "normal": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "null"
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "misere": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "open_misere": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "double_nullo": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "grand_nullo": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "play": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rankHighToLow",
+        "rightBower",
+        "leftBower",
+        "jokerIsTrump",
+        "mustFollowEffectiveSuit",
+        "mustTrumpWhenVoid",
+        "mustOvertrump",
+        "finish"
+      ],
+      "properties": {
+        "rankHighToLow": {
+          "const": [
+            "A",
+            "K",
+            "Q",
+            "J",
+            "10",
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4"
+          ]
+        },
+        "rightBower": {
+          "type": "boolean"
+        },
+        "leftBower": {
+          "type": "boolean"
+        },
+        "jokerIsTrump": {
+          "type": "boolean"
+        },
+        "mustFollowEffectiveSuit": {
+          "type": "boolean"
+        },
+        "mustTrumpWhenVoid": {
+          "type": "boolean"
+        },
+        "mustOvertrump": {
+          "type": "boolean"
+        },
+        "finish": {
+          "enum": [
+            "play_all_tricks",
+            "when_all_score_components_determined"
+          ]
+        }
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "normalTable",
+        "contractSuccess",
+        "failure",
+        "defenderTricks",
+        "zeroContractDefenders",
+        "slam",
+        "defensiveScoreCap"
+      ],
+      "properties": {
+        "normalTable": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "properties": {
+            "6": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "S",
+                "C",
+                "D",
+                "H",
+                "NT"
+              ],
+              "properties": {
+                "S": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "H": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "NT": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                }
+              }
+            },
+            "7": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "S",
+                "C",
+                "D",
+                "H",
+                "NT"
+              ],
+              "properties": {
+                "S": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "H": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "NT": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                }
+              }
+            },
+            "8": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "S",
+                "C",
+                "D",
+                "H",
+                "NT"
+              ],
+              "properties": {
+                "S": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "H": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "NT": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                }
+              }
+            },
+            "9": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "S",
+                "C",
+                "D",
+                "H",
+                "NT"
+              ],
+              "properties": {
+                "S": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "H": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "NT": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                }
+              }
+            },
+            "10": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "S",
+                "C",
+                "D",
+                "H",
+                "NT"
+              ],
+              "properties": {
+                "S": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "H": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "NT": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                }
+              }
+            }
+          }
+        },
+        "contractSuccess": {
+          "enum": [
+            "award_contract_value"
+          ]
+        },
+        "failure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "contractor",
+            "defenders"
+          ],
+          "properties": {
+            "contractor": {
+              "enum": [
+                "lose_contract_value",
+                "zero"
+              ]
+            },
+            "defenders": {
+              "enum": [
+                "zero",
+                "gain_contract_value"
+              ]
+            }
+          }
+        },
+        "defenderTricks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "when",
+            "pointsPerTrick"
+          ],
+          "properties": {
+            "when": {
+              "enum": [
+                "always",
+                "only_when_contract_fails",
+                "never"
+              ]
+            },
+            "pointsPerTrick": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            }
+          }
+        },
+        "zeroContractDefenders": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "basis",
+            "pointsPerTrick",
+            "when"
+          ],
+          "properties": {
+            "basis": {
+              "enum": [
+                "none",
+                "declarer_tricks",
+                "declarer_team_tricks",
+                "defender_tricks"
+              ]
+            },
+            "pointsPerTrick": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            },
+            "when": {
+              "enum": [
+                "always",
+                "only_when_contract_fails"
+              ]
+            }
+          }
+        },
+        "slam": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "value",
+            "appliesTo",
+            "onlyBelowTenBid"
+          ],
+          "properties": {
+            "mode": {
+              "enum": [
+                "none",
+                "floor",
+                "bonus"
+              ]
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            },
+            "appliesTo": {
+              "enum": [
+                "normal_only"
+              ]
+            },
+            "onlyBelowTenBid": {
+              "type": "boolean"
+            }
+          }
+        },
+        "defensiveScoreCap": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "match": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "winScore",
+        "lossScore",
+        "mustMakeContractToWin",
+        "fixedDeals",
+        "countRedeals",
+        "check",
+        "lossPrecedesWin",
+        "simultaneousWinners",
+        "fixedDealTie"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "score_threshold",
+            "fixed_deals"
+          ]
+        },
+        "winScore": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "lossScore": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "maximum": -1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mustMakeContractToWin": {
+          "type": "boolean"
+        },
+        "fixedDeals": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "countRedeals": {
+          "type": "boolean"
+        },
+        "check": {
+          "enum": [
+            "after_deal"
+          ]
+        },
+        "lossPrecedesWin": {
+          "type": "boolean"
+        },
+        "simultaneousWinners": {
+          "enum": [
+            "contracting_team",
+            "highest_score_then_contracting_team",
+            "draw"
+          ]
+        },
+        "fixedDealTie": {
+          "enum": [
+            "draw",
+            "extra_deals"
+          ]
+        }
+      }
+    }
+  }
+}

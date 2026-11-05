@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "jsonFilesParsedBeforeReport": 15,
+  "resolvedConfigsValidated": 6,
+  "schema": "rules.schema.json",
+  "schemaDraft": "2020-12",
+  "semanticChecks": "Static subset C01–C15,C18,C19,C21,C22 checked where applicable; full definitions remain in constraints.json.",
+  "negativeSemanticFixturesPassed": 4,
+  "negativeSchemaFixturesPassed": 3,
+  "legacySourcesUnchanged": true,
+  "runtimeAcceptanceCases": "NOT EXECUTED: engine and bot integration is out of scope",
+  "dynamicConstraints": "C16,C17,C24 and reachability/deadlock aspects require future engine/capability validation."
+}

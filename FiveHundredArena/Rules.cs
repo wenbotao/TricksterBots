@@ -3,6 +3,8 @@ using Trickster.cloud;
 namespace FiveHundredArena;
 
 // Override rule operations for variants; JSON settings cover common four-player house rules.
+[System.Text.Json.Serialization.JsonPolymorphic]
+[System.Text.Json.Serialization.JsonDerivedType(typeof(ConfiguredRules), "resolved-v1")]
 public record Rules
 {
     public string Id { get; init; } = "australian-4-v1";
@@ -75,7 +77,7 @@ public record Rules
         return cards.SelectMany(c => c.IsJoker && contract.Trump == Suit.Unknown && trick.Count == 0
             ? Suits.Select(s => new PlayAction(c, s)) : new[] { new PlayAction(c) }).ToList();
     }
-    public Suit LedSuit(IReadOnlyList<PublicPlay> trick, Contract c) => trick[0].Action.Card.IsJoker && c.Trump == Suit.Unknown
+    public virtual Suit LedSuit(IReadOnlyList<PublicPlay> trick, Contract c) => trick[0].Action.Card.IsJoker && c.Trump == Suit.Unknown
         ? trick[0].Action.JokerLeadSuit : EffectiveSuit(trick[0].Action.Card, c);
     public virtual int Winner(IReadOnlyList<PublicPlay> trick, Contract c)
     {

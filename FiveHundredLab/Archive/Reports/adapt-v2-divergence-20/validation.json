@@ -1,0 +1,25 @@
+{
+  "schema": "adapt-v2-divergence-validation-v1",
+  "sampleSize": 20,
+  "games": 60,
+  "seed": 2711001,
+  "testsPassed": 509,
+  "frozenFilesVerified": 54,
+  "firstV2StrongDivergences": 17,
+  "firstDivergencePhases": {
+    "bid": 15,
+    "play": 2
+  },
+  "firstV2StrongDivergencesAlreadyChosenByOldAdapt": 17,
+  "newV2VersusOldAdaptTrajectoryChanges": 7,
+  "allGamesReplayed": true,
+  "artifactsSha256": {
+    "plan.json": "963d9ac53941f7729b65e70d587debe6bb3fa638d810f2c504f3b2e65a2105c3",
+    "divergences.json": "c7373020bcdd30d54f3f8c444a0e4290350452f44383d379cf8dad269b4591ab",
+    "v2-v1-first-differences.json": "5ea2fc8c06fb7ab0fdccf401e388cb7b5d7c696ad035cde0cad6a7283dda3cd1",
+    "results.json": "f96e548eaa8354f370e89885dd5b081524168a30dd59edc6e29cc3eb9426f779",
+    "REPORT.md": "62388d0c46bba898539739171425a6f9bb42064727d0fb9a2f5908b36205e93d",
+    "summary.json": "60a7e3e76afac7fd5c1d065893e4027fcfccf66953514fe7bad13b08732a2ec1",
+    "games.jsonl.gz": "835b3f113ee7f0da27159ed28d58e2e50818e671e32ff03190df5d66c663c0db"
+  }
+}
