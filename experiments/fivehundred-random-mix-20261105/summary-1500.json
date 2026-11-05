@@ -1,0 +1,89 @@
+{
+  "ThroughGame": 1500,
+  "Batch": {
+    "Matches": 750,
+    "Completed": 750,
+    "Errors": 0,
+    "Truncated": 0,
+    "Bots": [
+      {
+        "Bot": "Weak",
+        "Appearances": 609,
+        "Wins": 227,
+        "Losses": 382,
+        "WinRate": 0.3727422003284072
+      },
+      {
+        "Bot": "Medium",
+        "Appearances": 553,
+        "Wins": 259,
+        "Losses": 294,
+        "WinRate": 0.46835443037974683
+      },
+      {
+        "Bot": "Fast",
+        "Appearances": 614,
+        "Wins": 328,
+        "Losses": 286,
+        "WinRate": 0.5342019543973942
+      },
+      {
+        "Bot": "Strong",
+        "Appearances": 602,
+        "Wins": 373,
+        "Losses": 229,
+        "WinRate": 0.6196013289036545
+      },
+      {
+        "Bot": "Partner",
+        "Appearances": 622,
+        "Wins": 313,
+        "Losses": 309,
+        "WinRate": 0.5032154340836013
+      }
+    ]
+  },
+  "Cumulative": {
+    "Matches": 1500,
+    "Completed": 1500,
+    "Errors": 0,
+    "Truncated": 0,
+    "Bots": [
+      {
+        "Bot": "Weak",
+        "Appearances": 1214,
+        "Wins": 469,
+        "Losses": 745,
+        "WinRate": 0.38632619439868204
+      },
+      {
+        "Bot": "Medium",
+        "Appearances": 1136,
+        "Wins": 544,
+        "Losses": 592,
+        "WinRate": 0.4788732394366197
+      },
+      {
+        "Bot": "Fast",
+        "Appearances": 1209,
+        "Wins": 638,
+        "Losses": 571,
+        "WinRate": 0.5277088502894954
+      },
+      {
+        "Bot": "Strong",
+        "Appearances": 1218,
+        "Wins": 735,
+        "Losses": 483,
+        "WinRate": 0.603448275862069
+      },
+      {
+        "Bot": "Partner",
+        "Appearances": 1223,
+        "Wins": 614,
+        "Losses": 609,
+        "WinRate": 0.5020441537203598
+      }
+    ]
+  }
+}

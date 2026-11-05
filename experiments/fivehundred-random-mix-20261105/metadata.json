@@ -1,0 +1,43 @@
+{
+  "TotalGames": 1500,
+  "BatchSize": 30,
+  "Selection": "Uniform independent seats, with replacement",
+  "Rules": {
+    "Id": "australian-4-v1",
+    "AllowMisere": true,
+    "AllowOpenMisere": true,
+    "MisereRequiresSeven": true,
+    "OpenMisereRequiresEight": true,
+    "MiserePoints": 250,
+    "OpenMiserePoints": 500,
+    "WinScore": 500,
+    "LossScore": -500,
+    "DefenderTrickPoints": 10,
+    "SlamMinimum": 250,
+    "MustContractToWin": true,
+    "PassIsPermanent": true
+  },
+  "Path": "Formal bots, unconfigured default rule path",
+  "MaxRounds": 1000,
+  "Workers": 4,
+  "LineupSeed": 20261105,
+  "DealSeed": 20261106,
+  "Fingerprints": {
+    "FiveHundredArena.dll": "A470B0FE4328D267B15BFF7A419ECFAB83EC8A0AB916FCA97809F8E1D9B7CAE1",
+    "FiveHundredLab.dll": "99C0EB5A8742CA9009043F2A7E22A88FACC873F0C8686E7536C49A35A9C25996"
+  },
+  "WinRateUnit": "Seat appearance in a completed match; duplicate types counted separately",
+  "Notes": "Same-game observations are correlated. No timing comparison and no independent-trial confidence intervals.",
+  "GitCommit": "42b69e6",
+  "ExecutionPhases": [
+    {
+      "ThroughGame": 750,
+      "Mode": "30-match batches"
+    },
+    {
+      "ThroughGame": 1500,
+      "Mode": "continuous 750-match run"
+    }
+  ],
+  "BatchSizeNote": "BatchSize=30 describes early phases only; final 750 matches ran continuously."
+}

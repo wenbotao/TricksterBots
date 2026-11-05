@@ -1,0 +1,121 @@
+{
+  "ThroughGame": 420,
+  "Batch": {
+    "Matches": 30,
+    "Completed": 30,
+    "Truncated": 0,
+    "Errors": 0,
+    "Deals": 271,
+    "Bots": [
+      {
+        "Bot": "Weak",
+        "Matches": 12,
+        "Appearances": 19,
+        "Wins": 7,
+        "Losses": 12,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.3684210526315789
+      },
+      {
+        "Bot": "Medium",
+        "Matches": 18,
+        "Appearances": 24,
+        "Wins": 14,
+        "Losses": 10,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.5833333333333334
+      },
+      {
+        "Bot": "Fast",
+        "Matches": 21,
+        "Appearances": 24,
+        "Wins": 11,
+        "Losses": 13,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.4583333333333333
+      },
+      {
+        "Bot": "Strong",
+        "Matches": 21,
+        "Appearances": 25,
+        "Wins": 14,
+        "Losses": 11,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.56
+      },
+      {
+        "Bot": "Partner",
+        "Matches": 17,
+        "Appearances": 28,
+        "Wins": 14,
+        "Losses": 14,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.5
+      }
+    ]
+  },
+  "Cumulative": {
+    "Matches": 420,
+    "Completed": 420,
+    "Truncated": 0,
+    "Errors": 0,
+    "Deals": 3609,
+    "Bots": [
+      {
+        "Bot": "Weak",
+        "Matches": 242,
+        "Appearances": 329,
+        "Wins": 130,
+        "Losses": 199,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.3951367781155015
+      },
+      {
+        "Bot": "Medium",
+        "Matches": 257,
+        "Appearances": 342,
+        "Wins": 170,
+        "Losses": 172,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.49707602339181284
+      },
+      {
+        "Bot": "Fast",
+        "Matches": 249,
+        "Appearances": 333,
+        "Wins": 171,
+        "Losses": 162,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.5135135135135135
+      },
+      {
+        "Bot": "Strong",
+        "Matches": 251,
+        "Appearances": 331,
+        "Wins": 196,
+        "Losses": 135,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.5921450151057401
+      },
+      {
+        "Bot": "Partner",
+        "Matches": 248,
+        "Appearances": 345,
+        "Wins": 173,
+        "Losses": 172,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.5014492753623189
+      }
+    ]
+  }
+}

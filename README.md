@@ -37,3 +37,7 @@ Unit testing is done using the TestBots project. These are the tests that will r
 ## FiveHundred 开发总结
 
 [开发过程与成果总结](FIVEHUNDRED_DEVELOPMENT.md)介绍规则配置的实际效果、对战引擎流程、六种正式 bot 的策略、源码依赖关系及验证边界。
+
+## FiveHundred 随机对战数据
+
+[1,500场数据与胜率分析](experiments/fivehundred-random-mix-20261105/README.md)包含逐场结果、完整压缩牌谱、复现计划、统计脚本和分析图表。
