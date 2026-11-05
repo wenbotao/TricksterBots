@@ -1,0 +1,852 @@
+[
+  {
+    "Number": 1,
+    "Seed": 1273288296,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1979402627,
+      -189887511,
+      596851390,
+      1853912125
+    ]
+  },
+  {
+    "Number": 2,
+    "Seed": -1909303523,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      709056634,
+      884942504,
+      -651629711,
+      1174705988
+    ]
+  },
+  {
+    "Number": 3,
+    "Seed": 1782510189,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1986865263,
+      394028272,
+      2017532857,
+      -1180166380
+    ]
+  },
+  {
+    "Number": 4,
+    "Seed": 281361568,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      720942685,
+      2043854297,
+      -750027340,
+      -251902918
+    ]
+  },
+  {
+    "Number": 5,
+    "Seed": -766250846,
+    "Dealer": 1,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -2065320300,
+      -633001373,
+      -1607759140,
+      -854672958
+    ]
+  },
+  {
+    "Number": 6,
+    "Seed": 1963779132,
+    "Dealer": 3,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1205637303,
+      1859060078,
+      724449779,
+      -874940357
+    ]
+  },
+  {
+    "Number": 7,
+    "Seed": 2136132703,
+    "Dealer": 1,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -658160599,
+      -1017962486,
+      -2131282492,
+      1692349921
+    ]
+  },
+  {
+    "Number": 8,
+    "Seed": -2081254456,
+    "Dealer": 1,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1072290479,
+      -1756021206,
+      -782337788,
+      -1941198334
+    ]
+  },
+  {
+    "Number": 9,
+    "Seed": -144412966,
+    "Dealer": 3,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -1028061684,
+      -289001293,
+      -1626567203,
+      -1309334174
+    ]
+  },
+  {
+    "Number": 10,
+    "Seed": -947247621,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      586283603,
+      -1551722338,
+      1588698444,
+      764626649
+    ]
+  },
+  {
+    "Number": 11,
+    "Seed": 1709061623,
+    "Dealer": 3,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1954952100,
+      2070823695,
+      -887644985,
+      -1174172195
+    ]
+  },
+  {
+    "Number": 12,
+    "Seed": 1760480942,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      748988814,
+      458818367,
+      -114250768,
+      331600908
+    ]
+  },
+  {
+    "Number": 13,
+    "Seed": -49170593,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -2122400181,
+      -1876507334,
+      -1247368045,
+      1765166677
+    ]
+  },
+  {
+    "Number": 14,
+    "Seed": -336433934,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1794819011,
+      208248039,
+      1631229293,
+      -513211034
+    ]
+  },
+  {
+    "Number": 15,
+    "Seed": -1870619431,
+    "Dealer": 1,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1240269363,
+      758550672,
+      -1424690089,
+      -887527168
+    ]
+  },
+  {
+    "Number": 16,
+    "Seed": 775501937,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -676760766,
+      -1898034611,
+      -1594556929,
+      -2056775921
+    ]
+  },
+  {
+    "Number": 17,
+    "Seed": 1699026451,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -1588366849,
+      1414811132,
+      -813902521,
+      -1990990371
+    ]
+  },
+  {
+    "Number": 18,
+    "Seed": 495276777,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1986350622,
+      -1459187762,
+      -576221294,
+      1499348641
+    ]
+  },
+  {
+    "Number": 19,
+    "Seed": 710629935,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -824481394,
+      1129778759,
+      1496542343,
+      -1774717299
+    ]
+  },
+  {
+    "Number": 20,
+    "Seed": 1588554165,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -181821036,
+      -555105135,
+      98940255,
+      508283119
+    ]
+  },
+  {
+    "Number": 21,
+    "Seed": 1463579,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -2074297148,
+      -1456850286,
+      -644007371,
+      1956871290
+    ]
+  },
+  {
+    "Number": 22,
+    "Seed": 1185750619,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1417274388,
+      1120234577,
+      2123356495,
+      1044221346
+    ]
+  },
+  {
+    "Number": 23,
+    "Seed": 438321354,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1562557255,
+      444682856,
+      1669641853,
+      -785355486
+    ]
+  },
+  {
+    "Number": 24,
+    "Seed": -1082545642,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -41309669,
+      105340915,
+      52814605,
+      749782792
+    ]
+  },
+  {
+    "Number": 25,
+    "Seed": 384862227,
+    "Dealer": 3,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -506044173,
+      -210630852,
+      -1037327524,
+      -198780625
+    ]
+  },
+  {
+    "Number": 26,
+    "Seed": 1579095636,
+    "Dealer": 2,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1716108908,
+      -715969921,
+      1999231344,
+      -897784476
+    ]
+  },
+  {
+    "Number": 27,
+    "Seed": -810690416,
+    "Dealer": 1,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1660111481,
+      -321002491,
+      754646305,
+      1482368645
+    ]
+  },
+  {
+    "Number": 28,
+    "Seed": 1219311348,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -1138908849,
+      959548948,
+      637592658,
+      -114749935
+    ]
+  },
+  {
+    "Number": 29,
+    "Seed": -625742688,
+    "Dealer": 0,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1752141672,
+      -1845706132,
+      -595553729,
+      420386335
+    ]
+  },
+  {
+    "Number": 30,
+    "Seed": -1122252822,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -1987244465,
+      1025391754,
+      1654295695,
+      -96602332
+    ]
+  },
+  {
+    "Number": 31,
+    "Seed": -1709311819,
+    "Dealer": 0,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -1811450191,
+      -825963422,
+      -1457440614,
+      -585436931
+    ]
+  },
+  {
+    "Number": 32,
+    "Seed": -497761402,
+    "Dealer": 1,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -632693300,
+      580644311,
+      324669579,
+      -1744781194
+    ]
+  },
+  {
+    "Number": 33,
+    "Seed": -1407102525,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -622365164,
+      -1284143829,
+      -1580049878,
+      -1636700003
+    ]
+  },
+  {
+    "Number": 34,
+    "Seed": -2069810131,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -60071990,
+      -1800987924,
+      595341051,
+      -49374928
+    ]
+  },
+  {
+    "Number": 35,
+    "Seed": 552904944,
+    "Dealer": 1,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1433197423,
+      2017048181,
+      1469563510,
+      -2124679125
+    ]
+  },
+  {
+    "Number": 36,
+    "Seed": -1810580283,
+    "Dealer": 3,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1465797130,
+      -2102378421,
+      1477726322,
+      1033411112
+    ]
+  },
+  {
+    "Number": 37,
+    "Seed": 624908787,
+    "Dealer": 2,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -551233786,
+      989801495,
+      1524998018,
+      -1724820103
+    ]
+  },
+  {
+    "Number": 38,
+    "Seed": 316777686,
+    "Dealer": 2,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      643755898,
+      1137434119,
+      1069591949,
+      1203959416
+    ]
+  },
+  {
+    "Number": 39,
+    "Seed": 1443076213,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      359801861,
+      1214783735,
+      -1818354627,
+      -1329033769
+    ]
+  },
+  {
+    "Number": 40,
+    "Seed": -2067587718,
+    "Dealer": 1,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -72807974,
+      1652556132,
+      -1275630711,
+      301989917
+    ]
+  },
+  {
+    "Number": 41,
+    "Seed": -2055651739,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      144129630,
+      1612220229,
+      -2021095830,
+      -727077663
+    ]
+  },
+  {
+    "Number": 42,
+    "Seed": 736387422,
+    "Dealer": 2,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1789841099,
+      1510799537,
+      -2137823617,
+      1720566176
+    ]
+  },
+  {
+    "Number": 43,
+    "Seed": -1957694119,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -709782856,
+      1752431109,
+      -771969518,
+      263297437
+    ]
+  },
+  {
+    "Number": 44,
+    "Seed": -24077744,
+    "Dealer": 0,
+    "Lineup": [
+      "RandomPass",
+      "RandomPass",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      1447136152,
+      -2131494799,
+      1703216298,
+      310470182
+    ]
+  },
+  {
+    "Number": 45,
+    "Seed": 293965748,
+    "Dealer": 0,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1473861224,
+      -1820438829,
+      687579804,
+      -1232223168
+    ]
+  },
+  {
+    "Number": 46,
+    "Seed": -857246072,
+    "Dealer": 1,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -1675276914,
+      1565143661,
+      653367987,
+      596242558
+    ]
+  },
+  {
+    "Number": 47,
+    "Seed": -186945431,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "Weak",
+      "Weak"
+    ],
+    "BotSeeds": [
+      -291501260,
+      -48209162,
+      -1079468213,
+      -2003971229
+    ]
+  },
+  {
+    "Number": 48,
+    "Seed": -1753682534,
+    "Dealer": 3,
+    "Lineup": [
+      "Weak",
+      "Weak",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -89704698,
+      -1288663037,
+      949698373,
+      -2144151777
+    ]
+  },
+  {
+    "Number": 49,
+    "Seed": 1519288837,
+    "Dealer": 0,
+    "Lineup": [
+      "Weak",
+      "RandomPass",
+      "RandomPass",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      1133134720,
+      -1886669814,
+      -1200392076,
+      852458736
+    ]
+  },
+  {
+    "Number": 50,
+    "Seed": -1726383480,
+    "Dealer": 2,
+    "Lineup": [
+      "RandomPass",
+      "Weak",
+      "Weak",
+      "RandomPass"
+    ],
+    "BotSeeds": [
+      -403744204,
+      -1936081135,
+      -1406345002,
+      1275281427
+    ]
+  }
+]

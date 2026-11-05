@@ -35,3 +35,5 @@ Adapt已搁置；预训练和中间迭代不作为默认推荐。源码、模型
 开发全貌、规则执行与源码依赖见[开发过程与成果总结](../FIVEHUNDRED_DEVELOPMENT.md)。
 
 本轮策略主体整合与依赖说明见 [CONSOLIDATION.md](CONSOLIDATION.md)。
+
+Random 的始终 Pass 变体为 `random-pass-v1`；[与 Weak 的50场随机实验](../experiments/randompass-weak-50-20261105/README.md)包含完整报告和复核数据。

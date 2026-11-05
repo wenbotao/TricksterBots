@@ -1,0 +1,31 @@
+{
+  "TotalGames": 50,
+  "BatchSize": 50,
+  "Selection": "Uniform independent seats, with replacement",
+  "Rules": {
+    "Id": "australian-4-v1",
+    "AllowMisere": true,
+    "AllowOpenMisere": true,
+    "MisereRequiresSeven": true,
+    "OpenMisereRequiresEight": true,
+    "MiserePoints": 250,
+    "OpenMiserePoints": 500,
+    "WinScore": 500,
+    "LossScore": -500,
+    "DefenderTrickPoints": 10,
+    "SlamMinimum": 250,
+    "MustContractToWin": true,
+    "PassIsPermanent": true
+  },
+  "Path": "Formal bots, unconfigured default rule path",
+  "MaxRounds": 1000,
+  "Workers": 4,
+  "LineupSeed": 20261108,
+  "DealSeed": 20261109,
+  "Fingerprints": {
+    "FiveHundredArena.dll": "17CD1CF96B41C4F365E37083A12067C1BDC89C9BFA6728E10EC25D8D5FAC43FC",
+    "FiveHundredLab.dll": "AAA2BDE4105FF89A1D31370CC74E6924757925F9E5093315B126AF1F36CE50B8"
+  },
+  "WinRateUnit": "Seat appearance in a completed match; duplicate types counted separately",
+  "Notes": "Same-game observations are correlated. No timing comparison and no independent-trial confidence intervals."
+}

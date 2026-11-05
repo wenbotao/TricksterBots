@@ -1,0 +1,61 @@
+{
+  "ThroughGame": 50,
+  "Batch": {
+    "Matches": 50,
+    "Completed": 49,
+    "Truncated": 1,
+    "Errors": 0,
+    "Deals": 1700,
+    "Bots": [
+      {
+        "Bot": "RandomPass",
+        "Matches": 47,
+        "Appearances": 92,
+        "Wins": 24,
+        "Losses": 64,
+        "Unfinished": 4,
+        "Errors": 0,
+        "WinRate": 0.2727272727272727
+      },
+      {
+        "Bot": "Weak",
+        "Matches": 49,
+        "Appearances": 108,
+        "Wins": 74,
+        "Losses": 34,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.6851851851851852
+      }
+    ]
+  },
+  "Cumulative": {
+    "Matches": 50,
+    "Completed": 49,
+    "Truncated": 1,
+    "Errors": 0,
+    "Deals": 1700,
+    "Bots": [
+      {
+        "Bot": "RandomPass",
+        "Matches": 47,
+        "Appearances": 92,
+        "Wins": 24,
+        "Losses": 64,
+        "Unfinished": 4,
+        "Errors": 0,
+        "WinRate": 0.2727272727272727
+      },
+      {
+        "Bot": "Weak",
+        "Matches": 49,
+        "Appearances": 108,
+        "Wins": 74,
+        "Losses": 34,
+        "Unfinished": 0,
+        "Errors": 0,
+        "WinRate": 0.6851851851851852
+      }
+    ]
+  }
+}

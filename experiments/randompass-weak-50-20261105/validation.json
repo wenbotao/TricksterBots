@@ -1,0 +1,9 @@
+{
+  "TestsPassed": 4,
+  "TestsScope": "TestRandomPassBot and TestCleanup",
+  "ReplayedGames": 50,
+  "CompletedGames": 49,
+  "TruncatedGames": 1,
+  "Errors": 0,
+  "RandomPassSourceSha256": "27253d660540599fa54de892b5074b354b04ba736a25d3c3b0defb7255592b0c"
+}

@@ -45,3 +45,7 @@ Fast/Strong 的 `SelectByRollout` 负责配置路径候选比较，默认路径�
 旧 Legacy 策略已移至 Archive/Strategies，继续编译以兼容历史 profile；迁入前七个包装文件以 `.cs.txt` 非编译快照保存于 Archive/Snapshots。它们不再是正式 bot 的默认策略依赖。
 
 整合记录见 [CONSOLIDATION.md](../../CONSOLIDATION.md)，全局说明见 [开发总结](../../../FIVEHUNDRED_DEVELOPMENT.md)。
+
+## Random 的永远 Pass 变体
+
+`RandomPassBot`（profile：`random-pass-v1`）叫牌始终返回 Pass，不消耗随机数；弃牌、出牌和 Joker 声明组合调用原 RandomBot。支持相同的规则参数和 FromConfiguration 入口。四个此类 bot 同场时将持续全 Pass 重发，直到运行上限，记为截断而非胜负。若传入不允许 Pass 的合法动作列表，明确报错。

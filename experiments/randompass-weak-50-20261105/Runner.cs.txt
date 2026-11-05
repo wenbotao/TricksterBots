@@ -1,0 +1,95 @@
+using System.Diagnostics;
+using System.IO.Compression;
+using System.Security.Cryptography;
+using System.Text.Json;
+using FiveHundredArena;
+using Bots = FiveHundredLab.Bots.FiveHundred;
+
+var output = args[0];
+Directory.CreateDirectory(output);
+var names = new[] { "RandomPass", "Weak" };
+var json = new JsonSerializerOptions(ArenaCommand.Json) { WriteIndented = false };
+string planPath = Path.Combine(output, "plan.json");
+if (!File.Exists(planPath))
+{
+    var lineupRandom = new SeededRandom(20261108);
+    var dealRandom = new SeededRandom(20261109);
+    var plans = Enumerable.Range(0, 50).Select(index => new Plan(index + 1, unchecked((int)dealRandom.NextUInt()), dealRandom.Next(4),
+        Enumerable.Range(0, 4).Select(_ => names[lineupRandom.Next(names.Length)]).ToArray(),
+        Enumerable.Range(0, 4).Select(_ => unchecked((int)dealRandom.NextUInt())).ToArray())).ToArray();
+    File.WriteAllText(planPath, JsonSerializer.Serialize(plans, new JsonSerializerOptions(json) { WriteIndented = true }));
+    var fingerprint = new[] { typeof(Engine).Assembly.Location, typeof(Bots.FastBot).Assembly.Location }.ToDictionary(Path.GetFileName, p => Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(p))));
+    File.WriteAllText(Path.Combine(output, "metadata.json"), JsonSerializer.Serialize(new { TotalGames = 50, BatchSize = 50, Selection = "Uniform independent seats, with replacement", Rules = new Rules(), Path = "Formal bots, unconfigured default rule path", MaxRounds = 1000, Workers = 4, LineupSeed = 20261108, DealSeed = 20261109, Fingerprints = fingerprint, WinRateUnit = "Seat appearance in a completed match; duplicate types counted separately", Notes = "Same-game observations are correlated. No timing comparison and no independent-trial confidence intervals." }, new JsonSerializerOptions(json) { WriteIndented = true }));
+}
+var plan = JsonSerializer.Deserialize<Plan[]>(File.ReadAllText(planPath), json)!;
+int start = int.Parse(args[1]), count = int.Parse(args[2]);
+var selected = plan.Skip(start).Take(count).ToArray();
+if (selected.Length != count) throw new ArgumentException("Batch exceeds plan");
+var gate = new object();
+int completed = 0;
+var wall = Stopwatch.StartNew();
+Parallel.ForEach(selected, new ParallelOptions { MaxDegreeOfParallelism = 4 }, entry =>
+{
+    string prefix = Path.Combine(output, $"game-{entry.Number:D3}");
+    if (File.Exists(prefix + ".json")) throw new IOException("Refusing to overwrite " + prefix);
+    var watch = Stopwatch.StartNew();
+    var rules = new Rules();
+    IPlayer Create(int seat) => entry.Lineup[seat] switch
+    {
+        "RandomPass" => new Bots.RandomPassBot(entry.BotSeeds[seat], rules),
+        "Weak" => new Bots.WeakBot(entry.BotSeeds[seat], rules),
+        "Medium" => new Bots.MediumBot(entry.BotSeeds[seat], rules),
+        "Fast" => new Bots.FastBot(entry.BotSeeds[seat], rules),
+        "Strong" => new Bots.StrongBot(entry.BotSeeds[seat], rules),
+        "Partner" => new Bots.PartnerBot(entry.BotSeeds[seat], rules),
+        _ => throw new ArgumentException("Unknown bot")
+    };
+    var players = Enumerable.Range(0, 4).Select(Create).ToArray();
+    try
+    {
+        var game = new Engine(rules).Run(players, entry.Seed, 1000, entry.Dealer);
+        watch.Stop();
+        using (var file = File.Create(prefix + ".json.gz"))
+        using (var zip = new GZipStream(file, CompressionLevel.Fastest)) JsonSerializer.Serialize(zip, game, json);
+        var result = new Result(entry.Number, entry.Seed, entry.Dealer, entry.Lineup, entry.BotSeeds, game.Winner, game.Truncated, game.Rounds.Count, game.Rounds.Count(r => !r.Redeal), watch.Elapsed.TotalSeconds, null);
+        File.WriteAllText(prefix + ".json", JsonSerializer.Serialize(result, json));
+        lock (gate) Console.WriteLine(JsonSerializer.Serialize(new { CompletedInBatch = ++completed, entry.Number, entry.Lineup, Winner = game.Winner, game.Truncated, Deals = game.Rounds.Count, WallSeconds = Math.Round(wall.Elapsed.TotalSeconds, 1) }, json));
+    }
+    catch (Exception ex)
+    {
+        if (ex.Data["record"] is GameRecord partial)
+        {
+            using var file = File.Create(prefix + ".failure.json.gz"); using var zip = new GZipStream(file, CompressionLevel.Fastest); JsonSerializer.Serialize(zip, partial, json);
+        }
+        File.WriteAllText(prefix + ".json", JsonSerializer.Serialize(new Result(entry.Number, entry.Seed, entry.Dealer, entry.Lineup, entry.BotSeeds, null, false, 0, 0, watch.Elapsed.TotalSeconds, ex.ToString()), json));
+        throw;
+    }
+});
+var all = Directory.GetFiles(output, "game-*.json").Select(p => JsonSerializer.Deserialize<Result>(File.ReadAllText(p), json)!).OrderBy(g => g.Number).ToArray();
+object Stats(IEnumerable<Result> source)
+{
+    var records = source.ToArray();
+    var bots = names.Select(name =>
+    {
+        int wins = 0, losses = 0, unfinished = 0, errors = 0, matches = 0;
+        foreach (var game in records)
+        {
+            if (game.Lineup.Contains(name)) matches++;
+            for (int seat = 0; seat < 4; seat++) if (game.Lineup[seat] == name)
+            {
+                if (game.Error != null) errors++;
+                else if (game.Truncated || !game.Winner.HasValue) unfinished++;
+                else if (seat % 2 == game.Winner.Value) wins++;
+                else losses++;
+            }
+        }
+        return new { Bot = name, Matches = matches, Appearances = wins + losses + unfinished + errors, Wins = wins, Losses = losses, Unfinished = unfinished, Errors = errors, WinRate = wins + losses > 0 ? (double?)wins / (wins + losses) : null };
+    }).ToArray();
+    return new { Matches = records.Length, Completed = records.Count(g => g.Winner.HasValue && !g.Truncated && g.Error == null), Truncated = records.Count(g => g.Truncated), Errors = records.Count(g => g.Error != null), Deals = records.Sum(g => g.Deals), Bots = bots };
+}
+var summary = new { ThroughGame = all.Max(g => g.Number), Batch = Stats(all.Where(g => g.Number > start && g.Number <= start + count)), Cumulative = Stats(all) };
+File.WriteAllText(Path.Combine(output, $"summary-{start + count:D3}.json"), JsonSerializer.Serialize(summary, new JsonSerializerOptions(json) { WriteIndented = true }));
+Console.WriteLine("BATCH_SUMMARY " + JsonSerializer.Serialize(summary, json));
+
+record Plan(int Number, int Seed, int Dealer, string[] Lineup, int[] BotSeeds);
+record Result(int Number, int Seed, int Dealer, string[] Lineup, int[] BotSeeds, int? Winner, bool Truncated, int Deals, int PlayedDeals, double Seconds, string? Error);

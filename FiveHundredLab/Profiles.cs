@@ -4,6 +4,7 @@ public static class Profiles
 {
     public static IPlayer Create(string name, int seed, string? model = null) => name switch
     {
+        "random-pass-v1" => CreateForRules("random-pass-v1",seed),
         "Adapt-v2" or "adapt-v2" => new AdaptV2(seed),
         "Adapt" or "adapt" or "adapt-v1" => new Adapt(seed),
         "opponent-strong-bidding-v1" => new OpponentStrong(seed,OpponentAdaptationStage.Bidding),
@@ -43,6 +44,7 @@ public static class Profiles
         name=name switch{"random-rules-v1"=>"random-legal-v1","weak-rules-v1"=>"weak-v1","medium-rules-v1"=>"medium-v1","fast-rules-v1"=>"visibility-fast-v8","strong-rules-v1"=>"strong-v1","partner-rules-v1"=>"partner-fast-v9",_=>name};
         return name switch
         {
+            "random-pass-v1" => new Bots.FiveHundred.RandomPassBot(seed, rules),
             "random-legal-v1" => new Bots.FiveHundred.RandomBot(seed, rules),
             "weak-v1" => new Bots.FiveHundred.WeakBot(seed, rules),
             "medium-v1" => new Bots.FiveHundred.MediumBot(seed, rules),
