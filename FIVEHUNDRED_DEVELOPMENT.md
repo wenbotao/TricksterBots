@@ -10,7 +10,7 @@
 
 - 四人、固定对家组队的对战引擎，负责发牌、合法动作、信息公开、计分、终局和牌谱。
 - 完整展开的规则预设、自定义模板、结构 Schema、约束资料和运行时加载器。
-- Random、Weak、Medium、Fast、Strong、Partner 六种正式 bot 入口，均保留规则接口。
+- Random、Weak、Medium、Fast、Strong、StrongPlus、Partner 七种主要正式 bot 入口，均保留规则接口。
 - 成对对战、混合搭档测试、耗时记录、牌谱重放、搭档体验场景及回归测试。
 - 历史策略、模型、报告和 Adapt 实验归档；Adapt 暂停推进，预训练方案暂不作为正式方案。
 
@@ -126,9 +126,9 @@ flowchart TD
 
 达到运行上限仍未结束的比赛标记为 `Truncated`，不把当前领先者当赢家。胜率、体验通过率和耗时必须分别报告；小样本只适合迭代反馈。
 
-## 5. 六种正式 bot
+## 5. 七种主要正式 bot
 
-正式入口位于 [FiveHundredLab/Bots/FiveHundred](FiveHundredLab/Bots/FiveHundred/README.md)，命名空间为 `FiveHundredLab.Bots.FiveHundred`。六类继承 `FiveHundredRuleBot`，接受 `(int seed = 1, Rules? rules = null)`，并提供 `FromConfiguration`。策略判断主体已移入各自 bot 文件，共享设施提供采样、估值与续演。详见 [策略整合记录](FiveHundredLab/CONSOLIDATION.md)。
+正式入口位于 [FiveHundredLab/Bots/FiveHundred](FiveHundredLab/Bots/FiveHundred/README.md)，命名空间为 `FiveHundredLab.Bots.FiveHundred`。七类继承 `FiveHundredRuleBot`，接受 `(int seed = 1, Rules? rules = null)`，并提供 `FromConfiguration`。策略判断主体已移入各自 bot 文件，共享设施提供采样、估值与续演。详见 [策略整合记录](FiveHundredLab/CONSOLIDATION.md)。
 
 ### 5.1 显式配置下的策略
 
@@ -139,6 +139,7 @@ flowchart TD
 | Medium | 牌力、搭档叫牌支持、成败收益及终局效用估计 | 枚举后按保留牌型评分选最佳 | 有效花色、赢墩/避墩等确定性战术，不续演 |
 | Fast | 使用规则版启发式叫牌 | 评分筛出最多 4 组，每组共用 4 个隐藏牌样本续演 | 基准战术优先，最多 4 个动作候选、4 个样本 |
 | Strong | 使用规则版启发式叫牌 | 最多 12 组、8 个样本 | 评估全部合法出牌候选、8 个样本 |
+| StrongPlus | 使用规则版启发式叫牌 | 最多 24 组、32 个样本 | 评估全部合法出牌候选、32 个样本；默认路径另有零墩证明 |
 | Partner | 基于 Fast 的叫牌 | Fast 预算后修补牌型结构 | 先执行公开信息可确认的体验保护，再进行 Fast 预算搜索 |
 
 这些样本数是每个候选共用的隐藏世界数，不等于总续演数。只有一个候选时无需比较搜索；`LastRollouts` 是最近一次决策的实际续演次数。
@@ -154,6 +155,7 @@ flowchart TD
 | MediumBot | 本文件的 `DefaultAdapter` → `DefaultStrategy : BaseBot` | 原 bot 策略不变 |
 | FastBot | 本文件的 `DefaultPolicy`（原 Fast V8） | 复用轻量基准、代表动作裁剪；末位、早中晚局使用不同小样本预算 |
 | StrongBot | 本文件的 `DefaultPolicy`（原 Strong） | 以 Medium 为基准，对叫牌、弃牌和出牌做隐藏牌采样续演；证据不足时保留基准 |
+| StrongPlusBot | 本文件的 `DefaultPolicy` 与 `MisereProof` | 32样本、24个弃牌候选、门槛6/标准误系数1.0、可见手牌适配及公开零墩判断 |
 | PartnerBot | 本文件的配合判断 → 新 FastBot | Fast 加公开必破、保护搭档赢家、约定信号、弃牌结构与稳定排序 |
 
 历史 Fast 并非始终固定四样本；它的末位出牌通常用两样本，较早阶段四样本，较晚阶段八样本。不要把规则版的固定预算表套用到默认路径。历史 Strong 的续演以 Medium 为其他玩家的模型，而 Adapt 曾尝试改变这一假设。
@@ -186,14 +188,14 @@ Partner 优先处理人类容易感到明显不合理的行为：自己的 Misè
 flowchart LR
     T[TricksterBots<br/>原 bot 与共享平台类型]
     A[FiveHundredArena<br/>规则、裁判、观察、续演]
-    L[FiveHundredLab<br/>六个正式类、实验与体验评估]
+    L[FiveHundredLab<br/>正式bot、实验与体验评估]
     X[TestBots<br/>回归验证]
     L --> A
     A --> T
     X --> L
     X --> A
     X --> T
-    F[六个正式 bot 文件中的决策] -.计算.-> S[采样 / 估值 / 续演]
+    F[正式 bot 文件中的决策] -.计算.-> S[采样 / 估值 / 续演]
     F -.默认路径.-> H[各文件内迁入的默认策略]
     P[PartnerBot] -.组合.-> Q[FastBot]
     Q -.基准及续演.-> M[MediumBot]
@@ -213,9 +215,9 @@ flowchart LR
 | 历史 bot 适配 | [ExistingBotPlayer.cs](FiveHundredArena/ExistingBotPlayer.cs)、[SimpleBots.cs](FiveHundredArena/SimpleBots.cs) | 将观察转换为原平台输入，或提供基础策略 |
 | 历史搜索基线 | [StrongBot.cs](FiveHundredArena/StrongBot.cs)、[BeliefSampler.cs](FiveHundredArena/BeliefSampler.cs)、[ForwardModel.cs](FiveHundredArena/ForwardModel.cs) | 默认 Strong 的候选、采样、Medium 续演 |
 | 公共牌力工具 | [HandEvaluator.cs](FiveHundredArena/HandEvaluator.cs) | 牌力、弃牌组合与保留牌型评分，被规则版和搜索策略使用 |
-| 旧规则策略兼容 | [RuleAwarePlayer.cs](FiveHundredArena/Bots/FiveHundred/RuleAwarePlayer.cs) | 留给历史对照、Arena 旧入口及 Adapt；正式六类不再委托它 |
+| 旧规则策略兼容 | [RuleAwarePlayer.cs](FiveHundredArena/Bots/FiveHundred/RuleAwarePlayer.cs) | 留给历史对照、Arena 旧入口及 Adapt；正式类不再委托它 |
 | 隐藏牌采样及旧续演 | [RuleSimulation.cs](FiveHundredArena/Bots/FiveHundred/RuleSimulation.cs) | 正式策略继续复用纯采样 `RuleSamples`；旧战术与续演仅兼容使用 |
-| 六个正式入口 | [FiveHundredRuleBot.cs](FiveHundredLab/Bots/FiveHundred/FiveHundredRuleBot.cs) 及同目录六类 | 基类只处理规则绑定和诊断；六个文件各自包含默认及配置策略 |
+| 正式入口 | [FiveHundredRuleBot.cs](FiveHundredLab/Bots/FiveHundred/FiveHundredRuleBot.cs) 及同目录七类 | 基类只处理规则绑定和诊断；七个主要bot文件各自包含默认及配置策略 |
 | 正式共享计算 | [DefaultRollout](FiveHundredLab/Bots/FiveHundred/DefaultRollout.cs)、[ConfiguredRollout](FiveHundredLab/Bots/FiveHundred/ConfiguredRollout.cs)、[RuleBotEvaluation](FiveHundredLab/Bots/FiveHundred/RuleBotEvaluation.cs) | 续演执行与纯估值；动作选择在 bot 文件 |
 | 牌表与公开牌工具 | [CardFrame](FiveHundredLab/Bots/FiveHundred/Shared/CardFrame.cs) | 缓存牌表和公开信息特征，不承担各 bot 的决策入口 |
 | 策略注册 | [Profiles.cs](FiveHundredLab/Profiles.cs) | `Create` 保留历史 profile；`CreateForRules` 返回正式规则类并保留别名 |
@@ -278,3 +280,5 @@ dotnet run --project FiveHundredArena -c Release -- replay \
 ```
 
 输出路径使用新目录，避免覆盖已有实验。更多 CLI 选项以 Arena、Lab 的入口代码及各专题说明为准。
+
+StrongPlus已作为独立正式bot整理，源码与Fast、Strong同目录，注册名保持`strong-plus-v1`，策略和参数未因整理而变。RandomPass是单独的随机变体；StrongAblationBot的各研究控制不列入主要正式bot列表。强化及消融结果分别见 [StrongPlus报告](experiments/strong-plus-v1-20261106/REPORT_ZH.md) 和 [已停止的消融报告](experiments/strong-ablation-v1-20261106/REPORT_ZH.md)。

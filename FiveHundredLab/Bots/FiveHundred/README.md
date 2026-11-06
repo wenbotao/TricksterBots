@@ -1,6 +1,6 @@
 # 正式四人 Five Hundred bot
 
-六个文件现在是策略开发入口：直接阅读和修改对应文件的 `Bid`、`Discard`、`Play` 及其私有方法，即可追踪动作选择。命名空间为 `FiveHundredLab.Bots.FiveHundred`，目标框架为 .NET 8。
+七个主要 bot 文件是策略开发入口：直接阅读和修改对应文件的 `Bid`、`Discard`、`Play` 及其私有方法，即可追踪动作选择。命名空间为 `FiveHundredLab.Bots.FiveHundred`，目标框架为 .NET 8。
 
 | 文件 | 策略主体 |
 |---|---|
@@ -9,6 +9,7 @@
 | MediumBot.cs | 规则版确定性决策、完整迁入的原策略、默认规则适配和 Fast 所用可见手牌变体 |
 | FastBot.cs | 候选裁剪、预算、搜索比较；默认及配置路径分别保留原行为 |
 | StrongBot.cs | 叫牌、弃牌、出牌搜索的候选与选择；配置路径叫牌仍为既有启发式 |
+| [StrongPlusBot.cs](StrongPlusBot.cs) | 独立的强度优先策略：32样本、24个弃牌候选、默认路径零墩证明；策略主体保存在本文件 |
 | PartnerBot.cs | 公开必破、保护搭档、信号回应、弃牌修补；组合 Fast 处理剩余搜索 |
 
 每类均实现 `IPlayer` 和 `IJokerDeclarationPlayer`，构造参数为 `(int seed = 1, Rules? rules = null)`，提供 `FromConfiguration(string? path = null, int seed = 1)`。推荐读取一次规则，传给引擎和所有玩家；配置不匹配会拒绝。
@@ -23,7 +24,7 @@ var bot = new PartnerBot(seed: 7, rules: rules);
 
 非随机 bot 顶部为公开接口，接着是 `BidConfigured` 等配置策略；`DefaultPolicy` 为保留历史行为的默认路径。Medium 的 `DefaultStrategy : BaseBot<FiveHundredOptions>` 完整包含从原 `FiveHundredBot` 迁入的逻辑，`DefaultAdapter` 将 Observation 转成平台输入；它不调用或继承原 `FiveHundredBot`。`VisibilityAdapter` / `VisibilityStrategy` 为 Fast 续演保留历史可见手牌判断。
 
-Fast/Strong 的 `SelectByRollout` 负责配置路径候选比较，默认路径的搜索逻辑在同文件 `DefaultPolicy`。Partner 的 `ConfiguredPartnerPolicy` 和 `DefaultPartnerPolicy` 包含两条路径的体验判断，再组合本目录的 FastBot。修改 Fast 或 Medium 的共享基准可能影响其调用者，需一起回归。
+Fast/Strong/StrongPlus 的 `SelectByRollout` 负责配置路径候选比较，默认路径的搜索逻辑在同文件 `DefaultPolicy`。Partner 的 `ConfiguredPartnerPolicy` 和 `DefaultPartnerPolicy` 包含两条路径的体验判断，再组合本目录的 FastBot。修改 Fast 或 Medium 的共享基准可能影响其调用者，需一起回归。
 
 ## 共享设施
 
@@ -40,7 +41,7 @@ Fast/Strong 的 `SelectByRollout` 负责配置路径候选比较，默认路径�
 
 原 .NET Standard `Trickster.Bots.FiveHundredBot` 继续供旧 WebAPI 和历史基线使用，正式 Medium 已与其策略实现脱离。旧 `RuleAwarePlayer` 及旧 profile 留作 Arena CLI、Adapt 和回归兼容；它们不会自动转用本目录策略。
 
-实际开发应使用本目录公共类，或 `Profiles.CreateForRules`，或 Lab 的 `random-rules-v1` / `weak-rules-v1` / `medium-rules-v1` / `fast-rules-v1` / `strong-rules-v1` / `partner-rules-v1` 名称。不传规则文件时，这些正式名称也使用迁入的默认策略。历史的 `strong-v1`、`visibility-fast-v8` 等名称仍指向冻结基线，便于比较。
+实际开发应使用本目录公共类，或 `Profiles.CreateForRules`，或 Lab 的 `random-rules-v1` / `weak-rules-v1` / `medium-rules-v1` / `fast-rules-v1` / `strong-rules-v1` / `strong-plus-v1` / `partner-rules-v1` 名称。不传规则文件时，这些正式名称使用各自文件中的默认策略。历史的 `strong-v1`、`visibility-fast-v8` 等名称仍指向冻结基线，便于比较。
 
 旧 Legacy 策略已移至 Archive/Strategies，继续编译以兼容历史 profile；迁入前七个包装文件以 `.cs.txt` 非编译快照保存于 Archive/Snapshots。它们不再是正式 bot 的默认策略依赖。
 
@@ -50,12 +51,21 @@ Fast/Strong 的 `SelectByRollout` 负责配置路径候选比较，默认路径�
 
 `RandomPassBot`（profile：`random-pass-v1`）叫牌始终返回 Pass，不消耗随机数；弃牌、出牌和 Joker 声明组合调用原 RandomBot。支持相同的规则参数和 FromConfiguration 入口。四个此类 bot 同场时将持续全 Pass 重发，直到运行上限，记为截断而非胜负。若传入不允许 Pass 的合法动作列表，明确报错。
 
-## Strong 的强度优先实验版
+## StrongPlus 正式入口
 
 `StrongPlusBot`（profile：`strong-plus-v1`）独立于冻结 Strong：隐藏牌样本32，弃牌候选24；默认路径改选门槛6、标准误系数1.0，使用本目录Medium中的可见手牌变体作基准及续演。默认路径在根节点加入公开信息可证明的Misère躲墩/破约判断。配置路径仍保留原启发式叫牌，仅扩大弃牌/出牌搜索，不将默认的三人Misère证明套用于四人零墩变体。
 
+StrongPlus作为独立正式bot保留，不替代Strong，也不从消融配置动态选择参数。正式整理不表示已确认它在所有搭档或规则下更强。
+
+```csharp
+var rules = RuleConfiguration.Load(path); // null：默认规则
+var bot = new StrongPlusBot(seed: 7, rules: rules);
+// 或 StrongPlusBot.FromConfiguration(path, seed: 7)
+// 或 Profiles.CreateForRules("strong-plus-v1", 7, rules)
+```
+
 此版本不使用预训练或在线对手学习。配置入口和绑定规则检查与其他正式类相同。验证、行为差异和成对实战记录见[StrongPlus实验](../../../experiments/strong-plus-v1-20261106/README.md)。
 
-## Strong 的独立消融控制
+## 研究用消融控制（不属于正式bot列表）
 
 `StrongAblationBot`提供固定命名的`strong-study-base8-v1`、`all32`、`wide32`、`tuned32`、`bid32`、`discard32`、`play32`控制（后六者同样使用`strong-study-…-v1`全名）。各配置保留旧策略算法，仅按矩阵改变预算或阈值；基线等价及阶段预算已测试。设计、限制和结果见[消融试验](../../../experiments/strong-ablation-v1-20261106/README.md)。
