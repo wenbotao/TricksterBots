@@ -1,0 +1,35 @@
+{
+  "Strategy": "strong-plus-v1",
+  "Baseline": "strong-rules-v1",
+  "BaseCommit": "647d69f735aec50d36432d3e0581a9d6e64b29c0",
+  "RulePath": "unconfigured default Rules; configured presets covered by functional tests only",
+  "Plan": {
+    "PureTeamPairs": 30,
+    "MixedMediumPartnerPairs": 15,
+    "SeedBase": 7116001,
+    "SeedStep": 7919,
+    "Legs": 2,
+    "MaxRounds": 200,
+    "Workers": 4
+  },
+  "Enhancements": {
+    "Samples": 32,
+    "DiscardCandidates": 24,
+    "DefaultImprovementMargin": 6,
+    "DefaultStandardErrorMultiplier": 1.0,
+    "DefaultContinuation": "migrated visibility-safe Medium",
+    "RootMisereProofs": true
+  },
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongPlusBot.cs": "2c26233eb20e96de9cb815341dbf4696efd1a8d157af6f951800a7d590f2f32a",
+    "FiveHundredLab/Bots/FiveHundred/StrongBot.cs": "685a815c5aed074051564c20dc4b60353e5884d85de3c16cb971cc60ad9f4dc6"
+  },
+  "StudySourceSha256": "ca7c76c1766336acb5f894153d151e09baf8d9a7a0cc435fc0794c0654a1d67e",
+  "Outcome": {
+    "PureWins": 43,
+    "PureGames": 60,
+    "MixedWins": 17,
+    "MixedGames": 30,
+    "ReplayedGames": 90
+  }
+}

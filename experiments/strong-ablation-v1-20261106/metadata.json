@@ -1,0 +1,65 @@
+{
+  "Design": "Fixed 80 paired groups / 160 games, new seed block shared across comparisons",
+  "SeedBase": 8326001,
+  "SeedStep": 104729,
+  "DefaultRulesOnlyForMatches": true,
+  "Comparisons": [
+    {
+      "Name": "samples",
+      "A": "all32",
+      "B": "strong",
+      "Pairs": 24,
+      "Mixed": false
+    },
+    {
+      "Name": "plus",
+      "A": "plus",
+      "B": "all32",
+      "Pairs": 16,
+      "Mixed": false
+    },
+    {
+      "Name": "wide",
+      "A": "wide32",
+      "B": "all32",
+      "Pairs": 8,
+      "Mixed": false
+    },
+    {
+      "Name": "threshold",
+      "A": "tuned32",
+      "B": "wide32",
+      "Pairs": 8,
+      "Mixed": false
+    },
+    {
+      "Name": "bid-only",
+      "A": "bid32",
+      "B": "all32",
+      "Pairs": 12,
+      "Mixed": false
+    },
+    {
+      "Name": "mixed",
+      "A": "plus",
+      "B": "all32",
+      "Pairs": 12,
+      "Mixed": true
+    }
+  ],
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongAblationBot.cs": "2596f7c53684c04ef27e8639bd1e929b4b995879cfbef06fa29c46b30cbbf539",
+    "FiveHundredLab/Bots/FiveHundred/StrongPlusBot.cs": "2c26233eb20e96de9cb815341dbf4696efd1a8d157af6f951800a7d590f2f32a",
+    "FiveHundredLab/Bots/FiveHundred/StrongBot.cs": "685a815c5aed074051564c20dc4b60353e5884d85de3c16cb971cc60ad9f4dc6"
+  },
+  "Notes": [
+    "No tuning or early stopping based on interim wins",
+    "Shared seed blocks mean comparisons must not be pooled as independent evidence",
+    "Small secondary groups are exploratory and cannot prove equivalence"
+  ],
+  "StoppedByUser": true,
+  "FinalSavedGames": 136,
+  "FinalCompletePairs": 68,
+  "RemainingPlannedGamesNotRun": 24,
+  "StopNote": "User requested no further matches after the running match process was interrupted for scheduling improvement. No resume or subsequent matches were run."
+}

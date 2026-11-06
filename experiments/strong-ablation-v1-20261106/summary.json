@@ -1,0 +1,702 @@
+{
+  "groups": {
+    "samples": {
+      "pairConservative95": [
+        0.35372449439110587,
+        0.7151364693262663
+      ],
+      "A": "all32",
+      "B": "strong",
+      "mixed": false,
+      "completedPairs": 24,
+      "plannedPairs": 24,
+      "savedGames": 48,
+      "analyzedGames": 48,
+      "wins": 26,
+      "winRate": 0.5416666666666666,
+      "pairBootstrap95": [
+        0.4166666666666667,
+        0.6666666666666666
+      ],
+      "sweeps": 5,
+      "splits": 16,
+      "swept": 3,
+      "pairedSignP": 0.7265625,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 1432,
+            "milliseconds": 722413.3740000004,
+            "meanMs": 504.47861312849193
+          },
+          "play": {
+            "calls": 9000,
+            "milliseconds": 1287520.2012000002,
+            "meanMs": 143.05780013333336
+          },
+          "discard": {
+            "calls": 205,
+            "milliseconds": 183443.1861,
+            "meanMs": 894.8448102439024
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 1423,
+            "milliseconds": 183280.49520000006,
+            "meanMs": 128.79866141953624
+          },
+          "play": {
+            "calls": 9000,
+            "milliseconds": 325515.67529999994,
+            "meanMs": 36.16840836666666
+          },
+          "discard": {
+            "calls": 245,
+            "milliseconds": 56888.29289999999,
+            "meanMs": 232.197113877551
+          }
+        }
+      },
+      "contracts": {
+        "strong-study-all32-v1:Normal": {
+          "count": 205,
+          "made": 116,
+          "calledTricks": 1544,
+          "instantNegativeLoss": 2
+        },
+        "strong-rules-v1:Normal": {
+          "count": 245,
+          "made": 131,
+          "calledTricks": 1785,
+          "instantNegativeLoss": 4
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    },
+    "plus": {
+      "pairConservative95": [
+        0.37152218729810127,
+        0.8244776181283123
+      ],
+      "A": "plus",
+      "B": "all32",
+      "mixed": false,
+      "completedPairs": 15,
+      "plannedPairs": 16,
+      "savedGames": 30,
+      "analyzedGames": 30,
+      "wins": 19,
+      "winRate": 0.6333333333333333,
+      "pairBootstrap95": [
+        0.5,
+        0.7666666666666667
+      ],
+      "sweeps": 5,
+      "splits": 9,
+      "swept": 1,
+      "pairedSignP": 0.21875,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 950,
+            "milliseconds": 262035.93639999992,
+            "meanMs": 275.82730147368414
+          },
+          "play": {
+            "calls": 6100,
+            "milliseconds": 425778.8328000001,
+            "meanMs": 69.79980865573772
+          },
+          "discard": {
+            "calls": 148,
+            "milliseconds": 131924.9354,
+            "meanMs": 891.3846986486485
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 958,
+            "milliseconds": 445906.93359999993,
+            "meanMs": 465.4560893528183
+          },
+          "play": {
+            "calls": 6100,
+            "milliseconds": 812412.6486000001,
+            "meanMs": 133.18240140983607
+          },
+          "discard": {
+            "calls": 157,
+            "milliseconds": 131271.59440000003,
+            "meanMs": 836.1248050955415
+          }
+        }
+      },
+      "contracts": {
+        "strong-plus-v1:Normal": {
+          "count": 148,
+          "made": 93,
+          "calledTricks": 1092,
+          "instantNegativeLoss": 1
+        },
+        "strong-study-all32-v1:Normal": {
+          "count": 157,
+          "made": 89,
+          "calledTricks": 1163,
+          "instantNegativeLoss": 1
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    },
+    "wide": {
+      "pairConservative95": [
+        0.30016658049730927,
+        0.8470994214723825
+      ],
+      "A": "wide32",
+      "B": "all32",
+      "mixed": false,
+      "completedPairs": 8,
+      "plannedPairs": 8,
+      "savedGames": 16,
+      "analyzedGames": 16,
+      "wins": 10,
+      "winRate": 0.625,
+      "pairBootstrap95": [
+        0.5,
+        0.8125
+      ],
+      "sweeps": 2,
+      "splits": 6,
+      "swept": 0,
+      "pairedSignP": 0.5,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 722,
+            "milliseconds": 351226.16989999986,
+            "meanMs": 486.4628391966757
+          },
+          "play": {
+            "calls": 4680,
+            "milliseconds": 666285.9267000001,
+            "meanMs": 142.36878775641028
+          },
+          "discard": {
+            "calls": 130,
+            "milliseconds": 223113.99230000004,
+            "meanMs": 1716.2614792307695
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 699,
+            "milliseconds": 340041.9336,
+            "meanMs": 486.46914678111585
+          },
+          "play": {
+            "calls": 4680,
+            "milliseconds": 630370.8874,
+            "meanMs": 134.69463405982907
+          },
+          "discard": {
+            "calls": 104,
+            "milliseconds": 90161.25759999998,
+            "meanMs": 866.935169230769
+          }
+        }
+      },
+      "contracts": {
+        "strong-study-wide32-v1:Normal": {
+          "count": 130,
+          "made": 78,
+          "calledTricks": 943,
+          "instantNegativeLoss": 0
+        },
+        "strong-study-all32-v1:Normal": {
+          "count": 104,
+          "made": 54,
+          "calledTricks": 763,
+          "instantNegativeLoss": 0
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    },
+    "threshold": {
+      "pairConservative95": [
+        0.012499999999999956,
+        1.0
+      ],
+      "A": "tuned32",
+      "B": "wide32",
+      "mixed": false,
+      "completedPairs": 1,
+      "plannedPairs": 8,
+      "savedGames": 2,
+      "analyzedGames": 2,
+      "wins": 2,
+      "winRate": 1.0,
+      "pairBootstrap95": [
+        1.0,
+        1.0
+      ],
+      "sweeps": 1,
+      "splits": 0,
+      "swept": 0,
+      "pairedSignP": 1.0,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 77,
+            "milliseconds": 32302.785300000007,
+            "meanMs": 419.5166922077923
+          },
+          "discard": {
+            "calls": 10,
+            "milliseconds": 14614.8958,
+            "meanMs": 1461.48958
+          },
+          "play": {
+            "calls": 500,
+            "milliseconds": 59467.39770000001,
+            "meanMs": 118.93479540000001
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 86,
+            "milliseconds": 35519.4005,
+            "meanMs": 413.01628488372097
+          },
+          "play": {
+            "calls": 500,
+            "milliseconds": 58706.81089999999,
+            "meanMs": 117.41362179999997
+          },
+          "discard": {
+            "calls": 15,
+            "milliseconds": 22661.467399999998,
+            "meanMs": 1510.7644933333331
+          }
+        }
+      },
+      "contracts": {
+        "strong-study-tuned32-v1:Normal": {
+          "count": 10,
+          "made": 5,
+          "calledTricks": 72,
+          "instantNegativeLoss": 0
+        },
+        "strong-study-wide32-v1:Normal": {
+          "count": 15,
+          "made": 7,
+          "calledTricks": 109,
+          "instantNegativeLoss": 0
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    },
+    "bid-only": {
+      "pairConservative95": [
+        0.24526213492208643,
+        0.8949539574194121
+      ],
+      "A": "bid32",
+      "B": "all32",
+      "mixed": false,
+      "completedPairs": 8,
+      "plannedPairs": 12,
+      "savedGames": 16,
+      "analyzedGames": 16,
+      "wins": 10,
+      "winRate": 0.625,
+      "pairBootstrap95": [
+        0.375,
+        0.875
+      ],
+      "sweeps": 3,
+      "splits": 4,
+      "swept": 1,
+      "pairedSignP": 0.625,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 484,
+            "milliseconds": 246990.21730000002,
+            "meanMs": 510.3103663223141
+          },
+          "play": {
+            "calls": 2980,
+            "milliseconds": 109848.84920000001,
+            "meanMs": 36.86202993288591
+          },
+          "discard": {
+            "calls": 76,
+            "milliseconds": 17634.3817,
+            "meanMs": 232.03133815789477
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 489,
+            "milliseconds": 251691.3051,
+            "meanMs": 514.706145398773
+          },
+          "discard": {
+            "calls": 73,
+            "milliseconds": 67178.22079999998,
+            "meanMs": 920.2495999999998
+          },
+          "play": {
+            "calls": 2980,
+            "milliseconds": 425887.8609,
+            "meanMs": 142.9153895637584
+          }
+        }
+      },
+      "contracts": {
+        "strong-study-all32-v1:Normal": {
+          "count": 73,
+          "made": 39,
+          "calledTricks": 543,
+          "instantNegativeLoss": 0
+        },
+        "strong-study-bid32-v1:Normal": {
+          "count": 76,
+          "made": 49,
+          "calledTricks": 559,
+          "instantNegativeLoss": 0
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    },
+    "mixed": {
+      "pairConservative95": [
+        0.2938243286680098,
+        0.762016706056531
+      ],
+      "A": "plus",
+      "B": "all32",
+      "mixed": true,
+      "completedPairs": 12,
+      "plannedPairs": 12,
+      "savedGames": 24,
+      "analyzedGames": 24,
+      "wins": 13,
+      "winRate": 0.5416666666666666,
+      "pairBootstrap95": [
+        0.4166666666666667,
+        0.6666666666666666
+      ],
+      "sweeps": 2,
+      "splits": 9,
+      "swept": 1,
+      "pairedSignP": 1.0,
+      "truncated": 0,
+      "latency": {
+        "A": {
+          "bid": {
+            "calls": 260,
+            "milliseconds": 72035.05479999998,
+            "meanMs": 277.057903076923
+          },
+          "play": {
+            "calls": 1660,
+            "milliseconds": 123659.09850000001,
+            "meanMs": 74.49343283132531
+          },
+          "discard": {
+            "calls": 55,
+            "milliseconds": 49339.4139,
+            "meanMs": 897.0802527272728
+          }
+        },
+        "B": {
+          "bid": {
+            "calls": 260,
+            "milliseconds": 120768.7235,
+            "meanMs": 464.49509038461537
+          },
+          "play": {
+            "calls": 1660,
+            "milliseconds": 244785.93690000003,
+            "meanMs": 147.46140777108437
+          },
+          "discard": {
+            "calls": 67,
+            "milliseconds": 55601.06579999999,
+            "meanMs": 829.8666537313431
+          }
+        }
+      },
+      "contracts": {
+        "medium-rules-v1:Normal": {
+          "count": 44,
+          "made": 29,
+          "calledTricks": 298,
+          "instantNegativeLoss": 0
+        },
+        "strong-plus-v1:Normal": {
+          "count": 55,
+          "made": 33,
+          "calledTricks": 408,
+          "instantNegativeLoss": 1
+        },
+        "strong-study-all32-v1:Normal": {
+          "count": 67,
+          "made": 44,
+          "calledTricks": 484,
+          "instantNegativeLoss": 0
+        }
+      },
+      "holmAcrossPlannedComparisons": 1
+    }
+  },
+  "totalSavedGames": 136,
+  "analyzedGames": 136,
+  "audit": {
+    "trials": 612,
+    "contexts": 68,
+    "profiles": {
+      "all32": {
+        "checksFailed": 9,
+        "failedByLevel": {
+          "Unspecified": 9
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 8485.8302,
+            "medianMs": 492.4327
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 7409.0462,
+            "medianMs": 722.399
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 8722.1631,
+            "medianMs": 136.52955
+          }
+        }
+      },
+      "base8": {
+        "checksFailed": 12,
+        "failedByLevel": {
+          "Unspecified": 12
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 2449.6859,
+            "medianMs": 126.16454999999999
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 1737.7906,
+            "medianMs": 180.12675000000002
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 2268.486,
+            "medianMs": 42.49485
+          }
+        }
+      },
+      "bid32": {
+        "checksFailed": 12,
+        "failedByLevel": {
+          "Unspecified": 12
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 8190.8452,
+            "medianMs": 534.61405
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 1820.8459,
+            "medianMs": 175.7693
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 2264.0928,
+            "medianMs": 38.9848
+          }
+        }
+      },
+      "discard32": {
+        "checksFailed": 11,
+        "failedByLevel": {
+          "Unspecified": 11
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 2050.8349,
+            "medianMs": 126.63785
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 7115.5343,
+            "medianMs": 689.77445
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 2234.4723,
+            "medianMs": 38.503
+          }
+        }
+      },
+      "play32": {
+        "checksFailed": 10,
+        "failedByLevel": {
+          "Unspecified": 10
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 2088.6549,
+            "medianMs": 133.4072
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 1780.1109000000001,
+            "medianMs": 173.76785
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 8748.5473,
+            "medianMs": 141.3304
+          }
+        }
+      },
+      "plus": {
+        "checksFailed": 5,
+        "failedByLevel": {
+          "Unspecified": 5
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 5045.9444,
+            "medianMs": 302.9812
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 7816.2428,
+            "medianMs": 767.6982
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 4100.3090999999995,
+            "medianMs": 37.9639
+          }
+        }
+      },
+      "strong": {
+        "checksFailed": 12,
+        "failedByLevel": {
+          "Unspecified": 12
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 2404.725,
+            "medianMs": 125.14835
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 1873.0478,
+            "medianMs": 187.54989999999998
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 2235.4595,
+            "medianMs": 27.9509
+          }
+        }
+      },
+      "tuned32": {
+        "checksFailed": 9,
+        "failedByLevel": {
+          "Unspecified": 9
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 8441.6486,
+            "medianMs": 508.60210000000006
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 14171.5273,
+            "medianMs": 1382.7393499999998
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 8801.5979,
+            "medianMs": 139.42424999999997
+          }
+        }
+      },
+      "wide32": {
+        "checksFailed": 9,
+        "failedByLevel": {
+          "Unspecified": 9
+        },
+        "phases": {
+          "bid": {
+            "count": 16,
+            "totalMs": 8220.8028,
+            "medianMs": 528.2396
+          },
+          "discard": {
+            "count": 12,
+            "totalMs": 14567.1078,
+            "medianMs": 1468.0399499999999
+          },
+          "play": {
+            "count": 40,
+            "totalMs": 8566.1829,
+            "medianMs": 137.69805
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "base8 vs strong": {},
+      "all32 vs strong": {
+        "bid": 2,
+        "play": 3,
+        "discard": 4
+      },
+      "wide32 vs all32": {
+        "discard": 1
+      },
+      "tuned32 vs wide32": {},
+      "plus vs tuned32": {
+        "play": 4
+      },
+      "bid32 vs all32": {
+        "play": 3,
+        "discard": 4
+      },
+      "discard32 vs all32": {
+        "bid": 2,
+        "play": 3
+      },
+      "play32 vs all32": {
+        "bid": 2,
+        "discard": 4
+      }
+    }
+  }
+}

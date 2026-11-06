@@ -4,6 +4,14 @@ public static class Profiles
 {
     public static IPlayer Create(string name, int seed, string? model = null) => name switch
     {
+        "strong-study-base8-v1" => CreateForRules("strong-study-base8-v1",seed),
+        "strong-study-all32-v1" => CreateForRules("strong-study-all32-v1",seed),
+        "strong-study-wide32-v1" => CreateForRules("strong-study-wide32-v1",seed),
+        "strong-study-tuned32-v1" => CreateForRules("strong-study-tuned32-v1",seed),
+        "strong-study-bid32-v1" => CreateForRules("strong-study-bid32-v1",seed),
+        "strong-study-discard32-v1" => CreateForRules("strong-study-discard32-v1",seed),
+        "strong-study-play32-v1" => CreateForRules("strong-study-play32-v1",seed),
+        "strong-plus-v1" => CreateForRules("strong-plus-v1",seed),
         "random-pass-v1" => CreateForRules("random-pass-v1",seed),
         "Adapt-v2" or "adapt-v2" => new AdaptV2(seed),
         "Adapt" or "adapt" or "adapt-v1" => new Adapt(seed),
@@ -44,6 +52,14 @@ public static class Profiles
         name=name switch{"random-rules-v1"=>"random-legal-v1","weak-rules-v1"=>"weak-v1","medium-rules-v1"=>"medium-v1","fast-rules-v1"=>"visibility-fast-v8","strong-rules-v1"=>"strong-v1","partner-rules-v1"=>"partner-fast-v9",_=>name};
         return name switch
         {
+            "strong-study-base8-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Baseline8, seed, rules),
+            "strong-study-all32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.All32, seed, rules),
+            "strong-study-wide32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Wide32, seed, rules),
+            "strong-study-tuned32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Tuned32, seed, rules),
+            "strong-study-bid32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Bid32, seed, rules),
+            "strong-study-discard32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Discard32, seed, rules),
+            "strong-study-play32-v1" => new Bots.FiveHundred.StrongAblationBot(Bots.FiveHundred.StrongAblationProfile.Play32, seed, rules),
+            "strong-plus-v1" => new Bots.FiveHundred.StrongPlusBot(seed, rules),
             "random-pass-v1" => new Bots.FiveHundred.RandomPassBot(seed, rules),
             "random-legal-v1" => new Bots.FiveHundred.RandomBot(seed, rules),
             "weak-v1" => new Bots.FiveHundred.WeakBot(seed, rules),

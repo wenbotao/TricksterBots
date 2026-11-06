@@ -1,0 +1,109 @@
+{
+  "pure": {
+    "pairs": 30,
+    "games": 60,
+    "wins": 43,
+    "winRate": 0.7166666666666667,
+    "pairBootstrap95": [
+      0.6,
+      0.8166666666666667
+    ],
+    "sweeps": 15,
+    "splits": 13,
+    "swept": 2,
+    "pairedSignP": 0.002349853515625
+  },
+  "mixed": {
+    "pairs": 15,
+    "games": 30,
+    "wins": 17,
+    "winRate": 0.5666666666666667,
+    "pairBootstrap95": [
+      0.43333333333333335,
+      0.7
+    ],
+    "sweeps": 3,
+    "splits": 11,
+    "swept": 1,
+    "pairedSignP": 0.625
+  },
+  "firstDealDifferences": {
+    "bid": 32,
+    "discard": 4,
+    "play": 7
+  },
+  "firstBidComparisons": {
+    "count": 30,
+    "changed": 12
+  },
+  "contracts": {
+    "strong-plus-v1:Normal": {
+      "count": 336,
+      "made": 213,
+      "calledTricks": 2506
+    },
+    "strong-rules-v1:Normal": {
+      "count": 437,
+      "made": 236,
+      "calledTricks": 3212
+    },
+    "medium-rules-v1:Normal": {
+      "count": 73,
+      "made": 49,
+      "calledTricks": 493
+    }
+  },
+  "decisionCounts": {
+    "bid": 5170,
+    "discard": 846,
+    "play": 33840
+  },
+  "truncated": 0,
+  "audit": {
+    "count": 68,
+    "changed": 14,
+    "checksStrongFailed": 12,
+    "checksPlusFailed": 5,
+    "phases": {
+      "bid": {
+        "count": 16,
+        "changed": 2,
+        "strongMedianMs": 93.56075,
+        "plusMedianMs": 213.7924,
+        "strongTotalMs": 1527.5378,
+        "plusTotalMs": 3738.9835000000003,
+        "budget32Changed": 0
+      },
+      "discard": {
+        "count": 12,
+        "changed": 5,
+        "strongMedianMs": 141.1501,
+        "plusMedianMs": 588.8850500000001,
+        "strongTotalMs": 1467.557,
+        "plusTotalMs": 6034.7283,
+        "budget32Changed": 1
+      },
+      "play": {
+        "count": 40,
+        "changed": 7,
+        "strongMedianMs": 27.47035,
+        "plusMedianMs": 29.28395,
+        "strongTotalMs": 1580.6764,
+        "plusTotalMs": 2911.8366,
+        "budget32Changed": 4
+      }
+    }
+  },
+  "measuredLatency": {
+    "strong-plus-v1": {
+      "calls": 16175,
+      "milliseconds": 1920599.215,
+      "meanMs": 118.73874590417311
+    },
+    "strong-rules-v1": {
+      "calls": 16355,
+      "milliseconds": 920221.6915,
+      "meanMs": 56.265465698563126
+    }
+  }
+}

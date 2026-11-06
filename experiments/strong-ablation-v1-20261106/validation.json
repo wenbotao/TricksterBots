@@ -1,0 +1,21 @@
+{
+  "Tests": {
+    "total": 522,
+    "passed": 522,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "FrozenEntries": 74,
+  "BaselineAuditEquivalent": true,
+  "AuditQueries": 612,
+  "AuditIllegalActions": 0,
+  "BaselineDefaultDealsEquivalent": true,
+  "SavedMatches": 136,
+  "ReplayedMatches": 136,
+  "CompletePairs": 68,
+  "UnpairedSavedMatches": 0,
+  "TruncatedMatches": 0,
+  "StoppedByUser": true,
+  "All32IndependentReferenceContexts": 68,
+  "All32IndependentReferenceDifferences": 0
+}

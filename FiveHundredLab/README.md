@@ -37,3 +37,7 @@ Adapt已搁置；预训练和中间迭代不作为默认推荐。源码、模型
 本轮策略主体整合与依赖说明见 [CONSOLIDATION.md](CONSOLIDATION.md)。
 
 Random 的始终 Pass 变体为 `random-pass-v1`；[与 Weak 的50场随机实验](../experiments/randompass-weak-50-20261105/README.md)包含完整报告和复核数据。
+
+强度优先实验版 `strong-plus-v1` 保留旧 Strong 不变；[实现、行为差异及成对实战报告](../experiments/strong-plus-v1-20261106/REPORT_ZH.md)。
+
+Strong 的独立消融与阶段预算试验按用户要求提前停止，保存136场：[结果与优化方向](../experiments/strong-ablation-v1-20261106/REPORT_ZH.md)。

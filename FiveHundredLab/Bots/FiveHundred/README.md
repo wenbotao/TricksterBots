@@ -49,3 +49,13 @@ Fast/Strong 的 `SelectByRollout` 负责配置路径候选比较，默认路径�
 ## Random 的永远 Pass 变体
 
 `RandomPassBot`（profile：`random-pass-v1`）叫牌始终返回 Pass，不消耗随机数；弃牌、出牌和 Joker 声明组合调用原 RandomBot。支持相同的规则参数和 FromConfiguration 入口。四个此类 bot 同场时将持续全 Pass 重发，直到运行上限，记为截断而非胜负。若传入不允许 Pass 的合法动作列表，明确报错。
+
+## Strong 的强度优先实验版
+
+`StrongPlusBot`（profile：`strong-plus-v1`）独立于冻结 Strong：隐藏牌样本32，弃牌候选24；默认路径改选门槛6、标准误系数1.0，使用本目录Medium中的可见手牌变体作基准及续演。默认路径在根节点加入公开信息可证明的Misère躲墩/破约判断。配置路径仍保留原启发式叫牌，仅扩大弃牌/出牌搜索，不将默认的三人Misère证明套用于四人零墩变体。
+
+此版本不使用预训练或在线对手学习。配置入口和绑定规则检查与其他正式类相同。验证、行为差异和成对实战记录见[StrongPlus实验](../../../experiments/strong-plus-v1-20261106/README.md)。
+
+## Strong 的独立消融控制
+
+`StrongAblationBot`提供固定命名的`strong-study-base8-v1`、`all32`、`wide32`、`tuned32`、`bid32`、`discard32`、`play32`控制（后六者同样使用`strong-study-…-v1`全名）。各配置保留旧策略算法，仅按矩阵改变预算或阈值；基线等价及阶段预算已测试。设计、限制和结果见[消融试验](../../../experiments/strong-ablation-v1-20261106/README.md)。

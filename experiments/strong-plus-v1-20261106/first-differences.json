@@ -1,0 +1,1651 @@
+{
+  "firstBid": [
+    {
+      "pair": 0,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 1,
+      "changed": false,
+      "Strong": null,
+      "Plus": null
+    },
+    {
+      "pair": 2,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 3,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 4,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": null
+    },
+    {
+      "pair": 5,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 6,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 7,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 8,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 9,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 10,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 11,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": null
+    },
+    {
+      "pair": 12,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 13,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 14,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": null
+    },
+    {
+      "pair": 15,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Clubs",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 16,
+      "changed": false,
+      "Strong": {
+        "Tricks": 7,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 7,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 17,
+      "changed": false,
+      "Strong": {
+        "Tricks": 7,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 7,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 18,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 19,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 20,
+      "changed": true,
+      "Strong": null,
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 21,
+      "changed": true,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Diamonds",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": null
+    },
+    {
+      "pair": 22,
+      "changed": false,
+      "Strong": null,
+      "Plus": null
+    },
+    {
+      "pair": 23,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 24,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Spades",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 25,
+      "changed": false,
+      "Strong": null,
+      "Plus": null
+    },
+    {
+      "pair": 26,
+      "changed": false,
+      "Strong": null,
+      "Plus": null
+    },
+    {
+      "pair": 27,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 28,
+      "changed": false,
+      "Strong": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      },
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Unknown",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    },
+    {
+      "pair": 29,
+      "changed": true,
+      "Strong": null,
+      "Plus": {
+        "Tricks": 6,
+        "Trump": "Hearts",
+        "Kind": "Normal",
+        "IsMisere": false
+      }
+    }
+  ],
+  "firstPrefixDifference": [
+    {
+      "pair": 0,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 1,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 2,
+      "phase": "discard",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Hearts",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Hearts",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Clubs",
+            "Rank": 6,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Hearts",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Clubs",
+            "Rank": 6,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      }
+    },
+    {
+      "pair": 3,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Diamonds",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Diamonds",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 4,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 5,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 6,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 7,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 8,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 9,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 10,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 11,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 12,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 13,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 14,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 15,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 16,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 12,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 17,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 8,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 18,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 19,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 20,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 21,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 22,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 23,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 24,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 25,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 26,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 27,
+      "phase": "discard",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Clubs",
+            "Rank": 8,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 5,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Spades",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 10,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      }
+    },
+    {
+      "pair": 28,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 3,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 29,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 2,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 30,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 9,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Joker",
+            "Rank": 16,
+            "IsJoker": true
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 31,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 32,
+      "phase": "discard",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Diamonds",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Clubs",
+            "Rank": 10,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Clubs",
+            "Rank": 9,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Diamonds",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Diamonds",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Clubs",
+            "Rank": 9,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      }
+    },
+    {
+      "pair": 33,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Diamonds",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 13,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 34,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 35,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 36,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 37,
+      "phase": "discard",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Hearts",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Hearts",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Diamonds",
+            "Rank": 6,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "discard",
+        "Bid": null,
+        "Discards": [
+          {
+            "Suit": "Hearts",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Hearts",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          {
+            "Suit": "Spades",
+            "Rank": 9,
+            "IsJoker": false
+          }
+        ],
+        "Play": null
+      }
+    },
+    {
+      "pair": 38,
+      "phase": "play",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 8,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      }
+    },
+    {
+      "pair": 39,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 8,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": null,
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 40,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 42,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 0,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 7,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    },
+    {
+      "pair": 44,
+      "phase": "bid",
+      "Leg0": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      },
+      "Leg1": {
+        "Seat": 1,
+        "Phase": "bid",
+        "Bid": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Discards": null,
+        "Play": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Tests": {
+    "total": 520,
+    "passed": 520,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "SourceFingerprintEntries": 73,
+  "ExistingStrongChanged": false,
+  "RuleSnapshotCount": 36,
+  "ConfiguredFiles": 6,
+  "ReplayedMatches": 90,
+  "TruncatedMatches": 0,
+  "PairedGroups": 45
+}
