@@ -1,0 +1,1054 @@
+{
+  "plannedDeals": 120,
+  "savedDeals": 120,
+  "completePairedCases": 40,
+  "discardOrDealConfounds": 0,
+  "groups": {
+    "Misere:unfiltered": {
+      "pairedSeeds": 8,
+      "baselineMade": 2,
+      "baselineMakeRate": 0.25,
+      "roles": {
+        "declarer-proof": {
+          "made": 2,
+          "makeRate": 0.25,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 98.523115,
+            "subjectMeanMs": 133.57213125
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 6,
+            "earlier": 0,
+            "same": 6,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 2,
+          "makeRate": 0.25,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 68.5399975,
+            "subjectMeanMs": 82.556148125
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 6,
+            "earlier": 0,
+            "same": 6,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    },
+    "OpenMisere:unfiltered": {
+      "pairedSeeds": 8,
+      "baselineMade": 0,
+      "baselineMakeRate": 0.0,
+      "roles": {
+        "declarer-proof": {
+          "made": 0,
+          "makeRate": 0.0,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 69.42026625,
+            "subjectMeanMs": 68.19194250000001
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 8,
+            "earlier": 0,
+            "same": 8,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 0,
+          "makeRate": 0.0,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 63.676205,
+            "subjectMeanMs": 56.065853749999995
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 8,
+            "earlier": 0,
+            "same": 8,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    },
+    "Misere:lower-risk": {
+      "pairedSeeds": 8,
+      "baselineMade": 5,
+      "baselineMakeRate": 0.625,
+      "roles": {
+        "declarer-proof": {
+          "made": 5,
+          "makeRate": 0.625,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 99.2300375,
+            "subjectMeanMs": 75.82472874999999
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 3,
+            "earlier": 0,
+            "same": 3,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 5,
+          "makeRate": 0.625,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 90.76777687500001,
+            "subjectMeanMs": 69.77673562499999
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 3,
+            "earlier": 0,
+            "same": 3,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    },
+    "OpenMisere:lower-risk": {
+      "pairedSeeds": 8,
+      "baselineMade": 2,
+      "baselineMakeRate": 0.25,
+      "roles": {
+        "declarer-proof": {
+          "made": 2,
+          "makeRate": 0.25,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 67.01870125,
+            "subjectMeanMs": 57.30134375
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 6,
+            "earlier": 0,
+            "same": 6,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 2,
+          "makeRate": 0.25,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 69.803206875,
+            "subjectMeanMs": 77.85413
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 6,
+            "earlier": 0,
+            "same": 6,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    },
+    "Normal:unfiltered": {
+      "pairedSeeds": 8,
+      "baselineMade": 4,
+      "baselineMakeRate": 0.5,
+      "roles": {
+        "declarer-proof": {
+          "made": 4,
+          "makeRate": 0.5,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 247.21507125,
+            "subjectMeanMs": 225.81605124999996
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 0,
+            "earlier": 0,
+            "same": 0,
+            "later": 0,
+            "meanTrickChange": null
+          }
+        },
+        "defense-proof": {
+          "made": 4,
+          "makeRate": 0.5,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 1.25,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 163.69825125,
+            "subjectMeanMs": 146.006495
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 0,
+            "earlier": 0,
+            "same": 0,
+            "later": 0,
+            "meanTrickChange": null
+          }
+        }
+      }
+    }
+  },
+  "byContract": {
+    "Misere": {
+      "pairedSeeds": 16,
+      "baselineMade": 7,
+      "baselineMakeRate": 0.4375,
+      "roles": {
+        "declarer-proof": {
+          "made": 7,
+          "makeRate": 0.4375,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 16,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.2395741431463415,
+            0.2395741431463415
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 98.87657625,
+            "subjectMeanMs": 104.69843
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 9,
+            "earlier": 0,
+            "same": 9,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 7,
+          "makeRate": 0.4375,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 16,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.2395741431463415,
+            0.2395741431463415
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 320,
+            "baselineMeanMs": 79.6538871875,
+            "subjectMeanMs": 76.166441875
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 9,
+            "earlier": 0,
+            "same": 9,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    },
+    "Normal": {
+      "pairedSeeds": 8,
+      "baselineMade": 4,
+      "baselineMakeRate": 0.5,
+      "roles": {
+        "declarer-proof": {
+          "made": 4,
+          "makeRate": 0.5,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 80,
+            "baselineMeanMs": 247.21507125,
+            "subjectMeanMs": 225.81605124999996
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 0,
+            "earlier": 0,
+            "same": 0,
+            "later": 0,
+            "meanTrickChange": null
+          }
+        },
+        "defense-proof": {
+          "made": 4,
+          "makeRate": 0.5,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 8,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.4217525162283793,
+            0.4217525162283793
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 1.25,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 163.69825125,
+            "subjectMeanMs": 146.006495
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 0,
+            "earlier": 0,
+            "same": 0,
+            "later": 0,
+            "meanTrickChange": null
+          }
+        }
+      }
+    },
+    "OpenMisere": {
+      "pairedSeeds": 16,
+      "baselineMade": 2,
+      "baselineMakeRate": 0.125,
+      "roles": {
+        "declarer-proof": {
+          "made": 2,
+          "makeRate": 0.125,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 16,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.2395741431463415,
+            0.2395741431463415
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 160,
+            "baselineMeanMs": 68.21948375,
+            "subjectMeanMs": 62.746643125000006
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 14,
+            "earlier": 0,
+            "same": 14,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        },
+        "defense-proof": {
+          "made": 2,
+          "makeRate": 0.125,
+          "betterOutcomes": 0,
+          "worseOutcomes": 0,
+          "unchangedOutcomes": 16,
+          "benefitRateDifference": 0.0,
+          "benefitBootstrap95": [
+            0.0,
+            0.0
+          ],
+          "benefitConservative95": [
+            -0.2395741431463415,
+            0.2395741431463415
+          ],
+          "exactPairedP": 1.0,
+          "meanActingTeamScoreDeltaChange": 0.0,
+          "actingSeatLatency": {
+            "calls": 320,
+            "baselineMeanMs": 66.7397059375,
+            "subjectMeanMs": 66.959991875
+          },
+          "firstBustTiming": {
+            "comparableFailedDeals": 14,
+            "earlier": 0,
+            "same": 14,
+            "later": 0,
+            "meanTrickChange": 0.0
+          }
+        }
+      }
+    }
+  },
+  "firstDivergences": [
+    {
+      "case": "Misere-unfiltered-00",
+      "arm": "defense-proof",
+      "turn": 2,
+      "before": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-unfiltered-01",
+      "arm": "defense-proof",
+      "turn": 13,
+      "before": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 12,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-unfiltered-02",
+      "arm": "defense-proof",
+      "turn": 10,
+      "before": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-unfiltered-04",
+      "arm": "defense-proof",
+      "turn": 16,
+      "before": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 9,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-unfiltered-06",
+      "arm": "defense-proof",
+      "turn": 4,
+      "before": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-lower-risk-09",
+      "arm": "defense-proof",
+      "turn": 19,
+      "before": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 11,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 0,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 8,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-lower-risk-10",
+      "arm": "defense-proof",
+      "turn": 19,
+      "before": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 10,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 1,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-lower-risk-11",
+      "arm": "defense-proof",
+      "turn": 13,
+      "before": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 12,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Diamonds",
+            "Rank": 4,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "Misere-lower-risk-13",
+      "arm": "defense-proof",
+      "turn": 14,
+      "before": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-lower-risk-13",
+      "arm": "defense-proof",
+      "turn": 8,
+      "before": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 14,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 2,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 7,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "OpenMisere-lower-risk-14",
+      "arm": "defense-proof",
+      "turn": 14,
+      "before": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Clubs",
+            "Rank": 13,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Hearts",
+            "Rank": 6,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "misere-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    },
+    {
+      "case": "Normal-unfiltered-02",
+      "arm": "defense-proof",
+      "turn": 24,
+      "before": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Spades",
+            "Rank": 5,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "after": {
+        "Seat": 3,
+        "Phase": "play",
+        "Bid": null,
+        "Discards": null,
+        "Play": {
+          "Card": {
+            "Suit": "Diamonds",
+            "Rank": 13,
+            "IsJoker": false
+          },
+          "JokerLeadSuit": "Unknown"
+        }
+      },
+      "reason": "normal-certain-set",
+      "baselineMade": false,
+      "subjectMade": false
+    }
+  ],
+  "tactics": {
+    "queries": 1200,
+    "interventions": 41,
+    "proofNodes": 21361,
+    "budgetReached": 0,
+    "reasons": {
+      "misere-certain-set": 20,
+      "misere-avoid-certain-loss": 19,
+      "normal-certain-set": 1,
+      "normal-certain-make": 1
+    },
+    "firstDivergenceReasons": {
+      "misere-certain-set": 11,
+      "normal-certain-set": 1
+    }
+  },
+  "latency": {
+    "baseline": {
+      "playCalls": 1280,
+      "playMilliseconds": 133976.8198
+    },
+    "declarer-proof": {
+      "playCalls": 1280,
+      "playMilliseconds": 128412.2441
+    },
+    "defense-proof": {
+      "playCalls": 1280,
+      "playMilliseconds": 125402.6324
+    }
+  },
+  "audit": {
+    "queries": 272,
+    "allLegal": true,
+    "profiles": {
+      "all32": {
+        "failedChecks": 9,
+        "criticalFailures": 4
+      },
+      "tactical": {
+        "failedChecks": 5,
+        "criticalFailures": 0
+      },
+      "misere-only": {
+        "failedChecks": 5,
+        "criticalFailures": 0
+      },
+      "contract-only": {
+        "failedChecks": 9,
+        "criticalFailures": 4
+      }
+    },
+    "changesVsAll32": {
+      "all32": {
+        "bid": 0,
+        "discard": 0,
+        "play": 0
+      },
+      "tactical": {
+        "bid": 0,
+        "discard": 0,
+        "play": 4
+      },
+      "misere-only": {
+        "bid": 0,
+        "discard": 0,
+        "play": 4
+      },
+      "contract-only": {
+        "bid": 0,
+        "discard": 0,
+        "play": 0
+      }
+    }
+  }
+}

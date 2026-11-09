@@ -1,0 +1,20 @@
+{
+  "Passed": true,
+  "Matches": 96,
+  "CompletedMatches": 96,
+  "TruncatedMatches": 0,
+  "PairedBlocks": 32,
+  "RawRounds": 987,
+  "SubjectDecisionsMatchedToRecords": 11532,
+  "MetadataAndSourceHashesVerified": true,
+  "NoFailureOrIncompleteFiles": true,
+  "Replay": "VERIFIED 96 matches; engineering equivalent blocks=32",
+  "Frozen": "Verified 82 frozen source/model files",
+  "Details": {
+    "MatchesReplayed": 96,
+    "EngineeringEquivalentBlocks": 32,
+    "PairedDealsVerified": true,
+    "FirstDivergencesExplained": true,
+    "Passed": true
+  }
+}

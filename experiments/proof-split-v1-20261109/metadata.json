@@ -1,0 +1,34 @@
+{
+  "Design": "Fixed proof factor ablation and contract-conditioned single-deal role comparison",
+  "RegisteredBeforeDeals": true,
+  "Rules": "Unconfigured default; explicit presets receive functional tests only",
+  "SeedBase": 34119001,
+  "SeedStep": 7919,
+  "SeedPool": 256,
+  "Corpus": {
+    "unfiltered": "First 8 seed indices",
+    "lowerRisk": "Lowest risk 8 of remaining 248 indices; tie by index",
+    "Risk": "Initial declarer ten cards only: sum(joker?25:max(0,rank-6)/(1+count lower same suit)); no outcomes or future actions used",
+    "Misere": 16,
+    "OpenMisere": 16,
+    "Normal": 8,
+    "NormalContracts": "7 tricks, rotating S/C/D/H; unfiltered seeds only",
+    "SeatRotation": "Corpus slot modulo 4; dealer=(declarer+2)%4"
+  },
+  "Arms": [
+    "all32-all-seats",
+    "proof-declarer-only",
+    "proof-defenders-only"
+  ],
+  "Deals": 120,
+  "Workers": 4,
+  "MaxRounds": 1,
+  "Bidding": "Forced legal prerequisite 7S/8S then target for Misere/Open; normal opener Pass then declarer target. Strategy bidding not evaluated, does not consume RNG",
+  "Discard": "All32 algorithm and same seat RNG seeds in every arm; assert exact same discard set",
+  "Outcome": "Contract Made and score delta; one completed deal, not full-match win rate; engine Truncated is expected at this one-round cap",
+  "Primary": "Misere and Open separate; declarer make rate vs baseline; defender bust rate vs baseline",
+  "Inference": "Pair on same seed; separate cohorts and contract types; do not treat three arms as independent samples; no parameter retuning or default promotion",
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongProofAblationBot.cs": "d5443509d028516fd5c692ec6d504dcc607f54b9884e7cf14a18047586eb7293"
+  }
+}

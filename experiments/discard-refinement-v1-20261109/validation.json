@@ -1,0 +1,30 @@
+{
+  "freshHands": 32,
+  "boundaryStates": 256,
+  "pairedGroups": 1024,
+  "physicalDealsReplayed": 2452,
+  "logicalArmDeals": 4096,
+  "scoreOverlayAndAliasesVerified": true,
+  "noOldTemplateOverlap": true,
+  "engineeringEquivalentDecisions": true,
+  "replay": "REPLAY 2452",
+  "frozen": "Verified 81 frozen source/model files",
+  "tests": {
+    "total": "547",
+    "executed": "547",
+    "passed": "547",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  }
+}

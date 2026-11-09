@@ -1,0 +1,41 @@
+{
+  "RegisteredBeforeOutcomeEvaluation": true,
+  "OldCases": "Development hypotheses only; no claims from rerunning old losses",
+  "FreshPool": 192,
+  "Selection": "First up to16 actual v1 repairs per family then fill to32; no outcome selection; exclude all prior256 hand sets",
+  "SeedBases": {
+    "templates": 83119001,
+    "decisions": 93119001,
+    "evaluation": 96119001
+  },
+  "Conditions": [
+    "6NT",
+    "7NT",
+    "8NT",
+    "9NT",
+    "10NT",
+    "6NT score400,0",
+    "6NT score-400,0",
+    "6NT score0,400"
+  ],
+  "Layouts": 2,
+  "Policies": [
+    "medium-all",
+    "mixed: declarerStrong,partnerFast,opponentsStrong/Medium swapped by layout"
+  ],
+  "Arms": [
+    "original",
+    "v1",
+    "shape",
+    "audit"
+  ],
+  "DuplicateActions": "Identical ordered discards share one physical continuation; logical arms separately recorded",
+  "ScoreOverlay": "Observers receive initial scenario scores; raw engine records start at0; terminal utility separately recomputed by authoritative Rules.WinningTeam",
+  "Cluster": "Fresh hand, across conditions/layouts; fixed two families; no parameter retuning",
+  "Shape": "Minimum edits; preserve top sequences; penalize Q protection .45, J .20, productive length .35; original static floor-.5",
+  "Audit": "Only high-target,score-risk,structure-tradeoff,multiple edits or buriedK; 8/16 independent worlds; paired upper evidence mean+1.5SE<-12 vetoes; no main RNG consumption",
+  "Engineering": "Cached pool, exact original ordering/ties, cleared phase diagnostics; five independently named profiles",
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongDiscardRefinedBot.cs": "2975849f0c9bd5102db64374c04ab80db5b69e61b9e41b733a5cd2957fcef264"
+  }
+}

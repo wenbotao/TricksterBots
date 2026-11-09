@@ -1,0 +1,327 @@
+{
+  "cases": 128,
+  "templates": 94,
+  "policies": {
+    "weak": {
+      "pairedLayouts": 1024,
+      "completeContexts": 128,
+      "completeTemplateClusters": 94,
+      "rawBaselineMade": 502,
+      "rawRepairedMade": 518,
+      "complete": true,
+      "score": {
+        "mean": 4.714095744680851,
+        "clusterBootstrap95": [
+          0.35222739361702143,
+          9.12915558510637
+        ]
+      },
+      "make": {
+        "mean": 0.015957446808510637,
+        "clusterBootstrap95": [
+          0.0,
+          0.031914893617021274
+        ]
+      },
+      "tricks": {
+        "mean": 0.09707446808510638,
+        "clusterBootstrap95": [
+          0.04055851063829787,
+          0.15492021276595744
+        ]
+      },
+      "baselineMake": 0.4913563829787234,
+      "repairedMake": 0.507313829787234,
+      "families": {
+        "random-fillers": {
+          "templates": 50,
+          "score": {
+            "mean": 7.775,
+            "clusterBootstrap95": [
+              1.1375,
+              14.837812499999973
+            ]
+          },
+          "make": {
+            "mean": 0.0275,
+            "clusterBootstrap95": [
+              0.00375,
+              0.0525
+            ]
+          }
+        },
+        "two-card-perturbations": {
+          "templates": 44,
+          "score": {
+            "mean": 1.2357954545454546,
+            "clusterBootstrap95": [
+              -3.877840909090909,
+              6.548295454545454
+            ]
+          },
+          "make": {
+            "mean": 0.002840909090909091,
+            "clusterBootstrap95": [
+              -0.017045454545454544,
+              0.022727272727272728
+            ]
+          }
+        }
+      }
+    },
+    "medium": {
+      "pairedLayouts": 1024,
+      "completeContexts": 128,
+      "completeTemplateClusters": 94,
+      "rawBaselineMade": 527,
+      "rawRepairedMade": 614,
+      "complete": true,
+      "score": {
+        "mean": 25.492021276595743,
+        "clusterBootstrap95": [
+          16.908244680851062,
+          34.30186170212766
+        ]
+      },
+      "make": {
+        "mean": 0.09175531914893617,
+        "clusterBootstrap95": [
+          0.0598404255319149,
+          0.12433510638297872
+        ]
+      },
+      "tricks": {
+        "mean": 0.4421542553191489,
+        "clusterBootstrap95": [
+          0.34441489361702127,
+          0.5405585106382979
+        ]
+      },
+      "baselineMake": 0.5113031914893617,
+      "repairedMake": 0.6030585106382979,
+      "families": {
+        "random-fillers": {
+          "templates": 50,
+          "score": {
+            "mean": 29.5,
+            "clusterBootstrap95": [
+              17.65,
+              41.8
+            ]
+          },
+          "make": {
+            "mean": 0.10875,
+            "clusterBootstrap95": [
+              0.065,
+              0.15375
+            ]
+          }
+        },
+        "two-card-perturbations": {
+          "templates": 44,
+          "score": {
+            "mean": 20.9375,
+            "clusterBootstrap95": [
+              9.048295454545455,
+              33.42329545454545
+            ]
+          },
+          "make": {
+            "mean": 0.07244318181818182,
+            "clusterBootstrap95": [
+              0.028409090909090908,
+              0.11931818181818182
+            ]
+          }
+        }
+      }
+    },
+    "fast": {
+      "pairedLayouts": 1024,
+      "completeContexts": 128,
+      "completeTemplateClusters": 94,
+      "rawBaselineMade": 578,
+      "rawRepairedMade": 633,
+      "complete": true,
+      "score": {
+        "mean": 14.933510638297872,
+        "clusterBootstrap95": [
+          6.243184840425532,
+          23.523936170212767
+        ],
+        "fourEndpointBonferroniInterval": [
+          3.723404255319149,
+          25.74468085106383
+        ]
+      },
+      "make": {
+        "mean": 0.0511968085106383,
+        "clusterBootstrap95": [
+          0.018617021276595744,
+          0.08311170212765957
+        ],
+        "fourEndpointBonferroniInterval": [
+          0.009308510638297872,
+          0.09175531914893617
+        ]
+      },
+      "tricks": {
+        "mean": 0.2732712765957447,
+        "clusterBootstrap95": [
+          0.14893617021276595,
+          0.39695811170212625
+        ]
+      },
+      "baselineMake": 0.5631648936170213,
+      "repairedMake": 0.6143617021276596,
+      "families": {
+        "random-fillers": {
+          "templates": 50,
+          "score": {
+            "mean": 15.475,
+            "clusterBootstrap95": [
+              5.425,
+              25.675
+            ]
+          },
+          "make": {
+            "mean": 0.06125,
+            "clusterBootstrap95": [
+              0.025,
+              0.0975
+            ]
+          }
+        },
+        "two-card-perturbations": {
+          "templates": 44,
+          "score": {
+            "mean": 14.318181818181818,
+            "clusterBootstrap95": [
+              -0.5965909090909091,
+              28.082386363636363
+            ]
+          },
+          "make": {
+            "mean": 0.03977272727272727,
+            "clusterBootstrap95": [
+              -0.017045454545454544,
+              0.09232954545454546
+            ]
+          }
+        }
+      }
+    },
+    "strong": {
+      "pairedLayouts": 1024,
+      "completeContexts": 128,
+      "completeTemplateClusters": 94,
+      "rawBaselineMade": 580,
+      "rawRepairedMade": 650,
+      "complete": true,
+      "score": {
+        "mean": 19.50132978723404,
+        "clusterBootstrap95": [
+          9.893617021276595,
+          29.268783244680836
+        ],
+        "fourEndpointBonferroniInterval": [
+          7.426820146276596,
+          31.941572473404285
+        ]
+      },
+      "make": {
+        "mean": 0.07180851063829788,
+        "clusterBootstrap95": [
+          0.036569148936170214,
+          0.1077127659574468
+        ],
+        "fourEndpointBonferroniInterval": [
+          0.02726063829787234,
+          0.11702127659574468
+        ]
+      },
+      "tricks": {
+        "mean": 0.31316489361702127,
+        "clusterBootstrap95": [
+          0.18816489361702127,
+          0.4401595744680851
+        ]
+      },
+      "baselineMake": 0.5585106382978723,
+      "repairedMake": 0.6303191489361702,
+      "families": {
+        "random-fillers": {
+          "templates": 50,
+          "score": {
+            "mean": 21.025,
+            "clusterBootstrap95": [
+              7.849375,
+              34.125
+            ]
+          },
+          "make": {
+            "mean": 0.075,
+            "clusterBootstrap95": [
+              0.02875,
+              0.12
+            ]
+          }
+        },
+        "two-card-perturbations": {
+          "templates": 44,
+          "score": {
+            "mean": 17.769886363636363,
+            "clusterBootstrap95": [
+              3.6363636363636362,
+              32.08842329545451
+            ]
+          },
+          "make": {
+            "mean": 0.06818181818181818,
+            "clusterBootstrap95": [
+              0.015625,
+              0.12215909090909091
+            ]
+          }
+        }
+      }
+    }
+  },
+  "effectDifferencesVsMedium": {
+    "fast": {
+      "pairedTemplateClusters": 94,
+      "score": {
+        "meanEffectDifference": -10.558510638297872,
+        "pairedClusterBootstrap95": [
+          -20.911070478723403,
+          -0.2923869680851209
+        ]
+      },
+      "make": {
+        "meanEffectDifference": -0.04055851063829787,
+        "pairedClusterBootstrap95": [
+          -0.0797872340425532,
+          -0.0019946808510638296
+        ]
+      }
+    },
+    "strong": {
+      "pairedTemplateClusters": 94,
+      "score": {
+        "meanEffectDifference": -5.990691489361702,
+        "pairedClusterBootstrap95": [
+          -17.925531914893618,
+          5.4788896276595604
+        ]
+      },
+      "make": {
+        "meanEffectDifference": -0.0199468085106383,
+        "pairedClusterBootstrap95": [
+          -0.06515957446808511,
+          0.023936170212765957
+        ]
+      }
+    }
+  },
+  "allPoliciesComplete": true
+}

@@ -1,0 +1,2642 @@
+{
+  "weak": {
+    "1": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.4375
+    },
+    "2": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "10": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "11": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "15": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "16": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "23": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "24": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "26": {
+      "score": -35.0,
+      "make": -0.125,
+      "tricks": -0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "28": {
+      "score": 67.5,
+      "make": 0.25,
+      "tricks": 0.75,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "33": {
+      "score": -3.125,
+      "make": 0.0,
+      "tricks": -0.3125,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.8125
+    },
+    "34": {
+      "score": 22.5,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "36": {
+      "score": 40.0,
+      "make": 0.125,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "37": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "39": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "40": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "46": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "47": {
+      "score": -9.375,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "51": {
+      "score": 31.25,
+      "make": 0.125,
+      "tricks": 0.125,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "52": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "55": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "56": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "57": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "58": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "60": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "63": {
+      "score": -53.75,
+      "make": -0.125,
+      "tricks": -0.75,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "65": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.25
+    },
+    "67": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "71": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.125,
+      "repairedMake": 0.125
+    },
+    "74": {
+      "score": -14.375,
+      "make": -0.0625,
+      "tricks": 0.0625,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.25
+    },
+    "78": {
+      "score": -32.5,
+      "make": -0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "82": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "83": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.5625
+    },
+    "84": {
+      "score": -18.75,
+      "make": -0.0625,
+      "tricks": -0.375,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.25
+    },
+    "85": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "86": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "88": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "96": {
+      "score": 65.0,
+      "make": 0.25,
+      "tricks": 0.5,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "98": {
+      "score": 53.125,
+      "make": 0.1875,
+      "tricks": 0.8125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.8125
+    },
+    "101": {
+      "score": -0.625,
+      "make": 0.0,
+      "tricks": -0.0625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "103": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "104": {
+      "score": 51.875,
+      "make": 0.1875,
+      "tricks": 0.6875,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.875
+    },
+    "107": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "109": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "112": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.8125
+    },
+    "113": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "119": {
+      "score": 16.25,
+      "make": 0.0625,
+      "tricks": 0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5625
+    },
+    "121": {
+      "score": -15.625,
+      "make": -0.0625,
+      "tricks": -0.0625,
+      "baselineMake": 0.75,
+      "repairedMake": 0.6875
+    },
+    "123": {
+      "score": -0.625,
+      "make": 0.0,
+      "tricks": -0.0625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "127": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "129": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "130": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "132": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.6875
+    },
+    "133": {
+      "score": -17.5,
+      "make": -0.0625,
+      "tricks": -0.25,
+      "baselineMake": 0.25,
+      "repairedMake": 0.1875
+    },
+    "134": {
+      "score": -14.375,
+      "make": -0.0625,
+      "tricks": 0.0625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5625
+    },
+    "135": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.875,
+      "repairedMake": 0.875
+    },
+    "136": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "138": {
+      "score": 52.5,
+      "make": 0.1875,
+      "tricks": 0.75,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5625
+    },
+    "139": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.1875,
+      "repairedMake": 0.1875
+    },
+    "140": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "144": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.4375
+    },
+    "145": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "147": {
+      "score": -1.875,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.125,
+      "repairedMake": 0.125
+    },
+    "148": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "151": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "152": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "153": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "154": {
+      "score": -32.5,
+      "make": -0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.25,
+      "repairedMake": 0.125
+    },
+    "155": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.25
+    },
+    "156": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "158": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "159": {
+      "score": -32.5,
+      "make": -0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.875,
+      "repairedMake": 0.75
+    },
+    "160": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "161": {
+      "score": 31.25,
+      "make": 0.125,
+      "tricks": 0.125,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "163": {
+      "score": -1.875,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "164": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "165": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.4375
+    },
+    "166": {
+      "score": 16.25,
+      "make": 0.0625,
+      "tricks": 0.125,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.5
+    },
+    "167": {
+      "score": 16.875,
+      "make": 0.0625,
+      "tricks": 0.1875,
+      "baselineMake": 0.1875,
+      "repairedMake": 0.25
+    },
+    "168": {
+      "score": 1.875,
+      "make": 0.0,
+      "tricks": 0.1875,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "169": {
+      "score": 15.625,
+      "make": 0.0625,
+      "tricks": 0.0625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5625
+    },
+    "170": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.125,
+      "repairedMake": 0.125
+    },
+    "171": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "172": {
+      "score": -0.625,
+      "make": 0.0,
+      "tricks": -0.0625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "173": {
+      "score": -32.5,
+      "make": -0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.875,
+      "repairedMake": 0.75
+    },
+    "174": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "176": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.0,
+      "repairedMake": 0.0
+    },
+    "177": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "178": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "179": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "180": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "181": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "185": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "186": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    }
+  },
+  "medium": {
+    "1": {
+      "score": 5.625,
+      "make": 0.0,
+      "tricks": 0.5625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "2": {
+      "score": 103.75,
+      "make": 0.375,
+      "tricks": 1.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.875
+    },
+    "10": {
+      "score": 73.75,
+      "make": 0.25,
+      "tricks": 1.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "11": {
+      "score": 93.75,
+      "make": 0.375,
+      "tricks": 0.375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.625
+    },
+    "15": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "16": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "23": {
+      "score": 135.0,
+      "make": 0.5,
+      "tricks": 1.5,
+      "baselineMake": 0.125,
+      "repairedMake": 0.625
+    },
+    "24": {
+      "score": 30.0,
+      "make": 0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "26": {
+      "score": 5.0,
+      "make": 0.0,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "28": {
+      "score": 132.5,
+      "make": 0.5,
+      "tricks": 1.25,
+      "baselineMake": 0.5,
+      "repairedMake": 1.0
+    },
+    "33": {
+      "score": -53.125,
+      "make": 0.0,
+      "tricks": -0.4375,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "34": {
+      "score": -27.5,
+      "make": -0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "36": {
+      "score": 10.0,
+      "make": 0.0,
+      "tricks": 1.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "37": {
+      "score": -26.25,
+      "make": -0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "39": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "40": {
+      "score": 100.0,
+      "make": 0.375,
+      "tricks": 1.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.875
+    },
+    "46": {
+      "score": 6.25,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "47": {
+      "score": -26.875,
+      "make": -0.0625,
+      "tricks": -0.375,
+      "baselineMake": 1.0,
+      "repairedMake": 0.9375
+    },
+    "51": {
+      "score": 102.5,
+      "make": 0.375,
+      "tricks": 1.25,
+      "baselineMake": 0.375,
+      "repairedMake": 0.75
+    },
+    "52": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "55": {
+      "score": 4.375,
+      "make": 0.0,
+      "tricks": 0.4375,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.6875
+    },
+    "56": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "57": {
+      "score": 97.5,
+      "make": 0.375,
+      "tricks": 0.75,
+      "baselineMake": 0.5,
+      "repairedMake": 0.875
+    },
+    "58": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "60": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "63": {
+      "score": -15.0,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "65": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.25,
+      "repairedMake": 0.5
+    },
+    "67": {
+      "score": -27.5,
+      "make": -0.125,
+      "tricks": 0.25,
+      "baselineMake": 1.0,
+      "repairedMake": 0.875
+    },
+    "71": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "74": {
+      "score": 5.625,
+      "make": 0.0,
+      "tricks": 0.5625,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.5625
+    },
+    "78": {
+      "score": 7.5,
+      "make": 0.0,
+      "tricks": 0.75,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "82": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "83": {
+      "score": -0.625,
+      "make": 0.0,
+      "tricks": -0.0625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.4375
+    },
+    "84": {
+      "score": -11.875,
+      "make": -0.0625,
+      "tricks": 0.3125,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.375
+    },
+    "85": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "86": {
+      "score": -26.875,
+      "make": -0.125,
+      "tricks": 0.3125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "88": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "96": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "98": {
+      "score": 10.0,
+      "make": 0.0625,
+      "tricks": -0.5,
+      "baselineMake": 0.9375,
+      "repairedMake": 1.0
+    },
+    "101": {
+      "score": 63.75,
+      "make": 0.25,
+      "tricks": 0.375,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.5625
+    },
+    "103": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "104": {
+      "score": -18.125,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "107": {
+      "score": 43.75,
+      "make": 0.125,
+      "tricks": 1.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "109": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.4375
+    },
+    "112": {
+      "score": 18.125,
+      "make": 0.0625,
+      "tricks": 0.3125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.8125
+    },
+    "113": {
+      "score": 6.25,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "119": {
+      "score": 1.875,
+      "make": 0.0,
+      "tricks": 0.1875,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "121": {
+      "score": 19.375,
+      "make": 0.0625,
+      "tricks": 0.4375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.8125
+    },
+    "123": {
+      "score": 96.25,
+      "make": 0.375,
+      "tricks": 0.625,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.6875
+    },
+    "127": {
+      "score": 65.0,
+      "make": 0.25,
+      "tricks": 0.5,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "129": {
+      "score": -72.5,
+      "make": -0.25,
+      "tricks": -1.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.5
+    },
+    "130": {
+      "score": 101.25,
+      "make": 0.375,
+      "tricks": 1.125,
+      "baselineMake": 0.125,
+      "repairedMake": 0.5
+    },
+    "132": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.6875
+    },
+    "133": {
+      "score": -13.125,
+      "make": -0.0625,
+      "tricks": 0.1875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.375
+    },
+    "134": {
+      "score": -4.375,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.6875
+    },
+    "135": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "136": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.125,
+      "repairedMake": 0.25
+    },
+    "138": {
+      "score": 50.625,
+      "make": 0.1875,
+      "tricks": 0.5625,
+      "baselineMake": 0.8125,
+      "repairedMake": 1.0
+    },
+    "139": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "140": {
+      "score": -25.625,
+      "make": -0.125,
+      "tricks": 0.4375,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.1875
+    },
+    "144": {
+      "score": 69.375,
+      "make": 0.25,
+      "tricks": 0.9375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.5
+    },
+    "145": {
+      "score": -30.0,
+      "make": -0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "147": {
+      "score": 0.625,
+      "make": 0.0,
+      "tricks": 0.0625,
+      "baselineMake": 0.1875,
+      "repairedMake": 0.1875
+    },
+    "148": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "151": {
+      "score": -2.5,
+      "make": 0.0,
+      "tricks": -0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "152": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "153": {
+      "score": -11.25,
+      "make": -0.0625,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.4375
+    },
+    "154": {
+      "score": 7.5,
+      "make": 0.0,
+      "tricks": 0.75,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "155": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "156": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "158": {
+      "score": 135.0,
+      "make": 0.5,
+      "tricks": 1.5,
+      "baselineMake": 0.375,
+      "repairedMake": 0.875
+    },
+    "159": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "160": {
+      "score": -1.875,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.4375
+    },
+    "161": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "163": {
+      "score": 16.875,
+      "make": 0.0625,
+      "tricks": 0.1875,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.625
+    },
+    "164": {
+      "score": -30.0,
+      "make": -0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "165": {
+      "score": 20.625,
+      "make": 0.0625,
+      "tricks": 0.5625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.5
+    },
+    "166": {
+      "score": 68.75,
+      "make": 0.25,
+      "tricks": 0.875,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.5625
+    },
+    "167": {
+      "score": 49.375,
+      "make": 0.1875,
+      "tricks": 0.4375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5625
+    },
+    "168": {
+      "score": 65.625,
+      "make": 0.25,
+      "tricks": 0.5625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "169": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "170": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.125,
+      "repairedMake": 0.25
+    },
+    "171": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "172": {
+      "score": 9.375,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "173": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "174": {
+      "score": 62.5,
+      "make": 0.25,
+      "tricks": 0.25,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "176": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.125,
+      "repairedMake": 0.375
+    },
+    "177": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "178": {
+      "score": 115.0,
+      "make": 0.4375,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.8125
+    },
+    "179": {
+      "score": -3.75,
+      "make": 0.0,
+      "tricks": -0.375,
+      "baselineMake": 0.125,
+      "repairedMake": 0.125
+    },
+    "180": {
+      "score": 73.75,
+      "make": 0.25,
+      "tricks": 1.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "181": {
+      "score": -33.75,
+      "make": -0.125,
+      "tricks": -0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.25
+    },
+    "185": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "186": {
+      "score": 6.25,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    }
+  },
+  "fast": {
+    "1": {
+      "score": 33.125,
+      "make": 0.1875,
+      "tricks": -0.375,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.625
+    },
+    "2": {
+      "score": 78.75,
+      "make": 0.25,
+      "tricks": 1.875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "10": {
+      "score": -27.5,
+      "make": -0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.875,
+      "repairedMake": 0.75
+    },
+    "11": {
+      "score": 97.5,
+      "make": 0.375,
+      "tricks": 0.75,
+      "baselineMake": 0.125,
+      "repairedMake": 0.5
+    },
+    "15": {
+      "score": -2.5,
+      "make": 0.0,
+      "tricks": -0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "16": {
+      "score": 40.0,
+      "make": 0.125,
+      "tricks": 1.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "23": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "24": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "26": {
+      "score": 96.25,
+      "make": 0.25,
+      "tricks": 2.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "28": {
+      "score": 58.75,
+      "make": 0.25,
+      "tricks": -0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "33": {
+      "score": -11.875,
+      "make": 0.0625,
+      "tricks": -0.25,
+      "baselineMake": 0.9375,
+      "repairedMake": 1.0
+    },
+    "34": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.875,
+      "repairedMake": 0.875
+    },
+    "36": {
+      "score": 5.0,
+      "make": 0.0,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "37": {
+      "score": -62.5,
+      "make": -0.25,
+      "tricks": -0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.5
+    },
+    "39": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "40": {
+      "score": 65.0,
+      "make": 0.25,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "46": {
+      "score": -27.5,
+      "make": -0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "47": {
+      "score": 13.75,
+      "make": 0.0625,
+      "tricks": -0.125,
+      "baselineMake": 0.9375,
+      "repairedMake": 1.0
+    },
+    "51": {
+      "score": -5.0,
+      "make": 0.0,
+      "tricks": -0.5,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "52": {
+      "score": 31.25,
+      "make": 0.125,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "55": {
+      "score": 30.625,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "56": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "57": {
+      "score": -78.75,
+      "make": -0.25,
+      "tricks": -1.875,
+      "baselineMake": 0.5,
+      "repairedMake": 0.25
+    },
+    "58": {
+      "score": 43.75,
+      "make": 0.25,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "60": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "63": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "65": {
+      "score": -30.0,
+      "make": -0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.25
+    },
+    "67": {
+      "score": 28.75,
+      "make": 0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "71": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "74": {
+      "score": -10.0,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.5625
+    },
+    "78": {
+      "score": 26.25,
+      "make": 0.125,
+      "tricks": -0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "82": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "83": {
+      "score": 56.25,
+      "make": 0.1875,
+      "tricks": 1.125,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.625
+    },
+    "84": {
+      "score": -12.5,
+      "make": -0.0625,
+      "tricks": 0.25,
+      "baselineMake": 0.375,
+      "repairedMake": 0.3125
+    },
+    "85": {
+      "score": 17.5,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "86": {
+      "score": 16.875,
+      "make": 0.0625,
+      "tricks": 0.1875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.6875
+    },
+    "88": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "96": {
+      "score": 8.75,
+      "make": 0.0,
+      "tricks": 0.875,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "98": {
+      "score": -8.125,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.875,
+      "repairedMake": 0.875
+    },
+    "101": {
+      "score": 50.625,
+      "make": 0.1875,
+      "tricks": 0.5625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5625
+    },
+    "103": {
+      "score": -32.5,
+      "make": -0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "104": {
+      "score": -31.25,
+      "make": -0.0625,
+      "tricks": -0.8125,
+      "baselineMake": 1.0,
+      "repairedMake": 0.9375
+    },
+    "107": {
+      "score": -2.5,
+      "make": 0.0,
+      "tricks": -0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "109": {
+      "score": -10.0,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.3125
+    },
+    "112": {
+      "score": 20.625,
+      "make": 0.0625,
+      "tricks": 0.5625,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.875
+    },
+    "113": {
+      "score": -5.0,
+      "make": 0.0,
+      "tricks": -0.5,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "119": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.5625
+    },
+    "121": {
+      "score": 9.375,
+      "make": 0.0625,
+      "tricks": 0.25,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.75
+    },
+    "123": {
+      "score": 53.75,
+      "make": 0.1875,
+      "tricks": 0.875,
+      "baselineMake": 0.5,
+      "repairedMake": 0.6875
+    },
+    "127": {
+      "score": 17.5,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "129": {
+      "score": -100.0,
+      "make": -0.375,
+      "tricks": -1.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.375
+    },
+    "130": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.125,
+      "repairedMake": 0.25
+    },
+    "132": {
+      "score": 14.375,
+      "make": 0.0625,
+      "tricks": -0.0625,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.625
+    },
+    "133": {
+      "score": 13.125,
+      "make": 0.0625,
+      "tricks": -0.1875,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.625
+    },
+    "134": {
+      "score": -56.25,
+      "make": -0.25,
+      "tricks": -0.4375,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.5625
+    },
+    "135": {
+      "score": 16.25,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "136": {
+      "score": 67.5,
+      "make": 0.25,
+      "tricks": 0.75,
+      "baselineMake": 0.125,
+      "repairedMake": 0.375
+    },
+    "138": {
+      "score": 53.75,
+      "make": 0.1875,
+      "tricks": 0.875,
+      "baselineMake": 0.8125,
+      "repairedMake": 1.0
+    },
+    "139": {
+      "score": -28.125,
+      "make": -0.125,
+      "tricks": 0.1875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.3125
+    },
+    "140": {
+      "score": -30.625,
+      "make": -0.125,
+      "tricks": -0.0625,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.1875
+    },
+    "144": {
+      "score": 85.625,
+      "make": 0.3125,
+      "tricks": 1.0625,
+      "baselineMake": 0.25,
+      "repairedMake": 0.5625
+    },
+    "145": {
+      "score": -130.0,
+      "make": -0.5,
+      "tricks": -1.0,
+      "baselineMake": 1.0,
+      "repairedMake": 0.5
+    },
+    "147": {
+      "score": 10.0,
+      "make": 0.0,
+      "tricks": 0.1875,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "148": {
+      "score": -6.25,
+      "make": 0.0,
+      "tricks": -0.625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "151": {
+      "score": -66.25,
+      "make": -0.25,
+      "tricks": -0.625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.375
+    },
+    "152": {
+      "score": 21.25,
+      "make": 0.0,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "153": {
+      "score": 5.0,
+      "make": 0.0,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "154": {
+      "score": 71.25,
+      "make": 0.25,
+      "tricks": 1.125,
+      "baselineMake": 0.125,
+      "repairedMake": 0.375
+    },
+    "155": {
+      "score": 42.5,
+      "make": 0.125,
+      "tricks": 1.25,
+      "baselineMake": 0.125,
+      "repairedMake": 0.25
+    },
+    "156": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "158": {
+      "score": -25.0,
+      "make": -0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "159": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "160": {
+      "score": 30.0,
+      "make": 0.0625,
+      "tricks": 0.6875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.6875
+    },
+    "161": {
+      "score": -8.75,
+      "make": -0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "163": {
+      "score": 15.625,
+      "make": 0.0625,
+      "tricks": 0.0625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.6875
+    },
+    "164": {
+      "score": 100.0,
+      "make": 0.375,
+      "tricks": 1.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.875
+    },
+    "165": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "166": {
+      "score": 63.125,
+      "make": 0.25,
+      "tricks": 0.3125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "167": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.4375
+    },
+    "168": {
+      "score": 38.125,
+      "make": 0.125,
+      "tricks": 0.8125,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.6875
+    },
+    "169": {
+      "score": -19.375,
+      "make": -0.0625,
+      "tricks": -0.4375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5625
+    },
+    "170": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "171": {
+      "score": 66.25,
+      "make": 0.25,
+      "tricks": 0.625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "172": {
+      "score": 46.875,
+      "make": 0.1875,
+      "tricks": 0.1875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.625
+    },
+    "173": {
+      "score": -27.5,
+      "make": -0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.5
+    },
+    "174": {
+      "score": 58.75,
+      "make": 0.25,
+      "tricks": -0.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "176": {
+      "score": -35.0,
+      "make": -0.125,
+      "tricks": -0.5,
+      "baselineMake": 0.375,
+      "repairedMake": 0.25
+    },
+    "177": {
+      "score": -63.75,
+      "make": -0.25,
+      "tricks": -0.375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.5
+    },
+    "178": {
+      "score": 40.0,
+      "make": 0.125,
+      "tricks": 1.0,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.6875
+    },
+    "179": {
+      "score": 101.25,
+      "make": 0.375,
+      "tricks": 1.125,
+      "baselineMake": 0.125,
+      "repairedMake": 0.5
+    },
+    "180": {
+      "score": 5.0,
+      "make": 0.0,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "181": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "185": {
+      "score": 2.5,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.25,
+      "repairedMake": 0.25
+    },
+    "186": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    }
+  },
+  "strong": {
+    "1": {
+      "score": 43.75,
+      "make": 0.1875,
+      "tricks": 0.6875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.625
+    },
+    "2": {
+      "score": 58.75,
+      "make": 0.125,
+      "tricks": 1.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "10": {
+      "score": 56.25,
+      "make": 0.125,
+      "tricks": 1.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "11": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "15": {
+      "score": 11.25,
+      "make": 0.125,
+      "tricks": -0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "16": {
+      "score": 52.5,
+      "make": 0.25,
+      "tricks": 0.875,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "23": {
+      "score": -60.0,
+      "make": -0.25,
+      "tricks": 0.0,
+      "baselineMake": 0.875,
+      "repairedMake": 0.625
+    },
+    "24": {
+      "score": -5.0,
+      "make": 0.0,
+      "tricks": -0.5,
+      "baselineMake": 0.875,
+      "repairedMake": 0.875
+    },
+    "26": {
+      "score": -22.5,
+      "make": -0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "28": {
+      "score": 48.75,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "33": {
+      "score": -36.875,
+      "make": 0.0,
+      "tricks": -0.4375,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "34": {
+      "score": -30.0,
+      "make": -0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.875,
+      "repairedMake": 0.75
+    },
+    "36": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "37": {
+      "score": 60.0,
+      "make": 0.125,
+      "tricks": 1.375,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "39": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "40": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "46": {
+      "score": -13.75,
+      "make": 0.0,
+      "tricks": 0.25,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "47": {
+      "score": -10.0,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "51": {
+      "score": 177.5,
+      "make": 0.625,
+      "tricks": 2.75,
+      "baselineMake": 0.125,
+      "repairedMake": 0.75
+    },
+    "52": {
+      "score": -70.0,
+      "make": -0.25,
+      "tricks": -1.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.375
+    },
+    "55": {
+      "score": 19.375,
+      "make": 0.0625,
+      "tricks": 0.4375,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.875
+    },
+    "56": {
+      "score": -92.5,
+      "make": -0.375,
+      "tricks": -0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.25
+    },
+    "57": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "58": {
+      "score": 66.25,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "60": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.75,
+      "repairedMake": 0.875
+    },
+    "63": {
+      "score": 8.75,
+      "make": 0.0,
+      "tricks": -0.75,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "65": {
+      "score": -70.0,
+      "make": -0.25,
+      "tricks": -1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.125
+    },
+    "67": {
+      "score": 37.5,
+      "make": 0.125,
+      "tricks": 0.75,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "71": {
+      "score": 63.75,
+      "make": 0.25,
+      "tricks": 0.375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.5
+    },
+    "74": {
+      "score": 10.0,
+      "make": 0.0,
+      "tricks": 1.0,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.6875
+    },
+    "78": {
+      "score": 65.0,
+      "make": 0.25,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "82": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "83": {
+      "score": 61.875,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.5625
+    },
+    "84": {
+      "score": 18.75,
+      "make": 0.0625,
+      "tricks": 0.375,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.625
+    },
+    "85": {
+      "score": -22.5,
+      "make": 0.0,
+      "tricks": -0.625,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "86": {
+      "score": 66.25,
+      "make": 0.25,
+      "tricks": 0.625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.6875
+    },
+    "88": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "96": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.875,
+      "repairedMake": 1.0
+    },
+    "98": {
+      "score": -10.625,
+      "make": 0.0,
+      "tricks": -0.25,
+      "baselineMake": 0.9375,
+      "repairedMake": 0.9375
+    },
+    "101": {
+      "score": 55.625,
+      "make": 0.1875,
+      "tricks": 1.0625,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.625
+    },
+    "103": {
+      "score": 73.75,
+      "make": 0.25,
+      "tricks": 1.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "104": {
+      "score": -12.5,
+      "make": 0.0,
+      "tricks": -0.4375,
+      "baselineMake": 1.0,
+      "repairedMake": 1.0
+    },
+    "107": {
+      "score": 40.0,
+      "make": 0.125,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "109": {
+      "score": 48.75,
+      "make": 0.1875,
+      "tricks": 0.375,
+      "baselineMake": 0.3125,
+      "repairedMake": 0.5
+    },
+    "112": {
+      "score": 1.875,
+      "make": 0.0,
+      "tricks": 0.1875,
+      "baselineMake": 0.9375,
+      "repairedMake": 0.9375
+    },
+    "113": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "119": {
+      "score": 53.125,
+      "make": 0.1875,
+      "tricks": 0.8125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5625
+    },
+    "121": {
+      "score": -48.125,
+      "make": -0.125,
+      "tricks": -0.1875,
+      "baselineMake": 0.875,
+      "repairedMake": 0.75
+    },
+    "123": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.5625
+    },
+    "127": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "129": {
+      "score": -30.0,
+      "make": -0.125,
+      "tricks": 0.0,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "130": {
+      "score": 38.75,
+      "make": 0.125,
+      "tricks": 0.875,
+      "baselineMake": 0.0,
+      "repairedMake": 0.125
+    },
+    "132": {
+      "score": 19.375,
+      "make": 0.0625,
+      "tricks": 0.4375,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.625
+    },
+    "133": {
+      "score": -35.625,
+      "make": -0.125,
+      "tricks": -0.5625,
+      "baselineMake": 0.5,
+      "repairedMake": 0.375
+    },
+    "134": {
+      "score": -31.25,
+      "make": -0.125,
+      "tricks": -0.125,
+      "baselineMake": 0.8125,
+      "repairedMake": 0.6875
+    },
+    "135": {
+      "score": -33.75,
+      "make": -0.125,
+      "tricks": -0.375,
+      "baselineMake": 0.75,
+      "repairedMake": 0.625
+    },
+    "136": {
+      "score": 36.25,
+      "make": 0.125,
+      "tricks": 0.625,
+      "baselineMake": 0.125,
+      "repairedMake": 0.25
+    },
+    "138": {
+      "score": 5.0,
+      "make": 0.0625,
+      "tricks": -0.1875,
+      "baselineMake": 0.75,
+      "repairedMake": 0.8125
+    },
+    "139": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "140": {
+      "score": 20.625,
+      "make": 0.0625,
+      "tricks": 0.5625,
+      "baselineMake": 0.25,
+      "repairedMake": 0.3125
+    },
+    "144": {
+      "score": 39.375,
+      "make": 0.125,
+      "tricks": 0.9375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "145": {
+      "score": 62.5,
+      "make": 0.25,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.875
+    },
+    "147": {
+      "score": -3.125,
+      "make": 0.0,
+      "tricks": -0.3125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "148": {
+      "score": 31.25,
+      "make": 0.125,
+      "tricks": 0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "151": {
+      "score": -100.0,
+      "make": -0.375,
+      "tricks": -1.0,
+      "baselineMake": 0.75,
+      "repairedMake": 0.375
+    },
+    "152": {
+      "score": 70.0,
+      "make": 0.25,
+      "tricks": 1.0,
+      "baselineMake": 0.375,
+      "repairedMake": 0.625
+    },
+    "153": {
+      "score": -16.25,
+      "make": -0.0625,
+      "tricks": -0.125,
+      "baselineMake": 0.5,
+      "repairedMake": 0.4375
+    },
+    "154": {
+      "score": 98.75,
+      "make": 0.375,
+      "tricks": 0.875,
+      "baselineMake": 0.125,
+      "repairedMake": 0.5
+    },
+    "155": {
+      "score": 31.25,
+      "make": 0.125,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.5
+    },
+    "156": {
+      "score": 0.0,
+      "make": 0.0,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "158": {
+      "score": 170.0,
+      "make": 0.625,
+      "tricks": 2.0,
+      "baselineMake": 0.125,
+      "repairedMake": 0.75
+    },
+    "159": {
+      "score": -1.25,
+      "make": 0.0,
+      "tricks": -0.125,
+      "baselineMake": 0.75,
+      "repairedMake": 0.75
+    },
+    "160": {
+      "score": 69.375,
+      "make": 0.25,
+      "tricks": 0.9375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.75
+    },
+    "161": {
+      "score": 1.25,
+      "make": 0.0,
+      "tricks": 0.125,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "163": {
+      "score": 15.0,
+      "make": 0.0625,
+      "tricks": 0.0,
+      "baselineMake": 0.625,
+      "repairedMake": 0.6875
+    },
+    "164": {
+      "score": -60.0,
+      "make": -0.25,
+      "tricks": 0.0,
+      "baselineMake": 0.875,
+      "repairedMake": 0.625
+    },
+    "165": {
+      "score": 19.375,
+      "make": 0.0625,
+      "tricks": 0.4375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5625
+    },
+    "166": {
+      "score": -7.5,
+      "make": -0.0625,
+      "tricks": -0.0625,
+      "baselineMake": 0.6875,
+      "repairedMake": 0.625
+    },
+    "167": {
+      "score": -16.875,
+      "make": -0.0625,
+      "tricks": -0.1875,
+      "baselineMake": 0.4375,
+      "repairedMake": 0.375
+    },
+    "168": {
+      "score": 34.375,
+      "make": 0.125,
+      "tricks": 0.4375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "169": {
+      "score": -3.75,
+      "make": 0.0,
+      "tricks": -0.375,
+      "baselineMake": 0.5625,
+      "repairedMake": 0.5625
+    },
+    "170": {
+      "score": -87.5,
+      "make": -0.25,
+      "tricks": -1.125,
+      "baselineMake": 0.625,
+      "repairedMake": 0.375
+    },
+    "171": {
+      "score": 106.25,
+      "make": 0.5,
+      "tricks": 0.25,
+      "baselineMake": 0.25,
+      "repairedMake": 0.75
+    },
+    "172": {
+      "score": 25.625,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "173": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.625,
+      "repairedMake": 0.75
+    },
+    "174": {
+      "score": 35.0,
+      "make": 0.125,
+      "tricks": 0.5,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "176": {
+      "score": 3.75,
+      "make": 0.0,
+      "tricks": 0.375,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "177": {
+      "score": 32.5,
+      "make": 0.125,
+      "tricks": 0.25,
+      "baselineMake": 0.5,
+      "repairedMake": 0.625
+    },
+    "178": {
+      "score": -1.875,
+      "make": 0.0,
+      "tricks": -0.1875,
+      "baselineMake": 0.5,
+      "repairedMake": 0.5
+    },
+    "179": {
+      "score": 6.25,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.375,
+      "repairedMake": 0.375
+    },
+    "180": {
+      "score": 6.25,
+      "make": 0.0,
+      "tricks": 0.625,
+      "baselineMake": 0.625,
+      "repairedMake": 0.625
+    },
+    "181": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    },
+    "185": {
+      "score": 97.5,
+      "make": 0.375,
+      "tricks": 0.75,
+      "baselineMake": 0.25,
+      "repairedMake": 0.625
+    },
+    "186": {
+      "score": 33.75,
+      "make": 0.125,
+      "tricks": 0.375,
+      "baselineMake": 0.25,
+      "repairedMake": 0.375
+    }
+  }
+}

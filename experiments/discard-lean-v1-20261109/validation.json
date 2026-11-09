@@ -1,0 +1,87 @@
+{
+  "Passed": true,
+  "SourceHashesVerified": true,
+  "SearchPlayAndConfiguredSourceIdentical": true,
+  "Equivalence": {
+    "Passed": true,
+    "RepairStates": 256,
+    "FullRootSearches": 32,
+    "OrderedDiscardsIdentical": true,
+    "SearchReportsAndRolloutsIdentical": true,
+    "StructuralFeatureEvaluations": 0
+  },
+  "FullTestCounters": {
+    "total": "550",
+    "executed": "550",
+    "passed": "550",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "NewTests": [
+    {
+      "executionId": "f18811ba-cdfc-42b6-82a4-5c1abc86723a",
+      "testId": "10029855-33af-8e1c-93e0-c9d4680e485d",
+      "testName": "SequentialDecisionsAndSearchReportsMatchSelectedBaseline",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:08.8571073",
+      "startTime": "2026-11-09T11:15:14.1344747+00:00",
+      "endTime": "2026-11-09T11:15:22.9918364+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "f18811ba-cdfc-42b6-82a4-5c1abc86723a"
+    },
+    {
+      "executionId": "c0060c3b-3e21-459d-82ee-163bcdf41eeb",
+      "testId": "140de436-ad2a-8b97-aab5-f7e3c3334e9b",
+      "testName": "DefaultAndEveryRuleConfigurationHaveIdenticalPlayedAndReplayedGames",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:08.6585963",
+      "startTime": "2026-11-09T11:15:23.6177515+00:00",
+      "endTime": "2026-11-09T11:15:32.2764614+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "c0060c3b-3e21-459d-82ee-163bcdf41eeb"
+    },
+    {
+      "executionId": "7134eab9-99b2-4938-86cf-f3df0ec54c4a",
+      "testId": "1b226091-b86c-849e-8895-dfca1fe16d9d",
+      "testName": "IsolatedRepairDoesNotAdvanceSearchAndDiagnosticsAreCleared",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:00.6253355",
+      "startTime": "2026-11-09T11:15:22.9922049+00:00",
+      "endTime": "2026-11-09T11:15:23.6176838+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "7134eab9-99b2-4938-86cf-f3df0ec54c4a"
+    }
+  ],
+  "Frozen": "Verified 82 frozen source/model files",
+  "Benchmark": {
+    "Cases": 8,
+    "Repeats": 3,
+    "Pairs": 24,
+    "AllDecisionsAndSearchesEqual": true,
+    "Method": "Serial, both policies warmed once; alternating pair order; same seeds, hands and observations; decision-body allocations on current thread; no forced GC",
+    "ReferenceMedianMs": 584.98875,
+    "LeanMedianMs": 595.72685,
+    "ReferenceP95Ms": 673.87435,
+    "LeanP95Ms": 682.7950799999999,
+    "ReferenceMedianAllocatedBytes": 1167227248,
+    "LeanMedianAllocatedBytes": 1167001748
+  },
+  "Scope": "Regression and engineering measurements; no new game-strength claim"
+}

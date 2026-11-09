@@ -1,0 +1,482 @@
+{
+  "groups": {
+    "same-budget-pure": {
+      "opponent": "all32",
+      "mixed": false,
+      "savedGames": 16,
+      "completedPairs": 8,
+      "plannedPairs": 8,
+      "truncated": 0,
+      "wins": 8,
+      "losses": 8,
+      "winRate": 0.5,
+      "sweeps": 0,
+      "splits": 8,
+      "swept": 0,
+      "bootstrap95": [
+        0.5,
+        0.5
+      ],
+      "conservative95": [
+        0.28912374188581036,
+        0.7108762581141896
+      ],
+      "pairedSignP": 1.0,
+      "tactics": {
+        "queries": 2940,
+        "nodes": 106627,
+        "budgetReached": 4,
+        "interventions": 24,
+        "removedCandidates": 48,
+        "reasons": {
+          "normal-certain-make": 12,
+          "normal-certain-set": 12
+        }
+      },
+      "dealKinds": {
+        "Normal": 147,
+        "redeal": 2
+      },
+      "latency": {
+        "A:bid": {
+          "calls": 447,
+          "milliseconds": 210999.8099,
+          "meanMs": 472.0353689038031
+        },
+        "A:play": {
+          "calls": 2940,
+          "milliseconds": 389162.7797000001,
+          "meanMs": 132.36829241496602
+        },
+        "A:discard": {
+          "calls": 72,
+          "milliseconds": 63544.397399999994,
+          "meanMs": 882.561075
+        },
+        "B:bid": {
+          "calls": 441,
+          "milliseconds": 212311.39710000003,
+          "meanMs": 481.4317394557824
+        },
+        "B:discard": {
+          "calls": 75,
+          "milliseconds": 62563.744099999996,
+          "meanMs": 834.1832546666666
+        },
+        "B:play": {
+          "calls": 2940,
+          "milliseconds": 389688.99820000003,
+          "meanMs": 132.54727829931974
+        }
+      }
+    },
+    "same-budget-mixed": {
+      "opponent": "all32",
+      "mixed": true,
+      "savedGames": 16,
+      "completedPairs": 8,
+      "plannedPairs": 8,
+      "truncated": 0,
+      "wins": 10,
+      "losses": 6,
+      "winRate": 0.625,
+      "sweeps": 2,
+      "splits": 6,
+      "swept": 0,
+      "bootstrap95": [
+        0.5,
+        0.8125
+      ],
+      "conservative95": [
+        0.30016658049730927,
+        0.8470994214723825
+      ],
+      "pairedSignP": 0.5,
+      "tactics": {
+        "queries": 1360,
+        "nodes": 71653,
+        "budgetReached": 4,
+        "interventions": 13,
+        "removedCandidates": 28,
+        "reasons": {
+          "normal-certain-set": 4,
+          "normal-certain-make": 9
+        }
+      },
+      "dealKinds": {
+        "Normal": 136,
+        "redeal": 1
+      },
+      "latency": {
+        "A:bid": {
+          "calls": 228,
+          "milliseconds": 125434.50570000001,
+          "meanMs": 550.1513407894737
+        },
+        "A:play": {
+          "calls": 1360,
+          "milliseconds": 228354.70129999996,
+          "meanMs": 167.90786860294114
+        },
+        "A:discard": {
+          "calls": 48,
+          "milliseconds": 47487.830500000004,
+          "meanMs": 989.3298020833334
+        },
+        "B:bid": {
+          "calls": 228,
+          "milliseconds": 122143.61600000001,
+          "meanMs": 535.7176140350878
+        },
+        "B:play": {
+          "calls": 1360,
+          "milliseconds": 223937.2181,
+          "meanMs": 164.65971919117646
+        },
+        "B:discard": {
+          "calls": 50,
+          "milliseconds": 48326.8578,
+          "meanMs": 966.537156
+        }
+      }
+    },
+    "reference-pure": {
+      "opponent": "strong",
+      "mixed": false,
+      "savedGames": 8,
+      "completedPairs": 4,
+      "plannedPairs": 4,
+      "truncated": 0,
+      "wins": 4,
+      "losses": 4,
+      "winRate": 0.5,
+      "sweeps": 0,
+      "splits": 4,
+      "swept": 0,
+      "bootstrap95": [
+        0.5,
+        0.5
+      ],
+      "conservative95": [
+        0.1671850762441054,
+        0.8328149237558946
+      ],
+      "pairedSignP": 1.0,
+      "tactics": {
+        "queries": 1140,
+        "nodes": 46888,
+        "budgetReached": 3,
+        "interventions": 12,
+        "removedCandidates": 26,
+        "reasons": {
+          "normal-certain-set": 9,
+          "normal-certain-make": 3
+        }
+      },
+      "dealKinds": {
+        "Normal": 57
+      },
+      "latency": {
+        "A:bid": {
+          "calls": 175,
+          "milliseconds": 89113.7113,
+          "meanMs": 509.2212074285714
+        },
+        "A:play": {
+          "calls": 1140,
+          "milliseconds": 155019.6933,
+          "meanMs": 135.98218710526316
+        },
+        "B:bid": {
+          "calls": 183,
+          "milliseconds": 23558.288100000005,
+          "meanMs": 128.73381475409838
+        },
+        "B:play": {
+          "calls": 1140,
+          "milliseconds": 41517.912000000004,
+          "meanMs": 36.419221052631585
+        },
+        "B:discard": {
+          "calls": 35,
+          "milliseconds": 7806.089700000001,
+          "meanMs": 223.03113428571433
+        },
+        "A:discard": {
+          "calls": 22,
+          "milliseconds": 20894.4636,
+          "meanMs": 949.7483454545454
+        }
+      }
+    },
+    "reference-mixed": {
+      "opponent": "strong",
+      "mixed": true,
+      "savedGames": 8,
+      "completedPairs": 4,
+      "plannedPairs": 4,
+      "truncated": 0,
+      "wins": 4,
+      "losses": 4,
+      "winRate": 0.5,
+      "sweeps": 0,
+      "splits": 4,
+      "swept": 0,
+      "bootstrap95": [
+        0.5,
+        0.5
+      ],
+      "conservative95": [
+        0.1671850762441054,
+        0.8328149237558946
+      ],
+      "pairedSignP": 1.0,
+      "tactics": {
+        "queries": 980,
+        "nodes": 17377,
+        "budgetReached": 0,
+        "interventions": 12,
+        "removedCandidates": 22,
+        "reasons": {
+          "normal-certain-make": 5,
+          "normal-certain-set": 7
+        }
+      },
+      "dealKinds": {
+        "Normal": 98,
+        "redeal": 2
+      },
+      "latency": {
+        "A:bid": {
+          "calls": 139,
+          "milliseconds": 65037.097100000006,
+          "meanMs": 467.89278489208635
+        },
+        "A:play": {
+          "calls": 980,
+          "milliseconds": 136712.3061,
+          "meanMs": 139.5023531632653
+        },
+        "A:discard": {
+          "calls": 40,
+          "milliseconds": 33990.91650000001,
+          "meanMs": 849.7729125000002
+        },
+        "B:bid": {
+          "calls": 142,
+          "milliseconds": 16888.4678,
+          "meanMs": 118.9328718309859
+        },
+        "B:play": {
+          "calls": 980,
+          "milliseconds": 34203.69080000001,
+          "meanMs": 34.90172530612246
+        },
+        "B:discard": {
+          "calls": 34,
+          "milliseconds": 7090.269,
+          "meanMs": 208.53732352941176
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "all32": {
+      "wins": 18,
+      "losses": 14,
+      "winRate": 0.5625,
+      "completedPairs": 16,
+      "stratifiedPairBootstrap95": [
+        0.5,
+        0.65625
+      ]
+    },
+    "strong": {
+      "wins": 8,
+      "losses": 8,
+      "winRate": 0.5,
+      "completedPairs": 8,
+      "stratifiedPairBootstrap95": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "interventionReview": {
+    "gamesReplayed": 48,
+    "queries": 61,
+    "freshPairedActionChanges": 28,
+    "byReason": {
+      "normal-certain-make": {
+        "queries": 29,
+        "changed": 15
+      },
+      "normal-certain-set": {
+        "queries": 32,
+        "changed": 13
+      }
+    }
+  },
+  "audit": {
+    "queries": 272,
+    "profiles": {
+      "strong": {
+        "queries": 68,
+        "failedChecks": 12,
+        "failures": {
+          "bid-weak-opening:prefer-pass:Advisory": 4,
+          "signal-low-discard:return-requested-suit:Advisory": 2,
+          "open-misere-forced-bust:take-public-certainty:Critical": 4,
+          "discard-nt-stopper:keep-king-guard:Advisory": 2
+        }
+      },
+      "all32": {
+        "queries": 68,
+        "failedChecks": 9,
+        "failures": {
+          "bid-weak-opening:prefer-pass:Advisory": 4,
+          "open-misere-forced-bust:take-public-certainty:Critical": 4,
+          "discard-nt-stopper:keep-king-guard:Advisory": 1
+        }
+      },
+      "plus": {
+        "queries": 68,
+        "failedChecks": 5,
+        "failures": {
+          "bid-weak-opening:prefer-pass:Advisory": 4,
+          "discard-nt-stopper:keep-king-guard:Advisory": 1
+        }
+      },
+      "tactical": {
+        "queries": 68,
+        "failedChecks": 5,
+        "failures": {
+          "bid-weak-opening:prefer-pass:Advisory": 4,
+          "discard-nt-stopper:keep-king-guard:Advisory": 1
+        }
+      }
+    },
+    "changesVsAll32": {
+      "bid": {
+        "queries": 16,
+        "changed": 0,
+        "details": []
+      },
+      "discard": {
+        "queries": 12,
+        "changed": 0,
+        "details": []
+      },
+      "play": {
+        "queries": 40,
+        "changed": 4,
+        "details": [
+          {
+            "scenario": "open-misere-forced-bust",
+            "seed": 71,
+            "before": {
+              "Card": {
+                "Suit": "Diamonds",
+                "Rank": 4,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "after": {
+              "Card": {
+                "Suit": "Hearts",
+                "Rank": 5,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "tactics": {
+              "Reason": "misere-certain-set",
+              "OriginalCandidates": 12,
+              "RetainedCandidates": 1,
+              "ProofNodes": 183
+            }
+          },
+          {
+            "scenario": "open-misere-forced-bust",
+            "seed": 83,
+            "before": {
+              "Card": {
+                "Suit": "Diamonds",
+                "Rank": 4,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "after": {
+              "Card": {
+                "Suit": "Hearts",
+                "Rank": 5,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "tactics": {
+              "Reason": "misere-certain-set",
+              "OriginalCandidates": 12,
+              "RetainedCandidates": 1,
+              "ProofNodes": 183
+            }
+          },
+          {
+            "scenario": "open-misere-forced-bust",
+            "seed": 97,
+            "before": {
+              "Card": {
+                "Suit": "Diamonds",
+                "Rank": 4,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "after": {
+              "Card": {
+                "Suit": "Hearts",
+                "Rank": 5,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "tactics": {
+              "Reason": "misere-certain-set",
+              "OriginalCandidates": 12,
+              "RetainedCandidates": 1,
+              "ProofNodes": 183
+            }
+          },
+          {
+            "scenario": "open-misere-forced-bust",
+            "seed": 109,
+            "before": {
+              "Card": {
+                "Suit": "Diamonds",
+                "Rank": 4,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "after": {
+              "Card": {
+                "Suit": "Hearts",
+                "Rank": 5,
+                "IsJoker": false
+              },
+              "JokerLeadSuit": "Unknown"
+            },
+            "tactics": {
+              "Reason": "misere-certain-set",
+              "OriginalCandidates": 12,
+              "RetainedCandidates": 1,
+              "ProofNodes": 183
+            }
+          }
+        ]
+      }
+    }
+  }
+}

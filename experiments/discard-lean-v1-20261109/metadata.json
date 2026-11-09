@@ -1,0 +1,13 @@
+{
+  "ReferenceProfile": "strong-discard-guard-efficient-v1",
+  "CandidateProfile": "strong-discard-guard-lean-v1",
+  "StrategyChanges": false,
+  "InternalRollout": "Unchanged Medium",
+  "SearchPlayAndConfiguredPolicySourceIdentical": true,
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongDiscardRefinedBot.cs": "2975849f0c9bd5102db64374c04ab80db5b69e61b9e41b733a5cd2957fcef264",
+    "FiveHundredLab/Bots/FiveHundred/StrongDiscardLeanBot.cs": "aec3cf34dda1b01b623b8964b490e9bff312e10908eba311b5f84315b08021a9"
+  },
+  "Validation": "Existing256 states and32 selected hands are regression inputs, not new strength evidence",
+  "Benchmark": "8 hands x3 repeats; alternate pair order; warm both; run after full tests; current-thread decision allocations"
+}

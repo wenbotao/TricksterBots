@@ -1,0 +1,453 @@
+{
+  "PlannedBlocks": 32,
+  "PlannedMatches": 96,
+  "FinishedMatches": 96,
+  "CompletedBlocks": 32,
+  "Complete": true,
+  "Arms": {
+    "unpatched": {
+      "Matches": 32,
+      "Completed": 32,
+      "Truncated": 0,
+      "Wins": 25,
+      "Losses": 7,
+      "WinRate": 0.78125,
+      "WinRateExact95": [
+        0.6002717362878924,
+        0.9072284677152807
+      ],
+      "Rounds": 329,
+      "PlayedDeals": 320,
+      "Redeals": 9,
+      "SubjectContracts": 173,
+      "SubjectMade": 106,
+      "SubjectNormalNoTrump": 25,
+      "RepairEvents": 0,
+      "MatchesWithRepair": 0,
+      "RelativeTerminalScore": {
+        "count": 32,
+        "mean": 40.9375,
+        "p50": 280.0,
+        "p95": 809.0
+      },
+      "MatchSeconds": {
+        "count": 32,
+        "mean": 28.309886103125002,
+        "p50": 20.60411095,
+        "p95": 65.41929787
+      },
+      "SubjectPhaseTelemetry": {
+        "bid": {
+          "Milliseconds": {
+            "count": 471,
+            "mean": 419.23929787685773,
+            "p50": 416.7639,
+            "p95": 519.3962
+          },
+          "AllocatedBytes": {
+            "count": 471,
+            "mean": 585042856.2208068,
+            "p50": 575450816.0,
+            "p95": 685544764.0
+          },
+          "KnownRollouts": 0,
+          "RolloutCounterCoverage": 0,
+          "TotalMilliseconds": 197461.7093
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 173,
+            "mean": 739.4437589595377,
+            "p50": 737.5724,
+            "p95": 888.11242
+          },
+          "AllocatedBytes": {
+            "count": 173,
+            "mean": 1090530908.531792,
+            "p50": 1065450448.0,
+            "p95": 1162794124.8
+          },
+          "KnownRollouts": 0,
+          "RolloutCounterCoverage": 0,
+          "TotalMilliseconds": 127923.7703
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 3200,
+            "mean": 138.078751125,
+            "p50": 83.45580000000001,
+            "p95": 502.2119699999997
+          },
+          "AllocatedBytes": {
+            "count": 3200,
+            "mean": 198998569.7225,
+            "p50": 118273032.0,
+            "p95": 791212207.2
+          },
+          "KnownRollouts": 0,
+          "RolloutCounterCoverage": 0,
+          "TotalMilliseconds": 441852.0036
+        }
+      },
+      "ContractTypes": {
+        "Suit": {
+          "Deals": 263,
+          "SubjectTeamContracts": 194,
+          "SubjectTeamMade": 128,
+          "OpponentContracts": 69,
+          "OpponentSet": 23
+        },
+        "NoTrump": {
+          "Deals": 57,
+          "SubjectTeamContracts": 37,
+          "SubjectTeamMade": 20,
+          "OpponentContracts": 20,
+          "OpponentSet": 3
+        }
+      }
+    },
+    "guard": {
+      "Matches": 32,
+      "Completed": 32,
+      "Truncated": 0,
+      "Wins": 25,
+      "Losses": 7,
+      "WinRate": 0.78125,
+      "WinRateExact95": [
+        0.6002717362878924,
+        0.9072284677152807
+      ],
+      "Rounds": 329,
+      "PlayedDeals": 320,
+      "Redeals": 9,
+      "SubjectContracts": 173,
+      "SubjectMade": 106,
+      "SubjectNormalNoTrump": 25,
+      "RepairEvents": 0,
+      "MatchesWithRepair": 0,
+      "RelativeTerminalScore": {
+        "count": 32,
+        "mean": 40.9375,
+        "p50": 280.0,
+        "p95": 809.0
+      },
+      "MatchSeconds": {
+        "count": 32,
+        "mean": 27.982650200000002,
+        "p50": 20.62359345,
+        "p95": 64.34837519999999
+      },
+      "SubjectPhaseTelemetry": {
+        "bid": {
+          "Milliseconds": {
+            "count": 471,
+            "mean": 413.1029053078557,
+            "p50": 408.8965,
+            "p95": 510.0167
+          },
+          "AllocatedBytes": {
+            "count": 471,
+            "mean": 585038603.3800424,
+            "p50": 575444872.0,
+            "p95": 685542516.0
+          },
+          "KnownRollouts": 92960,
+          "RolloutCounterCoverage": 471,
+          "TotalMilliseconds": 194571.4684
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 173,
+            "mean": 733.7240121387283,
+            "p50": 732.1689,
+            "p95": 884.60976
+          },
+          "AllocatedBytes": {
+            "count": 173,
+            "mean": 1090565704.416185,
+            "p50": 1065439928.0,
+            "p95": 1163037611.2
+          },
+          "KnownRollouts": 69056,
+          "RolloutCounterCoverage": 173,
+          "TotalMilliseconds": 126934.2541
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 3200,
+            "mean": 136.21024803125002,
+            "p50": 82.58425,
+            "p95": 492.2589249999998
+          },
+          "AllocatedBytes": {
+            "count": 3200,
+            "mean": 198998496.6525,
+            "p50": 118268352.0,
+            "p95": 791205124.0
+          },
+          "KnownRollouts": 383648,
+          "RolloutCounterCoverage": 3200,
+          "TotalMilliseconds": 435872.7937
+        }
+      },
+      "ContractTypes": {
+        "Suit": {
+          "Deals": 263,
+          "SubjectTeamContracts": 194,
+          "SubjectTeamMade": 128,
+          "OpponentContracts": 69,
+          "OpponentSet": 23
+        },
+        "NoTrump": {
+          "Deals": 57,
+          "SubjectTeamContracts": 37,
+          "SubjectTeamMade": 20,
+          "OpponentContracts": 20,
+          "OpponentSet": 3
+        }
+      }
+    },
+    "lean": {
+      "Matches": 32,
+      "Completed": 32,
+      "Truncated": 0,
+      "Wins": 25,
+      "Losses": 7,
+      "WinRate": 0.78125,
+      "WinRateExact95": [
+        0.6002717362878924,
+        0.9072284677152807
+      ],
+      "Rounds": 329,
+      "PlayedDeals": 320,
+      "Redeals": 9,
+      "SubjectContracts": 173,
+      "SubjectMade": 106,
+      "SubjectNormalNoTrump": 25,
+      "RepairEvents": 0,
+      "MatchesWithRepair": 0,
+      "RelativeTerminalScore": {
+        "count": 32,
+        "mean": 40.9375,
+        "p50": 280.0,
+        "p95": 809.0
+      },
+      "MatchSeconds": {
+        "count": 32,
+        "mean": 28.2105265375,
+        "p50": 20.85095855,
+        "p95": 69.46031857
+      },
+      "SubjectPhaseTelemetry": {
+        "bid": {
+          "Milliseconds": {
+            "count": 471,
+            "mean": 419.5497535031847,
+            "p50": 424.0993,
+            "p95": 518.4358500000001
+          },
+          "AllocatedBytes": {
+            "count": 471,
+            "mean": 585037529.1380043,
+            "p50": 575458888.0,
+            "p95": 685544436.0
+          },
+          "KnownRollouts": 92960,
+          "RolloutCounterCoverage": 471,
+          "TotalMilliseconds": 197607.9339
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 173,
+            "mean": 735.471549132948,
+            "p50": 738.4283,
+            "p95": 882.43366
+          },
+          "AllocatedBytes": {
+            "count": 173,
+            "mean": 1090536008.8786128,
+            "p50": 1065444480.0,
+            "p95": 1162815628.8
+          },
+          "KnownRollouts": 69056,
+          "RolloutCounterCoverage": 173,
+          "TotalMilliseconds": 127236.578
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 3200,
+            "mean": 137.00526065625002,
+            "p50": 83.56705,
+            "p95": 497.7129949999999
+          },
+          "AllocatedBytes": {
+            "count": 3200,
+            "mean": 198998482.3325,
+            "p50": 118270080.0,
+            "p95": 791195868.0
+          },
+          "KnownRollouts": 383648,
+          "RolloutCounterCoverage": 3200,
+          "TotalMilliseconds": 438416.8341
+        }
+      },
+      "ContractTypes": {
+        "Suit": {
+          "Deals": 263,
+          "SubjectTeamContracts": 194,
+          "SubjectTeamMade": 128,
+          "OpponentContracts": 69,
+          "OpponentSet": 23
+        },
+        "NoTrump": {
+          "Deals": 57,
+          "SubjectTeamContracts": 37,
+          "SubjectTeamMade": 20,
+          "OpponentContracts": 20,
+          "OpponentSet": 3
+        }
+      }
+    }
+  },
+  "Comparisons": {
+    "lean-unpatched": {
+      "CompletedPairs": 32,
+      "Improved": 0,
+      "Worsened": 0,
+      "BothWin": 25,
+      "BothLose": 7,
+      "PairedWinRateDifference": 0.0,
+      "ConservativeExact95Difference": [
+        -0.12797599984079655,
+        0.12797599984079655
+      ],
+      "ExactMcNemarP": 1.0,
+      "PairedRelativeTerminalScore": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      },
+      "PairedRounds": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      }
+    },
+    "guard-unpatched": {
+      "CompletedPairs": 32,
+      "Improved": 0,
+      "Worsened": 0,
+      "BothWin": 25,
+      "BothLose": 7,
+      "PairedWinRateDifference": 0.0,
+      "ConservativeExact95Difference": [
+        -0.12797599984079655,
+        0.12797599984079655
+      ],
+      "ExactMcNemarP": 1.0,
+      "PairedRelativeTerminalScore": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      },
+      "PairedRounds": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      }
+    },
+    "lean-guard": {
+      "CompletedPairs": 32,
+      "Improved": 0,
+      "Worsened": 0,
+      "BothWin": 25,
+      "BothLose": 7,
+      "PairedWinRateDifference": 0.0,
+      "ConservativeExact95Difference": [
+        -0.12797599984079655,
+        0.12797599984079655
+      ],
+      "ExactMcNemarP": 1.0,
+      "PairedRelativeTerminalScore": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      },
+      "PairedRounds": {
+        "mean": 0.0,
+        "blockBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "degenerateBootstrap": true
+      }
+    }
+  },
+  "NaturalRepairExposure": {
+    "Events": 0,
+    "SubjectNormalNoTrump": 25,
+    "FractionOfSubjectNormalNoTrump": 0.0,
+    "MatchesWithRepair": 0,
+    "ObservedMatches": 32,
+    "MatchRepairProbabilityExact95": [
+      0.0,
+      0.10888116067935288
+    ],
+    "Note": "Only lean counted; repeated guard is not an independent exposure; contract-level event frequency descriptive, not independent binomial inference"
+  },
+  "LeanPartnerStrata": {
+    "strong-rules-v1": {
+      "Matches": 9,
+      "Completed": 9,
+      "Wins": 9
+    },
+    "medium-rules-v1": {
+      "Matches": 7,
+      "Completed": 7,
+      "Wins": 6
+    },
+    "fast-rules-v1": {
+      "Matches": 7,
+      "Completed": 7,
+      "Wins": 5
+    },
+    "weak-rules-v1": {
+      "Matches": 6,
+      "Completed": 6,
+      "Wins": 3
+    },
+    "partner-rules-v1": {
+      "Matches": 3,
+      "Completed": 3,
+      "Wins": 2
+    }
+  },
+  "Behavior": {
+    "VerifiedBlocks": 32,
+    "IdenticalUnpatchedActions": 32,
+    "ChangedUnpatchedActions": 0,
+    "Differences": []
+  },
+  "Limits": [
+    "32 independent seed-roster blocks; arms share deals, do not count96 as independent comparative samples",
+    "Default rules only; no screened hands or parameter retuning; no statement about all variants",
+    "Terminal score subject to game stopping and variable rounds; descriptive alongside win outcome",
+    "Two concurrent blocks; natural timings include warmup and GC; no speedup conclusion",
+    "Unpatched rollout diagnostics unavailable rather than zero; subject telemetry only, excludes other players"
+  ]
+}

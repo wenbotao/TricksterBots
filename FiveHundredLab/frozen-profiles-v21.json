@@ -1,0 +1,6 @@
+{
+  "FiveHundredLab/Bots/FiveHundred/StrongPlayIncrementalBot.cs": "288996716af2c8359564cfc572c74f45650ca7a68bea7ef9c82ab7ba23cc9b5b",
+  "FiveHundredLab/Bots/FiveHundred/IncrementalPlayDataContext.cs": "d32c6f2e8deb81d91568a7a5a210ab68e8c1a8c6738c5381bfd9aa29486f0e30",
+  "FiveHundredLab/Bots/FiveHundred/IncrementalPlayRollout.cs": "5a0430cc02055b21a18343c47b7329f446c555c801f6b7f86856639ee17db8c9",
+  "FiveHundredLab/Bots/FiveHundred/IncrementalPlayHistory.cs": "94238c648a882e0c7d5f3d518cc5345233db77280dad6ad0a46db8a567e4b142"
+}

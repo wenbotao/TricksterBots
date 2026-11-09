@@ -1,0 +1,7 @@
+{
+  "dotnet": "8.0.422",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "parallelWorkers": 4,
+  "timing": "Stopwatch wall-clock per action under concurrent workload; not isolated CPU benchmark"
+}

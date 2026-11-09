@@ -1,0 +1,4122 @@
+{
+  "matches": {
+    "weak-opening": {
+      "plannedPairs": 64,
+      "savedGames": 128,
+      "completedPairs": 64,
+      "truncated": 0,
+      "noInterventionIdenticalTrajectoryPairs": 0,
+      "subjectEvents": {
+        "bid": 64
+      },
+      "baselineWins": 47,
+      "subjectWins": 42,
+      "gained": 8,
+      "lost": 13,
+      "bothWin": 34,
+      "bothLose": 9,
+      "winRateDifference": -0.078125,
+      "pairedBootstrap95": [
+        -0.21875,
+        0.0625
+      ],
+      "conservative95": [
+        -0.2905448545903129,
+        0.1444690745810115
+      ],
+      "exactPairedP": 0.38331031799316406,
+      "firstBidChanged": 27,
+      "firstBidBaselinePass": 37,
+      "baselineMeanRootDecisionMs": 274.4539040289403,
+      "subjectMeanRootDecisionMs": 254.82782990061932,
+      "commonDealPrefixesVerified": true,
+      "initialDeal": {
+        "baselineRootDeclarer": 4,
+        "subjectRootDeclarer": 0,
+        "baselineRootMisere": 1,
+        "subjectRootMisere": 0,
+        "meanRelativeScoreChange": 6.875
+      },
+      "pairedDetails": [
+        {
+          "index": 0,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 20,
+          "subjectFirstRelativeScore": 20
+        },
+        {
+          "index": 1,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -220,
+          "subjectFirstRelativeScore": -220
+        },
+        {
+          "index": 2,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -260,
+          "subjectFirstRelativeScore": -260
+        },
+        {
+          "index": 3,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 260,
+          "subjectFirstRelativeScore": 160
+        },
+        {
+          "index": 4,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 5,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -110,
+          "subjectFirstRelativeScore": -110
+        },
+        {
+          "index": 6,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": null,
+          "baselineFirstRelativeScore": -130,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 7,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 260,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 8,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 60,
+          "subjectFirstRelativeScore": 60
+        },
+        {
+          "index": 9,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 230,
+          "subjectFirstRelativeScore": 230
+        },
+        {
+          "index": 10,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 11,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -190,
+          "subjectFirstRelativeScore": -190
+        },
+        {
+          "index": 12,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 160,
+          "subjectFirstRelativeScore": 100
+        },
+        {
+          "index": 13,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -70,
+          "subjectFirstRelativeScore": -70
+        },
+        {
+          "index": 14,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 15,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 150,
+          "subjectFirstRelativeScore": 250
+        },
+        {
+          "index": 16,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 0,
+            "Trump": "Unknown",
+            "Kind": "Misere",
+            "IsMisere": true
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 17,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -120,
+          "subjectFirstRelativeScore": -120
+        },
+        {
+          "index": 18,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -70,
+          "subjectFirstRelativeScore": -60
+        },
+        {
+          "index": 19,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 20,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 21,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -150,
+          "subjectFirstRelativeScore": -150
+        },
+        {
+          "index": 22,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 30,
+          "subjectFirstRelativeScore": 30
+        },
+        {
+          "index": 23,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -200,
+          "subjectFirstRelativeScore": -200
+        },
+        {
+          "index": 24,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -200,
+          "subjectFirstRelativeScore": -200
+        },
+        {
+          "index": 25,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -280,
+          "subjectFirstRelativeScore": -280
+        },
+        {
+          "index": 26,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -190,
+          "subjectFirstRelativeScore": -190
+        },
+        {
+          "index": 27,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 110,
+          "subjectFirstRelativeScore": 10
+        },
+        {
+          "index": 28,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 29,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -260,
+          "subjectFirstRelativeScore": -260
+        },
+        {
+          "index": 30,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 60,
+          "subjectFirstRelativeScore": 10
+        },
+        {
+          "index": 31,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -270,
+          "subjectFirstRelativeScore": -270
+        },
+        {
+          "index": 32,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 160,
+          "subjectFirstRelativeScore": 160
+        },
+        {
+          "index": 33,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -190,
+          "subjectFirstRelativeScore": -190
+        },
+        {
+          "index": 34,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -240
+        },
+        {
+          "index": 35,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -320,
+          "subjectFirstRelativeScore": -320
+        },
+        {
+          "index": 36,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 37,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 330,
+          "subjectFirstRelativeScore": 330
+        },
+        {
+          "index": 38,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -160,
+          "subjectFirstRelativeScore": -160
+        },
+        {
+          "index": 39,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 360,
+          "subjectFirstRelativeScore": 360
+        },
+        {
+          "index": 40,
+          "baselineRootWin": true,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 40,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 41,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -290,
+          "subjectFirstRelativeScore": 340
+        },
+        {
+          "index": 42,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -140,
+          "subjectFirstRelativeScore": -140
+        },
+        {
+          "index": 43,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 44,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 250,
+          "subjectFirstRelativeScore": 250
+        },
+        {
+          "index": 45,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 290,
+          "subjectFirstRelativeScore": 290
+        },
+        {
+          "index": 46,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -170,
+          "subjectFirstRelativeScore": -170
+        },
+        {
+          "index": 47,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -180,
+          "subjectFirstRelativeScore": -180
+        },
+        {
+          "index": 48,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -110,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 49,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -180,
+          "subjectFirstRelativeScore": -180
+        },
+        {
+          "index": 50,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -200,
+          "subjectFirstRelativeScore": 20
+        },
+        {
+          "index": 51,
+          "baselineRootWin": false,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 52,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 53,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 90,
+          "subjectFirstRelativeScore": 90
+        },
+        {
+          "index": 54,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -150,
+          "subjectFirstRelativeScore": -150
+        },
+        {
+          "index": 55,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 240,
+          "subjectFirstRelativeScore": 240
+        },
+        {
+          "index": 56,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 130,
+          "subjectFirstRelativeScore": 40
+        },
+        {
+          "index": 57,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -320,
+          "subjectFirstRelativeScore": -320
+        },
+        {
+          "index": 58,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -320,
+          "subjectFirstRelativeScore": -110
+        },
+        {
+          "index": 59,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -180,
+          "subjectFirstRelativeScore": -180
+        },
+        {
+          "index": 60,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 61,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -40,
+          "subjectFirstRelativeScore": -40
+        },
+        {
+          "index": 62,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 100,
+          "subjectFirstRelativeScore": 100
+        },
+        {
+          "index": 63,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [
+            {
+              "Phase": "bid",
+              "Round": 0,
+              "Reason": "weak-balanced-opening"
+            }
+          ],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 80,
+          "subjectFirstRelativeScore": 80
+        }
+      ],
+      "firstBidStrata": {
+        "changed": {
+          "pairs": 27,
+          "gained": 4,
+          "lost": 7
+        },
+        "same": {
+          "pairs": 37,
+          "gained": 4,
+          "lost": 6
+        }
+      },
+      "sameOpeningPassOnlyInitialGuard": {
+        "pairs": 37,
+        "winOutcomeChanges": 10,
+        "interpretation": "Opening actions equal; skipping opening rollout advances future random streams differently; this is not a pure opening-action effect"
+      }
+    },
+    "random": {
+      "plannedPairs": 64,
+      "savedGames": 128,
+      "completedPairs": 64,
+      "truncated": 0,
+      "noInterventionIdenticalTrajectoryPairs": 64,
+      "subjectEvents": {},
+      "baselineWins": 52,
+      "subjectWins": 52,
+      "gained": 0,
+      "lost": 0,
+      "bothWin": 52,
+      "bothLose": 12,
+      "winRateDifference": 0.0,
+      "pairedBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "conservative95": [
+        -0.06617774702077084,
+        0.06617774702077084
+      ],
+      "exactPairedP": 1.0,
+      "firstBidChanged": 0,
+      "firstBidBaselinePass": 31,
+      "baselineMeanRootDecisionMs": 270.4328251031637,
+      "subjectMeanRootDecisionMs": 264.22463539202204,
+      "commonDealPrefixesVerified": true,
+      "initialDeal": {
+        "baselineRootDeclarer": 25,
+        "subjectRootDeclarer": 25,
+        "baselineRootMisere": 0,
+        "subjectRootMisere": 0,
+        "meanRelativeScoreChange": 0.0
+      },
+      "pairedDetails": [
+        {
+          "index": 0,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -240
+        },
+        {
+          "index": 1,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 90,
+          "subjectFirstRelativeScore": 90
+        },
+        {
+          "index": 2,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 320,
+          "subjectFirstRelativeScore": 320
+        },
+        {
+          "index": 3,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -50,
+          "subjectFirstRelativeScore": -50
+        },
+        {
+          "index": 4,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 5,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 40,
+          "subjectFirstRelativeScore": 40
+        },
+        {
+          "index": 6,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 7,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 120,
+          "subjectFirstRelativeScore": 120
+        },
+        {
+          "index": 8,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -50,
+          "subjectFirstRelativeScore": -50
+        },
+        {
+          "index": 9,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 10,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 11,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 240,
+          "subjectFirstRelativeScore": 240
+        },
+        {
+          "index": 12,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 110,
+          "subjectFirstRelativeScore": 110
+        },
+        {
+          "index": 13,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 190,
+          "subjectFirstRelativeScore": 190
+        },
+        {
+          "index": 14,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -270,
+          "subjectFirstRelativeScore": -270
+        },
+        {
+          "index": 15,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 70,
+          "subjectFirstRelativeScore": 70
+        },
+        {
+          "index": 16,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -240
+        },
+        {
+          "index": 17,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -50,
+          "subjectFirstRelativeScore": -50
+        },
+        {
+          "index": 18,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 250,
+          "subjectFirstRelativeScore": 250
+        },
+        {
+          "index": 19,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 50,
+          "subjectFirstRelativeScore": 50
+        },
+        {
+          "index": 20,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 50,
+          "subjectFirstRelativeScore": 50
+        },
+        {
+          "index": 21,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 22,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 140,
+          "subjectFirstRelativeScore": 140
+        },
+        {
+          "index": 23,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -170,
+          "subjectFirstRelativeScore": -170
+        },
+        {
+          "index": 24,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 90,
+          "subjectFirstRelativeScore": 90
+        },
+        {
+          "index": 25,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 220,
+          "subjectFirstRelativeScore": 220
+        },
+        {
+          "index": 26,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 80,
+          "subjectFirstRelativeScore": 80
+        },
+        {
+          "index": 27,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -40,
+          "subjectFirstRelativeScore": -40
+        },
+        {
+          "index": 28,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -20,
+          "subjectFirstRelativeScore": -20
+        },
+        {
+          "index": 29,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -70,
+          "subjectFirstRelativeScore": -70
+        },
+        {
+          "index": 30,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 31,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 32,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 290,
+          "subjectFirstRelativeScore": 290
+        },
+        {
+          "index": 33,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 34,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 35,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -290,
+          "subjectFirstRelativeScore": -290
+        },
+        {
+          "index": 36,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 260,
+          "subjectFirstRelativeScore": 260
+        },
+        {
+          "index": 37,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 40,
+          "subjectFirstRelativeScore": 40
+        },
+        {
+          "index": 38,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -100,
+          "subjectFirstRelativeScore": -100
+        },
+        {
+          "index": 39,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -240
+        },
+        {
+          "index": 40,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -250,
+          "subjectFirstRelativeScore": -250
+        },
+        {
+          "index": 41,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 40,
+          "subjectFirstRelativeScore": 40
+        },
+        {
+          "index": 42,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 240,
+          "subjectFirstRelativeScore": 240
+        },
+        {
+          "index": 43,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -60,
+          "subjectFirstRelativeScore": -60
+        },
+        {
+          "index": 44,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 190,
+          "subjectFirstRelativeScore": 190
+        },
+        {
+          "index": 45,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 160,
+          "subjectFirstRelativeScore": 160
+        },
+        {
+          "index": 46,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -80,
+          "subjectFirstRelativeScore": -80
+        },
+        {
+          "index": 47,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -300,
+          "subjectFirstRelativeScore": -300
+        },
+        {
+          "index": 48,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 250,
+          "subjectFirstRelativeScore": 250
+        },
+        {
+          "index": 49,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 30,
+          "subjectFirstRelativeScore": 30
+        },
+        {
+          "index": 50,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -70,
+          "subjectFirstRelativeScore": -70
+        },
+        {
+          "index": 51,
+          "baselineRootWin": false,
+          "subjectRootWin": false,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 80,
+          "subjectFirstRelativeScore": 80
+        },
+        {
+          "index": 52,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 170,
+          "subjectFirstRelativeScore": 170
+        },
+        {
+          "index": 53,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -130,
+          "subjectFirstRelativeScore": -130
+        },
+        {
+          "index": 54,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -260,
+          "subjectFirstRelativeScore": -260
+        },
+        {
+          "index": 55,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 70,
+          "subjectFirstRelativeScore": 70
+        },
+        {
+          "index": 56,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Diamonds",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -240,
+          "subjectFirstRelativeScore": -240
+        },
+        {
+          "index": 57,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 7,
+            "Trump": "Clubs",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 8,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -300,
+          "subjectFirstRelativeScore": -300
+        },
+        {
+          "index": 58,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Spades",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 110,
+          "subjectFirstRelativeScore": 110
+        },
+        {
+          "index": 59,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": true,
+          "subjectRootDeclarer": true,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 70,
+          "subjectFirstRelativeScore": 70
+        },
+        {
+          "index": 60,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 61,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 6,
+            "Trump": "Unknown",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": -90,
+          "subjectFirstRelativeScore": -90
+        },
+        {
+          "index": 62,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": null,
+          "subjectFirstBid": null,
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": null,
+          "subjectContract": null,
+          "baselineFirstRelativeScore": 0,
+          "subjectFirstRelativeScore": 0
+        },
+        {
+          "index": 63,
+          "baselineRootWin": true,
+          "subjectRootWin": true,
+          "subjectEvents": [],
+          "baselineFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectFirstBid": {
+            "Tricks": 6,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineRootDeclarer": false,
+          "subjectRootDeclarer": false,
+          "baselineContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "subjectContract": {
+            "Tricks": 7,
+            "Trump": "Hearts",
+            "Kind": "Normal",
+            "IsMisere": false
+          },
+          "baselineFirstRelativeScore": 180,
+          "subjectFirstRelativeScore": 180
+        }
+      ],
+      "firstBidStrata": {
+        "changed": {
+          "pairs": 0,
+          "gained": 0,
+          "lost": 0
+        },
+        "same": {
+          "pairs": 64,
+          "gained": 0,
+          "lost": 0
+        }
+      },
+      "sameOpeningPassOnlyInitialGuard": {
+        "pairs": 0,
+        "winOutcomeChanges": 0,
+        "interpretation": "Opening actions equal; skipping opening rollout advances future random streams differently; this is not a pure opening-action effect"
+      }
+    }
+  },
+  "discard": {
+    "proposals": {
+      "completed": 1024,
+      "planned": 1024,
+      "changed": 224,
+      "changedTemplates": 144,
+      "calibrationChanged": 2
+    },
+    "selectedContexts": 128,
+    "selectedTemplates": 94,
+    "policyEffects": {
+      "medium": {
+        "completedPairedLayouts": 1024,
+        "completedContexts": 128,
+        "templateClusters": 94,
+        "baselineMade": 527,
+        "subjectMade": 614,
+        "score": {
+          "templateWeightedMeanDifference": 25.492021276595743,
+          "templateClusterBootstrap95": [
+            16.908244680851062,
+            34.30186170212766
+          ]
+        },
+        "make": {
+          "templateWeightedMeanDifference": 0.09175531914893617,
+          "templateClusterBootstrap95": [
+            0.0598404255319149,
+            0.12433510638297872
+          ]
+        },
+        "tricks": {
+          "templateWeightedMeanDifference": 0.4421542553191489,
+          "templateClusterBootstrap95": [
+            0.34441489361702127,
+            0.5405585106382979
+          ]
+        },
+        "families": {
+          "random-fillers": {
+            "templateClusters": 50,
+            "score": {
+              "templateWeightedMeanDifference": 29.5,
+              "templateClusterBootstrap95": [
+                17.65,
+                41.8
+              ]
+            },
+            "make": {
+              "templateWeightedMeanDifference": 0.10875,
+              "templateClusterBootstrap95": [
+                0.065,
+                0.15375
+              ]
+            }
+          },
+          "two-card-perturbations": {
+            "templateClusters": 44,
+            "score": {
+              "templateWeightedMeanDifference": 20.9375,
+              "templateClusterBootstrap95": [
+                9.048295454545455,
+                33.42329545454545
+              ]
+            },
+            "make": {
+              "templateWeightedMeanDifference": 0.07244318181818182,
+              "templateClusterBootstrap95": [
+                0.028409090909090908,
+                0.11931818181818182
+              ]
+            }
+          }
+        }
+      },
+      "weak": {
+        "completedPairedLayouts": 1024,
+        "completedContexts": 128,
+        "templateClusters": 94,
+        "baselineMade": 502,
+        "subjectMade": 518,
+        "score": {
+          "templateWeightedMeanDifference": 4.714095744680851,
+          "templateClusterBootstrap95": [
+            0.35222739361702143,
+            9.12915558510637
+          ]
+        },
+        "make": {
+          "templateWeightedMeanDifference": 0.015957446808510637,
+          "templateClusterBootstrap95": [
+            0.0,
+            0.031914893617021274
+          ]
+        },
+        "tricks": {
+          "templateWeightedMeanDifference": 0.09707446808510638,
+          "templateClusterBootstrap95": [
+            0.04055851063829787,
+            0.15492021276595744
+          ]
+        },
+        "families": {
+          "random-fillers": {
+            "templateClusters": 50,
+            "score": {
+              "templateWeightedMeanDifference": 7.775,
+              "templateClusterBootstrap95": [
+                1.1375,
+                14.837812499999973
+              ]
+            },
+            "make": {
+              "templateWeightedMeanDifference": 0.0275,
+              "templateClusterBootstrap95": [
+                0.00375,
+                0.0525
+              ]
+            }
+          },
+          "two-card-perturbations": {
+            "templateClusters": 44,
+            "score": {
+              "templateWeightedMeanDifference": 1.2357954545454546,
+              "templateClusterBootstrap95": [
+                -3.877840909090909,
+                6.548295454545454
+              ]
+            },
+            "make": {
+              "templateWeightedMeanDifference": 0.002840909090909091,
+              "templateClusterBootstrap95": [
+                -0.017045454545454544,
+                0.022727272727272728
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "openingEligibility": {
+    "screened": 100000,
+    "qualifying": 201,
+    "rate": 0.00201,
+    "uniformDealExactEligibleHands": 4572400,
+    "uniformDealExactTotalHands": 1917334783,
+    "uniformDealExactRate": 0.002384768711516146,
+    "scope": "Default 43-card deck, first opening at zero score; not the per-match event rate"
+  }
+}

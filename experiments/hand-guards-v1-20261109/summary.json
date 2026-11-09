@@ -1,0 +1,288 @@
+{
+  "stages": {
+    "bid": {
+      "groups": {
+        "bid-pure": {
+          "A": "bid-guard",
+          "B": "misere",
+          "mixed": false,
+          "savedGames": 8,
+          "plannedPairs": 4,
+          "completedPairs": 4,
+          "truncated": 0,
+          "identicalRoundTrajectoryPairs": 4,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 0.5,
+          "sweeps": 0,
+          "splits": 4,
+          "swept": 0,
+          "conservative95": [
+            0.1671850762441054,
+            0.8328149237558946
+          ],
+          "pairedSignP": 1.0,
+          "guardEvents": {},
+          "gamesWithGuardEvents": 0,
+          "latency": {
+            "A:bid": {
+              "calls": 185,
+              "milliseconds": 105740.9376,
+              "meanMs": 571.5726356756757
+            },
+            "A:play": {
+              "calls": 1200,
+              "milliseconds": 184390.84390000004,
+              "meanMs": 153.65903658333337
+            },
+            "B:bid": {
+              "calls": 185,
+              "milliseconds": 108624.80120000002,
+              "meanMs": 587.1610875675676
+            },
+            "B:play": {
+              "calls": 1200,
+              "milliseconds": 181233.7201,
+              "meanMs": 151.02810008333333
+            },
+            "B:discard": {
+              "calls": 30,
+              "milliseconds": 29862.900499999996,
+              "meanMs": 995.4300166666666
+            },
+            "A:discard": {
+              "calls": 30,
+              "milliseconds": 29389.1947,
+              "meanMs": 979.6398233333333
+            }
+          }
+        },
+        "bid-mixed": {
+          "A": "bid-guard",
+          "B": "misere",
+          "mixed": true,
+          "savedGames": 8,
+          "plannedPairs": 4,
+          "completedPairs": 4,
+          "truncated": 0,
+          "identicalRoundTrajectoryPairs": 4,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 0.5,
+          "sweeps": 0,
+          "splits": 4,
+          "swept": 0,
+          "conservative95": [
+            0.1671850762441054,
+            0.8328149237558946
+          ],
+          "pairedSignP": 1.0,
+          "guardEvents": {},
+          "gamesWithGuardEvents": 0,
+          "latency": {
+            "A:bid": {
+              "calls": 123,
+              "milliseconds": 70303.0461,
+              "meanMs": 571.569480487805
+            },
+            "A:play": {
+              "calls": 920,
+              "milliseconds": 155589.0503,
+              "meanMs": 169.11853293478262
+            },
+            "A:discard": {
+              "calls": 35,
+              "milliseconds": 35394.0127,
+              "meanMs": 1011.2575057142857
+            },
+            "B:bid": {
+              "calls": 123,
+              "milliseconds": 67984.45850000001,
+              "meanMs": 552.719174796748
+            },
+            "B:discard": {
+              "calls": 35,
+              "milliseconds": 35133.2201,
+              "meanMs": 1003.8062885714286
+            },
+            "B:play": {
+              "calls": 920,
+              "milliseconds": 152064.4093,
+              "meanMs": 165.28740141304348
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "wins": 8,
+        "losses": 8,
+        "winRate": 0.5,
+        "completedPairs": 8,
+        "stratifiedPairBootstrap95": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "hand": {
+      "groups": {
+        "hand-pure": {
+          "A": "hand-guard",
+          "B": "bid-guard",
+          "mixed": false,
+          "savedGames": 8,
+          "plannedPairs": 4,
+          "completedPairs": 4,
+          "truncated": 0,
+          "identicalRoundTrajectoryPairs": 4,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 0.5,
+          "sweeps": 0,
+          "splits": 4,
+          "swept": 0,
+          "conservative95": [
+            0.1671850762441054,
+            0.8328149237558946
+          ],
+          "pairedSignP": 1.0,
+          "guardEvents": {},
+          "gamesWithGuardEvents": 0,
+          "latency": {
+            "A:bid": {
+              "calls": 231,
+              "milliseconds": 122792.0287,
+              "meanMs": 531.5672238095237
+            },
+            "A:play": {
+              "calls": 1400,
+              "milliseconds": 207335.42900000003,
+              "meanMs": 148.09673500000002
+            },
+            "A:discard": {
+              "calls": 35,
+              "milliseconds": 33084.1846,
+              "meanMs": 945.2624171428572
+            },
+            "B:bid": {
+              "calls": 231,
+              "milliseconds": 124104.32250000001,
+              "meanMs": 537.2481493506494
+            },
+            "B:discard": {
+              "calls": 35,
+              "milliseconds": 36105.1455,
+              "meanMs": 1031.5755857142856
+            },
+            "B:play": {
+              "calls": 1400,
+              "milliseconds": 210423.4009,
+              "meanMs": 150.30242921428572
+            }
+          }
+        },
+        "hand-mixed": {
+          "A": "hand-guard",
+          "B": "bid-guard",
+          "mixed": true,
+          "savedGames": 8,
+          "plannedPairs": 4,
+          "completedPairs": 4,
+          "truncated": 0,
+          "identicalRoundTrajectoryPairs": 4,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 0.5,
+          "sweeps": 0,
+          "splits": 4,
+          "swept": 0,
+          "conservative95": [
+            0.1671850762441054,
+            0.8328149237558946
+          ],
+          "pairedSignP": 1.0,
+          "guardEvents": {},
+          "gamesWithGuardEvents": 0,
+          "latency": {
+            "A:bid": {
+              "calls": 120,
+              "milliseconds": 70024.36700000001,
+              "meanMs": 583.5363916666668
+            },
+            "A:play": {
+              "calls": 760,
+              "milliseconds": 126339.44690000002,
+              "meanMs": 166.23611434210528
+            },
+            "A:discard": {
+              "calls": 26,
+              "milliseconds": 26519.300499999998,
+              "meanMs": 1019.9730961538461
+            },
+            "B:bid": {
+              "calls": 120,
+              "milliseconds": 68484.921,
+              "meanMs": 570.707675
+            },
+            "B:play": {
+              "calls": 760,
+              "milliseconds": 127063.5395,
+              "meanMs": 167.1888677631579
+            },
+            "B:discard": {
+              "calls": 26,
+              "milliseconds": 27278.763299999995,
+              "meanMs": 1049.1832038461537
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "wins": 8,
+        "losses": 8,
+        "winRate": 0.5,
+        "completedPairs": 8,
+        "stratifiedPairBootstrap95": [
+          0.5,
+          0.5
+        ]
+      }
+    }
+  },
+  "audit": {
+    "queries": 204,
+    "profiles": {
+      "misere": {
+        "failedChecks": 5,
+        "criticalFailures": 0
+      },
+      "bid-guard": {
+        "failedChecks": 1,
+        "criticalFailures": 0
+      },
+      "hand-guard": {
+        "failedChecks": 0,
+        "criticalFailures": 0
+      }
+    },
+    "changes": {
+      "bid-guard": {
+        "bid": 4,
+        "discard": 0,
+        "play": 0
+      },
+      "hand-guard": {
+        "bid": 0,
+        "discard": 1,
+        "play": 0
+      }
+    }
+  },
+  "independentDiscardProbe": {
+    "queries": 64,
+    "changed": 0,
+    "underlyingSearchMatched": true,
+    "legalAndRetainedControlsChecked": true,
+    "purpose": "Legal engine-captured 6NT discard observations, not completed games or win-rate evidence"
+  }
+}

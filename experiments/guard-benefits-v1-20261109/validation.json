@@ -1,0 +1,13 @@
+{
+  "matchesReplayed": 256,
+  "conditionalDealsReplayed": 4096,
+  "pairedHiddenLayoutsChecked": 2048,
+  "proposalContexts": 1024,
+  "selectedContexts": 128,
+  "templateClusters": 94,
+  "replay": "REPLAY matches=256 conditional-deals=4096",
+  "frozen": "Verified 79 frozen source/model files",
+  "policiesUnchanged": true,
+  "priorRegression": "539 tests passed in hand-guards-v1; frozen bot sources unchanged; no redundant full-suite rerun",
+  "harnessPreflight": "32 fixture deals replayed before primary experiments; excluded from estimates"
+}

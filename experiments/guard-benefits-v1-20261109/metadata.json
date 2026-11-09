@@ -1,0 +1,46 @@
+{
+  "RegisteredBeforeResults": true,
+  "NoBotOrRuleModifications": true,
+  "Rules": "Default AU only",
+  "Matches": {
+    "conditionalWeakOpeningPairs": 64,
+    "randomPairs": 64,
+    "Games": 256,
+    "RootSeat": 0,
+    "OtherSeats": "Independently sampled with replacement from Weak,Medium,Fast; same roster/seeds/dealer within pair",
+    "ConditionalControl": "MisereOnly vs BidGuard; naturally dealt first hand meets guard raw hand conditions; dealer3, scores0",
+    "RandomControl": "MisereOnly vs HandGuard; no hand filter; initial dealer rotates",
+    "SeedScreen": 100000,
+    "ConditionalScreenSeedBase": 51119001,
+    "ConditionalSeedStep": 97,
+    "RandomSeedBase": 52119001,
+    "RandomSeedStep": 7919,
+    "MaxRounds": 200
+  },
+  "Discard": {
+    "Templates": 256,
+    "DecisionSeedsPerTemplate": 4,
+    "Contexts": 1024,
+    "PrimaryTemplates": "1..255; template0 is original UX calibration and excluded from primary",
+    "Families": "127 random fillers around KS5S ACQC AH, 128 unique two-card perturbations of original stopper hand",
+    "Selection": "Actual changed discard only, before outcome simulation; first up to128 contexts, at most2 per unique template",
+    "HiddenLayoutsPerContext": 8,
+    "ContinuationPolicies": [
+      "Medium",
+      "Weak"
+    ],
+    "PairedArms": [
+      "original discard",
+      "repaired discard"
+    ],
+    "NoRootSearchDuringContinuation": true,
+    "IndependentFutureSeeds": true,
+    "InferenceUnit": "Own-hand template; cluster across decision seeds and layouts; report policy strata separately",
+    "DeckHandling": "Fixed permutation fixture, stripped from every bot observation; archive records fixture deck and requires dedicated replay"
+  },
+  "Stopping": "Fixed pool and match counts; no winner-dependent stopping, retuning or promotion",
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongBidGuardBot.cs": "dfd4903a9fba7be20eb13cbc72700f4ffc89c1634d2b3196b7264f19c082ae8f",
+    "FiveHundredLab/Bots/FiveHundred/StrongHandGuardBot.cs": "b2af4069477a337febc8e653b76a3ac98113dbadcb1f8a35ffe48cf96897e2b1"
+  }
+}

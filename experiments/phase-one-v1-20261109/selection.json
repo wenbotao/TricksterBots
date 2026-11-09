@@ -1,0 +1,25 @@
+{
+  "budget": "all32",
+  "budgetRanking": [
+    {
+      "profile": "all32",
+      "wins": 8,
+      "games": 12
+    },
+    {
+      "profile": "bid32",
+      "wins": 7,
+      "games": 12
+    },
+    {
+      "profile": "plus",
+      "wins": 7,
+      "games": 12
+    }
+  ],
+  "structureAdvance": false,
+  "structureWins": 7,
+  "structureGames": 16,
+  "SelectionIsExploratory": true,
+  "DoNotPoolWithHoldoutForConfirmation": true
+}

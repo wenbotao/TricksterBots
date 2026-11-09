@@ -1,0 +1,34 @@
+{
+  "RegisteredBeforePrimaryResults": true,
+  "Bot": "strong-discard-guard-v1: MisereOnly base + unchanged NT discard repair; original search bidding restored",
+  "PriorCases": "experiments/guard-benefits-v1-20261109/results/selected-discards.json",
+  "PriorCasesSha256": "d8b064ae302c64328df1c6e0edb5b88f9da9b73fdb1c0504ffe37c361ddf2a9b",
+  "Cases": 128,
+  "Templates": 94,
+  "HiddenLayoutsPerCase": 8,
+  "NewPolicies": [
+    "Original FastBot default",
+    "Original StrongBot default (8 samples, not All32/StrongPlus)"
+  ],
+  "Seats": "All four seats use same continuation type; forced legal 6NT auction, fixed discard choice",
+  "NewDeals": 4096,
+  "PriorDeals": 4096,
+  "Workers": 4,
+  "PreserveBeforeAfterLayoutAndActorSeeds": true,
+  "ActorSeed": "57119001+caseIndex*1009+layout*9176+97*(seat+1)",
+  "HiddenRandomSeed": "same game seed xor741; identical to prior experiment",
+  "PrimaryEndpoints": [
+    "Template-weighted make-rate difference",
+    "Template-weighted relative-score difference"
+  ],
+  "Inference": "Cluster by same94 hand templates; compare policy effects within same templates; no pooling as8192 independent games",
+  "Stopping": "Fixed counts, no outcome-based sample selection or retuning",
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongDiscardGuardBot.cs": "b721f72cc7a348ebf8dd1ef51fea0c1824e228c607461c28f1dabaeaa044681d",
+    "FiveHundredLab/Bots/FiveHundred/StrongHandGuardBot.cs": "b2af4069477a337febc8e653b76a3ac98113dbadcb1f8a35ffe48cf96897e2b1",
+    "FiveHundredLab/Bots/FiveHundred/FastBot.cs": "6067097761a56a695ff8519c4b082decc486cb1946459e9c44fd224d75bded33",
+    "FiveHundredLab/Bots/FiveHundred/StrongBot.cs": "685a815c5aed074051564c20dc4b60353e5884d85de3c16cb971cc60ad9f4dc6",
+    "FiveHundredLab/Bots/FiveHundred/MediumBot.cs": "aa659b6edd558a1b29a98d01f72727bf8b3af8149dd83d6386d450cf05347787",
+    "FiveHundredLab/Bots/FiveHundred/WeakBot.cs": "651193b14626586837bc2e5834c90410fd4d1943c79a5cab916bcc1e9ba92372"
+  }
+}

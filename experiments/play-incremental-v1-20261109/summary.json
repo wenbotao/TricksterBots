@@ -1,0 +1,75 @@
+{
+  "Cases": 24,
+  "Repeats": 2,
+  "PairedMeasurements": 48,
+  "AllActionsSearchReportsAndRolloutsIdentical": true,
+  "AllContinuationWorkIdentical": true,
+  "Strata": {
+    "early": {
+      "Cases": 6,
+      "PairedMeasurements": 12,
+      "ReferenceMedianMs": 269.36635,
+      "OptimizedMedianMs": 250.807775,
+      "ReferenceMedianAllocatedBytes": 529101260.0,
+      "OptimizedMedianAllocatedBytes": 489680786.0,
+      "StateMedianOfPairedTimeRatios": 0.9231113747488588,
+      "RootEvaluationsAcrossMeasuredRepeats": 3584,
+      "ForcedMovesAcrossMeasuredRepeats": 32994,
+      "PolicyMovesAcrossMeasuredRepeats": 97246,
+      "ForcedFraction": 0.25333230958230957
+    },
+    "middle": {
+      "Cases": 6,
+      "PairedMeasurements": 12,
+      "ReferenceMedianMs": 88.7902,
+      "OptimizedMedianMs": 74.5401,
+      "ReferenceMedianAllocatedBytes": 170052576.0,
+      "OptimizedMedianAllocatedBytes": 151571960.0,
+      "StateMedianOfPairedTimeRatios": 0.8078059550616907,
+      "RootEvaluationsAcrossMeasuredRepeats": 1984,
+      "ForcedMovesAcrossMeasuredRepeats": 13620,
+      "PolicyMovesAcrossMeasuredRepeats": 32268,
+      "ForcedFraction": 0.29680962343096234
+    },
+    "late": {
+      "Cases": 6,
+      "PairedMeasurements": 12,
+      "ReferenceMedianMs": 12.1559,
+      "OptimizedMedianMs": 10.912075,
+      "ReferenceMedianAllocatedBytes": 23032816.0,
+      "OptimizedMedianAllocatedBytes": 20227576.0,
+      "StateMedianOfPairedTimeRatios": 0.8991585282453624,
+      "RootEvaluationsAcrossMeasuredRepeats": 1088,
+      "ForcedMovesAcrossMeasuredRepeats": 5316,
+      "PolicyMovesAcrossMeasuredRepeats": 4604,
+      "ForcedFraction": 0.5358870967741935
+    },
+    "forced": {
+      "Cases": 6,
+      "PairedMeasurements": 12,
+      "ReferenceMedianMs": 0.0052250000000000005,
+      "OptimizedMedianMs": 0.00245,
+      "ReferenceMedianAllocatedBytes": 216.0,
+      "OptimizedMedianAllocatedBytes": 216.0,
+      "StateMedianOfPairedTimeRatios": null,
+      "RootEvaluationsAcrossMeasuredRepeats": 0,
+      "ForcedMovesAcrossMeasuredRepeats": 0,
+      "PolicyMovesAcrossMeasuredRepeats": 0,
+      "ForcedFraction": null
+    }
+  },
+  "DataPreparation": {
+    "RootContextsAcrossMeasuredRepeats": 36,
+    "OptionsCreatedAcrossMeasuredRepeats": 42,
+    "AdapterCallsAcrossMeasuredRepeats": 134118,
+    "HistoryForks": 6656,
+    "HistoryAppends": 192704,
+    "SeedHistoryCount": 592
+  },
+  "Limits": [
+    "6 root states per stratum,2 repeated measurements each; baseline is cached-play version; descriptive only",
+    "Balanced strata do not have natural-match weights; no overall match speedup or win-rate claim; same previous regression states",
+    "Normal contracts measured; Misere and configuration equivalence covered by tests, not timed strata",
+    "Serial alternating pair order; decision-body allocations on current thread, excludes constructors"
+  ]
+}

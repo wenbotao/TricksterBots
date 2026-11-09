@@ -1,0 +1,66 @@
+{
+  "Cases": 24,
+  "Repeats": 3,
+  "PairedMeasurements": 72,
+  "AllActionsSearchReportsAndRolloutsIdentical": true,
+  "Strata": {
+    "early": {
+      "Cases": 6,
+      "PairedMeasurements": 18,
+      "ReferenceMedianMs": 406.89215,
+      "OptimizedMedianMs": 329.42985,
+      "ReferenceMedianAllocatedBytes": 731602016.0,
+      "OptimizedMedianAllocatedBytes": 592512780.0,
+      "StateMedianOfPairedTimeRatios": 0.7975955136400011,
+      "RootEvaluationsAcrossMeasuredRepeats": 5376,
+      "ForcedMovesAcrossMeasuredRepeats": 49491,
+      "PolicyMovesAcrossMeasuredRepeats": 145869,
+      "ForcedFraction": 0.25333230958230957
+    },
+    "middle": {
+      "Cases": 6,
+      "PairedMeasurements": 18,
+      "ReferenceMedianMs": 159.47235,
+      "OptimizedMedianMs": 110.83535,
+      "ReferenceMedianAllocatedBytes": 264793260.0,
+      "OptimizedMedianAllocatedBytes": 195235624.0,
+      "StateMedianOfPairedTimeRatios": 0.722489798588529,
+      "RootEvaluationsAcrossMeasuredRepeats": 2976,
+      "ForcedMovesAcrossMeasuredRepeats": 20430,
+      "PolicyMovesAcrossMeasuredRepeats": 48402,
+      "ForcedFraction": 0.29680962343096234
+    },
+    "late": {
+      "Cases": 6,
+      "PairedMeasurements": 18,
+      "ReferenceMedianMs": 31.536450000000002,
+      "OptimizedMedianMs": 14.2132,
+      "ReferenceMedianAllocatedBytes": 60745388.0,
+      "OptimizedMedianAllocatedBytes": 26989476.0,
+      "StateMedianOfPairedTimeRatios": 0.4583072667861856,
+      "RootEvaluationsAcrossMeasuredRepeats": 1632,
+      "ForcedMovesAcrossMeasuredRepeats": 7974,
+      "PolicyMovesAcrossMeasuredRepeats": 6906,
+      "ForcedFraction": 0.5358870967741935
+    },
+    "forced": {
+      "Cases": 6,
+      "PairedMeasurements": 18,
+      "ReferenceMedianMs": 0.00035,
+      "OptimizedMedianMs": 0.0015,
+      "ReferenceMedianAllocatedBytes": 208.0,
+      "OptimizedMedianAllocatedBytes": 216.0,
+      "StateMedianOfPairedTimeRatios": null,
+      "RootEvaluationsAcrossMeasuredRepeats": 0,
+      "ForcedMovesAcrossMeasuredRepeats": 0,
+      "PolicyMovesAcrossMeasuredRepeats": 0,
+      "ForcedFraction": null
+    }
+  },
+  "Limits": [
+    "6 root states per stratum,3 repeated measurements each; descriptive local performance evidence only",
+    "Balanced strata do not have natural-match weights; no overall match speedup or win-rate claim",
+    "Normal contracts measured; Misere and configuration equivalence covered by tests, not timed strata",
+    "Serial alternating pair order; decision-body allocations on current thread, excludes constructors"
+  ]
+}

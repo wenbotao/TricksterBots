@@ -1,0 +1,59 @@
+{
+  "Stage": "Phase one: stage budgets and structural discard coverage",
+  "PrimaryRules": "unconfigured default Rules; configured presets receive functional checks only",
+  "Screen": {
+    "BudgetCandidates": [
+      "all32",
+      "bid32",
+      "plus"
+    ],
+    "Opponent": "strong",
+    "PairsPerCandidate": {
+      "pure": 3,
+      "mixed": 3
+    },
+    "StructureComparison": "structured vs all32",
+    "StructurePairs": {
+      "pure": 4,
+      "mixed": 4
+    },
+    "TotalGames": 52
+  },
+  "Advancement": {
+    "Budget": "Select most wins out of 12 screen games, tie preference bid32 then plus then all32; advance only if at least 6 wins; exclude illegal/error runs",
+    "Structure": "Advance if at least 8 wins out of 16 and no illegal/error runs",
+    "NoDefaultPromotion": "Small tests cannot establish equivalence or universal strength"
+  },
+  "Holdout": {
+    "BudgetPairs": {
+      "pure": 8,
+      "mixed": 8
+    },
+    "StructurePairs": {
+      "pure": 6,
+      "mixed": 6
+    },
+    "NewIndependentSeedBlocks": true,
+    "MaximumAdditionalGames": 56
+  },
+  "StructuralSelector": {
+    "MaxRankedCandidates": 12,
+    "MediumBaselineIncluded": true,
+    "KeepTopRanked": 4,
+    "RankScoreFloorDrop": {
+      "normal": 1.0,
+      "misere": 3.0
+    },
+    "EqualDistinctCandidateCountToAll32": true,
+    "TieOrdering": "baseline first, then original retained-hand ranking",
+    "Structures": [
+      "effective suit lengths",
+      "protected kings by suit",
+      "short high suits",
+      "joker count"
+    ]
+  },
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongStructuredBot.cs": "648a6c9be1cffb0328e8b9f2d7f0ad1b87bd840ee3d0c864469aec3e82b9b289"
+  }
+}

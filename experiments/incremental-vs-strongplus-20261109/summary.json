@@ -1,0 +1,1212 @@
+{
+  "PlannedMatches": 80,
+  "FinishedMatches": 80,
+  "ReplacementBlocks": 32,
+  "DirectPairs": 8,
+  "Complete": true,
+  "Replacement": {
+    "incremental": {
+      "Games": 32,
+      "Completed": 32,
+      "Wins": 25,
+      "Losses": 7,
+      "Truncated": 0,
+      "WinRate": 0.78125,
+      "WinRateExact95": [
+        0.6002717362878924,
+        0.9072284677152807
+      ],
+      "Rounds": 227,
+      "PlayedDeals": 227,
+      "Redeals": 0,
+      "SubjectContracts": 114,
+      "SubjectMade": 76,
+      "RepairEvents": 0,
+      "MatchSeconds": {
+        "count": 32,
+        "mean": 16.333135768749997,
+        "p50": 14.3879543,
+        "p95": 32.247438249999995
+      },
+      "TerminalRelativeScore": {
+        "count": 32,
+        "mean": 155.0,
+        "p50": 370.0,
+        "p95": 723.9999999999999
+      }
+    },
+    "plus": {
+      "Games": 32,
+      "Completed": 32,
+      "Wins": 22,
+      "Losses": 10,
+      "Truncated": 0,
+      "WinRate": 0.6875,
+      "WinRateExact95": [
+        0.49992241836783036,
+        0.8388152759117995
+      ],
+      "Rounds": 265,
+      "PlayedDeals": 262,
+      "Redeals": 3,
+      "SubjectContracts": 134,
+      "SubjectMade": 87,
+      "RepairEvents": 0,
+      "MatchSeconds": {
+        "count": 32,
+        "mean": 15.96183805,
+        "p50": 12.670074249999999,
+        "p95": 36.57294354999999
+      },
+      "TerminalRelativeScore": {
+        "count": 32,
+        "mean": -29.0625,
+        "p50": 200.0,
+        "p95": 723.9999999999999
+      }
+    }
+  },
+  "Direct": {
+    "Games": 16,
+    "Completed": 16,
+    "Truncated": 0,
+    "IncrementalWins": 8,
+    "PlusWins": 8,
+    "IncrementalWinRate": 0.5,
+    "CompleteSeedPairs": 8,
+    "SeedPairWinFractions": [
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.0,
+      0.5
+    ],
+    "ClusterWinRate": {
+      "mean": 0.5,
+      "blockBootstrap95": [
+        0.3125,
+        0.6875
+      ],
+      "blocks": 8,
+      "degenerate": false
+    },
+    "IncrementalSweeps": 1,
+    "PlusSweeps": 1,
+    "SplitPairs": 6,
+    "ByIncrementalSeat": {
+      "0": {
+        "Completed": 8,
+        "Wins": 5
+      },
+      "1": {
+        "Completed": 8,
+        "Wins": 3
+      }
+    }
+  },
+  "Telemetry": {
+    "replacement/incremental": {
+      "Phases": {
+        "bid": {
+          "Milliseconds": {
+            "count": 327,
+            "mean": 440.76790366972483,
+            "p50": 429.6538,
+            "p95": 539.6641999999999
+          },
+          "AllocatedBytes": {
+            "count": 327,
+            "mean": 587577643.1804281,
+            "p50": 575891320.0,
+            "p95": 699514982.4
+          },
+          "TotalMilliseconds": 144131.1045,
+          "Rollouts": 64896,
+          "SearchChanged": 163
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 2270,
+            "mean": 84.65263224669603,
+            "p50": 42.57315,
+            "p95": 337.5871499999999
+          },
+          "AllocatedBytes": {
+            "count": 2270,
+            "mean": 119840514.16035242,
+            "p50": 57471276.0,
+            "p95": 537018217.9999998
+          },
+          "TotalMilliseconds": 192161.4752,
+          "Rollouts": 271616,
+          "SearchChanged": 171
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 114,
+            "mean": 777.9107614035089,
+            "p50": 784.0445,
+            "p95": 893.13826
+          },
+          "AllocatedBytes": {
+            "count": 114,
+            "mean": 1093137798.4561403,
+            "p50": 1110714180.0,
+            "p95": 1157125013.6
+          },
+          "TotalMilliseconds": 88681.8268,
+          "Rollouts": 45632,
+          "SearchChanged": 42
+        }
+      },
+      "Contracts": {
+        "Suit": {
+          "Deals": 174,
+          "OwnTeamContracts": 126,
+          "OwnTeamMade": 86,
+          "OpponentContracts": 48,
+          "OpponentSet": 20
+        },
+        "NoTrump": {
+          "Deals": 53,
+          "OwnTeamContracts": 31,
+          "OwnTeamMade": 21,
+          "OpponentContracts": 22,
+          "OpponentSet": 5
+        }
+      }
+    },
+    "replacement/plus": {
+      "Phases": {
+        "bid": {
+          "Milliseconds": {
+            "count": 374,
+            "mean": 257.9907668449198,
+            "p50": 254.83175,
+            "p95": 342.23848499999997
+          },
+          "AllocatedBytes": {
+            "count": 374,
+            "mean": 316818036.14973265,
+            "p50": 308136344.0,
+            "p95": 395573266.8
+          },
+          "TotalMilliseconds": 96488.5468,
+          "Rollouts": 74720,
+          "SearchChanged": 190
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 2620,
+            "mean": 75.3215560687023,
+            "p50": 42.56445,
+            "p95": 281.9024749999997
+          },
+          "AllocatedBytes": {
+            "count": 2620,
+            "mean": 91773360.70839694,
+            "p50": 49722772.0,
+            "p95": 384626112.0
+          },
+          "TotalMilliseconds": 197342.4769,
+          "Rollouts": 311392,
+          "SearchChanged": 148
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 134,
+            "mean": 834.7377470149253,
+            "p50": 835.08125,
+            "p95": 956.41877
+          },
+          "AllocatedBytes": {
+            "count": 134,
+            "mean": 1052314541.6716418,
+            "p50": 1048707704.0,
+            "p95": 1109798116.0
+          },
+          "TotalMilliseconds": 111854.8581,
+          "Rollouts": 104160,
+          "SearchChanged": 35
+        }
+      },
+      "Contracts": {
+        "Suit": {
+          "Deals": 203,
+          "OwnTeamContracts": 150,
+          "OwnTeamMade": 97,
+          "OpponentContracts": 53,
+          "OpponentSet": 18
+        },
+        "NoTrump": {
+          "Deals": 59,
+          "OwnTeamContracts": 38,
+          "OwnTeamMade": 23,
+          "OpponentContracts": 21,
+          "OpponentSet": 5
+        }
+      }
+    },
+    "direct/incremental": {
+      "Phases": {
+        "bid": {
+          "Milliseconds": {
+            "count": 221,
+            "mean": 368.80962895927604,
+            "p50": 349.0518,
+            "p95": 494.3522
+          },
+          "AllocatedBytes": {
+            "count": 221,
+            "mean": 584663894.7330316,
+            "p50": 572616712.0,
+            "p95": 686195736.0
+          },
+          "TotalMilliseconds": 81506.928,
+          "Rollouts": 43520,
+          "SearchChanged": 106
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 1400,
+            "mean": 65.93240864285715,
+            "p50": 33.15455,
+            "p95": 276.621125
+          },
+          "AllocatedBytes": {
+            "count": 1400,
+            "mean": 108078011.05714285,
+            "p50": 52179320.0,
+            "p95": 427945375.2
+          },
+          "TotalMilliseconds": 92305.3721,
+          "Rollouts": 153856,
+          "SearchChanged": 87
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 50,
+            "mean": 640.3434619999999,
+            "p50": 612.04865,
+            "p95": 803.0812049999998
+          },
+          "AllocatedBytes": {
+            "count": 50,
+            "mean": 1082858905.76,
+            "p50": 1053141604.0,
+            "p95": 1154905913.6
+          },
+          "TotalMilliseconds": 32017.1731,
+          "Rollouts": 19840,
+          "SearchChanged": 12
+        }
+      },
+      "Contracts": {
+        "NoTrump": {
+          "Deals": 30,
+          "OwnTeamContracts": 15,
+          "OwnTeamMade": 9,
+          "OpponentContracts": 15,
+          "OpponentSet": 3
+        },
+        "Suit": {
+          "Deals": 110,
+          "OwnTeamContracts": 51,
+          "OwnTeamMade": 30,
+          "OpponentContracts": 59,
+          "OpponentSet": 24
+        }
+      }
+    },
+    "direct/plus": {
+      "Phases": {
+        "bid": {
+          "Milliseconds": {
+            "count": 211,
+            "mean": 224.99021090047395,
+            "p50": 214.9008,
+            "p95": 306.41575
+          },
+          "AllocatedBytes": {
+            "count": 211,
+            "mean": 316244547.60189575,
+            "p50": 311024928.0,
+            "p95": 367413748.0
+          },
+          "TotalMilliseconds": 47472.9345,
+          "Rollouts": 41536,
+          "SearchChanged": 108
+        },
+        "discard": {
+          "Milliseconds": {
+            "count": 54,
+            "mean": 705.4140666666664,
+            "p50": 655.1614500000001,
+            "p95": 892.7107199999999
+          },
+          "AllocatedBytes": {
+            "count": 54,
+            "mean": 1045979198.8148148,
+            "p50": 1041992804.0,
+            "p95": 1094174364.3999999
+          },
+          "TotalMilliseconds": 38092.3596,
+          "Rollouts": 41792,
+          "SearchChanged": 13
+        },
+        "play": {
+          "Milliseconds": {
+            "count": 1400,
+            "mean": 60.01309971428571,
+            "p50": 35.2353,
+            "p95": 225.116445
+          },
+          "AllocatedBytes": {
+            "count": 1400,
+            "mean": 84032195.63428572,
+            "p50": 48495860.0,
+            "p95": 316489471.59999996
+          },
+          "TotalMilliseconds": 84018.3396,
+          "Rollouts": 155616,
+          "SearchChanged": 70
+        }
+      },
+      "Contracts": {
+        "NoTrump": {
+          "Deals": 30,
+          "OwnTeamContracts": 15,
+          "OwnTeamMade": 12,
+          "OpponentContracts": 15,
+          "OpponentSet": 6
+        },
+        "Suit": {
+          "Deals": 110,
+          "OwnTeamContracts": 59,
+          "OwnTeamMade": 35,
+          "OpponentContracts": 51,
+          "OpponentSet": 21
+        }
+      }
+    }
+  },
+  "ReplacementPaired": {
+    "Pairs": 32,
+    "Improved": 5,
+    "Worsened": 2,
+    "BothWin": 20,
+    "BothLose": 5,
+    "WinDifference": 0.09375,
+    "ConservativeExact95Difference": [
+      -0.18653126442419599,
+      0.34730195832206834
+    ],
+    "ExactMcNemarP": 0.453125,
+    "PairedWinBootstrap": {
+      "mean": 0.09375,
+      "blockBootstrap95": [
+        -0.0625,
+        0.25
+      ],
+      "blocks": 32,
+      "degenerate": false
+    },
+    "PairedTerminalRelativeScore": {
+      "mean": 184.0625,
+      "blockBootstrap95": [
+        -36.57031249999999,
+        425.625
+      ],
+      "blocks": 32,
+      "degenerate": false
+    },
+    "PairedRounds": {
+      "mean": -1.1875,
+      "blockBootstrap95": [
+        -3.03125,
+        0.5625
+      ],
+      "blocks": 32,
+      "degenerate": false
+    }
+  },
+  "NaturalBehavior": {
+    "Blocks": 32,
+    "SameContextComparisons": 1233,
+    "IdenticalActions": 1201,
+    "SameContextDifferentActions": 32,
+    "FirstDifferencePhases": {
+      "bid": 7,
+      "play": 16,
+      "discard": 3
+    },
+    "ChangedBlocks": 26,
+    "Differences": [
+      {
+        "Block": 0,
+        "Round": 0,
+        "Phase": "bid",
+        "Hand": "\u26635 \u26667 \u26659 \u26655 \u266310 \u26608 \u26664 \u26609 \u26658 \u2660A",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          0,
+          0
+        ],
+        "LegalCount": 22,
+        "Incremental": "{\"Tricks\":7,\"Trump\":\"Spades\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "null"
+      },
+      {
+        "Block": 0,
+        "Round": 1,
+        "Phase": "bid",
+        "Hand": "\u26654 \u2666J \u2663A \u2665Q \u26664 \u26605 \u266510 \u2663Q \u2660J \u26656",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          0,
+          250
+        ],
+        "LegalCount": 21,
+        "Incremental": "null",
+        "Plus": "{\"Tricks\":7,\"Trump\":\"Hearts\",\"Kind\":\"Normal\",\"IsMisere\":false}"
+      },
+      {
+        "Block": 1,
+        "Round": 0,
+        "Phase": "play",
+        "Hand": "\u266310 \u26636 \u2663K \u26665 \u26664 \u2666K \u2666Q \u2660A",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          0,
+          0
+        ],
+        "LegalCount": 8,
+        "Incremental": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":10,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":4,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 3,
+        "Round": 2,
+        "Phase": "discard",
+        "Hand": "\u2605H \u2665A \u26669 \u266010 \u26654 \u2663J \u26657 \u26605 \u266510 \u2666Q \u26656 \u2660Q \u26665",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          190,
+          -460
+        ],
+        "LegalCount": 3,
+        "Incremental": "[{\"Suit\":\"Spades\",\"Rank\":10,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":11,\"IsJoker\":false},{\"Suit\":\"Spades\",\"Rank\":12,\"IsJoker\":false}]",
+        "Plus": "[{\"Suit\":\"Clubs\",\"Rank\":11,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":5,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":9,\"IsJoker\":false}]"
+      },
+      {
+        "Block": 5,
+        "Round": 1,
+        "Phase": "discard",
+        "Hand": "\u2663J \u26666 \u26609 \u26654 \u26655 \u26638 \u2660A \u2665J \u26657 \u2605H \u266010 \u26669 \u2663A",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          10,
+          240
+        ],
+        "LegalCount": 3,
+        "Incremental": "[{\"Suit\":\"Clubs\",\"Rank\":11,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":6,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":9,\"IsJoker\":false}]",
+        "Plus": "[{\"Suit\":\"Diamonds\",\"Rank\":6,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":9,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":8,\"IsJoker\":false}]"
+      },
+      {
+        "Block": 7,
+        "Round": 1,
+        "Phase": "bid",
+        "Hand": "\u26666 \u2665K \u26635 \u2663K \u26655 \u2666J \u26658 \u26605 \u2663J \u2660A",
+        "Contract": null,
+        "Scores": [
+          200,
+          10
+        ],
+        "LegalCount": 26,
+        "Incremental": "{\"Tricks\":6,\"Trump\":\"Clubs\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "{\"Tricks\":6,\"Trump\":\"Hearts\",\"Kind\":\"Normal\",\"IsMisere\":false}"
+      },
+      {
+        "Block": 7,
+        "Round": 4,
+        "Phase": "discard",
+        "Hand": "\u2665K \u26608 \u2660K \u2660A \u26638 \u2666Q \u26667 \u26657 \u2663J \u266510 \u26639 \u2666A \u2660J",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          440,
+          70
+        ],
+        "LegalCount": 3,
+        "Incremental": "[{\"Suit\":\"Clubs\",\"Rank\":8,\"IsJoker\":false},{\"Suit\":\"Hearts\",\"Rank\":7,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":11,\"IsJoker\":false}]",
+        "Plus": "[{\"Suit\":\"Clubs\",\"Rank\":8,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":12,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":7,\"IsJoker\":false}]"
+      },
+      {
+        "Block": 8,
+        "Round": 4,
+        "Phase": "play",
+        "Hand": "\u2663J \u26635 \u26605 \u26639 \u26665",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          110,
+          180
+        ],
+        "LegalCount": 5,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":5,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":5,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 10,
+        "Round": 3,
+        "Phase": "bid",
+        "Hand": "\u266310 \u2666Q \u2605H \u2665Q \u2666A \u2665A \u2665J \u26655 \u26607 \u26664",
+        "Contract": null,
+        "Scores": [
+          160,
+          110
+        ],
+        "LegalCount": 26,
+        "Incremental": "{\"Tricks\":9,\"Trump\":\"Diamonds\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "{\"Tricks\":9,\"Trump\":\"Hearts\",\"Kind\":\"Normal\",\"IsMisere\":false}"
+      },
+      {
+        "Block": 11,
+        "Round": 1,
+        "Phase": "bid",
+        "Hand": "\u26639 \u26667 \u26637 \u26635 \u26636 \u2660A \u2605H \u2666K \u26664 \u26607",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          30,
+          160
+        ],
+        "LegalCount": 22,
+        "Incremental": "{\"Tricks\":7,\"Trump\":\"Clubs\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "null"
+      },
+      {
+        "Block": 12,
+        "Round": 5,
+        "Phase": "play",
+        "Hand": "\u266610 \u2665K \u26667 \u2663J \u26639 \u2665J \u26638 \u26637",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          390,
+          360
+        ],
+        "LegalCount": 8,
+        "Incremental": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":9,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":11,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 13,
+        "Round": 3,
+        "Phase": "bid",
+        "Hand": "\u266510 \u26657 \u2660Q \u2665Q \u26665 \u2663Q \u266610 \u2666J \u2663A \u266010",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          -80,
+          260
+        ],
+        "LegalCount": 14,
+        "Incremental": "{\"Tricks\":8,\"Trump\":\"Hearts\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "null"
+      },
+      {
+        "Block": 14,
+        "Round": 3,
+        "Phase": "play",
+        "Hand": "\u2663Q \u26639 \u26668 \u266310 \u2666A \u26658 \u2666Q \u266510 \u2663J \u2665A",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          330,
+          160
+        ],
+        "LegalCount": 10,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 15,
+        "Round": 2,
+        "Phase": "play",
+        "Hand": "\u2605H \u26658 \u2666J \u26635 \u2663K \u2665A \u2665Q \u26657 \u2663Q \u2660A",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          -440,
+          80
+        ],
+        "LegalCount": 10,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":11,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Joker\",\"Rank\":16,\"IsJoker\":true},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 16,
+        "Round": 3,
+        "Phase": "play",
+        "Hand": "\u2665Q \u26637 \u2663A \u2666J \u2665A \u2660Q \u26638 \u2605H",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          170,
+          -10
+        ],
+        "LegalCount": 8,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":11,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Joker\",\"Rank\":16,\"IsJoker\":true},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 17,
+        "Round": 11,
+        "Phase": "play",
+        "Hand": "\u266610 \u2660Q \u2666J \u26668 \u26638 \u2660J \u266510 \u2660A \u2663Q",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          590,
+          300
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":12,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":14,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 19,
+        "Round": 1,
+        "Phase": "play",
+        "Hand": "\u2605H \u26654 \u266510 \u26639 \u2660K \u2665K \u2665A \u26637 \u26657 \u2663A",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          20,
+          320
+        ],
+        "LegalCount": 10,
+        "Incremental": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":14,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Joker\",\"Rank\":16,\"IsJoker\":true},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 20,
+        "Round": 0,
+        "Phase": "bid",
+        "Hand": "\u26666 \u266610 \u26659 \u26608 \u26636 \u2665Q \u26635 \u26637 \u266310 \u26638",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          0,
+          0
+        ],
+        "LegalCount": 21,
+        "Incremental": "{\"Tricks\":7,\"Trump\":\"Clubs\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "null"
+      },
+      {
+        "Block": 21,
+        "Round": 5,
+        "Phase": "play",
+        "Hand": "\u26638 \u26636 \u2663J \u26635 \u2663Q \u2660J \u26659 \u2665A \u2665K",
+        "Contract": {
+          "Tricks": 9,
+          "Trump": "Clubs",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          200,
+          0
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":14,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":5,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 22,
+        "Round": 4,
+        "Phase": "play",
+        "Hand": "\u2660K \u266010 \u26669 \u2660J \u26658 \u26635 \u2665K \u266610 \u2666Q",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          200,
+          40
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":10,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 23,
+        "Round": 4,
+        "Phase": "play",
+        "Hand": "\u2660J \u26668 \u2666A \u26608 \u26669 \u26666 \u2660Q \u2660K \u2663A",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Spades",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          100,
+          20
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":11,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 24,
+        "Round": 1,
+        "Phase": "play",
+        "Hand": "\u2666Q \u26635 \u2663Q \u26658 \u2665Q \u26655 \u266610 \u26667 \u26654 \u26669",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          80,
+          40
+        ],
+        "LegalCount": 10,
+        "Incremental": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":10,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 25,
+        "Round": 7,
+        "Phase": "play",
+        "Hand": "\u26608 \u26667 \u2660A \u2665K \u2665A \u26659 \u26609 \u266510",
+        "Contract": {
+          "Tricks": 9,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          -220,
+          -20
+        ],
+        "LegalCount": 8,
+        "Incremental": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":7,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 26,
+        "Round": 2,
+        "Phase": "discard",
+        "Hand": "\u26655 \u266510 \u2660A \u2666K \u26607 \u2663Q \u26658 \u26667 \u2605H \u2660K \u2660J \u2666Q \u26664",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          450,
+          20
+        ],
+        "LegalCount": 3,
+        "Incremental": "[{\"Suit\":\"Hearts\",\"Rank\":5,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":12,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":7,\"IsJoker\":false}]",
+        "Plus": "[{\"Suit\":\"Spades\",\"Rank\":7,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":12,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":7,\"IsJoker\":false}]"
+      },
+      {
+        "Block": 28,
+        "Round": 1,
+        "Phase": "play",
+        "Hand": "\u266510 \u2666Q \u26659 \u2663J \u2665Q \u26669 \u2666J \u26639 \u2663A",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          50,
+          -100
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":12,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":9,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 28,
+        "Round": 2,
+        "Phase": "play",
+        "Hand": "\u26605 \u2660K \u266010 \u2666A \u26667 \u2666J \u2665A \u26606",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          150,
+          -60
+        ],
+        "LegalCount": 3,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":7,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":11,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 28,
+        "Round": 3,
+        "Phase": "discard",
+        "Hand": "\u26636 \u2665J \u26654 \u2666Q \u26606 \u26665 \u2660Q \u26655 \u26635 \u2660A \u2665Q \u26605 \u26668",
+        "Contract": {
+          "Tricks": 7,
+          "Trump": "Hearts",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          400,
+          -60
+        ],
+        "LegalCount": 3,
+        "Incremental": "[{\"Suit\":\"Clubs\",\"Rank\":5,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":6,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":5,\"IsJoker\":false}]",
+        "Plus": "[{\"Suit\":\"Clubs\",\"Rank\":6,\"IsJoker\":false},{\"Suit\":\"Diamonds\",\"Rank\":12,\"IsJoker\":false},{\"Suit\":\"Clubs\",\"Rank\":5,\"IsJoker\":false}]"
+      },
+      {
+        "Block": 29,
+        "Round": 2,
+        "Phase": "play",
+        "Hand": "\u2666J \u2666A \u2663Q \u26608 \u26668 \u26637 \u26639 \u26667 \u26669",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          80,
+          190
+        ],
+        "LegalCount": 9,
+        "Incremental": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":7,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":8,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 29,
+        "Round": 3,
+        "Phase": "play",
+        "Hand": "\u2605H \u2666Q \u2665K \u26664 \u26659 \u26666 \u266610 \u26665 \u2666K \u26667",
+        "Contract": {
+          "Tricks": 8,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          330,
+          190
+        ],
+        "LegalCount": 10,
+        "Incremental": "{\"Card\":{\"Suit\":\"Diamonds\",\"Rank\":12,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Joker\",\"Rank\":16,\"IsJoker\":true},\"JokerLeadSuit\":\"Unknown\"}"
+      },
+      {
+        "Block": 29,
+        "Round": 4,
+        "Phase": "bid",
+        "Hand": "\u26654 \u2605H \u266610 \u2666K \u26667 \u26607 \u26608 \u26668 \u2660A \u26655",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          340,
+          470
+        ],
+        "LegalCount": 23,
+        "Incremental": "{\"Tricks\":7,\"Trump\":\"Diamonds\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "{\"Tricks\":6,\"Trump\":\"Unknown\",\"Kind\":\"Normal\",\"IsMisere\":false}"
+      },
+      {
+        "Block": 30,
+        "Round": 0,
+        "Phase": "bid",
+        "Hand": "\u266610 \u26659 \u2663J \u2660K \u26656 \u2663Q \u2663A \u26636 \u2665K \u2666Q",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Diamonds",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          0,
+          0
+        ],
+        "LegalCount": 23,
+        "Incremental": "{\"Tricks\":7,\"Trump\":\"Clubs\",\"Kind\":\"Normal\",\"IsMisere\":false}",
+        "Plus": "null"
+      },
+      {
+        "Block": 31,
+        "Round": 6,
+        "Phase": "play",
+        "Hand": "\u2663Q \u2663J \u26636 \u26656 \u2663K \u26637 \u26657",
+        "Contract": {
+          "Tricks": 6,
+          "Trump": "Unknown",
+          "Kind": "Normal",
+          "IsMisere": false
+        },
+        "Scores": [
+          330,
+          -440
+        ],
+        "LegalCount": 7,
+        "Incremental": "{\"Card\":{\"Suit\":\"Clubs\",\"Rank\":6,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":6,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      }
+    ]
+  },
+  "MatchedMicro": {
+    "PairedMeasurements": 92,
+    "UniqueStates": 46,
+    "Groups": {
+      "natural-play-regression/play/early": {
+        "States": 6,
+        "DifferentActions": 1,
+        "Incremental": {
+          "Milliseconds": 286.29145,
+          "AllocatedBytes": 489680780.0,
+          "Rollouts": 304.0
+        },
+        "Plus": {
+          "Milliseconds": 227.17104999999998,
+          "AllocatedBytes": 356353616.0,
+          "Rollouts": 304.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 1.2678251832193639
+      },
+      "natural-play-regression/play/middle": {
+        "States": 6,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 85.68462500000001,
+          "AllocatedBytes": 151571960.0,
+          "Rollouts": 192.0
+        },
+        "Plus": {
+          "Milliseconds": 82.07745,
+          "AllocatedBytes": 118412072.0,
+          "Rollouts": 192.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 1.0547542905502425
+      },
+      "natural-play-regression/play/late": {
+        "States": 6,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 13.363674999999999,
+          "AllocatedBytes": 20227576.0,
+          "Rollouts": 96.0
+        },
+        "Plus": {
+          "Milliseconds": 16.4468,
+          "AllocatedBytes": 24489016.0,
+          "Rollouts": 96.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 0.7563065648188286
+      },
+      "natural-play-regression/play/forced": {
+        "States": 6,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 0.0048000000000000004,
+          "AllocatedBytes": 216.0,
+          "Rollouts": 0.0
+        },
+        "Plus": {
+          "Milliseconds": 0.024024999999999998,
+          "AllocatedBytes": 8644.0,
+          "Rollouts": 0.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": null
+      },
+      "natural-other-phase/bid/all": {
+        "States": 8,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 325.54345,
+          "AllocatedBytes": 605614912.0,
+          "Rollouts": 192.0
+        },
+        "Plus": {
+          "Milliseconds": 209.37937499999998,
+          "AllocatedBytes": 331970008.0,
+          "Rollouts": 192.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 1.6432275126120537
+      },
+      "natural-other-phase/discard/all": {
+        "States": 8,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 595.136175,
+          "AllocatedBytes": 1085390000.0,
+          "Rollouts": 400.0
+        },
+        "Plus": {
+          "Milliseconds": 647.0037500000001,
+          "AllocatedBytes": 1047937556.0,
+          "Rollouts": 768.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 0.9554549276031209
+      },
+      "ux-misere/play/all": {
+        "States": 6,
+        "DifferentActions": 0,
+        "Incremental": {
+          "Milliseconds": 0.44242499999999996,
+          "AllocatedBytes": 51970.0,
+          "Rollouts": 0.0
+        },
+        "Plus": {
+          "Milliseconds": 0.504375,
+          "AllocatedBytes": 48324.0,
+          "Rollouts": 0.0
+        },
+        "MedianStateTimeRatioIncrementalOverPlus": 0.8647835713022215
+      }
+    },
+    "Differences": [
+      {
+        "Id": 12,
+        "Origin": "natural-play-regression",
+        "Phase": "play",
+        "Bucket": "early",
+        "Incremental": "{\"Card\":{\"Suit\":\"Hearts\",\"Rank\":7,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}",
+        "Plus": "{\"Card\":{\"Suit\":\"Spades\",\"Rank\":14,\"IsJoker\":false},\"JokerLeadSuit\":\"Unknown\"}"
+      }
+    ],
+    "MisereUxChecks": {
+      "Incremental": {
+        "ByLevel": {
+          "Advisory": {
+            "Passed": 1,
+            "Total": 1
+          },
+          "Control": {
+            "Passed": 1,
+            "Total": 1
+          },
+          "Critical": {
+            "Passed": 4,
+            "Total": 4
+          }
+        },
+        "Failed": []
+      },
+      "Plus": {
+        "ByLevel": {
+          "Advisory": {
+            "Passed": 1,
+            "Total": 1
+          },
+          "Control": {
+            "Passed": 1,
+            "Total": 1
+          },
+          "Critical": {
+            "Passed": 4,
+            "Total": 4
+          }
+        },
+        "Failed": []
+      }
+    }
+  },
+  "Limits": [
+    "32 replacement blocks and8 direct seed pairs are distinct designs, do not pool their win rates",
+    "Default rules only; no parameter retuning or hand screening; direct matchup uses Medium partners",
+    "Full variants differ in strategy/visibility/threshold/candidates and engineering; no pure engineering causal attribution",
+    "Natural cost data concurrent and different trajectories; serial matched-state data is primary cost evidence",
+    "StrongPlus default rollout count derived from fresh search reports, not raw0 wrapper counter"
+  ]
+}

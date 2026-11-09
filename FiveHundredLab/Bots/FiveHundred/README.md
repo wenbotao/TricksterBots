@@ -69,3 +69,32 @@ var bot = new StrongPlusBot(seed: 7, rules: rules);
 ## 研究用消融控制（不属于正式bot列表）
 
 `StrongAblationBot`提供固定命名的`strong-study-base8-v1`、`all32`、`wide32`、`tuned32`、`bid32`、`discard32`、`play32`控制（后六者同样使用`strong-study-…-v1`全名）。各配置保留旧策略算法，仅按矩阵改变预算或阈值；基线等价及阶段预算已测试。设计、限制和结果见[消融试验](../../../experiments/strong-ablation-v1-20261106/README.md)。
+
+`StrongStructuredBot`（`strong-structured-v1`）是独立实验策略：沿用 All32 的叫牌、出牌和续演，保持弃牌候选数量，改为覆盖不同留牌结构。它支持同样的规则参数与 `FromConfiguration` 入口，没有替代正式 Strong 或 StrongPlus。第一阶段的独立种子验证、结构实验及限制见[实验报告](../../../experiments/phase-one-v1-20261109/README.md)。
+
+`StrongTacticalBot`（`strong-tactical-v1`）在 All32 基础上增加有节点上限的公开当前墩证明：Misère 必破与避险，以及普通合约关键一墩的保约/破约。默认与配置规则均可用，未知手牌不使用真实发牌信息。它仍为独立实验版本，见[第二阶段报告](../../../experiments/public-tactics-v1-20261109/README.md)。
+
+`StrongProofAblationBot` 提供 `strong-misere-proof-v1`、`strong-contract-proof-v1` 两种独立固定配置，分别启用 Misère 或普通合约证明；构造参数为 `(StrongProofProfile profile, int seed = 1, Rules? rules = null)`，支持 `FromConfiguration(profile, path, seed)`。两层拆分、120 副定向牌的成约/破约结果与限制见[第三阶段报告](../../../experiments/proof-split-v1-20261109/README.md)。它们不自动替换现有策略。
+
+`StrongBidGuardBot`（`strong-bid-guard-v1`）在仅 Misère 版上增加窄范围的弱牌开叫 Pass 判断；`StrongHandGuardBot`（`strong-hand-guard-v1`）累计增加无将弃牌的 K 保护修补，不增加续演次数。两者支持标准规则接口及工厂入口，均为独立实验版本，详见[第四阶段报告](../../../experiments/hand-guards-v1-20261109/README.md)。
+
+`StrongDiscardGuardBot`（`strong-discard-guard-v1`）为保留弃牌修补的独立版本：沿用仅 Misère 证明版的原叫牌和出牌，加入同一无将弃牌修补，去掉强制 Pass。支持 `(seed, rules)`、`FromConfiguration(path, seed)` 与规则工厂入口。128 个既有案例的修补前后选择已核对一致，Fast/Strong 等续演下的条件收益见[续演比较报告](../../../experiments/discard-rollouts-v1-20261109/README.md)。
+
+
+## 弃牌修补的后续策略与工程版本
+
+`StrongDiscardRefinedBot` 提供五个独立固定配置：`strong-discard-shape-v1`、`strong-discard-audit-v1`、对应的 `strong-discard-shape-efficient-v1` / `strong-discard-audit-efficient-v1`，以及保留旧修补策略的 `strong-discard-guard-efficient-v1`。构造参数为 `(DiscardRefinementProfile profile, int seed = 1, Rules? rules = null)`，支持 `FromConfiguration(profile, path, seed)`。
+
+新样本未证明结构版或选择性复核优于旧补丁，当前推荐工程入口为 `EfficientBaseline`（`strong-discard-guard-efficient-v1`），旧 bot 不变。缓存消除了重复静态估值，但未证明端到端加速。新类的 `LastRollouts` 统计实际搜索与复核，动作开始会清空诊断；此处有别于旧默认包装层的计数语义。实现、条件成约率及 2,452 局实际续演见[本轮报告](../../../experiments/discard-refinement-v1-20261109/README.md)。
+
+
+`StrongDiscardLeanBot`（`strong-discard-guard-lean-v1`）为 `EfficientBaseline` 的独立工程精简版：移除无用结构计算及全量字符串索引，按需排序，保留相同 Medium 续演、预算和策略。支持 `(seed, rules)` 与 `FromConfiguration(path, seed)`。256 状态、32 次根搜索及默认/六配置对局记录等价，550 项回归通过。少量分配减少尚未转化为可确认的速度收益，见[工程报告](../../../experiments/discard-lean-v1-20261109/README.md)。
+
+
+`StrongPlayForcedBot`（`strong-play-forced-v1`）以 Lean 为基准，仅在出牌续演内直接执行唯一合法的完整动作，省去观察与 Medium 适配；保留 Joker 多声明、规则上下文、原预算及非强制动作策略。叫牌、弃牌与共享续演器不变。支持 `(seed, rules)`、`FromConfiguration(path, seed)` 与工厂入口；`LastPlayWork` 记录续演内部工作量。555 项测试通过，72 组测量动作/搜索一致并显示局部加速，见[出牌优化第一步](../../../experiments/play-forced-v1-20261109/README.md)。
+
+
+`StrongPlayCachedBot`（`strong-play-cached-v1`）继续第一步的强制动作快路，并通过每次根搜索独立的 `PlayDataContext` 复用公开竞叫、比分、牌字符串编码及按 Joker 花色分开的参数。策略实例、历史及各世界状态仍独立，默认策略判断与预算不变；显式配置路径沿用第一步。支持标准规则参数、`FromConfiguration` 和工厂入口。`LastDataWork` 提供准备计数。561 项测试和 72 组配对检查通过，小样本分配量约再降 11%–15%，见[重复数据优化报告](../../../experiments/play-cached-v1-20261109/README.md)。
+
+
+`StrongPlayIncrementalBot`（`strong-play-incremental-v1`）在缓存版上增量维护公共历史摘要，保留暂时赢墩牌与缺门顺序；每个候选/世界的摘要独立，旧接口模型仍按调用新建。默认续演更新，显式配置路径不变。4 项针对性测试及 48 组小规模计量通过，全量回归按用户要求留待统一测试，见[增量历史报告](../../../experiments/play-incremental-v1-20261109/README.md)。

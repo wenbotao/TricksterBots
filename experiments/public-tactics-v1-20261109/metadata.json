@@ -1,0 +1,28 @@
+{
+  "Design": "Public tactics v1; same-budget proof intervention vs All32 and separate reference Strong",
+  "RegisteredBeforeGames": true,
+  "DefaultRulesOnlyWinRate": true,
+  "SameBudget": {
+    "Opponent": "all32",
+    "PurePairs": 8,
+    "MixedPairs": 8
+  },
+  "Reference": {
+    "Opponent": "strong",
+    "PurePairs": 4,
+    "MixedPairs": 4
+  },
+  "Games": 48,
+  "SeedBase": 19119001,
+  "SeedStep": 7919,
+  "MaxRounds": 200,
+  "Workers": 4,
+  "Misere": "Take certain set; declarer team prunes certain loss only if an alternative remains",
+  "Normal": "Restrict to provably winning-team moves only when one trick settles contract make/set",
+  "NodeBudgetPerDecision": 8192,
+  "Control": "All32 exact bidding, discard, play search; fixed 32 samples, top12 plus Medium; original margin8/z.75",
+  "Selection": "No adaptive selection or retuning; no default promotion; same-budget comparison primary; reference secondary",
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongTacticalBot.cs": "17fb55a158476fe0c1c4279630537ac5ea56b7780dcb23272c8e1e7d6d670246"
+  }
+}

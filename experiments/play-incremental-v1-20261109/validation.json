@@ -1,0 +1,81 @@
+{
+  "Passed": true,
+  "ActualPublicObservationsVerified": 24,
+  "PairedMeasurements": 48,
+  "AllRootActionsSearchReportsRolloutsIdentical": true,
+  "Tests": {
+    "total": "4",
+    "executed": "4",
+    "passed": "4",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "NewTests": [
+    {
+      "executionId": "e04a2e31-be5a-4333-ad6c-1ece875fbda6",
+      "testId": "1b4b0163-578f-8e67-b295-a811e47a4cda",
+      "testName": "DefaultAndConfiguredSmokeGamesMatchAndReplay",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:06.3518809",
+      "startTime": "2026-11-09T12:54:42.1392539+00:00",
+      "endTime": "2026-11-09T12:54:48.4935989+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "e04a2e31-be5a-4333-ad6c-1ece875fbda6"
+    },
+    {
+      "executionId": "4dbad9d9-31a3-4cce-93bd-21d2351754ed",
+      "testId": "17f58964-2acc-8224-8f1c-db0d25022c82",
+      "testName": "RootActionsSearchAndDiagnosticsMatch",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:09.5905888",
+      "startTime": "2026-11-09T12:54:32.5470951+00:00",
+      "endTime": "2026-11-09T12:54:42.1378731+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "4dbad9d9-31a3-4cce-93bd-21d2351754ed"
+    },
+    {
+      "executionId": "89f99595-9622-42f2-96bf-248f28ad5ad6",
+      "testId": "1a22dae4-ced6-87c1-b2c3-64aceac93fec",
+      "testName": "ContinuationActionsUtilitiesAndBranchIsolationMatch",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:00.4755677",
+      "startTime": "2026-11-09T12:54:31.9518797+00:00",
+      "endTime": "2026-11-09T12:54:32.4403773+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "89f99595-9622-42f2-96bf-248f28ad5ad6"
+    },
+    {
+      "executionId": "2d0ef8ae-4177-4090-a6a5-906f17576150",
+      "testId": "14c11aa3-312c-8cc0-8c36-46f1d383fe7f",
+      "testName": "EveryPrefixSummaryMatchesFrozenRebuildAndForkIsIndependent",
+      "computerName": "9a1e048fe273",
+      "duration": "00:00:00.0970226",
+      "startTime": "2026-11-09T12:54:32.4490453+00:00",
+      "endTime": "2026-11-09T12:54:32.5465863+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "2d0ef8ae-4177-4090-a6a5-906f17576150"
+    }
+  ],
+  "SourceHashesVerified": true,
+  "Frozen": "Verified 92 frozen source/model files",
+  "Scope": "Step3 incremental public history;4 targeted tests only; full integration deferred by user; not a strength or full-match speedup test"
+}

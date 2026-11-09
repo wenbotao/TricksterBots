@@ -1,0 +1,23 @@
+{
+  "RegisteredBeforeMatches": true,
+  "PrimaryRules": "Default only; six explicit configs functional/replay tests",
+  "Stages": {
+    "bid": "16 games: BidGuard vs MisereOnly; 4 pure pairs + 4 mixed pairs",
+    "hand": "16 games: HandGuard vs BidGuard; 4 pure pairs + 4 mixed pairs"
+  },
+  "Seeds": {
+    "bid": 41119001,
+    "hand": 43119001,
+    "step": 7919,
+    "mixedOffset": 678901
+  },
+  "MaxRounds": 200,
+  "Workers": 4,
+  "OpeningGuard": "No active bids; pass legal; no legal Misere/Inkle; 10 cards all rank<=10/noJoker; no raw suit>=5; both teams below winScore-150, own score above lossScore+150",
+  "DiscardGuard": "Normal NT only; newly unsupported singleton K originally protected, no own Ace or known dead Ace; preserve retained A/Joker, static value at least original-.5; no additional rollouts",
+  "NoAdaptiveTuningOrDefaultPromotion": true,
+  "SourceHashes": {
+    "FiveHundredLab/Bots/FiveHundred/StrongBidGuardBot.cs": "dfd4903a9fba7be20eb13cbc72700f4ffc89c1634d2b3196b7264f19c082ae8f",
+    "FiveHundredLab/Bots/FiveHundred/StrongHandGuardBot.cs": "b2af4069477a337febc8e653b76a3ac98113dbadcb1f8a35ffe48cf96897e2b1"
+  }
+}
