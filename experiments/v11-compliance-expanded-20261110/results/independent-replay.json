@@ -1,0 +1,8 @@
+{
+  "Validated": 540,
+  "ExitCode": 0,
+  "Stdout": "Validated 540 games by replaying all legal decisions and comparing deals, trick winners and scores.\n",
+  "Stderr": "",
+  "ReplayInputSha256": "f88fb10478c85ae20ac529ea4cd40b74eb6b0b344b0071d09ac0a31ec2380d98",
+  "Method": "Separate FiveHundredArena CLI process replays every saved decision; no strategy search or outcome filtering."
+}

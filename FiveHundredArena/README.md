@@ -2,6 +2,8 @@
 
 用于策略开发的四人、两队、完整比赛模拟器。`Engine` 负责规则和裁判，`IPlayer` 只负责决策；不修改原来的 `FiveHundredBot`。默认用仓库已有策略与随机合法策略对战，随机策略只是功能基线，不代表有竞争力的对手。
 
+**v1.1 入口注意：** 下文的旧 `FiveHundredArena run` 命令尚未统一到新版默认与 bot 工厂：不传 `--rules` 时使用旧 `Rules`；传新版配置后引擎为 v1.1，但 bot 仍为旧 `RuleAwarePlayer` 适配器。使用当前九版策略请通过 [V11 API 与工厂](../FiveHundredLab/Bots/FiveHundred/V11/README.md)，或[新评估程序](../experiments/v11-compliance-expanded-20261110/README.md)。不要把旧命令中的 `strong` 名称当成 `strong-v1.1`。入口检查结果见 [entrypoint-audit.json](../experiments/v11-compliance-expanded-20261110/results/entrypoint-audit.json)。
+
 ## 运行
 
 需要 .NET 8。从仓库根目录运行。在本云环境先设置：

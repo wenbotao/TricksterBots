@@ -1,0 +1,72 @@
+{
+  "PreliminaryRuns": [
+    {
+      "Run": "compliance-preflight",
+      "Counters": {
+        "total": "47",
+        "executed": "47",
+        "passed": "47",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "TrxSha256": "2a557b0436e18e52e1c89eda3d6c9ab634013ccc27bf83a7c785faaf0d4a7a09",
+      "Failures": []
+    },
+    {
+      "Run": "compliance-expanded",
+      "Counters": {
+        "total": "53",
+        "executed": "53",
+        "passed": "50",
+        "failed": "3",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "TrxSha256": "c81191d3b04cc6149a1bb85db58de65e3275b146cf54148505d8cb344754fb72",
+      "Failures": [
+        {
+          "Name": "InkleSignalsDoNotBecomeAContractOrSatisfyMisereEligibility (True)",
+          "Message": "Assert.IsFalse failed. 'condition' expression: 'legal.Any(b=>b?.Kind==ContractKind.Misere)'."
+        },
+        {
+          "Name": "EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets (\"american\")",
+          "Message": "Test method TestBots.TestV11Compliance.EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets threw exception:\r\nFiveHundredArena.IllegalActionException: Illegal v1.1 bid"
+        },
+        {
+          "Name": "InkleSignalsDoNotBecomeAContractOrSatisfyMisereEligibility (False)",
+          "Message": "Assert.IsFalse failed. 'condition' expression: 'legal.Any(b=>b?.Kind==ContractKind.Misere)'."
+        }
+      ]
+    }
+  ],
+  "Resolutions": [
+    "Compilation: test array Profiles renamed BotProfiles to avoid shadowing the bot factory.",
+    "The American scripted auction must select a legal NT bid at level seven or higher.",
+    "American default Misere has no prior-seven gate; the Inkle/history test explicitly configures that gate.",
+    "The requirement says three actual passes; Inkle signals do not meet that forced-dealer condition. The test expects a redeal when there are only Inkle signals and passes."
+  ],
+  "InterruptedRegression": "One full regression was cancelled after clarifying the test expectation; it was superseded by a fresh full run with final test scripts.",
+  "ProductCodeModified": false,
+  "MatchResultsFiltered": false
+}

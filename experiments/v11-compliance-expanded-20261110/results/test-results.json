@@ -1,0 +1,3491 @@
+{
+  "Counters": {
+    "total": "638",
+    "executed": "638",
+    "passed": "638",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "NewComplianceTests": [
+    {
+      "Name": "InkleSignalsNeitherBecomeContractsNorCountAsThreePasses (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0276298"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"play\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0041950"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"only_when_void\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0196097"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"solo\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0133931"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"never_led\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0025831"
+    },
+    {
+      "Name": "NormalScoringMatchesTheTableAndSlamFloorForAllTrickDistributions (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0875434"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"anytime\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0200188"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"low-zero\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0356843"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"nomination\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031184"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"first_lead_of_suit_or_void\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0209741"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"american\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0095065"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Clubs,Spades)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014493"
+    },
+    {
+      "Name": "EveryBotCompliesWithForcedDealerInsteadOfReturningIllegalPass",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.6774654"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"anytime\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0204998"
+    },
+    {
+      "Name": "NormalScoringMatchesTheTableAndSlamFloorForAllTrickDistributions (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0728892"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"transfer\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0033112"
+    },
+    {
+      "Name": "AllRankingModesAndGrandEligibilityHaveExactBoundaries (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0120848"
+    },
+    {
+      "Name": "NamedJokerHasOneSuitAndSurvivesObservationRoundTrip (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031523"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-count\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038677"
+    },
+    {
+      "Name": "EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:01:15.1460631"
+    },
+    {
+      "Name": "AllRankingModesAndGrandEligibilityHaveExactBoundaries (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0058455"
+    },
+    {
+      "Name": "PlayerObservationMutationCannotChangeEngineState (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0104442"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"no-pickup\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0416057"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"australian\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0125497"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-duplicate\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0042259"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"normal\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0263247"
+    },
+    {
+      "Name": "InkleSignalsNeitherBecomeContractsNorCountAsThreePasses (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0079902"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"grand\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0150842"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"solo\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0221790"
+    },
+    {
+      "Name": "ZeroScoringUsesTheCorrectSeatOrTeamTarget (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0133071"
+    },
+    {
+      "Name": "SoloSuccessFailureAndNoContractPointsAreSymmetric (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0057417"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"last_card_only\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0056923"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"american\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0097016"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"any\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0041698"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"open\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0224930"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"not_shown_void\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0024761"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Diamonds,Hearts)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014113"
+    },
+    {
+      "Name": "ZeroScoringUsesTheCorrectSeatOrTeamTarget (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0080308"
+    },
+    {
+      "Name": "ReplayRejectsTamperedScoringAndHiddenDeal",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0323785"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0598920"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"duplicate-nomination\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038298"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Spades,Clubs)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0030603"
+    },
+    {
+      "Name": "PlayerObservationMutationCannotChangeEngineState (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0306631"
+    },
+    {
+      "Name": "NamedJokerHasOneSuitAndSurvivesObservationRoundTrip (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021973"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"australian\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0098658"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-foreign\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0034975"
+    },
+    {
+      "Name": "SoloSuccessFailureAndNoContractPointsAreSymmetric (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0057687"
+    },
+    {
+      "Name": "ContradictorySpecialContractSettingsFailAtLoadTime",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0141326"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"grand\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0255226"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"nt\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0182384"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"previously_led_by_holder\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0028362"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"first_lead_of_suit_or_void\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0218204"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Hearts,Diamonds)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0012990"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"only_when_void\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0382962"
+    },
+    {
+      "Name": "EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:01:10.5270018"
+    }
+  ],
+  "AllResults": [
+    {
+      "Name": "InkleSignalsNeitherBecomeContractsNorCountAsThreePasses (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0276298"
+    },
+    {
+      "Name": "Trump in with non-capturable low from 3rd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001112"
+    },
+    {
+      "Name": "Should bid with three sure tricks, regardless of other cards",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000079"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (2,False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0020164"
+    },
+    {
+      "Name": "CachedMediumMatchesOriginalForEveryDecisionIncludingJokerAndOpenHands (Normal,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0247491"
+    },
+    {
+      "Name": "PublicTrackerUpdatesAndResetsAcrossDivergingWorlds",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0013887"
+    },
+    {
+      "Name": "ShortForwardFullDepthMatchesActualRulesAndPrivatePolicies (Normal,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0101911"
+    },
+    {
+      "Name": "TacticianProtectsNoTrumpStopperStructure",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014774"
+    },
+    {
+      "Name": "Bid 6NT with Joker and a near weak hand in Australian",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002448"
+    },
+    {
+      "Name": "Should bid with only Jacks with strong off-suit support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000058"
+    },
+    {
+      "Name": "Duck from 4th seat with boss when protecting Nil if already set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000054"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"selective-belief-v3\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003285"
+    },
+    {
+      "Name": "ImpossibleDealsAreRejectedBeforeBotEvaluation",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004802"
+    },
+    {
+      "Name": "Should bid alone if call-for-best with only Jacks with strong off-suit support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000527"
+    },
+    {
+      "Name": "DontLeadTrumpWhenDefending",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010160"
+    },
+    {
+      "Name": "SAYC: 4th highest from AJ10xx against NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0050547"
+    },
+    {
+      "Name": "RepeatedPartnerLeadsLeaveRoomForUnblockingInsteadOfForcingPreservation",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003285"
+    },
+    {
+      "Name": "TestBids (\"JCJS5C4C3C2C\",6,False,TenPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000092"
+    },
+    {
+      "Name": "Bid 6NT with Joker and a medium hand in Australian",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000723"
+    },
+    {
+      "Name": "Don't play QS if partner taking trick with higher spade, even holding AS",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002267"
+    },
+    {
+      "Name": "Should not go alone in call-for-best without either Jack with next 3 trump and strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000082"
+    },
+    {
+      "Name": "Bid 13 with highest Spades and all off-suit Aces",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000248"
+    },
+    {
+      "Name": "Do not bid alone without either jack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001974"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"play\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0041950"
+    },
+    {
+      "Name": "DontBidNilAfterBlindNil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002326"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"selective-quality-v2\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002865"
+    },
+    {
+      "Name": "Should bid missing both Jacks with remaining high trump and two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000057"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"only_when_void\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0196097"
+    },
+    {
+      "Name": "TechnicalErrorsAreSeparateFromLegalButUndesirableDecisions",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0028234"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 2S\",\"3D\",\"5+ Diamonds (8-11 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000275"
+    },
+    {
+      "Name": "Lead highest off-suit if need all tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000638"
+    },
+    {
+      "Name": "Lead highest trump if need all tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000099"
+    },
+    {
+      "Name": "Bid Nil instead of 1 with 1-card pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000183"
+    },
+    {
+      "Name": "Bid alone if alone-must-take-5 with top three trump, two-suited, and top off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002680"
+    },
+    {
+      "Name": "IllegalActionsFailWithoutFallback (\"discard\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004399"
+    },
+    {
+      "Name": "Should go alone without high Jack if strong enough",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000063"
+    },
+    {
+      "Name": "ShortForwardFullDepthMatchesActualRulesAndPrivatePolicies (Misere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0036473"
+    },
+    {
+      "Name": "NT_OpeningLead_TryTakeEmCannotLeadNonBossFromPartnerVoidSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003489"
+    },
+    {
+      "Name": "FullGamesStayLegalBoundedAndReproducible",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.4222934"
+    },
+    {
+      "Name": "SequentialRootActionsReportsAndRandomStreamRemainIdentical",
+      "Outcome": "Passed",
+      "Duration": "00:00:12.3211912"
+    },
+    {
+      "Name": "Stage2DoesNotTreatPostKittyDeclarerHandAsOriginalBidHand",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0047406"
+    },
+    {
+      "Name": "Ditch low from suit without boss in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000341"
+    },
+    {
+      "Name": "SoloDucksIfEffectivePartnerTakingTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007190"
+    },
+    {
+      "Name": "Acol: top from three small",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0019174"
+    },
+    {
+      "Name": "ContinuationActionsUtilitiesAndBranchIsolationMatch",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0941002"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"solo\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0133931"
+    },
+    {
+      "Name": "V8SourceAndFixedBudgetsHaveTheirOwnFrozenManifest",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0011617"
+    },
+    {
+      "Name": "Should bid with three weak trump if two-suited with high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000061"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1C X 1H\",\"1S\",\"4+ Spades (6-9 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002658"
+    },
+    {
+      "Name": "DontProtectTheLeftIfTookOneTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001979"
+    },
+    {
+      "Name": "Should pass if four-suited with only one trump, even if Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000140"
+    },
+    {
+      "Name": "AlwaysPassesAndRetainsRandomNonBiddingSequence",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0087415"
+    },
+    {
+      "Name": "NT_OffenseSloughWeakSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015523"
+    },
+    {
+      "Name": "AllSixConfigurationsRunAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0415389"
+    },
+    {
+      "Name": "Should not go alone if opponents will pick up high Jack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000059"
+    },
+    {
+      "Name": "Avoid leading possible capturable low",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001886"
+    },
+    {
+      "Name": "ConfiguredBudgetsAndRuleMismatchAreExplicit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0169426"
+    },
+    {
+      "Name": "Should not go alone in call-for-best without top 3 trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000059"
+    },
+    {
+      "Name": "AustralianDeckAndAuctionOrder",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004738"
+    },
+    {
+      "Name": "PtnTestFiles",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0553411"
+    },
+    {
+      "Name": "Avoid leading trump on defense",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005197"
+    },
+    {
+      "Name": "Win from 4th seat with non-boss when protecting Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000977"
+    },
+    {
+      "Name": "PreemptExplanations (Acol,4,Hearts,\"Good 8-card Hearts suit; preempt (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000232"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"never_led\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0025831"
+    },
+    {
+      "Name": "SingleJokerWithFourLeadDeclarationsStillCallsPolicy",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0025304"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X Pass\",\"2H\",\"4+ Hearts; inviting game (9-11 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000561"
+    },
+    {
+      "Name": "PassReentryVariantChangesAuctionWithoutChangingDefault",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015711"
+    },
+    {
+      "Name": "QueenSpadesAfterHearts",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004382"
+    },
+    {
+      "Name": "Trump in with lowest capturable pointer from last seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000749"
+    },
+    {
+      "Name": "SaycTestSuite",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2452914"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"selective-joint-v1\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004284"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (Acol,\"Pass Pass Pass 1C X 1S\",\"2H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0060149"
+    },
+    {
+      "Name": "WrongRulesAreRejectedAndFreshSessionsReproduceDecisions",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.1008145"
+    },
+    {
+      "Name": "MinimalRepairPreservesControlsAndChangesOnlyOneDiscardWhenPossible",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0116467"
+    },
+    {
+      "Name": "Cut from 4th seat with boss Spade when protecting Nil if about to be set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000093"
+    },
+    {
+      "Name": "Duck covered from 2nd seat when protecting Nil if already set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002820"
+    },
+    {
+      "Name": "FullMatchesAreLegalReplayableAndSeedReproducible",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.7975587"
+    },
+    {
+      "Name": "30 on: 2H is not yet game; bid the cheapest game level",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0020081"
+    },
+    {
+      "Name": "AllNineCurrentBotsRunAgainstNewDefaultAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:06.8292144"
+    },
+    {
+      "Name": "Ditch low from suit without possible boss in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000101"
+    },
+    {
+      "Name": "NormalScoringMatchesTheTableAndSlamFloorForAllTrickDistributions (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0875434"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1C Pass 1D\",\"X\",\"Takeout double; 4+ Hearts and Spades (13+ dummy points), or 18+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0145118"
+    },
+    {
+      "Name": "Bid Nil with all lowest off-suit cards",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003416"
+    },
+    {
+      "Name": "ShortForwardFullDepthMatchesActualRulesAndPrivatePolicies (Normal,Hearts)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0380806"
+    },
+    {
+      "Name": "Avoid trumping in with capturable low from 2nd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000887"
+    },
+    {
+      "Name": "LeadBackPointsSecondTrickInCallPartner (\"JH\",\"AHJH2HTS9S\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000205"
+    },
+    {
+      "Name": "Should bid with four trump, regardless of off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000052"
+    },
+    {
+      "Name": "TakeBagsToSetOpponents",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001162"
+    },
+    {
+      "Name": "Duck from 4th seat with boss Spade when protecting Nil if already set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000044"
+    },
+    {
+      "Name": "ARequestWithOnlyASingletonHoldingDoesNotOverrideFast",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010725"
+    },
+    {
+      "Name": "Trump in above capturable low from 3rd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001239"
+    },
+    {
+      "Name": "Bid 4 with only 1-card pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000127"
+    },
+    {
+      "Name": "Overbid opponents even if we can reenter bidding",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000642"
+    },
+    {
+      "Name": "Bid 1 instead of Nil with no pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000313"
+    },
+    {
+      "Name": "SetOpenMisere (\"9C\",\"6C\",\"9C5C9S\",\"JSTS6D\",1)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000174"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"anytime\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0200188"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"Pass Pass 1D Pass Pass 1H 3D\",\"3H\",\"Competitive raise; 4+ Hearts (6-12 dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021434"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C\",\"X\",\"Takeout double; 3+ in unbid suits (13+ dummy points), or 18+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000273"
+    },
+    {
+      "Name": "Stage1ConfiguredBiddingReallyUsesSearchAndEntireAuction",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2206194"
+    },
+    {
+      "Name": "DiscardRepairMatchesFrozenHandGuard",
+      "Outcome": "Passed",
+      "Duration": "00:00:17.6134363"
+    },
+    {
+      "Name": "FullHandsConserveCardsMaskInformationAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0134378"
+    },
+    {
+      "Name": "Bid iNT in American",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000589"
+    },
+    {
+      "Name": "EveryPrefixSummaryMatchesFrozenRebuildAndForkIsIndependent",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0301806"
+    },
+    {
+      "Name": "Duck from 4th seat with boss Spade when protecting Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000099"
+    },
+    {
+      "Name": "LeadSignalFromLead_NT_LeadsLowestFromLongestSuitFallback",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002754"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"low-zero\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0356843"
+    },
+    {
+      "Name": "Bid alone with top four trump and high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000066"
+    },
+    {
+      "Name": "Lead low trump if less than all tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001245"
+    },
+    {
+      "Name": "ForwardModelMatchesAuthoritativeEngineFromDiscardAndMidTrick (Misere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0143694"
+    },
+    {
+      "Name": "SaveHighCardToProtectNilIfNoGaps",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001629"
+    },
+    {
+      "Name": "PreemptExplanations (SAYC,4,Hearts,\"Good 8-card Hearts suit; preempt (5-11 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000220"
+    },
+    {
+      "Name": "Should pass with weak off-suit and no high Jack if only three strong trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000073"
+    },
+    {
+      "Name": "V2LearnsMoreFromSameEvidenceAndCanReverseWithoutErasingModels",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0018799"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"nomination\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031184"
+    },
+    {
+      "Name": "NonGuardedBidsAndOtherPhasesMatchMisereOnlyOnFreshInputs",
+      "Outcome": "Passed",
+      "Duration": "00:00:12.8101872"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (0,False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0053254"
+    },
+    {
+      "Name": "SignalGoodSuitOnFirstSlough_Slough",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002571"
+    },
+    {
+      "Name": "Trump in with lowest capturable pointer from last seat (could follow)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000691"
+    },
+    {
+      "Name": "Avoid leading capturable low",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001232"
+    },
+    {
+      "Name": "HolderLeadHistoryFirstSuitFollowAndLowJokerAreIndependent",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0064024"
+    },
+    {
+      "Name": "AdvanceExplanations (SAYC,\"1C 1D 1S\",\"2S\",\"Unknown bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000233"
+    },
+    {
+      "Name": "TestPassNilBid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007400"
+    },
+    {
+      "Name": "PublicOpenMisereForcedBustIsTakenAcrossSeeds",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0039606"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"first_lead_of_suit_or_void\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0209741"
+    },
+    {
+      "Name": "LeadBackPointsSecondTrickInCallPartner (\"JH\",\"JH4H2HTS9S\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000313"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (SAYC,\"1C X 1S\",\"2H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004608"
+    },
+    {
+      "Name": "Don't bid 6NT with Joker and a weak hand in Australian",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004517"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"american\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0095065"
+    },
+    {
+      "Name": "Should pass missing both Jacks with remaining high trump and two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000051"
+    },
+    {
+      "Name": "NoPickupAndGrandNulloHaveDifferentPrivateExchangeFlows",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0133573"
+    },
+    {
+      "Name": "FullEngineGamesDefaultAndConfiguredMatchAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:02.1365707"
+    },
+    {
+      "Name": "DontProtectTheLeftWhenNextPlayerIsVoidInTrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002237"
+    },
+    {
+      "Name": "Prefer bidding a major",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003547"
+    },
+    {
+      "Name": "WeakOpeningPassesButHonorsLengthCompetitionAndPressureAreExempt",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0055647"
+    },
+    {
+      "Name": "LearnedModelsValidateIdentityAndSeedGroupIsolation",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0175605"
+    },
+    {
+      "Name": "Acol: top from three small in partner's suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003154"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Clubs,Spades)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014493"
+    },
+    {
+      "Name": "ForwardModelMatchesAuthoritativeEngineFromDiscardAndMidTrick (OpenMisere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0326907"
+    },
+    {
+      "Name": "JokerNominationAllowsDefendersAndSamplerKeepsPublicOwner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0384500"
+    },
+    {
+      "Name": "AllPhaseContinuationTracesAndUtilitiesMatchAndBranchesRemainIsolated",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1576021"
+    },
+    {
+      "Name": "Should pass if two-suited with very weak trump, even with high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000959"
+    },
+    {
+      "Name": "NewStrategyAndModelVersionsAreAlsoFrozen",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0008565"
+    },
+    {
+      "Name": "Trump in with lowest pointer from last seat (could follow)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000694"
+    },
+    {
+      "Name": "SignalGoodSuitAvoidsSingletonAce",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002774"
+    },
+    {
+      "Name": "TwentyGameScheduleIsReproducibleAndBalancesRootSeats",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0338790"
+    },
+    {
+      "Name": "CountSureTricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0030550"
+    },
+    {
+      "Name": "RootActionsSearchAndDiagnosticsMatch",
+      "Outcome": "Passed",
+      "Duration": "00:00:11.9947156"
+    },
+    {
+      "Name": "Lead high trump if pitcher",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0130832"
+    },
+    {
+      "Name": "Should pass with only three sure tricks, regardless of other cards",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000071"
+    },
+    {
+      "Name": "Bid 10 if we have it",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000710"
+    },
+    {
+      "Name": "Stage1EvidenceLearnsSeatsSeparatelyAndCanReverse",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0006417"
+    },
+    {
+      "Name": "Don't bid higher than needed to win",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000730"
+    },
+    {
+      "Name": "TestBids (\"ACKCQCJC2CAH\",15,True,FourPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000460"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"9HTH\",\"QHJH\",\"\",\"JH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000171"
+    },
+    {
+      "Name": "EveryBotCompliesWithForcedDealerInsteadOfReturningIllegalPass",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.6774654"
+    },
+    {
+      "Name": "Bridgit handles Blackwood",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1149616"
+    },
+    {
+      "Name": "LeadLastTrumpIfAlreadyMadeBidAndPartnerIsVoid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002218"
+    },
+    {
+      "Name": "Trump in with a pointer from last seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003355"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"anytime\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0204998"
+    },
+    {
+      "Name": "FreshActorsReproduceSeededDecisionsForEachHandOrder",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1392498"
+    },
+    {
+      "Name": "Should bid with only Jacks with mostly strong off-suit support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000057"
+    },
+    {
+      "Name": "FastAndStrongUseDistinctBudgetsAndCandidates",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0395304"
+    },
+    {
+      "Name": "PreservingPartnerWinnersAndDiscardingJokerHaveExplicitCounterexamples",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005808"
+    },
+    {
+      "Name": "NormalScoringMatchesTheTableAndSlamFloorForAllTrickDistributions (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0728892"
+    },
+    {
+      "Name": "RandomLegalSamplesCardsNotExpandedJokerActionsAndIncludesPassUniformly",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0214547"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"TH9H\",\"QH7H\",\"\",\"QH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000172"
+    },
+    {
+      "Name": "Handle fixed bidding in a suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000580"
+    },
+    {
+      "Name": "Bid grand slam in a suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004700"
+    },
+    {
+      "Name": "Ditch non-boss off-suit singleton",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003463"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 1S\",\"3H\",\"4+ Hearts; inviting game (10-12 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000886"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"transfer\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0033112"
+    },
+    {
+      "Name": "Bid partscore in a suit (case 2)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000197"
+    },
+    {
+      "Name": "Bid 4 with 2-card pass if partner bid non-Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000315"
+    },
+    {
+      "Name": "DontLeadJokersInNT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0280470"
+    },
+    {
+      "Name": "Don't play QS if last to play and partner taking trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000387"
+    },
+    {
+      "Name": "AllRankingModesAndGrandEligibilityHaveExactBoundaries (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0120848"
+    },
+    {
+      "Name": "NamedJokerHasOneSuitAndSurvivesObservationRoundTrip (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031523"
+    },
+    {
+      "Name": "TestHighBids",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001091"
+    },
+    {
+      "Name": "DontTakeBagsIfWeCantSetOpponents",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001188"
+    },
+    {
+      "Name": "Prefer picking suit with stronger trump (at correct level)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000764"
+    },
+    {
+      "Name": "LeadLeftToPartnerIfTheyCalled",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001182"
+    },
+    {
+      "Name": "Dump card worth fewer game points",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000576"
+    },
+    {
+      "Name": "Should bid four-suited having both Jacks and an off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000054"
+    },
+    {
+      "Name": "ResponderRebidExplanations (SAYC,\"1H Pass 1S Pass 2C Pass\",\"2D\",\"Fourth suit forcing (13+ points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0144394"
+    },
+    {
+      "Name": "Don't bid Nil if partner already bid Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000663"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-count\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038677"
+    },
+    {
+      "Name": "SoloTakesIfNoEffectivePartner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001437"
+    },
+    {
+      "Name": "EveryPlayPrefixAndJokerOptionMatchesUncachedMedium",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0323737"
+    },
+    {
+      "Name": "Should order up opponent with the top two trump and a low third trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001700"
+    },
+    {
+      "Name": "TimingWrappersForwardPublicJokerDeclarations",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0058098"
+    },
+    {
+      "Name": "BothNewProfilesLoadEveryConfigurationAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.7492478"
+    },
+    {
+      "Name": "LastSeatCanConsiderTakingOverPartnerToCashAnEstablishedSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002084"
+    },
+    {
+      "Name": "Bid 10♠ with Joker, a strong hand, and off-Jack in American",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000664"
+    },
+    {
+      "Name": "Should not bid alone with only Jacks if alone-must-take-5 even with call-for-best",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000115"
+    },
+    {
+      "Name": "DontTakeBagsIfWereTooCloseToPenalty",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001289"
+    },
+    {
+      "Name": "Raise opener's forcing 3-level new suit to game with 4-card support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0040373"
+    },
+    {
+      "Name": "Should pass four-suited having both Jacks and two off-suit Aces",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000157"
+    },
+    {
+      "Name": "SkipLeadTowardPartnerWhenBossCardsCoverRemainingContract_NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004260"
+    },
+    {
+      "Name": "PreviousBotsAndAllTheirConfigurationSourcesAreFrozen",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010203"
+    },
+    {
+      "Name": "SamplerPreservesVoidsExposedHandsOwnDiscardsAndEveryCardExactlyOnce",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0101194"
+    },
+    {
+      "Name": "Should bid three-suited missing both Jacks with strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002038"
+    },
+    {
+      "Name": "CallForBest",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0036726"
+    },
+    {
+      "Name": "ShouldPassPinochlePartsToDeclarer (Spades,\"QSJSJDAHAHKHACACKCKCQCQC\",\"QSJSJDAC\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000546"
+    },
+    {
+      "Name": "SignalGoodSuitOnFirstSlough_LeadBack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005139"
+    },
+    {
+      "Name": "EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:01:15.1460631"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1H X Pass\",\"1S\",\"3+ Spades (usually 4+) (0-8 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004850"
+    },
+    {
+      "Name": "PartnerPreservationDoesNotAssumeAnUnseenJokerCannotOvertake",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005176"
+    },
+    {
+      "Name": "ProtectTheLeftOnDefense",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002637"
+    },
+    {
+      "Name": "PlayOnlyAsHighAsNeededInLastSeat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003298"
+    },
+    {
+      "Name": "NewFlagsCannotSilentlyUseLegacyExecution",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0168290"
+    },
+    {
+      "Name": "TestBids (\"6C5C5S4S3D2D\",0,False,FourPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000238"
+    },
+    {
+      "Name": "Cut from 4th seat with non-boss when protecting Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000161"
+    },
+    {
+      "Name": "MigratedMediumStrategyInheritsOnlyPlatformBase",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004691"
+    },
+    {
+      "Name": "Don't bid alone if alone-must-take-5 with top four trump and any off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000076"
+    },
+    {
+      "Name": "AllRankingModesAndGrandEligibilityHaveExactBoundaries (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0058455"
+    },
+    {
+      "Name": "JokerPoliciesDifferAndNamedJokerIsNotUniversalTrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031390"
+    },
+    {
+      "Name": "MisereJudgementsDistinguishAvoidableLossFromForcedFollow",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010635"
+    },
+    {
+      "Name": "ExistingBotCanPlayCompleteDeterministicGames",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1096986"
+    },
+    {
+      "Name": "V2SupportsAllSixConfigurationsAndReplays",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.9312585"
+    },
+    {
+      "Name": "DontProtectTheLeftIfHoldingTheRight",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001713"
+    },
+    {
+      "Name": "Lead off-suit if opponents have a trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000293"
+    },
+    {
+      "Name": "Should bid when two-suited with three trump of reasonable strength",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000929"
+    },
+    {
+      "Name": "80 on: still show a 5-card major at the 1-level",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0011051"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1C\",\"X\",\"Takeout double; 3+ in unbid suits (13+ dummy points), or 18+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001344"
+    },
+    {
+      "Name": "Bid Nil instead of 4 with 4-card pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000167"
+    },
+    {
+      "Name": "PlayerObservationMutationCannotChangeEngineState (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0104442"
+    },
+    {
+      "Name": "OpenerRebidExplanations (SAYC,\"1S 3D 4D Pass\",\"4NT\",\"Blackwood; asking for Aces\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003901"
+    },
+    {
+      "Name": "Duck covered from 2nd seat when protecting Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000244"
+    },
+    {
+      "Name": "Bid game in a suit if slam is not available",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000337"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"no-pickup\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0416057"
+    },
+    {
+      "Name": "Don't bid any NT without Joker in Australian (if partner hasn't bid)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000815"
+    },
+    {
+      "Name": "LeadHighestLegalCardToProtectNil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0018424"
+    },
+    {
+      "Name": "Prefer picking suit with stronger trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000714"
+    },
+    {
+      "Name": "AuditDoesNotAdvanceMainRandomStreamAndReportsNeverGoStale",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.9857078"
+    },
+    {
+      "Name": "Stage1PosteriorImprovesPredictiveLogLossOnControlledEvidence",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003585"
+    },
+    {
+      "Name": "LeadBackPartnerGoodSuit_NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0037229"
+    },
+    {
+      "Name": "PlayOverHighCardToProtectNilIfNeeded",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001823"
+    },
+    {
+      "Name": "UninformativeEvidenceDoesNotInventAPlayerStyle",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003793"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"selective-play-v1\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015877"
+    },
+    {
+      "Name": "AllStagesSearchLegallyAcrossAllSixConfigurations",
+      "Outcome": "Passed",
+      "Duration": "00:00:08.7347531"
+    },
+    {
+      "Name": "Rubber: partscore read from GameScore",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014771"
+    },
+    {
+      "Name": "CorpusProfilerUsesIdenticalRecordedStatesAndRespectsBudget",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0469390"
+    },
+    {
+      "Name": "Raise partner with support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000831"
+    },
+    {
+      "Name": "Bid 5 instead of 4 with 2-card pass if partner hasn't bid yet",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000123"
+    },
+    {
+      "Name": "MediumInheritsEveryDecisionFromOriginalAndAdapterIsEquivalent",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0608449"
+    },
+    {
+      "Name": "DontTrumpWinningPartnerInLastSeat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002950"
+    },
+    {
+      "Name": "Bid alone with top three trump and top off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000058"
+    },
+    {
+      "Name": "BothPathsMatchFrozenPoliciesOnAllExperienceFixtures",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.9327800"
+    },
+    {
+      "Name": "TrumpRankingAndOffSuitCannotWin",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002046"
+    },
+    {
+      "Name": "DefaultAndCompatibilityPresetHaveIdenticalDecisionsAndScores",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0052100"
+    },
+    {
+      "Name": "SaycTestFiles",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1041857"
+    },
+    {
+      "Name": "Should bid three-suited missing both Jacks with strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000219"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"australian\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0125497"
+    },
+    {
+      "Name": "LeadBackPartnerPromotedSuitAgainBeforeOtherBoss_NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003382"
+    },
+    {
+      "Name": "SoloTakesIfEffectivePartnerNotTakingTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002167"
+    },
+    {
+      "Name": "RuleMismatchIsRejectedForEveryPolicy",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0107572"
+    },
+    {
+      "Name": "PlayUnderMisereIfPossible",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001452"
+    },
+    {
+      "Name": "DefaultAndConfiguredSmokeGamesMatchAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.4869263"
+    },
+    {
+      "Name": "Don't raise past 8 if missing tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000669"
+    },
+    {
+      "Name": "Only count the Joker as stopper once in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000731"
+    },
+    {
+      "Name": "OldPlayersCanDeclineOptionalRedealAndStillReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2073039"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X Pass 2H Pass\",\"4H\",\"Accept invitation (15+ dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001210"
+    },
+    {
+      "Name": "TestBids (\"ACKC3S6H7HQH\",3,False,FourPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0041122"
+    },
+    {
+      "Name": "Bid 7NT without Joker if strong in NT and partner bid 6NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000550"
+    },
+    {
+      "Name": "RootSearchActionsBudgetsAndDiagnosticsMatchAcrossPhases",
+      "Outcome": "Passed",
+      "Duration": "00:00:09.7466801"
+    },
+    {
+      "Name": "DontProtectTheLeftWhenLastToPlay",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002389"
+    },
+    {
+      "Name": "Bid partscore in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000180"
+    },
+    {
+      "Name": "TestBids (\"KCQCJCJS3C2C\",8,False,TenPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000838"
+    },
+    {
+      "Name": "StrongEvaluatesAllDiscardCombinationsAndUsesItsFixedBudget",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0426506"
+    },
+    {
+      "Name": "TestBids (\"7D5S8SQSAS6H\",3,False,FourPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002428"
+    },
+    {
+      "Name": "Chicago: partscore ignored",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0016275"
+    },
+    {
+      "Name": "OriginalSearchBiddingAndMiserePlayAreRetained",
+      "Outcome": "Passed",
+      "Duration": "00:00:37.2468903"
+    },
+    {
+      "Name": "Bid grand slam in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0023433"
+    },
+    {
+      "Name": "PreemptExplanations (Acol,3,Hearts,\"Good 7-card Hearts suit; preempt (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0222580"
+    },
+    {
+      "Name": "Don't bid any NT without Joker in Australian (if partner didn't bid NT)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000576"
+    },
+    {
+      "Name": "OpenerRebidExplanations (SAYC,\"1D 1S 2C Pass\",\"2NT\",\"Balanced; minimum; stopper in Spades (12-14 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002112"
+    },
+    {
+      "Name": "Handle fixed bidding in NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000985"
+    },
+    {
+      "Name": "ActiveMiserePartnerProtectsDeclarerWhileOpponentTriesToBust",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0039328"
+    },
+    {
+      "Name": "60 on: pass partner's forcing 2D with a 7-card fit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0012733"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"visibility-fast-v6\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0020109"
+    },
+    {
+      "Name": "ProofsSurviveEveryActualReplyInSmallHands",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0947121"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1H X Pass\",\"1S\",\"3+ Spades (usually 4+) (0-8 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0104715"
+    },
+    {
+      "Name": "Should pass ordering up opponent with a low third trump but without the top trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000100"
+    },
+    {
+      "Name": "Trump in above capturable low from 2nd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002720"
+    },
+    {
+      "Name": "Bid 7 instead of 5 with 4-card pass if partner hasn't bid yet",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000132"
+    },
+    {
+      "Name": "40 on: pass partner's doubled 1H (1HX = 60 makes game)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0016543"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"2H3H\",\"JH5H\",\"\",\"JH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004375"
+    },
+    {
+      "Name": "Trump in with non-capturable low from 2nd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000617"
+    },
+    {
+      "Name": "Acol: 2nd highest from four small",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002324"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-duplicate\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0042259"
+    },
+    {
+      "Name": "LeadHighestSpadeToProtectNil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001718"
+    },
+    {
+      "Name": "Should pass with only Jacks with mostly strong off-suit support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002072"
+    },
+    {
+      "Name": "Should bid alone with four trump and off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001428"
+    },
+    {
+      "Name": "Should pass if four-suited and weak, even with both Jacks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003540"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeatWithPlayHistory",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002566"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1D 1S\",\"2S\",\"Unknown bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000512"
+    },
+    {
+      "Name": "Should not go alone in call-for-best without either Jack, only 3 trump, and no off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000067"
+    },
+    {
+      "Name": "Lead high trump if need all tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002100"
+    },
+    {
+      "Name": "IllegalActionsFailWithoutFallback (\"play\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004614"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"normal\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0263247"
+    },
+    {
+      "Name": "Trump in with lowest pointer from last seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001050"
+    },
+    {
+      "Name": "TryToDrawOutQS",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002858"
+    },
+    {
+      "Name": "ForwardModelMatchesAuthoritativeEngineFromDiscardAndMidTrick (Normal,Hearts)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0722831"
+    },
+    {
+      "Name": "InkleSignalsNeitherBecomeContractsNorCountAsThreePasses (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0079902"
+    },
+    {
+      "Name": "SequentialRootActionsReportsAndRandomStreamRemainIdentical",
+      "Outcome": "Passed",
+      "Duration": "00:00:14.4698480"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1H\",\"X\",\"Takeout double; 3+ in unbid suits (13+ dummy points), or 18+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004284"
+    },
+    {
+      "Name": "60 on: opening bids are unaffected",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007925"
+    },
+    {
+      "Name": "Should bid with weak off-suit and no high Jack if three strong trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000062"
+    },
+    {
+      "Name": "60 on: don't pass partner's 2D without a fit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0023317"
+    },
+    {
+      "Name": "Bid 5 with 4-card pass if partner bid non-Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000126"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"Pass Pass Pass 1C X 1S\",\"2H\",\"4+ Hearts (6-9 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0011944"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"grand\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0150842"
+    },
+    {
+      "Name": "Bid 6 instead of 4 with 4-card pass if partner bid Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000125"
+    },
+    {
+      "Name": "SloughJokerFirstWhenVoidInNT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0008120"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"solo\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0221790"
+    },
+    {
+      "Name": "BaselineControlMatchesFrozenStrongOverDefaultDeals",
+      "Outcome": "Passed",
+      "Duration": "00:00:04.8319272"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"7H8H\",\"QHTH\",\"\",\"QH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000146"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (Acol,\"1D 1S 2D Pass Pass\",\"3C\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0006286"
+    },
+    {
+      "Name": "DefaultGameIsDeterministicAndReplays",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.2880550"
+    },
+    {
+      "Name": "DefaultAndConfiguredGameRecordsAreIdenticalAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:04.7857924"
+    },
+    {
+      "Name": "PassedOutGamesAreExplicitlyTruncatedAndReplayTamperingFails",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0009107"
+    },
+    {
+      "Name": "DefaultRandomActionsDoNotConsumeTheSeparateDeclarationStream",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0065123"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (0,True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0065597"
+    },
+    {
+      "Name": "Bid Nil instead of 2 with 2-card pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000148"
+    },
+    {
+      "Name": "EveryConfiguredPresetRunsAndReplays",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.2213612"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"7H8H\",\"QHTH\",\"JH\",\"TH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000139"
+    },
+    {
+      "Name": "ShortlistMatchesOriginalBudgetAndContainsOnlyUniqueLegalDiscardSets",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0199548"
+    },
+    {
+      "Name": "LeadBackPointsSecondTrickInCallPartner (\"3H\",\"JH3H2HTS9S\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001521"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (Acol,\"Pass Pass 1D Pass Pass 1H 3D\",\"3H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001481"
+    },
+    {
+      "Name": "BudgetExhaustionAndAlreadyFailedMisereDoNotInventProofs",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002772"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1D Pass\",\"1S\",\"Good 5+ Spades (6+ points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002436"
+    },
+    {
+      "Name": "SetOpenMisere (\"7S\",\"\",\"ADKDQD8C7C6CHJ7S\",\"JD9D8D6D8HJSTS5S\",3)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002926"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1D Pass\",\"1NT\",\"Balanced; stopper in Clubs (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004032"
+    },
+    {
+      "Name": "Win covered from 2nd seat when protecting Nil if need every trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002219"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"adaptive-balanced-v1\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0006046"
+    },
+    {
+      "Name": "ShouldPassPinochlePartsToDeclarer (Clubs,\"QDJDTDTD9DKSQSJSJSAHAHKH\",\"AHAH9DQD\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0082412"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"9HTH\",\"KHJH\",\"\",\"KH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000376"
+    },
+    {
+      "Name": "Bid 4 without a pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000160"
+    },
+    {
+      "Name": "40 on: pass partner's raise to 2H (40+60=100)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0030125"
+    },
+    {
+      "Name": "ZeroScoringUsesTheCorrectSeatOrTeamTarget (\"australian\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0133071"
+    },
+    {
+      "Name": "Bid partscore in a suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001309"
+    },
+    {
+      "Name": "Bid 4 with AS and 3 opportunities to cut",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038744"
+    },
+    {
+      "Name": "Don't bid alone if alone-must-take-5 with top four trump and high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000079"
+    },
+    {
+      "Name": "Should bid three-suited missing both Jacks with strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001304"
+    },
+    {
+      "Name": "SAYC: low from three small in partner's suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0031913"
+    },
+    {
+      "Name": "ScoringChangesBiddingForAllNonWeakStrategicProfiles",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0333728"
+    },
+    {
+      "Name": "Don't play QS if partner taking trick with higher spade",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001865"
+    },
+    {
+      "Name": "CachedMediumMatchesOriginalForEveryDecisionIncludingJokerAndOpenHands (OpenMisere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0266518"
+    },
+    {
+      "Name": "ForwardModelMatchesAuthoritativeEngineFromDiscardAndMidTrick (Normal,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0518745"
+    },
+    {
+      "Name": "Win from 4th seat with boss when protecting Nil if about to be set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000164"
+    },
+    {
+      "Name": "SingleJokerWithFourLeadDeclarationsStillCallsPolicy",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0039082"
+    },
+    {
+      "Name": "Avoid ditching off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001921"
+    },
+    {
+      "Name": "PlayUnderMisereIfPossibleWithJoker",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001543"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"adaptive-sprint-v1\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0037271"
+    },
+    {
+      "Name": "SAYC: low from three small",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0888944"
+    },
+    {
+      "Name": "Don't cut covered from 2nd seat when protecting Nil if already set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000735"
+    },
+    {
+      "Name": "RankAndScoreAreIndependentAndPresetSpecific",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0036137"
+    },
+    {
+      "Name": "SignalGoodSuitOnFirstSlough_Lead",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004416"
+    },
+    {
+      "Name": "Should pass with weak off-suit and no high Jack if only three strong trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000235"
+    },
+    {
+      "Name": "Should pass with three trump if two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001079"
+    },
+    {
+      "Name": "SoloSuccessFailureAndNoContractPointsAreSymmetric (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0057417"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"3H2H\",\"JH5H\",\"\",\"JH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001745"
+    },
+    {
+      "Name": "BiddingAndDiscardMatchAll32WithIdenticalFreshRandomStreams",
+      "Outcome": "Passed",
+      "Duration": "00:00:08.9749227"
+    },
+    {
+      "Name": "Lead high trump if opponents haven't taken a trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002234"
+    },
+    {
+      "Name": "LeadHighInNTWhenCanMakeContract",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002989"
+    },
+    {
+      "Name": "Bid 10NT with Joker and a strong hand in American",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001482"
+    },
+    {
+      "Name": "EveryBotCompletesSpecialContractsWithLegalActions",
+      "Outcome": "Passed",
+      "Duration": "00:00:39.8574017"
+    },
+    {
+      "Name": "Dump lower card",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002654"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"last_card_only\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0056923"
+    },
+    {
+      "Name": "OwnMisereUnloadsTheHighestSafeCardAndForcedLossRemainsLegal",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002673"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"american\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0097016"
+    },
+    {
+      "Name": "RepresentativesKeepNamedJokerActionsAndUnseenRanks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0013610"
+    },
+    {
+      "Name": "CurrentQueenSeparatesLosingJackFromWinningKing (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002910"
+    },
+    {
+      "Name": "ShortForwardFullDepthMatchesActualRulesAndPrivatePolicies (OpenMisere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0032406"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1H\",\"X\",\"Takeout double; 3+ in unbid suits (13+ dummy points), or 18+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0311786"
+    },
+    {
+      "Name": "NormalMakeAndSetUseActualTeamAndContractThreshold",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015736"
+    },
+    {
+      "Name": "Avoid trumping in with capturable low from 3rd seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000866"
+    },
+    {
+      "Name": "CurrentQueenSeparatesLosingJackFromWinningKing (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0008599"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (Acol,\"1C X 1S 2H Pass\",\"3H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001607"
+    },
+    {
+      "Name": "Acol: lead partner's 1D opening",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003245"
+    },
+    {
+      "Name": "AcolTestFiles",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1224362"
+    },
+    {
+      "Name": "NoLastSeatSearchWhenEveryMoveLosesToTheSameCard",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001464"
+    },
+    {
+      "Name": "Lead non-capturable low",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000754"
+    },
+    {
+      "Name": "Stage2ReweightsWithRoundPriorAndDoesNotMultiplyOldAuctionWeights",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0421349"
+    },
+    {
+      "Name": "LeadBackSuitPartnerTriedToPromote_NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002180"
+    },
+    {
+      "Name": "LeadBackPartnerGoodSuit_NT_BidderLeadsLowest",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003165"
+    },
+    {
+      "Name": "60 on: lower a 2NT rebid to 1NT (game)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0013525"
+    },
+    {
+      "Name": "LeadSignalFromLead_NT_LeadsLowestFromSelectedSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002980"
+    },
+    {
+      "Name": "ArenaAndLabCommandLinesUseOneConfigurationForEngineAndBots",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.5136873"
+    },
+    {
+      "Name": "LeadSignalFromLead_NT_KingDoubletonDoesNotUnstopSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003792"
+    },
+    {
+      "Name": "RuleBotDecisionSnapshotsStayUnchanged",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.7037049"
+    },
+    {
+      "Name": "LeadSignalFromLead_NT_BossAndCoverLeadsLowerCard",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002086"
+    },
+    {
+      "Name": "Bid alone if alone-must-take-5 with top three trump and top off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000325"
+    },
+    {
+      "Name": "Don't bid 6NT with Joker and a near weak hand in Australian if partner passed",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000713"
+    },
+    {
+      "Name": "Trump in with a pointer from last seat (could follow)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000694"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1H Pass Pass\",\"X\",\"Takeout double; 3+ in unbid suits (10+ dummy points), or 15+ HCP\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004130"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"any\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0041698"
+    },
+    {
+      "Name": "AllPassModesAndRedealRotation",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0231381"
+    },
+    {
+      "Name": "Ditch low from trump if necessary",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000174"
+    },
+    {
+      "Name": "Should pass with four trump, regardless of off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000130"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"open\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0224930"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"not_shown_void\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0024761"
+    },
+    {
+      "Name": "Bid 2 without a pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000132"
+    },
+    {
+      "Name": "DefaultAndExplicitRulesRemainPlayableAndEngineeringIsBehaviorEquivalent",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.0151905"
+    },
+    {
+      "Name": "Should take four-suited having both Jacks, an Ace and one off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000076"
+    },
+    {
+      "Name": "SAYC: 4th highest from four small",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002490"
+    },
+    {
+      "Name": "DontTakeBagsIfWellWinAnyway",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001828"
+    },
+    {
+      "Name": "Win covered from 2nd seat when protecting Nil if need almost every trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002062"
+    },
+    {
+      "Name": "Duck from 4th seat when protecting Nil if we can set opps Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001321"
+    },
+    {
+      "Name": "PlayHandThatBidItself",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002723"
+    },
+    {
+      "Name": "TestBids",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0050205"
+    },
+    {
+      "Name": "CachedMediumMatchesOriginalForEveryDecisionIncludingJokerAndOpenHands (Misere,Unknown)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0106441"
+    },
+    {
+      "Name": "FactoryAndAllRuleConfigurationsRunAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:02.9292703"
+    },
+    {
+      "Name": "AQueenFromAnEarlierTrickDoesNotPreventSafeRankPruning",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002203"
+    },
+    {
+      "Name": "TestBids (\"JCJSHJLJTC2C\",6,False,TenPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000100"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 1S 3H Pass\",\"4H\",\"Accept invitation (14+ dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004476"
+    },
+    {
+      "Name": "NonDiscardDecisionsMatchAll32OnFreshIdenticalInputs",
+      "Outcome": "Passed",
+      "Duration": "00:00:08.9555448"
+    },
+    {
+      "Name": "NoTrumpRepairKeepsGuardOrBuriesKingWithoutSacrificingAces",
+      "Outcome": "Passed",
+      "Duration": "00:00:04.5041217"
+    },
+    {
+      "Name": "CurrentTrumpSeparatesAnUndertrumpFromAnOvertrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001925"
+    },
+    {
+      "Name": "PublicMisereProofGeneralizesAcrossAllSeatsAndSuitRenamings",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0060528"
+    },
+    {
+      "Name": "Stage3ForcedOvertrumpIsNotEvidenceOfAggression",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0165943"
+    },
+    {
+      "Name": "PruningPreservesEveryCurrentWinnerClassAcrossRandomStates",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021992"
+    },
+    {
+      "Name": "Bid alone in call-for-best without either Jack with 4 trump and weak off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000417"
+    },
+    {
+      "Name": "DontLeadPartnerVoidSuitInNT_WhenAlternativeExists",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003633"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (SAYC,\"1C X 1S\",\"2H\",\"4+ Hearts (6-9 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001469"
+    },
+    {
+      "Name": "OpenerRebidExplanations (SAYC,\"1S Pass 3H Pass\",\"4NT\",\"Unknown bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000447"
+    },
+    {
+      "Name": "Bid Nil instead of 4 with 4-card pass (case 2)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000163"
+    },
+    {
+      "Name": "GrandSlamTransfersOneCardAndDiscardsOneExtra",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0067456"
+    },
+    {
+      "Name": "TestPassNonNilBid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001147"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 1S 2H Pass\",\"3H\",\"4+ Hearts; inviting game (14-16 dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0013443"
+    },
+    {
+      "Name": "Bid 5 instead of 4 with 2-card pass if partner bid Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000124"
+    },
+    {
+      "Name": "Should pass if three-suited and weak, even with three trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0027425"
+    },
+    {
+      "Name": "CardTablesMatchRulesAndRejectMaskedCards",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0042997"
+    },
+    {
+      "Name": "Should bid alone with four trump and off-suit Ace (case 2)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001655"
+    },
+    {
+      "Name": "Bid alone with top three trump, two-suited, and top off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000072"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"9HTH\",\"JH7H\",\"\",\"JH\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000361"
+    },
+    {
+      "Name": "Cut covered from 2nd seat when protecting Nil if about to be set",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000046"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"visibility-quality-v7\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003192"
+    },
+    {
+      "Name": "Bid natural instead of iNT in American with Joker",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000620"
+    },
+    {
+      "Name": "Should bid with four trump, regardless of off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000070"
+    },
+    {
+      "Name": "LowJokerChangesMisereDiscardRatherThanOnlyValidatingJson",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0125443"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Diamonds,Hearts)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014113"
+    },
+    {
+      "Name": "Should pass if four-suited with only one trump, even if high Jack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000085"
+    },
+    {
+      "Name": "ShouldPassPinochlePartsToDeclarer (Hearts,\"KDJDTDTDQSJSKCKCQCQCJCJC\",\"JCJCQCQC\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000394"
+    },
+    {
+      "Name": "LeadBackPointsSecondTrickInCallPartner (\"3H\",\"4H3H2HTS9S\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002687"
+    },
+    {
+      "Name": "Should bid when two-suited with three trump of reasonable strength",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000903"
+    },
+    {
+      "Name": "FourPlayerMiserePartnerMustHelpDeclarerAvoidTheTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0030301"
+    },
+    {
+      "Name": "SetOpenMisere (\"5C\",\"6C\",\"9C5C9S\",\"JCTC6D\",1)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000097"
+    },
+    {
+      "Name": "PlayHighIn3rdIfMisereIsUnder",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003457"
+    },
+    {
+      "Name": "Over-trump from last seat if trick is worth taking",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001381"
+    },
+    {
+      "Name": "Bid just high enough to win the game",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000655"
+    },
+    {
+      "Name": "OpenerRebidExplanations (SAYC,\"1S Pass 3H Pass\",\"3NT\",\"Balanced; no fit (12-19 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005918"
+    },
+    {
+      "Name": "DuckIfPartnerTakingTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0011605"
+    },
+    {
+      "Name": "WorkbookDefaultsAndFeatureBundlesAreResolved",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0090965"
+    },
+    {
+      "Name": "ZeroScoringUsesTheCorrectSeatOrTeamTarget (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0080308"
+    },
+    {
+      "Name": "Bid alone in call-for-best without either Jack with 4 trump and strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000056"
+    },
+    {
+      "Name": "Should bid with three trump if two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000188"
+    },
+    {
+      "Name": "LeadLowInNTWhileBuildingWinners",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0025916"
+    },
+    {
+      "Name": "Don't bid higher than partner if we can reenter bidding",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000770"
+    },
+    {
+      "Name": "DefaultAndEveryRuleConfigurationHaveIdenticalPlayedAndReplayedGames",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.3713982"
+    },
+    {
+      "Name": "ReplayRejectsTamperedScoringAndHiddenDeal",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0323785"
+    },
+    {
+      "Name": "UxRunnerSupportsExplicitProfilesWithoutChangingTheOriginalDefaults",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.3483833"
+    },
+    {
+      "Name": "Should bid with weak off-suit and no high Jack if three strong trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000056"
+    },
+    {
+      "Name": "AvoidLeadingSpadesIfOpponentsVoidAndPartnerIsNot",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003217"
+    },
+    {
+      "Name": "RankingsAndNoContractTerminalAreUnambiguous",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0108967"
+    },
+    {
+      "Name": "Lead high trump if need all tricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010017"
+    },
+    {
+      "Name": "Should bid alone with sure trump and off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000121"
+    },
+    {
+      "Name": "Over-trump with a pointer from last seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001001"
+    },
+    {
+      "Name": "Bid game in NT if slam is not available",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001144"
+    },
+    {
+      "Name": "UnequalWeightsUseEffectiveSampleSizeAndDominatedSamplesKeepBaseline",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0006209"
+    },
+    {
+      "Name": "VoidInferenceUsesLeftBowerAndJokerNamedSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003074"
+    },
+    {
+      "Name": "BasicTests",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0905877"
+    },
+    {
+      "Name": "FixedProfilesGateOnlyTheirOwnContractType",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0070964"
+    },
+    {
+      "Name": "SixCardDeadPoolAndPublicJokerOwnerAreRespectedBySampling",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0045129"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0598920"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 2S\",\"3H\",\"4+ Hearts (8-11 points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000371"
+    },
+    {
+      "Name": "PreemptExplanations (Acol,5,Clubs,\"Good 9-card Clubs suit; preempt (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004471"
+    },
+    {
+      "Name": "Duck from 4th seat when protecting Nil if not needed",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000421"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"duplicate-nomination\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038298"
+    },
+    {
+      "Name": "CachedStrongPreservesFrozenStrongDecisions",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.7262680"
+    },
+    {
+      "Name": "Should pass with three weak trump if two-suited with high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000062"
+    },
+    {
+      "Name": "Keep bid minimal with weak trump (Pass)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007644"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Spades,Clubs)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0030603"
+    },
+    {
+      "Name": "Dump card worth fewer points",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000851"
+    },
+    {
+      "Name": "CycleBeliefsPreserveAllPrivateAndPublicConstraints",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0089260"
+    },
+    {
+      "Name": "Stage3OnlyLearnsGenuineChoiceAndRevisitsDelayedEvidenceOnce",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0042814"
+    },
+    {
+      "Name": "PartnerRetainsCriticalAndSignalExperienceChecksUnderConfiguredLegacyRules",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0984710"
+    },
+    {
+      "Name": "Should pass three-suited missing both Jacks with strong off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000115"
+    },
+    {
+      "Name": "CachedAndUncachedVariantContinuationActionsAndUtilitiesMatch",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0661153"
+    },
+    {
+      "Name": "60 on: keep bidding when slam is plausible",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0025431"
+    },
+    {
+      "Name": "BiddingAndDiscardRetainAll32Decisions",
+      "Outcome": "Passed",
+      "Duration": "00:00:15.8735582"
+    },
+    {
+      "Name": "SAYC: ignore partner's 1D opening",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0043489"
+    },
+    {
+      "Name": "ConfiguredContinuationUtilitiesMatchForEveryConfiguration",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2005221"
+    },
+    {
+      "Name": "ScoringSlamMisereAndMustContractToWin",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005517"
+    },
+    {
+      "Name": "60 on: pass partner's raise to 2H (game)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0043364"
+    },
+    {
+      "Name": "PlayLowFirstTrickInCallPartner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021021"
+    },
+    {
+      "Name": "MismatchingRulesAreRejected",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0042023"
+    },
+    {
+      "Name": "PlayerObservationMutationCannotChangeEngineState (False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0306631"
+    },
+    {
+      "Name": "EngineeringProfilesKeepDecisionsAndAuditWorldsIdentical",
+      "Outcome": "Passed",
+      "Duration": "00:00:13.5461766"
+    },
+    {
+      "Name": "ConfigurationsReplayAndRejectMismatchedRules",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.1929731"
+    },
+    {
+      "Name": "TrumpAceWhenGoingAlone",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004101"
+    },
+    {
+      "Name": "ShouldPassPinochlePartsToDeclarer (Diamonds,\"JDQSJSAHAHKHACACKCKCQCQC\",\"JDQSACAC\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003473"
+    },
+    {
+      "Name": "EveryProbeIsReachableThroughTheRealEngineWithoutHiddenInformation",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0035994"
+    },
+    {
+      "Name": "IsolatedRepairDoesNotAdvanceSearchAndDiagnosticsAreCleared",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.0326946"
+    },
+    {
+      "Name": "Bid 6NT with Joker and a strong hand in Australian",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000881"
+    },
+    {
+      "Name": "NamedJokerHasOneSuitAndSurvivesObservationRoundTrip (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021973"
+    },
+    {
+      "Name": "CachedMediumMatchesOriginalForEveryDecisionIncludingJokerAndOpenHands (Normal,Hearts)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0269161"
+    },
+    {
+      "Name": "Lead high trump if pitcher's partner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004274"
+    },
+    {
+      "Name": "SingleRoundRecordsInkleWithoutMakingItTheContract",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0052149"
+    },
+    {
+      "Name": "DefaultAndConfiguredGameRecordsAreIdenticalAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.9708464"
+    },
+    {
+      "Name": "OpenMisereCertaintyUsesOnlyPublicInformationAndNotTheActualHiddenPartnerHand",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0022909"
+    },
+    {
+      "Name": "Pass with insufficient strength to overbid opponents",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000593"
+    },
+    {
+      "Name": "OpenExposureFollowsConfiguredTiming",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0125126"
+    },
+    {
+      "Name": "Bid 13 with highest Spades and one off-suit Ace",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001470"
+    },
+    {
+      "Name": "SequentialDecisionsAndSearchReportsMatchSelectedBaseline",
+      "Outcome": "Passed",
+      "Duration": "00:00:14.2786741"
+    },
+    {
+      "Name": "AllPassRotationAndNoContractDoNotInventAContractor (\"australian\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0098658"
+    },
+    {
+      "Name": "Should bid alone if two-suited with off-suit Ace and top three trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000065"
+    },
+    {
+      "Name": "UnknownProfilesBudgetsAndOptionsCannotSilentlyChangeAnExperiment",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0057173"
+    },
+    {
+      "Name": "Bid 13 with all Spades",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001977"
+    },
+    {
+      "Name": "Keep bidding if opponents might overbid but no higher than necessary",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001672"
+    },
+    {
+      "Name": "DontProtectTheLeftIfHigh",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001411"
+    },
+    {
+      "Name": "InvalidStructureAndConflictingConfigurationsAreRejected",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0338379"
+    },
+    {
+      "Name": "Should pass with three trump if two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000125"
+    },
+    {
+      "Name": "InvalidActionsAreRejectedWithoutScoringTheRound (\"discard-foreign\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0034975"
+    },
+    {
+      "Name": "HistoryExplanationsMatchLegalBidExplanations (Acol,\"1C X Pass\",\"1H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001037"
+    },
+    {
+      "Name": "NewBotsCompleteLegalGamesAndAreSeedReproducible",
+      "Outcome": "Passed",
+      "Duration": "00:00:04.5204454"
+    },
+    {
+      "Name": "60 on: pass partner's raise rather than rebid 3H",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0009527"
+    },
+    {
+      "Name": "DefaultRulesDelegateToEachFrozenStrategyWithoutDecisionChanges",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.8143325"
+    },
+    {
+      "Name": "PlayIfOthersFolded",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002806"
+    },
+    {
+      "Name": "CallForBestWithoutTrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0009879"
+    },
+    {
+      "Name": "PreemptExplanations (SAYC,3,Hearts,\"Good 7-card Hearts suit; preempt (5-11 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0012567"
+    },
+    {
+      "Name": "Lead high off-suit if opponents haven't taken a trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000505"
+    },
+    {
+      "Name": "Should pass if three-suited with very weak trump, even with high off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000110"
+    },
+    {
+      "Name": "Lead low off-suit if opponents have a trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000194"
+    },
+    {
+      "Name": "60 on: still answer Stayman",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010057"
+    },
+    {
+      "Name": "SoloSuccessFailureAndNoContractPointsAreSymmetric (True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0057687"
+    },
+    {
+      "Name": "PartnerRevisionHasItsOwnFrozenSourceManifest",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0004203"
+    },
+    {
+      "Name": "ContradictorySpecialContractSettingsFailAtLoadTime",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0141326"
+    },
+    {
+      "Name": "IllegalActionsFailWithoutFallback (\"bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0008292"
+    },
+    {
+      "Name": "CompletePhaseAndVisibilityProtocolWorksForEveryDeclarerSeat (\"grand\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0255226"
+    },
+    {
+      "Name": "Should bid with three trump if two-suited",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000060"
+    },
+    {
+      "Name": "CachedContinuationPreservesNamedAndSpecialContractActions (\"nt\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0182384"
+    },
+    {
+      "Name": "Should pass if three-suited with very weak trump and weak off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000053"
+    },
+    {
+      "Name": "LastSeatStaysCheapUnlessARealWinDuckChoiceIsCritical",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007005"
+    },
+    {
+      "Name": "Should pass with only Jacks with strong off-suit support",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000060"
+    },
+    {
+      "Name": "PlayHighFrom3rdSeat (\"TH9H\",\"JH7H\",\"\",\"7H\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010404"
+    },
+    {
+      "Name": "Should bid alone with strength even if missing off-Jack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000073"
+    },
+    {
+      "Name": "LeadSignalFromLead_NT_KingStopperTripletonLeadsLowestInGoodSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0002282"
+    },
+    {
+      "Name": "JokerLeadSetsRespectGlobalHistoryAndActingHolder (\"previously_led_by_holder\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0028362"
+    },
+    {
+      "Name": "Lead boss trump if we have it",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001870"
+    },
+    {
+      "Name": "ConfiguredContinuationUtilitiesMatchForEveryConfiguration",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2644678"
+    },
+    {
+      "Name": "Over-trump with lowest pointer from last seat",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001012"
+    },
+    {
+      "Name": "DontProtectTheLeftWith3PlusTrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001786"
+    },
+    {
+      "Name": "TakeBagsIfWellEndUpShort_BustedNilCase",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001854"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 1S 2H Pass\",\"4H\",\"4+ Hearts (17+ dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0304431"
+    },
+    {
+      "Name": "DontSloughSpadesIfHoldingQS",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0034539"
+    },
+    {
+      "Name": "OriginalExperienceChecksPassAcrossSeedsAndHandLayouts",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.0099970"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (1,False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0061052"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"first_lead_of_suit_or_void\",True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0218204"
+    },
+    {
+      "Name": "Duck from 4th seat with Spade when protecting Nil if we can set opps Nil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0019166"
+    },
+    {
+      "Name": "LeadHighWhenMustTakeAllRemaining",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003072"
+    },
+    {
+      "Name": "Should pass if three-suited with very weak trump and mixed off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000060"
+    },
+    {
+      "Name": "CommandLinePairedExperimentAndReplayPreserveExistingFiles",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0678891"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpRatherThanPrintedSuit (Hearts,Diamonds)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0012990"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1D 1S\",\"1NT\",\"Balanced; stoppers in Clubs and Spades (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0026291"
+    },
+    {
+      "Name": "DontProtectTheLeftIfPartnerTookOneTrick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001289"
+    },
+    {
+      "Name": "Raise with a good fit with partner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001112"
+    },
+    {
+      "Name": "Overbid opponents but no higher than necessary",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000673"
+    },
+    {
+      "Name": "Lead a low non-pointer if not holding high",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005074"
+    },
+    {
+      "Name": "Should pass if three-suited with very weak trump and mixed off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000059"
+    },
+    {
+      "Name": "LeadBossToProtectNil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014737"
+    },
+    {
+      "Name": "DiscardJokersInNT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0018134"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"value-guided-v3\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0040593"
+    },
+    {
+      "Name": "DontTrumpWinningPartnerWhenOpponentsGoAlone",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001854"
+    },
+    {
+      "Name": "60 on: still complete a Jacoby transfer",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0021259"
+    },
+    {
+      "Name": "DefaultContinuationActionsAndUtilitiesMatchIncludingMisere",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.1600916"
+    },
+    {
+      "Name": "TakeBagsEvenWithSureTricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0014632"
+    },
+    {
+      "Name": "JokerFollowAndForcedVoidConstraintsCompose (\"only_when_void\",False)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0382962"
+    },
+    {
+      "Name": "EveryBotPlaysNamedJokersAndSpecialContractsAcrossBothPresets (\"american\")",
+      "Outcome": "Passed",
+      "Duration": "00:01:10.5270018"
+    },
+    {
+      "Name": "DefaultCompleteDealsMatchAcrossNormalAndZeroContracts",
+      "Outcome": "Passed",
+      "Duration": "00:00:09.5439174"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (2,True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0023253"
+    },
+    {
+      "Name": "PhaseAllocationUsesItsNamedBudget",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.0114414"
+    },
+    {
+      "Name": "60 on: never pass out an opponent's contract",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007839"
+    },
+    {
+      "Name": "Win covered from 2nd seat when protecting Nil if need almost every trick",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000104"
+    },
+    {
+      "Name": "SetOpenMisere (\"6C\",\"\",\"ADKD8C7C6C\",\"JSTS9D8D6D\",3)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003644"
+    },
+    {
+      "Name": "AuctionForwardModelMatchesFullContinuationAndScoring (1,True)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0067266"
+    },
+    {
+      "Name": "AceNoFaceIsExactlyOneAceAndRequestOccursBeforeAuction",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2930093"
+    },
+    {
+      "Name": "EvaluationWritesAuditableLayeredResultsWithoutOverwritingAnExistingRun",
+      "Outcome": "Passed",
+      "Duration": "00:00:03.7771321"
+    },
+    {
+      "Name": "JokerDeclarationsAndMisereRemainSeparate",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003681"
+    },
+    {
+      "Name": "Should pass with four trump, regardless of off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007732"
+    },
+    {
+      "Name": "Bid 2 with only 1-card pass",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000188"
+    },
+    {
+      "Name": "LeadBackPointsSecondTrickInCallPartner (\"HJ\",\"JDHJ2HTS9S\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000222"
+    },
+    {
+      "Name": "ProtectTheLeftIfTookTwoTricks",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001320"
+    },
+    {
+      "Name": "NormalOnlyEqualsTacticalAndMisereOnlyEqualsAll32ThroughACompleteDeal",
+      "Outcome": "Passed",
+      "Duration": "00:00:09.8082514"
+    },
+    {
+      "Name": "PreemptExplanations (Acol,3,Diamonds,\"Good 7-8 card Diamonds suit; preempt (6-10 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0006199"
+    },
+    {
+      "Name": "DefaultAndSixConfigurationsRunAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:01.1036759"
+    },
+    {
+      "Name": "AlwaysCallMisdeal",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015486"
+    },
+    {
+      "Name": "DefaultContinuationActionsAndUtilitiesMatchIncludingMisere",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2058713"
+    },
+    {
+      "Name": "Bid alone with top four trump and any off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000054"
+    },
+    {
+      "Name": "BridgitSanityTests",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0597712"
+    },
+    {
+      "Name": "60 on: still answer Blackwood",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0015284"
+    },
+    {
+      "Name": "UnknownJokerAndExposedDuckBothInvalidateTheImmediateBustProof",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0017477"
+    },
+    {
+      "Name": "TestBids (\"ACKCQCJC2CAH\",4,False,FourPoint)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000116"
+    },
+    {
+      "Name": "HighContractsAndScoreThresholdsRequestIndependentAudit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0038572"
+    },
+    {
+      "Name": "KingGuardRepairDoesNotBuryAnAceToProtectALowCard",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0023539"
+    },
+    {
+      "Name": "FuzzPlays",
+      "Outcome": "Passed",
+      "Duration": "00:00:15.1881419"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"visibility-strong-v5\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2071866"
+    },
+    {
+      "Name": "Pass opener's jump to game in a new major rather than bid past game",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007037"
+    },
+    {
+      "Name": "TakeoutDoubleExplanations (Acol,\"1C X 3S\",\"4H\",\"4+ Hearts (10+ points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000364"
+    },
+    {
+      "Name": "TrumpBossEvenIfLhoIsVoid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003046"
+    },
+    {
+      "Name": "AllPassRedealsAndMixedGamesReplayAcrossAllConfigurations",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.2927533"
+    },
+    {
+      "Name": "Should pass if two-suited with weak trump and off-suit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000621"
+    },
+    {
+      "Name": "NewNamedStrategiesMakeLegalReproducibleDecisions (\"selective-fast-v4\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003281"
+    },
+    {
+      "Name": "AllSixBotsRunAllSixConfigurationsAndReplay",
+      "Outcome": "Passed",
+      "Duration": "00:00:05.6219862"
+    },
+    {
+      "Name": "LeadJustAbovePartnersHighestCardInSuit",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0003625"
+    },
+    {
+      "Name": "V2HeldOutPublicPredictionReportsAllStylesWithoutUsingActorHands",
+      "Outcome": "Passed",
+      "Duration": "00:00:04.5940355"
+    },
+    {
+      "Name": "Acol: J from AJ10xx against NT",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0007374"
+    },
+    {
+      "Name": "80 on: pass partner's 1C opening with 4 clubs",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0012012"
+    },
+    {
+      "Name": "Lead higher of touching low cards",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001125"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1H 2C\",\"3H\",\"Jump raise; 4+ Hearts (0-9 dummy points)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000577"
+    },
+    {
+      "Name": "PreemptExplanations (SAYC,5,Clubs,\"Good 9-card Clubs suit; preempt (5-11 HCP)\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000096"
+    },
+    {
+      "Name": "IgnoreNilWithHighBid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0005865"
+    },
+    {
+      "Name": "RidgeFitsTrainingStatisticsWithoutValidationLeak",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0098736"
+    },
+    {
+      "Name": "Should order up partner when the up-card fills a gap in our trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000763"
+    },
+    {
+      "Name": "Should pass if four-suited with only one trump, even if off-Jack",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000261"
+    },
+    {
+      "Name": "AdaptIsExactlyTheFullThreeStageVersion",
+      "Outcome": "Passed",
+      "Duration": "00:00:02.5346623"
+    },
+    {
+      "Name": "JokerOptionKeysAndReadOnlySnapshotsDoNotLeakAcrossCalls",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0035307"
+    },
+    {
+      "Name": "Ditch off-suit Ace if necessary",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000269"
+    },
+    {
+      "Name": "OpportunisticallySetNilWithHighBid",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001619"
+    },
+    {
+      "Name": "LeftBowerFollowsTrumpAndJokerCannotRevokeInNoTrump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0008896"
+    },
+    {
+      "Name": "FixedMediumAblationReproducesOriginalSearchStrong",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.4540795"
+    },
+    {
+      "Name": "LeadLowInPartnersVoidSuitToProtectNil",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0001773"
+    },
+    {
+      "Name": "SamplerRejectsImpossibleVoidsAndKeepsInactiveMiserePartner",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0010830"
+    },
+    {
+      "Name": "Should still pass a weak three-suited hand when partner deals",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000089"
+    },
+    {
+      "Name": "AdvanceExplanations (Acol,\"1C 1D 1S\",\"3S\",\"Unknown bid\")",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0000232"
+    },
+    {
+      "Name": "Keep bid minimal with weak trump",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0022792"
+    },
+    {
+      "Name": "Stage1ActualPublicBidStreamUpdatesWithoutSeeingActorHand",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.7283285"
+    },
+    {
+      "Name": "60 on: pass partner's doubled 2H (game doubled or not)",
+      "Outcome": "Passed",
+      "Duration": "00:00:00.0011208"
+    }
+  ],
+  "TrxSha256": "449e8c0b1cb6730e66c29b29bf2ec57ec9d693a490880d2d9c3c2e8cb4b900fa",
+  "TestSourceSha256": "2ad00065376ec1753b0ee55c607798caa1bdae65c855112ab9e458816ed01cbb"
+}

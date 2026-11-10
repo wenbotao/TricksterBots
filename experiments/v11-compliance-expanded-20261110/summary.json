@@ -1,0 +1,1222 @@
+{
+  "Primary540": {
+    "Matches": 540,
+    "Wins": {
+      "random-v1.1": {
+        "Wins": 37,
+        "Appearances": 240,
+        "WinRate": 0.15416666666666667,
+        "ClusterBootstrap95": [
+          0.11290322580645161,
+          0.1939655172413793
+        ]
+      },
+      "random-pass-v1.1": {
+        "Wins": 85,
+        "Appearances": 240,
+        "WinRate": 0.3541666666666667,
+        "ClusterBootstrap95": [
+          0.29803721488595436,
+          0.40942100308113655
+        ]
+      },
+      "weak-v1.1": {
+        "Wins": 116,
+        "Appearances": 240,
+        "WinRate": 0.48333333333333334,
+        "ClusterBootstrap95": [
+          0.4247091024488285,
+          0.5420206034220914
+        ]
+      },
+      "medium-v1.1": {
+        "Wins": 137,
+        "Appearances": 240,
+        "WinRate": 0.5708333333333333,
+        "ClusterBootstrap95": [
+          0.5132743362831859,
+          0.6291666666666667
+        ]
+      },
+      "fast-v1.1": {
+        "Wins": 128,
+        "Appearances": 240,
+        "WinRate": 0.5333333333333333,
+        "ClusterBootstrap95": [
+          0.47169605339045895,
+          0.5943775100401606
+        ]
+      },
+      "strong-v1.1": {
+        "Wins": 149,
+        "Appearances": 240,
+        "WinRate": 0.6208333333333333,
+        "ClusterBootstrap95": [
+          0.5598290598290598,
+          0.6810344827586207
+        ]
+      },
+      "partner-v1.1": {
+        "Wins": 126,
+        "Appearances": 240,
+        "WinRate": 0.525,
+        "ClusterBootstrap95": [
+          0.4652014652014652,
+          0.5841160873674259
+        ]
+      },
+      "strong-plus-v1.1": {
+        "Wins": 164,
+        "Appearances": 240,
+        "WinRate": 0.6833333333333333,
+        "ClusterBootstrap95": [
+          0.6304326679072915,
+          0.7357723577235772
+        ]
+      },
+      "strong-flow-cached-v1.1": {
+        "Wins": 138,
+        "Appearances": 240,
+        "WinRate": 0.575,
+        "ClusterBootstrap95": [
+          0.5173913043478261,
+          0.6320346320346321
+        ]
+      }
+    },
+    "Differences": {
+      "strong-flow-cached-v1.1/strong-plus-v1.1": {
+        "Difference": -0.10833333333333339,
+        "ClusterBootstrap95": [
+          -0.19105422104316166,
+          -0.026920266933254944
+        ]
+      },
+      "strong-flow-cached-v1.1/partner-v1.1": {
+        "Difference": 0.04999999999999993,
+        "ClusterBootstrap95": [
+          -0.039402593084648434,
+          0.13978510510904116
+        ]
+      },
+      "strong-flow-cached-v1.1/strong-v1.1": {
+        "Difference": -0.04583333333333339,
+        "ClusterBootstrap95": [
+          -0.13509771148388713,
+          0.043543653584100735
+        ]
+      },
+      "partner-v1.1/fast-v1.1": {
+        "Difference": -0.008333333333333304,
+        "ClusterBootstrap95": [
+          -0.09648951278821793,
+          0.0803356391325479
+        ]
+      },
+      "strong-plus-v1.1/strong-v1.1": {
+        "Difference": 0.0625,
+        "ClusterBootstrap95": [
+          -0.024897601879165312,
+          0.15017442434396067
+        ]
+      },
+      "strong-v1.1/medium-v1.1": {
+        "Difference": 0.050000000000000044,
+        "ClusterBootstrap95": [
+          -0.03829320496598314,
+          0.13596893400493038
+        ]
+      }
+    }
+  },
+  "Secondary720": {
+    "Matches": 720,
+    "Wins": {
+      "random-v1.1": {
+        "Wins": 45,
+        "Appearances": 320,
+        "WinRate": 0.140625,
+        "ClusterBootstrap95": [
+          0.10457516339869281,
+          0.17647058823529413
+        ]
+      },
+      "random-pass-v1.1": {
+        "Wins": 116,
+        "Appearances": 320,
+        "WinRate": 0.3625,
+        "ClusterBootstrap95": [
+          0.31493506493506496,
+          0.4115853658536585
+        ]
+      },
+      "weak-v1.1": {
+        "Wins": 148,
+        "Appearances": 320,
+        "WinRate": 0.4625,
+        "ClusterBootstrap95": [
+          0.4121174775928297,
+          0.5138472222222221
+        ]
+      },
+      "medium-v1.1": {
+        "Wins": 181,
+        "Appearances": 320,
+        "WinRate": 0.565625,
+        "ClusterBootstrap95": [
+          0.5149484357696568,
+          0.6163151494423226
+        ]
+      },
+      "fast-v1.1": {
+        "Wins": 174,
+        "Appearances": 320,
+        "WinRate": 0.54375,
+        "ClusterBootstrap95": [
+          0.4906235259433962,
+          0.5963855421686747
+        ]
+      },
+      "strong-v1.1": {
+        "Wins": 189,
+        "Appearances": 320,
+        "WinRate": 0.590625,
+        "ClusterBootstrap95": [
+          0.5377049180327869,
+          0.6445783132530121
+        ]
+      },
+      "partner-v1.1": {
+        "Wins": 179,
+        "Appearances": 320,
+        "WinRate": 0.559375,
+        "ClusterBootstrap95": [
+          0.5081076707775737,
+          0.6109422492401215
+        ]
+      },
+      "strong-plus-v1.1": {
+        "Wins": 212,
+        "Appearances": 320,
+        "WinRate": 0.6625,
+        "ClusterBootstrap95": [
+          0.6160990712074303,
+          0.7081967213114754
+        ]
+      },
+      "strong-flow-cached-v1.1": {
+        "Wins": 196,
+        "Appearances": 320,
+        "WinRate": 0.6125,
+        "ClusterBootstrap95": [
+          0.5637583892617449,
+          0.6605504587155964
+        ]
+      }
+    },
+    "Differences": {
+      "strong-flow-cached-v1.1/strong-plus-v1.1": {
+        "Difference": -0.04999999999999993,
+        "ClusterBootstrap95": [
+          -0.12047277557704424,
+          0.020561625808225695
+        ]
+      },
+      "strong-flow-cached-v1.1/partner-v1.1": {
+        "Difference": 0.05312500000000009,
+        "ClusterBootstrap95": [
+          -0.02281282589915475,
+          0.12848933685749936
+        ]
+      },
+      "strong-flow-cached-v1.1/strong-v1.1": {
+        "Difference": 0.02187500000000009,
+        "ClusterBootstrap95": [
+          -0.05440889248143423,
+          0.09734299108913756
+        ]
+      },
+      "partner-v1.1/fast-v1.1": {
+        "Difference": 0.015625,
+        "ClusterBootstrap95": [
+          -0.061395329498777726,
+          0.09130769433346049
+        ]
+      },
+      "strong-plus-v1.1/strong-v1.1": {
+        "Difference": 0.07187500000000002,
+        "ClusterBootstrap95": [
+          -0.0047049081783000464,
+          0.1458808847746313
+        ]
+      },
+      "strong-v1.1/medium-v1.1": {
+        "Difference": 0.02499999999999991,
+        "ClusterBootstrap95": [
+          -0.051331106277525594,
+          0.10292827446590375
+        ]
+      }
+    }
+  },
+  "Contracts": {
+    "Normal": 2998,
+    "OpenMisere": 5,
+    "Misere": 4
+  },
+  "ContractorStats": {
+    "random-v1.1": {
+      "Attempts": 397,
+      "Made": 38,
+      "ContractorDelta": -120520,
+      "NormalLevels": {
+        "10": 131,
+        "8": 94,
+        "7": 51,
+        "6": 35,
+        "9": 77
+      },
+      "Strains": {
+        "Hearts": 82,
+        "Unknown": 109,
+        "Clubs": 73,
+        "Spades": 64,
+        "Diamonds": 60
+      }
+    },
+    "random-pass-v1.1": {
+      "Attempts": 0,
+      "Made": 0,
+      "ContractorDelta": 0,
+      "NormalLevels": {},
+      "Strains": {}
+    },
+    "weak-v1.1": {
+      "Attempts": 59,
+      "Made": 59,
+      "ContractorDelta": 8760,
+      "NormalLevels": {
+        "7": 19,
+        "6": 35,
+        "8": 5
+      },
+      "Strains": {
+        "Diamonds": 22,
+        "Hearts": 27,
+        "Clubs": 3,
+        "Spades": 7
+      }
+    },
+    "medium-v1.1": {
+      "Attempts": 223,
+      "Made": 186,
+      "ContractorDelta": 28360,
+      "NormalLevels": {
+        "7": 140,
+        "6": 39,
+        "8": 41,
+        "9": 3
+      },
+      "Strains": {
+        "Hearts": 85,
+        "Diamonds": 55,
+        "Clubs": 54,
+        "Spades": 28,
+        "Unknown": 1
+      }
+    },
+    "fast-v1.1": {
+      "Attempts": 213,
+      "Made": 168,
+      "ContractorDelta": 22570,
+      "NormalLevels": {
+        "8": 40,
+        "7": 135,
+        "9": 5,
+        "6": 33
+      },
+      "Strains": {
+        "Clubs": 48,
+        "Hearts": 89,
+        "Spades": 28,
+        "Diamonds": 47,
+        "Unknown": 1
+      }
+    },
+    "strong-v1.1": {
+      "Attempts": 716,
+      "Made": 471,
+      "ContractorDelta": 25760,
+      "NormalLevels": {
+        "6": 336,
+        "7": 224,
+        "8": 136,
+        "9": 19,
+        "10": 1
+      },
+      "Strains": {
+        "Hearts": 226,
+        "Spades": 70,
+        "Clubs": 98,
+        "Unknown": 164,
+        "Diamonds": 158
+      }
+    },
+    "partner-v1.1": {
+      "Attempts": 230,
+      "Made": 183,
+      "ContractorDelta": 25150,
+      "NormalLevels": {
+        "8": 36,
+        "6": 54,
+        "7": 134,
+        "9": 6
+      },
+      "Strains": {
+        "Spades": 40,
+        "Hearts": 113,
+        "Clubs": 37,
+        "Diamonds": 40
+      }
+    },
+    "strong-plus-v1.1": {
+      "Attempts": 544,
+      "Made": 395,
+      "ContractorDelta": 38610,
+      "NormalLevels": {
+        "7": 208,
+        "8": 127,
+        "6": 181,
+        "9": 24,
+        "10": 4
+      },
+      "Strains": {
+        "Hearts": 191,
+        "Clubs": 86,
+        "Unknown": 119,
+        "Diamonds": 99,
+        "Spades": 49
+      }
+    },
+    "strong-flow-cached-v1.1": {
+      "Attempts": 625,
+      "Made": 403,
+      "ContractorDelta": 22230,
+      "NormalLevels": {
+        "6": 238,
+        "7": 228,
+        "9": 30,
+        "8": 122,
+        "10": 7
+      },
+      "Strains": {
+        "Hearts": 183,
+        "Unknown": 148,
+        "Clubs": 95,
+        "Diamonds": 132,
+        "Spades": 67
+      }
+    }
+  },
+  "PartnerSubgroups": {
+    "random-v1.1": {
+      "RandomTeammate": [
+        8,
+        59
+      ],
+      "OtherTeammate": [
+        29,
+        181
+      ]
+    },
+    "random-pass-v1.1": {
+      "RandomTeammate": [
+        14,
+        51
+      ],
+      "OtherTeammate": [
+        71,
+        189
+      ]
+    },
+    "weak-v1.1": {
+      "RandomTeammate": [
+        11,
+        57
+      ],
+      "OtherTeammate": [
+        105,
+        183
+      ]
+    },
+    "medium-v1.1": {
+      "RandomTeammate": [
+        12,
+        49
+      ],
+      "OtherTeammate": [
+        125,
+        191
+      ]
+    },
+    "fast-v1.1": {
+      "RandomTeammate": [
+        10,
+        50
+      ],
+      "OtherTeammate": [
+        118,
+        190
+      ]
+    },
+    "strong-v1.1": {
+      "RandomTeammate": [
+        22,
+        51
+      ],
+      "OtherTeammate": [
+        127,
+        189
+      ]
+    },
+    "partner-v1.1": {
+      "RandomTeammate": [
+        9,
+        51
+      ],
+      "OtherTeammate": [
+        117,
+        189
+      ]
+    },
+    "strong-plus-v1.1": {
+      "RandomTeammate": [
+        18,
+        54
+      ],
+      "OtherTeammate": [
+        146,
+        186
+      ]
+    },
+    "strong-flow-cached-v1.1": {
+      "RandomTeammate": [
+        18,
+        58
+      ],
+      "OtherTeammate": [
+        120,
+        182
+      ]
+    }
+  },
+  "OppositionSeatPairCounts": {
+    "random-v1.1": {
+      "random-v1.1": [
+        39,
+        78
+      ],
+      "random-pass-v1.1": [
+        4,
+        47
+      ],
+      "weak-v1.1": [
+        6,
+        57
+      ],
+      "medium-v1.1": [
+        4,
+        50
+      ],
+      "fast-v1.1": [
+        2,
+        53
+      ],
+      "strong-v1.1": [
+        2,
+        41
+      ],
+      "partner-v1.1": [
+        7,
+        54
+      ],
+      "strong-plus-v1.1": [
+        8,
+        55
+      ],
+      "strong-flow-cached-v1.1": [
+        2,
+        45
+      ]
+    },
+    "random-pass-v1.1": {
+      "random-v1.1": [
+        43,
+        47
+      ],
+      "random-pass-v1.1": [
+        33,
+        66
+      ],
+      "weak-v1.1": [
+        22,
+        52
+      ],
+      "medium-v1.1": [
+        14,
+        57
+      ],
+      "fast-v1.1": [
+        16,
+        49
+      ],
+      "strong-v1.1": [
+        6,
+        52
+      ],
+      "partner-v1.1": [
+        19,
+        56
+      ],
+      "strong-plus-v1.1": [
+        10,
+        58
+      ],
+      "strong-flow-cached-v1.1": [
+        7,
+        43
+      ]
+    },
+    "weak-v1.1": {
+      "random-v1.1": [
+        51,
+        57
+      ],
+      "random-pass-v1.1": [
+        30,
+        52
+      ],
+      "weak-v1.1": [
+        23,
+        46
+      ],
+      "medium-v1.1": [
+        23,
+        58
+      ],
+      "fast-v1.1": [
+        27,
+        57
+      ],
+      "strong-v1.1": [
+        22,
+        61
+      ],
+      "partner-v1.1": [
+        25,
+        56
+      ],
+      "strong-plus-v1.1": [
+        16,
+        49
+      ],
+      "strong-flow-cached-v1.1": [
+        15,
+        44
+      ]
+    },
+    "medium-v1.1": {
+      "random-v1.1": [
+        46,
+        50
+      ],
+      "random-pass-v1.1": [
+        43,
+        57
+      ],
+      "weak-v1.1": [
+        35,
+        58
+      ],
+      "medium-v1.1": [
+        32,
+        64
+      ],
+      "fast-v1.1": [
+        32,
+        55
+      ],
+      "strong-v1.1": [
+        13,
+        48
+      ],
+      "partner-v1.1": [
+        33,
+        52
+      ],
+      "strong-plus-v1.1": [
+        10,
+        36
+      ],
+      "strong-flow-cached-v1.1": [
+        30,
+        60
+      ]
+    },
+    "fast-v1.1": {
+      "random-v1.1": [
+        51,
+        53
+      ],
+      "random-pass-v1.1": [
+        33,
+        49
+      ],
+      "weak-v1.1": [
+        30,
+        57
+      ],
+      "medium-v1.1": [
+        23,
+        55
+      ],
+      "fast-v1.1": [
+        22,
+        44
+      ],
+      "strong-v1.1": [
+        32,
+        64
+      ],
+      "partner-v1.1": [
+        23,
+        47
+      ],
+      "strong-plus-v1.1": [
+        17,
+        59
+      ],
+      "strong-flow-cached-v1.1": [
+        25,
+        52
+      ]
+    },
+    "strong-v1.1": {
+      "random-v1.1": [
+        39,
+        41
+      ],
+      "random-pass-v1.1": [
+        46,
+        52
+      ],
+      "weak-v1.1": [
+        39,
+        61
+      ],
+      "medium-v1.1": [
+        35,
+        48
+      ],
+      "fast-v1.1": [
+        32,
+        64
+      ],
+      "strong-v1.1": [
+        19,
+        38
+      ],
+      "partner-v1.1": [
+        35,
+        56
+      ],
+      "strong-plus-v1.1": [
+        20,
+        58
+      ],
+      "strong-flow-cached-v1.1": [
+        33,
+        62
+      ]
+    },
+    "partner-v1.1": {
+      "random-v1.1": [
+        47,
+        54
+      ],
+      "random-pass-v1.1": [
+        37,
+        56
+      ],
+      "weak-v1.1": [
+        31,
+        56
+      ],
+      "medium-v1.1": [
+        19,
+        52
+      ],
+      "fast-v1.1": [
+        24,
+        47
+      ],
+      "strong-v1.1": [
+        21,
+        56
+      ],
+      "partner-v1.1": [
+        24,
+        48
+      ],
+      "strong-plus-v1.1": [
+        18,
+        53
+      ],
+      "strong-flow-cached-v1.1": [
+        31,
+        58
+      ]
+    },
+    "strong-plus-v1.1": {
+      "random-v1.1": [
+        47,
+        55
+      ],
+      "random-pass-v1.1": [
+        48,
+        58
+      ],
+      "weak-v1.1": [
+        33,
+        49
+      ],
+      "medium-v1.1": [
+        26,
+        36
+      ],
+      "fast-v1.1": [
+        42,
+        59
+      ],
+      "strong-v1.1": [
+        38,
+        58
+      ],
+      "partner-v1.1": [
+        35,
+        53
+      ],
+      "strong-plus-v1.1": [
+        31,
+        62
+      ],
+      "strong-flow-cached-v1.1": [
+        28,
+        50
+      ]
+    },
+    "strong-flow-cached-v1.1": {
+      "random-v1.1": [
+        43,
+        45
+      ],
+      "random-pass-v1.1": [
+        36,
+        43
+      ],
+      "weak-v1.1": [
+        29,
+        44
+      ],
+      "medium-v1.1": [
+        30,
+        60
+      ],
+      "fast-v1.1": [
+        27,
+        52
+      ],
+      "strong-v1.1": [
+        29,
+        62
+      ],
+      "partner-v1.1": [
+        27,
+        58
+      ],
+      "strong-plus-v1.1": [
+        22,
+        50
+      ],
+      "strong-flow-cached-v1.1": [
+        33,
+        66
+      ]
+    }
+  },
+  "InitialAuctionPositionCounts": {
+    "random-v1.1": [
+      63,
+      62,
+      54,
+      61
+    ],
+    "random-pass-v1.1": [
+      53,
+      72,
+      60,
+      55
+    ],
+    "weak-v1.1": [
+      63,
+      43,
+      69,
+      65
+    ],
+    "medium-v1.1": [
+      64,
+      55,
+      60,
+      61
+    ],
+    "fast-v1.1": [
+      51,
+      57,
+      67,
+      65
+    ],
+    "strong-v1.1": [
+      58,
+      59,
+      61,
+      62
+    ],
+    "partner-v1.1": [
+      64,
+      65,
+      51,
+      60
+    ],
+    "strong-plus-v1.1": [
+      62,
+      66,
+      57,
+      55
+    ],
+    "strong-flow-cached-v1.1": [
+      62,
+      61,
+      61,
+      56
+    ]
+  },
+  "DuplicateProfileExposure": {
+    "random-v1.1": {
+      "GamesPresent": 190,
+      "GamesOnBothTeams": 33,
+      "GamesWithRepeatedTeammates": 17
+    },
+    "random-pass-v1.1": {
+      "GamesPresent": 197,
+      "GamesOnBothTeams": 30,
+      "GamesWithRepeatedTeammates": 13
+    },
+    "weak-v1.1": {
+      "GamesPresent": 213,
+      "GamesOnBothTeams": 20,
+      "GamesWithRepeatedTeammates": 7
+    },
+    "medium-v1.1": {
+      "GamesPresent": 198,
+      "GamesOnBothTeams": 29,
+      "GamesWithRepeatedTeammates": 13
+    },
+    "fast-v1.1": {
+      "GamesPresent": 206,
+      "GamesOnBothTeams": 20,
+      "GamesWithRepeatedTeammates": 14
+    },
+    "strong-v1.1": {
+      "GamesPresent": 205,
+      "GamesOnBothTeams": 18,
+      "GamesWithRepeatedTeammates": 17
+    },
+    "partner-v1.1": {
+      "GamesPresent": 204,
+      "GamesOnBothTeams": 24,
+      "GamesWithRepeatedTeammates": 12
+    },
+    "strong-plus-v1.1": {
+      "GamesPresent": 198,
+      "GamesOnBothTeams": 28,
+      "GamesWithRepeatedTeammates": 14
+    },
+    "strong-flow-cached-v1.1": {
+      "GamesPresent": 199,
+      "GamesOnBothTeams": 29,
+      "GamesWithRepeatedTeammates": 12
+    }
+  },
+  "NaturalPhaseTotalsDescriptiveOnly": {
+    "random-v1.1": {
+      "bid": {
+        "Calls": 659,
+        "Milliseconds": 9.546800000000003,
+        "AllocatedBytes": 42240
+      },
+      "discard": {
+        "Calls": 397,
+        "Milliseconds": 10.3026,
+        "AllocatedBytes": 96896
+      },
+      "play": {
+        "Calls": 4780,
+        "Milliseconds": 5.9421000000000035,
+        "AllocatedBytes": 140648
+      },
+      "declare": {
+        "Calls": 168,
+        "Milliseconds": 5.670800000000001,
+        "AllocatedBytes": 33216
+      }
+    },
+    "random-pass-v1.1": {
+      "bid": {
+        "Calls": 2477,
+        "Milliseconds": 26.69869999999996,
+        "AllocatedBytes": 42240
+      },
+      "play": {
+        "Calls": 13880,
+        "Milliseconds": 17.7207,
+        "AllocatedBytes": 342720
+      },
+      "declare": {
+        "Calls": 242,
+        "Milliseconds": 5.996799999999999,
+        "AllocatedBytes": 28304
+      }
+    },
+    "weak-v1.1": {
+      "bid": {
+        "Calls": 2347,
+        "Milliseconds": 425.8772000000001,
+        "AllocatedBytes": 150521216
+      },
+      "play": {
+        "Calls": 14720,
+        "Milliseconds": 100.65859999999994,
+        "AllocatedBytes": 17151776
+      },
+      "declare": {
+        "Calls": 232,
+        "Milliseconds": 3.1948000000000043,
+        "AllocatedBytes": 5920
+      },
+      "discard": {
+        "Calls": 59,
+        "Milliseconds": 12.9622,
+        "AllocatedBytes": 42688
+      }
+    },
+    "medium-v1.1": {
+      "bid": {
+        "Calls": 1967,
+        "Milliseconds": 306.22610000000014,
+        "AllocatedBytes": 125830448
+      },
+      "play": {
+        "Calls": 12830,
+        "Milliseconds": 66.3736,
+        "AllocatedBytes": 17208936
+      },
+      "discard": {
+        "Calls": 223,
+        "Milliseconds": 1085.7089000000008,
+        "AllocatedBytes": 467158952
+      },
+      "declare": {
+        "Calls": 175,
+        "Milliseconds": 2.550700000000003,
+        "AllocatedBytes": 12312
+      }
+    },
+    "fast-v1.1": {
+      "bid": {
+        "Calls": 2009,
+        "Milliseconds": 361.67039999999986,
+        "AllocatedBytes": 127913528
+      },
+      "discard": {
+        "Calls": 213,
+        "Milliseconds": 4571.804599999999,
+        "AllocatedBytes": 2103536256
+      },
+      "play": {
+        "Calls": 13890,
+        "Milliseconds": 116949.83660000002,
+        "AllocatedBytes": 54420893816
+      },
+      "declare": {
+        "Calls": 193,
+        "Milliseconds": 0.5071999999999999,
+        "AllocatedBytes": 12616
+      }
+    },
+    "strong-v1.1": {
+      "bid": {
+        "Calls": 2378,
+        "Milliseconds": 672593.9189000005,
+        "AllocatedBytes": 326403741296
+      },
+      "declare": {
+        "Calls": 330,
+        "Milliseconds": 0.7156999999999989,
+        "AllocatedBytes": 27024
+      },
+      "play": {
+        "Calls": 16300,
+        "Milliseconds": 418674.94310000027,
+        "AllocatedBytes": 196961063272
+      },
+      "discard": {
+        "Calls": 716,
+        "Milliseconds": 74714.97819999997,
+        "AllocatedBytes": 35068703880
+      }
+    },
+    "partner-v1.1": {
+      "bid": {
+        "Calls": 2085,
+        "Milliseconds": 360.76170000000013,
+        "AllocatedBytes": 132769960
+      },
+      "play": {
+        "Calls": 14120,
+        "Milliseconds": 102373.92359999995,
+        "AllocatedBytes": 48923941552
+      },
+      "declare": {
+        "Calls": 229,
+        "Milliseconds": 0.5028000000000001,
+        "AllocatedBytes": 14064
+      },
+      "discard": {
+        "Calls": 230,
+        "Milliseconds": 5025.359399999999,
+        "AllocatedBytes": 2266549800
+      }
+    },
+    "strong-plus-v1.1": {
+      "bid": {
+        "Calls": 2255,
+        "Milliseconds": 2499757.9213,
+        "AllocatedBytes": 1234625530552
+      },
+      "discard": {
+        "Calls": 544,
+        "Milliseconds": 432056.708,
+        "AllocatedBytes": 205123095536
+      },
+      "play": {
+        "Calls": 14520,
+        "Milliseconds": 1441433.6471999998,
+        "AllocatedBytes": 689705238080
+      },
+      "declare": {
+        "Calls": 287,
+        "Milliseconds": 20.42189999999999,
+        "AllocatedBytes": 25216
+      }
+    },
+    "strong-flow-cached-v1.1": {
+      "bid": {
+        "Calls": 2295,
+        "Milliseconds": 2499163.302999999,
+        "AllocatedBytes": 1254355641760
+      },
+      "play": {
+        "Calls": 15150,
+        "Milliseconds": 1498055.4550000017,
+        "AllocatedBytes": 728353374776
+      },
+      "discard": {
+        "Calls": 625,
+        "Milliseconds": 235253.56949999993,
+        "AllocatedBytes": 117072149160
+      },
+      "declare": {
+        "Calls": 339,
+        "Milliseconds": 0.5952,
+        "AllocatedBytes": 28040
+      }
+    }
+  },
+  "Rounds": 4107,
+  "Redeals": 1100,
+  "Compliance": {
+    "AuditEntries": 245,
+    "Families": {
+      "scoring": 6,
+      "joker-lead": 5,
+      "joker-follow": 48,
+      "nomination": 2,
+      "bower": 4,
+      "ranking": 12,
+      "negative": 8,
+      "pass": 4,
+      "isolation": 2,
+      "protocol": 20,
+      "configuration": 8,
+      "replay": 3,
+      "inkle": 2,
+      "bot-scenarios": 108,
+      "bot-legality": 9,
+      "cache": 4
+    },
+    "ScoringDistributions": 70928
+  },
+  "Statistics": {
+    "BootstrapReplicates": 20000,
+    "PrimarySeed": 611119001,
+    "SecondarySeed": 612119001,
+    "ResamplingUnit": "Whole match; auxiliary pool stratified by original 180/new 540 batches",
+    "MultipleComparisonCorrection": false,
+    "Python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "NumPy": "2.3.5"
+  },
+  "EntrypointAudit": {
+    "UnconfiguredCLI": {
+      "Matches": 2,
+      "EngineVersions": [
+        "1",
+        "1"
+      ],
+      "Players": [
+        "medium-v1",
+        "weak-v1",
+        "medium-v1",
+        "weak-v1"
+      ],
+      "TruncatedByOneRoundSmokeLimit": 2,
+      "Log": "Games=2, A wins=0, B wins=0, truncated=2, deals=2, complete pairs=0\nResults: /tmp/v11-cli-legacy-default\n"
+    },
+    "ConfiguredCLI": {
+      "Matches": 2,
+      "EngineVersions": [
+        "1.1",
+        "1.1"
+      ],
+      "Players": [
+        "medium-rules-v1",
+        "weak-rules-v1",
+        "medium-rules-v1",
+        "weak-rules-v1"
+      ],
+      "TruncatedByOneRoundSmokeLimit": 2,
+      "Log": "Games=2, A wins=0, B wins=0, truncated=2, deals=2, complete pairs=0\nResults: /tmp/v11-cli-configured\n"
+    },
+    "Interpretation": "Legacy arena CLI remains a compatibility entry: without --rules it uses legacy Rules; with a v1.1 file it selects EngineV11 but still creates old RuleAwarePlayer bots. This study explicitly instantiates V11 profiles, not these CLI adapters.",
+    "RecommendedEntry": "RuleConfiguration.Load + Profiles.CreateForRules(<name>-v1.1, seed, rules) + new Engine(rules); for study reproduction use its Study runner."
+  }
+}

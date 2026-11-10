@@ -1,0 +1,34 @@
+{
+  "UnconfiguredCLI": {
+    "Matches": 2,
+    "EngineVersions": [
+      "1",
+      "1"
+    ],
+    "Players": [
+      "medium-v1",
+      "weak-v1",
+      "medium-v1",
+      "weak-v1"
+    ],
+    "TruncatedByOneRoundSmokeLimit": 2,
+    "Log": "Games=2, A wins=0, B wins=0, truncated=2, deals=2, complete pairs=0\nResults: /tmp/v11-cli-legacy-default\n"
+  },
+  "ConfiguredCLI": {
+    "Matches": 2,
+    "EngineVersions": [
+      "1.1",
+      "1.1"
+    ],
+    "Players": [
+      "medium-rules-v1",
+      "weak-rules-v1",
+      "medium-rules-v1",
+      "weak-rules-v1"
+    ],
+    "TruncatedByOneRoundSmokeLimit": 2,
+    "Log": "Games=2, A wins=0, B wins=0, truncated=2, deals=2, complete pairs=0\nResults: /tmp/v11-cli-configured\n"
+  },
+  "Interpretation": "Legacy arena CLI remains a compatibility entry: without --rules it uses legacy Rules; with a v1.1 file it selects EngineV11 but still creates old RuleAwarePlayer bots. This study explicitly instantiates V11 profiles, not these CLI adapters.",
+  "RecommendedEntry": "RuleConfiguration.Load + Profiles.CreateForRules(<name>-v1.1, seed, rules) + new Engine(rules); for study reproduction use its Study runner."
+}

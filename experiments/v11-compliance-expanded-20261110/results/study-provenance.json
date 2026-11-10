@@ -1,0 +1,33 @@
+{
+  "BaseCommit": "7005da4d5695a5fe59c023ca81d43e6758f40479",
+  "OS": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "RunnerSha256": "240eb1f4461ed0df583ebc409918aa16dc2b609ace7759240b828a3951a789b4",
+  "InitialChecksPassed": 47,
+  "EarlierMatches": 180,
+  "NewFixedMatches": 540,
+  "GameSeedsDisjoint": true,
+  "AnalysisPreparation": {
+    "CompletedMatchesWhenFrozen": 310,
+    "TimeUTC": "2026-11-10T12:07:34.686602+00:00",
+    "File": "analyze.py",
+    "Sha256": "60017c0da4c082da40c21943a4a14cbe094e24ca87d9dcbcbb9a336661b54c03",
+    "PrimaryMatches": 540,
+    "SecondaryPool": 720,
+    "BootstrapReplicates": 20000,
+    "Corrections": [
+      {
+        "TimeUTC": "2026-11-10T12:12:18.007295+00:00",
+        "Before": "60017c0da4c082da40c21943a4a14cbe094e24ca87d9dcbcbb9a336661b54c03",
+        "After": "49485a04cf01e93fc7967f238688a4ffb6bc78e83b349eeafcd9b6d4b1291539",
+        "Reason": "Add the observed legacy CLI entrypoint audit and documentation; match selection, bootstrap code, comparisons and all statistical formulas unchanged."
+      },
+      {
+        "TimeUTC": "2026-11-10T12:29:20.603539+00:00",
+        "Before": "49485a04cf01e93fc7967f238688a4ffb6bc78e83b349eeafcd9b6d4b1291539",
+        "After": "be11151356cab4122cbbe7cc0a4edcfb31e004aab5149d3dbb775705e47a97b8",
+        "Reason": "After reading final results, add narrative interpretation of replication, contract choices and Partner/UX; reorganize headings. No changes to datasets, comparisons, confidence intervals or formulas."
+      }
+    ],
+    "CurrentSha256": "be11151356cab4122cbbe7cc0a4edcfb31e004aab5149d3dbb775705e47a97b8"
+  }
+}
