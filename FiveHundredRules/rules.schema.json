@@ -82,7 +82,10 @@
           "minItems": 0
         },
         "integrationStatus": {
-          "const": "specification-only"
+          "enum": [
+            "specification-only",
+            "runtime-v1.1"
+          ]
         }
       }
     },
@@ -426,7 +429,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "^(?:[6-9]|10)(?:S|C|D|H|NT)$|^(?:misere|open_misere|double_nullo|grand_nullo)$"
+            "pattern": "^(?:[6-9]|10)(?:S|C|D|H|NT)$|^(?:misere|open_misere|misere_no_pickup|double_nullo|grand_nullo)$"
           },
           "minItems": 1,
           "maxItems": 29,
@@ -578,7 +581,8 @@
                 "predeclare": {
                   "enum": [
                     "none",
-                    "declarer_optional"
+                    "declarer_optional",
+                    "holder_optional"
                   ]
                 },
                 "declaredBehavior": {
@@ -602,7 +606,8 @@
                     "never_led",
                     "not_shown_void",
                     "previously_led_by_declarer",
-                    "last_card_only"
+                    "last_card_only",
+                    "previously_led_by_holder"
                   ]
                 },
                 "noEligibleSuit": {
@@ -760,7 +765,8 @@
                 "predeclare": {
                   "enum": [
                     "none",
-                    "declarer_optional"
+                    "declarer_optional",
+                    "holder_optional"
                   ]
                 },
                 "declaredBehavior": {
@@ -784,7 +790,8 @@
                     "never_led",
                     "not_shown_void",
                     "previously_led_by_declarer",
-                    "last_card_only"
+                    "last_card_only",
+                    "previously_led_by_holder"
                   ]
                 },
                 "noEligibleSuit": {
@@ -942,7 +949,8 @@
                 "predeclare": {
                   "enum": [
                     "none",
-                    "declarer_optional"
+                    "declarer_optional",
+                    "holder_optional"
                   ]
                 },
                 "declaredBehavior": {
@@ -966,7 +974,8 @@
                     "never_led",
                     "not_shown_void",
                     "previously_led_by_declarer",
-                    "last_card_only"
+                    "last_card_only",
+                    "previously_led_by_holder"
                   ]
                 },
                 "noEligibleSuit": {
@@ -1124,7 +1133,8 @@
                 "predeclare": {
                   "enum": [
                     "none",
-                    "declarer_optional"
+                    "declarer_optional",
+                    "holder_optional"
                   ]
                 },
                 "declaredBehavior": {
@@ -1148,7 +1158,8 @@
                     "never_led",
                     "not_shown_void",
                     "previously_led_by_declarer",
-                    "last_card_only"
+                    "last_card_only",
+                    "previously_led_by_holder"
                   ]
                 },
                 "noEligibleSuit": {
@@ -1172,6 +1183,191 @@
           }
         },
         "grand_nullo": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched",
+                "sequential_team_exchange"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional",
+                    "holder_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only",
+                    "previously_led_by_holder"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "misere_no_pickup": {
           "type": "object",
           "additionalProperties": false,
           "required": [
@@ -1306,7 +1502,8 @@
                 "predeclare": {
                   "enum": [
                     "none",
-                    "declarer_optional"
+                    "declarer_optional",
+                    "holder_optional"
                   ]
                 },
                 "declaredBehavior": {
@@ -1330,7 +1527,8 @@
                     "never_led",
                     "not_shown_void",
                     "previously_led_by_declarer",
-                    "last_card_only"
+                    "last_card_only",
+                    "previously_led_by_holder"
                   ]
                 },
                 "noEligibleSuit": {
@@ -1350,6 +1548,199 @@
                   "type": "boolean"
                 }
               }
+            }
+          }
+        },
+        "grand_slam": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "target",
+            "activeSeats",
+            "control",
+            "partnerVisibility",
+            "kitty",
+            "firstLead",
+            "exposure",
+            "eligibility",
+            "points",
+            "joker"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "target": {
+              "enum": [
+                "team_at_least",
+                "declarer_zero",
+                "team_zero",
+                "solo_ten"
+              ]
+            },
+            "activeSeats": {
+              "enum": [
+                "all_four",
+                "exclude_declarer_partner"
+              ]
+            },
+            "control": {
+              "enum": [
+                "individual",
+                "declarer_controls_team"
+              ]
+            },
+            "partnerVisibility": {
+              "enum": [
+                "hidden",
+                "declarer_only"
+              ]
+            },
+            "kitty": {
+              "enum": [
+                "take_and_discard",
+                "untouched"
+              ]
+            },
+            "firstLead": {
+              "enum": [
+                "declarer",
+                "left_of_declarer",
+                "left_of_dealer"
+              ]
+            },
+            "exposure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "timing",
+                "hands",
+                "includeDiscards"
+              ],
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "never",
+                    "before_first_lead",
+                    "after_first_trick"
+                  ]
+                },
+                "hands": {
+                  "enum": [
+                    "declarer",
+                    "declarer_team"
+                  ]
+                },
+                "includeDiscards": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "eligibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumPriorNormalLevel",
+                "scope"
+              ],
+              "properties": {
+                "minimumPriorNormalLevel": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 6,
+                      "maximum": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "scope": {
+                  "enum": [
+                    "any_player",
+                    "self"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "joker": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "predeclare",
+                "declaredBehavior",
+                "follow",
+                "forceWhenVoid",
+                "leadSuits",
+                "noEligibleSuit",
+                "unassignedRank",
+                "leadDeclarationRequired"
+              ],
+              "properties": {
+                "predeclare": {
+                  "enum": [
+                    "none",
+                    "declarer_optional",
+                    "holder_optional"
+                  ]
+                },
+                "declaredBehavior": {
+                  "enum": [
+                    "highest_in_named_suit_only"
+                  ]
+                },
+                "follow": {
+                  "enum": [
+                    "only_when_void",
+                    "anytime",
+                    "first_lead_of_suit_or_void"
+                  ]
+                },
+                "forceWhenVoid": {
+                  "type": "boolean"
+                },
+                "leadSuits": {
+                  "enum": [
+                    "any",
+                    "never_led",
+                    "not_shown_void",
+                    "previously_led_by_declarer",
+                    "last_card_only",
+                    "previously_led_by_holder"
+                  ]
+                },
+                "noEligibleSuit": {
+                  "enum": [
+                    "forbid_until_last_trick_then_any",
+                    "any_suit",
+                    "forbid"
+                  ]
+                },
+                "unassignedRank": {
+                  "enum": [
+                    "highest",
+                    "lowest"
+                  ]
+                },
+                "leadDeclarationRequired": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "noTrumpPoints": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "failurePoints": {
+              "type": "integer",
+              "minimum": 1
             }
           }
         }
@@ -1819,6 +2210,33 @@
           "enum": [
             "draw",
             "extra_deals"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "grandSlamEnabled"
+      ],
+      "properties": {
+        "version": {
+          "const": "1.1"
+        },
+        "grandSlamEnabled": {
+          "type": "boolean"
+        },
+        "openMisereRanking": {
+          "enum": [
+            "between_9NT_10S",
+            "between_10D_10H",
+            "by_points",
+            "by_points_higher",
+            "by_points_lower",
+            "by_points_first",
+            "no_pickup_bundle"
           ]
         }
       }

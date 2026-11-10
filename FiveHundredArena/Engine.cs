@@ -9,10 +9,12 @@ public sealed class Engine
     {
         template = rules;
     }
-    public Engine() : this(new Rules()) { }
+    public Engine() : this(RuleConfiguration.Load()) { }
     public static Engine FromConfiguration(string? path = null) => new(RuleConfiguration.Load(path));
     public GameRecord Run(IReadOnlyList<IPlayer> bots, int seed, int maxRounds = 200, int? initialDealer = null)
     {
+        if (template is ConfiguredRules { IsV11: true } current)
+            return new EngineV11(current).Run(bots, seed, maxRounds, initialDealer);
         var rules = template is ConfiguredRules config ? config with
         {
             History = [],
@@ -268,7 +270,7 @@ public sealed class RandomPlayer(string name, int seed) : IPlayer
     public PlayAction Play(Observation view, IReadOnlyList<PlayAction> legal) => legal[random.Next(legal.Count)];
 }
 
-public sealed class ReplayPlayer(string name, IEnumerable<Decision> decisions) : IPlayer, IJokerDeclarationPlayer
+public sealed class ReplayPlayer(string name, IEnumerable<Decision> decisions) : IPlayer, IJokerDeclarationPlayer, IRuleVariationPlayer
 {
     private readonly Queue<Decision> queue = new(decisions);
     public string Name => name;
@@ -286,6 +288,9 @@ public sealed class ReplayPlayer(string name, IEnumerable<Decision> decisions) :
             result.Add(queue.Dequeue().Play!);
         return result;
     }
+    public bool RequestRedeal(Observation view) => Next("redeal-request").Accepted ?? false;
+    public bool DeclareGrandSlam(Observation view) => Next("grand-slam").Accepted ?? false;
+    public PlayingCard TransferCard(Observation view, IReadOnlyList<PlayingCard> legal) => Next("transfer").Play!.Card;
     public Contract? Bid(Observation view, IReadOnlyList<Contract?> legal) => Next("bid").Bid;
     public IReadOnlyList<PlayingCard> Discard(Observation view, int count) => Next("discard").Discards ?? throw new InvalidDataException("Missing discards");
     public PlayAction Play(Observation view, IReadOnlyList<PlayAction> legal) => Next("play").Play ?? throw new InvalidDataException("Missing play");

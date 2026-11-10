@@ -128,7 +128,7 @@ public static class ArenaCommand
     }
     public static void Replay(GameRecord saved)
     {
-        if (saved.SchemaVersion != 1 || saved.EngineVersion != "1") throw new InvalidDataException("Unsupported replay version");
+        if (saved.SchemaVersion != 1 || saved.EngineVersion is not ("1" or "1.1")) throw new InvalidDataException("Unsupported replay version");
         if (saved.Rules.GetType() != typeof(Rules) && saved.Rules is not ConfiguredRules) throw new InvalidDataException("Custom rule subclasses require their own replay resolver");
         var bots = Enumerable.Range(0, 4).Select(s => new ReplayPlayer(saved.Players[s], saved.Rounds.SelectMany(r => r.Decisions).Where(d => d.Seat == s))).ToArray();
         var actual = new Engine(saved.Rules).Run(bots, saved.Seed, saved.MaxRounds, saved.InitialDealer);

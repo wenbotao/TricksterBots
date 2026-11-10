@@ -1,0 +1,7 @@
+{
+  "File": "FiveHundredArena/ConfigurationStructure.cs",
+  "BeforeHash": "D0FF44732B8784A7F0E14805D40A3755974495C02C60FB9A246E3C308F9D859A",
+  "FinalHash": "9E51DA07DCFB0A5A62934F12366127B072712528ABF4039B5B3A3D48C6DB52A9",
+  "Reason": "Reject new enabled feature flags without the v1.1 version tag instead of silently using the legacy engine.",
+  "Impact": "All evaluated games and costs use the valid v1.1 document;bot policies and applicable game rules unchanged."
+}

@@ -1,0 +1,7 @@
+{
+  "File": "FiveHundredArena/EngineV11.cs",
+  "GenerationHash": "E7F9E7F2294CC4FC26980628DCAFE92160CFD4A3EE2F62DF60EAE9614D898EDD",
+  "FinalHash": "6C9F4E9D19F07B19811F03EBB2C4ED3E201EA8BDC08F16FAFF3C206680945C2A",
+  "Reason": "Record an explicit false Ace-no-face request for eligible old IPlayer implementations without IRuleVariationPlayer, allowing ReplayPlayer to reproduce the optional-interface fallback.",
+  "Impact": "All nine evaluated bots implement the interface and the new Australian default disables this rule. No bot policy, default-rule behavior, RNG or measured decision code changed. Every saved match is independently replayed under the final engine."
+}

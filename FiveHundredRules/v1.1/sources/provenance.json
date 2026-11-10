@@ -1,0 +1,21 @@
+{
+  "FileName": "FiveHundred_v1.1.0_版本需求_v0.1.1_草案_20261106.xlsx",
+  "SizeBytes": 2191312,
+  "Sha256": "15dafe3704f54a7652496fdce3de888b056d664e0079541c60318c6b4d2d5922",
+  "Sheets": {
+    "规则优化需求": {
+      "Rows": 323,
+      "Columns": 14
+    },
+    "部分中英术语对照表": {
+      "Rows": 21,
+      "Columns": 4
+    }
+  },
+  "UserConfirmed": [
+    "2.6启用Grand Nullo，修正复制笔误",
+    "Grand Nullo竞叫紧随Open Misere",
+    "Joker提名向所有在打牌的持有者开放"
+  ],
+  "Scope": "Rules, engine interactions and bot interfaces; UI layout screenshots are not implemented in this engine-only repository."
+}

@@ -1,0 +1,186 @@
+using Trickster.cloud;
+namespace FiveHundredArena;
+
+// Authoritative four-player v1.1 execution. Legacy Engine remains available for old saved rules.
+internal sealed class EngineV11(ConfiguredRules template)
+{
+    internal GameRecord Run(IReadOnlyList<IPlayer> players, int seed, int maxRounds, int? initialDealer)
+    {
+        if (players.Count != 4 || maxRounds < 1 || initialDealer is < 0 or > 3) throw new ArgumentException("Four players, valid dealer and positive round limit required");
+        var rules = template.Detached();rules.Validate();
+        var deal = rules.Section("deal");var auctionOptions = rules.Section("auction");
+        int kittySize = ConfiguredRules.Number(deal, "kittySize");
+        int dealer = initialDealer ?? (ConfiguredRules.Text(deal, "firstDealer") == "random" ? new SeededRandom(seed).Next(4) : ConfiguredRules.Number(deal, "fixedDealer"));
+        var game = new GameRecord { EngineVersion = "1.1", Seed = seed, InitialDealer = dealer, MaxRounds = maxRounds, Players = players.Select(p => p.Name).ToArray(), Rules = rules.Detached() };
+        var scores = new int[2];
+        try
+        {
+            for (int round = 0; round < maxRounds; round++)
+            {
+                rules.History = [];rules.Declarations = new();rules.DeclarationOwners = new();
+                var deck = rules.Deck();new SeededRandom(unchecked(seed + round * 1000003)).Shuffle(deck);
+                var hands = Enumerable.Range(0, 4).Select(_ => new List<PlayingCard>()).ToArray();
+                var kitty = new List<PlayingCard>();int index = 0;
+                if (ConfiguredRules.Text(deal, "method") == "packets")
+                {
+                    foreach (var packet in deal.GetProperty("packets").EnumerateArray())
+                    {
+                        for (int off = 1; off <= 4; off++)
+                            for (int n = 0; n < ConfiguredRules.Number(packet, "cardsEach"); n++) hands[(dealer + off) % 4].Add(deck[index++]);
+                        for (int n = 0; n < ConfiguredRules.Number(packet, "kittyCards"); n++) kitty.Add(deck[index++]);
+                    }
+                }
+                else
+                {
+                    for (int n = 0; n < 40; n++) hands[(dealer + 1 + n) % 4].Add(deck[index++]);
+                    kitty.AddRange(deck.Skip(index));
+                }
+                var record = new RoundRecord { Number = round, Dealer = dealer, Hands = hands.Select(h => h.ToArray()).ToArray(), Kitty = kitty.ToArray() };game.Rounds.Add(record);
+                var auction = new List<AuctionAction>();var history = new List<PublicPlay>();var trick = new List<PublicPlay>();
+                var taken = Enumerable.Range(0, 4).Select(_ => new List<PlayingCard>()).ToArray();var tricks = new int[4];
+                var discards = Enumerable.Range(0, 4).Select(_ => new List<PlayingCard>()).ToArray();
+                var memory = Enumerable.Range(0, 4).Select(_ => new List<PrivateCardEvent>()).ToArray();
+                Contract? high = null;int declarer = -1;bool exposed = false;
+                Observation View(int seat)
+                {
+                    rules.History = history.ToArray();rules.CurrentSeat = seat;rules.DeclarerSeat = declarer;
+                    return new(seat, dealer, round, hands[seat].ToArray(), Enumerable.Range(0, 4).Select(s => new PublicPlayer(s, hands[s].Count, scores[s % 2], auction.Where(a => a.Seat == s).Select(a => a.Bid).ToArray(), tricks[s], taken[s].ToArray(), exposed && s == declarer ? hands[s].ToArray() : null)).ToArray(),
+                        auction.ToArray(), high, declarer < 0 || high?.Kind == ContractKind.NoContractNT ? null : declarer, trick.ToArray(), history.ToArray(), scores.ToArray(), rules.Detached(), discards[seat].ToArray(), memory[seat].Select(e => e with { Cards = e.Cards.ToArray() }).ToArray());
+                }
+                void FinishRedeal()
+                {
+                    record.Redeal = true;record.Tricks = tricks.ToArray();record.ScoreDelta = [0, 0];record.Scores = scores.ToArray();
+                    if (ConfiguredRules.Text(auctionOptions.GetProperty("allPass"), "dealerOnRedeal") == "advance") dealer = (dealer + 1) % 4;
+                }
+                bool redeal = false;
+                if (ConfiguredRules.Text(deal.GetProperty("redealRequest"), "mode") == "ace_no_face")
+                    for (int offset = 1; offset <= 4 && !redeal; offset++)
+                    {
+                        int s = (dealer + offset) % 4;
+                        if (!rules.AceNoFace(hands[s]) || players[s] is not IRuleVariationPlayer requester) continue;
+                        bool request = requester.RequestRedeal(View(s));record.Decisions.Add(new(s, "redeal-request", Accepted: request));
+                        // Workbook explicitly permits treating the partner's consent as automatic offline.
+                        if (request) redeal = true;
+                    }
+                if (redeal) { FinishRedeal();continue; }
+                var passed = new bool[4];int consecutive = 0, seat = (dealer + 1) % 4;
+                while (true)
+                {
+                    if (rules.PassIsPermanent && passed[seat]) { seat = (seat + 1) % 4;continue; }
+                    rules.CurrentSeat = seat;
+                    var legal = rules.LegalBids(high, auction);
+                    int position = (seat - dealer + 3) % 4;
+                    int minimum = auctionOptions.GetProperty("normalMinimumByPosition")[position].GetInt32();
+                    legal.RemoveAll(b => b?.Kind == ContractKind.Normal && b.Tricks < minimum);
+                    var inkle = auctionOptions.GetProperty("inkle");
+                    if (high == null && ConfiguredRules.Flag(inkle, "enabled") && inkle.GetProperty("allowedPositions").EnumerateArray().Any(p => p.GetInt32() == position))
+                        legal.AddRange(inkle.GetProperty("strains").EnumerateArray().Select(s => new Contract(6, ConfiguredRules.SuitOf(s.GetString()!), ContractKind.Inkle)));
+                    if (high == null && seat == dealer && auction.Count == 3 && auction.All(a => a.Bid == null) && ConfiguredRules.Text(auctionOptions.GetProperty("allPass"), "action") == "force_dealer") legal.Remove(null);
+                    var bid = players[seat].Bid(View(seat), legal.ToArray());
+                    if (!legal.Contains(bid)) throw new IllegalActionException("Illegal v1.1 bid");
+                    auction.Add(new(seat, bid));record.Decisions.Add(new(seat, "bid", Bid: bid));
+                    if (bid == null) { passed[seat] = true;consecutive++; }
+                    else if (bid.Kind != ContractKind.Inkle) { high = bid;declarer = seat;consecutive = 0; }
+                    if (ConfiguredRules.Text(auctionOptions, "mode") == "single_round" && auction.Count == 4 || high == null && consecutive >= 4 || high != null && (rules.PassIsPermanent ? Enumerable.Range(0, 4).All(s => s == declarer || passed[s]) : consecutive >= 3)) break;
+                    seat = (seat + 1) % 4;
+                }
+                if (high == null)
+                {
+                    if (ConfiguredRules.Text(auctionOptions.GetProperty("allPass"), "action") != "play_no_contract_nt") { FinishRedeal();continue; }
+                    high = new(0, Suit.Unknown, ContractKind.NoContractNT);declarer = dealer;
+                }
+                record.Contract = high;record.Declarer = high.Kind == ContractKind.NoContractNT ? null : declarer;
+                void Exchange(int s, bool take)
+                {
+                    if (take) { hands[s].AddRange(kitty);memory[s].Add(new("pickup", kitty.ToArray())); }
+                    int count = take ? kitty.Count : 0;
+                    var cards = players[s].Discard(View(s), count).ToArray();
+                    if (cards.Length != count || cards.Distinct().Count() != count || cards.Any(c => !hands[s].Contains(c))) throw new IllegalActionException("Invalid v1.1 discard");
+                    foreach (var c in cards) hands[s].Remove(c);
+                    discards[s].AddRange(cards);memory[s].Add(new("discard", cards.ToArray()));
+                    record.Decisions.Add(new(s, "discard", Discards: cards));
+                    if (take) kitty = cards.ToList();
+                }
+                string pickup = high.Kind == ContractKind.NoContractNT ? ConfiguredRules.Text(auctionOptions.GetProperty("allPass"), "noContractKitty") == "dealer_takes" ? "take_and_discard" : "untouched" : ConfiguredRules.Text(rules.ContractOptions(high), "kitty");
+                if (high.Kind != ContractKind.NoContractNT || pickup == "take_and_discard")
+                {
+                    if (high.Kind == ContractKind.Normal && rules.CanGrandSlam)
+                    {
+                        // Declaration occurs after seeing the kitty and before any discard.
+                        hands[declarer].AddRange(kitty);memory[declarer].Add(new("pickup", kitty.ToArray()));
+                        bool solo = players[declarer] is IRuleVariationPlayer chooser && chooser.DeclareGrandSlam(View(declarer));
+                        record.Decisions.Add(new(declarer, "grand-slam", Accepted: solo));
+                        if (solo)
+                        {
+                            high = new(10, high.Trump, ContractKind.GrandSlam);record.Contract = high;
+                            int partner = (declarer + 2) % 4;
+                            var legal = hands[partner].ToArray();
+                            var card = players[partner] is IRuleVariationPlayer giver ? giver.TransferCard(View(partner), legal) : legal[0];
+                            if (!hands[partner].Remove(card)) throw new IllegalActionException("Invalid Grand Slam transfer");
+                            hands[declarer].Add(card);memory[partner].Add(new("transfer-given", [card]));memory[declarer].Add(new("transfer-received", [card]));
+                            record.Decisions.Add(new(partner, "transfer", Play: new(card)));
+                        }
+                        // The hand already contains the kitty. Exchange removes kittySize (+1 for the gift).
+                        int n = kittySize + (solo ? 1 : 0);var cards = players[declarer].Discard(View(declarer), n).ToArray();
+                        if (cards.Length != n || cards.Distinct().Count() != n || cards.Any(c => !hands[declarer].Contains(c))) throw new IllegalActionException("Invalid Grand Slam discard");
+                        foreach (var c in cards) hands[declarer].Remove(c);
+                        discards[declarer].AddRange(cards);memory[declarer].Add(new("discard", cards));record.Decisions.Add(new(declarer, "discard", Discards: cards));
+                    }
+                    else
+                    {
+                        Exchange(declarer, pickup is "take_and_discard" or "sequential_team_exchange");
+                        if (pickup == "sequential_team_exchange")
+                        {
+                            // First exchanger no longer knows which old discards are in the dead pile.
+                            discards[declarer].Clear();Exchange((declarer + 2) % 4, true);
+                        }
+                    }
+                }
+                var active = rules.ActiveSeats(high, declarer);
+                if (high.IsMisere || high.Trump == Suit.Unknown)
+                {
+                    string naming = ConfiguredRules.Text(rules.ContractOptions(high).GetProperty("joker"), "predeclare");
+                    foreach (int s in active)
+                    {
+                        if (naming == "none" || naming == "declarer_optional" && s != declarer || players[s] is not IJokerDeclarationPlayer holder) continue;
+                        foreach (var move in holder.DeclareJokers(View(s)))
+                        {
+                            if (!move.Card.IsJoker || !hands[s].Contains(move.Card) || !Rules.Suits.Contains(move.JokerLeadSuit) || !rules.Declarations.TryAdd(move.Card, move.JokerLeadSuit)) throw new IllegalActionException("Invalid Joker nomination");
+                            rules.DeclarationOwners.Add(move.Card, s);record.Decisions.Add(new(s, "declare", Play: move));
+                        }
+                    }
+                }
+                var options = rules.ContractOptions(high);
+                exposed = ConfiguredRules.Text(options.GetProperty("exposure"), "timing") == "before_first_lead";
+                string leadMode = high.Kind == ContractKind.NoContractNT ? ConfiguredRules.Text(auctionOptions.GetProperty("allPass"), "noContractLead") : ConfiguredRules.Text(options, "firstLead");
+                int leader = leadMode is "left_of_dealer" ? (dealer + 1) % 4 : leadMode is "dealer" ? dealer : leadMode is "left_of_declarer" ? (declarer + 1) % 4 : declarer;
+                while (!active.Contains(leader)) leader = (leader + 1) % 4;
+                for (int t = 0; t < 10; t++)
+                {
+                    trick.Clear();
+                    for (int off = 0; off < 4; off++)
+                    {
+                        seat = (leader + off) % 4;if (!active.Contains(seat)) continue;
+                        var view = View(seat);var legal = rules.LegalPlays(hands[seat], trick, high);
+                        var move = players[seat].Play(view, legal.ToArray());
+                        if (!legal.Contains(move) || !hands[seat].Remove(move.Card)) throw new IllegalActionException("Illegal v1.1 play");
+                        var play = new PublicPlay(seat, move);trick.Add(play);history.Add(play);record.Decisions.Add(new(seat, "play", Play: move));
+                    }
+                    leader = rules.Winner(trick, high);tricks[leader]++;taken[leader].AddRange(trick.Select(p => p.Action.Card));record.TrickWinners.Add(leader);
+                    if (ConfiguredRules.Text(options.GetProperty("exposure"), "timing") == "after_first_trick") exposed = true;
+                }
+                var (made, delta) = rules.Score(high, declarer, tricks);
+                var cap = rules.Section("scoring").GetProperty("defensiveScoreCap");
+                if (cap.ValueKind != System.Text.Json.JsonValueKind.Null && high.Kind != ContractKind.NoContractNT)
+                { int team = 1 - declarer % 2;delta[team] = Math.Min(delta[team], Math.Max(0, cap.GetInt32() - scores[team])); }
+                for (int team = 0; team < 2; team++) scores[team] += delta[team];
+                record.Made = made;record.Tricks = tricks.ToArray();record.ScoreDelta = delta;record.Scores = scores.ToArray();
+                game.Winner = rules.WinnerForContract(high, declarer, scores, made);
+                if (game.Winner.HasValue) return game;
+                dealer = (dealer + 1) % 4;
+            }
+            game.Truncated = true;return game;
+        }
+        catch (Exception ex) { ex.Data["record"] = game;throw; }
+    }
+}

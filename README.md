@@ -1,5 +1,7 @@
 # TricksterBots
 
+当前 Five Hundred 规则与九个 bot 已按版本需求更新为 [v1.1](FiveHundredRules/v1.1/README.md)，见[新版 bot 入口](FiveHundredLab/Bots/FiveHundred/V11/README.md)及[新澳式默认评估](experiments/rules-v1-1-20261110/README.md)。
+
 This repository contains the source for for the _suggest_ methods of the Trickster Cards bots (computer players) along with a Web API driver for local testing.
 
 ## Requirements

@@ -1,5 +1,7 @@
 # FiveHundred 策略与验证入口
 
+> 当前规则与 bot 推荐入口更新为 [v1.1 九版](Bots/FiveHundred/V11/README.md)，新默认实战及成本比较见 [迁移报告](../experiments/rules-v1-1-20261110/README.md)。下方旧实验按其产生时的规则版本理解。
+
 ## 正式 bot
 
 七种主要规则版 bot 集中在 [Bots/FiveHundred](Bots/FiveHundred/README.md)：Random、Weak、Medium、Fast、Strong、StrongPlus、Partner。每种均有独立公共类、规则对象参数和配置文件入口；工厂`Profiles.CreateForRules`返回这些正式类。

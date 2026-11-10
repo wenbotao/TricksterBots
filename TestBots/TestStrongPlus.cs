@@ -21,12 +21,12 @@ public class TestStrongPlus
         var bot=new Bots.StrongPlusBot(21,r);var legal=r.LegalPlays(v.Hand,v.Trick,v.Contract!);
         Assert.IsTrue(legal.Contains(bot.Play(v,legal)));Assert.AreEqual(64,bot.LastRollouts);
         Assert.Throws<ArgumentException>(()=>bot.Play(f.View,f.LegalPlays));
-        Assert.IsInstanceOfType<Bots.StrongPlusBot>(Profiles.Create("strong-plus-v1",1));
+        Assert.IsInstanceOfType<Bots.StrongPlusBot>(Profiles.CreateForRules("strong-plus-v1",1,new Rules()));
     }
     [TestMethod]
     public void DefaultGameIsDeterministicAndReplays()
     {
-        GameRecord Run()=>new Engine().Run([new Bots.StrongPlusBot(51),new Bots.MediumBot(),new Bots.MediumBot(),new Bots.MediumBot()],431981,2);
+        GameRecord Run()=>new Engine(new Rules()).Run([new Bots.StrongPlusBot(51),new Bots.MediumBot(),new Bots.MediumBot(),new Bots.MediumBot()],431981,2);
         var a=Run();var b=Run();Assert.AreEqual(JsonSerializer.Serialize(a,ArenaCommand.Json),JsonSerializer.Serialize(b,ArenaCommand.Json));ArenaCommand.Replay(a);
     }
     [TestMethod]

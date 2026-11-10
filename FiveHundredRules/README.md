@@ -1,5 +1,7 @@
 # 四人 Five Hundred 规则配置 v1
 
+> 当前默认已按上传版本需求更新至 [v1.1](v1.1/README.md)。`RuleConfiguration.Load()` 读取新澳式配置；本目录原六份配置仍保留旧版含义，`new Rules()` 明确取得历史默认。新增合约与全体持有者提名需要 v1.1 版本标记。
+
 本目录的配置现已接入对战引擎 `--rules`，六份已交付配置均可加载；旧 bot 策略未修改。具体支持范围、运行方法和明确拒绝的高级选项见 [ENGINE_SUPPORT.md](ENGINE_SUPPORT.md)。配置生成时的历史校验记录不等于当前所有自定义组合均已实现。
 
 新增六种bot的配置接入、运行方式和测试边界见 [BOT_RULES.md](BOT_RULES.md)。

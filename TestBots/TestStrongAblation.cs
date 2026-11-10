@@ -15,7 +15,7 @@ public class TestStrongAblation
  public void BaselineControlMatchesFrozenStrongOverDefaultDeals()
  {
   IPlayer[] Seats(bool control)=>Enumerable.Range(0,4).Select(s=>(IPlayer)(s%2==0?(control?new Bots.StrongAblationBot(Bots.StrongAblationProfile.Baseline8,51+s):new Bots.StrongBot(51+s)):new Bots.MediumBot())).ToArray();
-  var a=new Engine().Run(Seats(false),8316111,2);var b=new Engine().Run(Seats(true),8316111,2);
+  var a=new Engine(new Rules()).Run(Seats(false),8316111,2);var b=new Engine(new Rules()).Run(Seats(true),8316111,2);
   Assert.AreEqual(JsonSerializer.Serialize(a.Rounds,ArenaCommand.Json),JsonSerializer.Serialize(b.Rounds,ArenaCommand.Json));
  }
  [TestMethod]

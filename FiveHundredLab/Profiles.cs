@@ -4,6 +4,7 @@ public static class Profiles
 {
     public static IPlayer Create(string name, int seed, string? model = null) => name switch
     {
+        "random-v1.1" or "random-pass-v1.1" or "weak-v1.1" or "medium-v1.1" or "fast-v1.1" or "strong-v1.1" or "partner-v1.1" or "strong-plus-v1.1" or "strong-flow-cached-v1.1" => CreateForRules(name,seed),
         "strong-study-base8-v1" => CreateForRules("strong-study-base8-v1",seed),
         "strong-study-all32-v1" => CreateForRules("strong-study-all32-v1",seed),
         "strong-study-wide32-v1" => CreateForRules("strong-study-wide32-v1",seed),
@@ -63,6 +64,23 @@ public static class Profiles
     public static IPlayer CreateForRules(string name,int seed,string? rulePath=null)=>CreateForRules(name,seed,RuleConfiguration.Load(rulePath));
     public static IPlayer CreateForRules(string name,int seed,Rules rules)
     {
+        if (rules is ConfiguredRules { IsV11:true } || name.EndsWith("-v1.1"))
+        {
+            IPlayer? current = name switch
+            {
+                "random-v1.1" or "random-rules-v1" or "random-legal-v1" => new Bots.FiveHundred.V11.RandomBot(seed,rules),
+                "random-pass-v1.1" or "random-pass-v1" => new Bots.FiveHundred.V11.RandomPassBot(seed,rules),
+                "weak-v1.1" or "weak-rules-v1" or "weak-v1" => new Bots.FiveHundred.V11.WeakBot(seed,rules),
+                "medium-v1.1" or "medium-rules-v1" or "medium-v1" => new Bots.FiveHundred.V11.MediumBot(seed,rules),
+                "fast-v1.1" or "fast-rules-v1" or "visibility-fast-v8" => new Bots.FiveHundred.V11.FastBot(seed,rules),
+                "strong-v1.1" or "strong-rules-v1" or "strong-v1" => new Bots.FiveHundred.V11.StrongBot(seed,rules),
+                "partner-v1.1" or "partner-rules-v1" or "partner-fast-v9" => new Bots.FiveHundred.V11.PartnerBot(seed,rules),
+                "strong-plus-v1.1" or "strong-plus-v1" => new Bots.FiveHundred.V11.StrongPlusBot(seed,rules),
+                "strong-flow-cached-v1.1" or "strong-flow-cached-v1" => new Bots.FiveHundred.V11.StrongFlowCachedBot(seed,rules),
+                _ => null
+            };
+            if(current!=null)return current;
+        }
         if(name is "Adapt-v2" or "adapt-v2")return new AdaptV2(seed,rules);
         if(name is "Adapt" or "adapt" or "adapt-v1")return new Adapt(seed,rules);
         if(name.StartsWith("opponent-strong-"))return new OpponentStrong(seed,name switch{"opponent-strong-bidding-v1"=>OpponentAdaptationStage.Bidding,"opponent-strong-belief-v1"=>OpponentAdaptationStage.Belief,"opponent-strong-play-v1"=>OpponentAdaptationStage.Play,_=>throw new ArgumentException("Unknown adaptive profile")},rules:rules);

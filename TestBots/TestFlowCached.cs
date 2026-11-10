@@ -84,7 +84,7 @@ public class TestFlowCached
             }
             Assert.AreEqual(reference.LastDefaultSearch, subject.LastDefaultSearch);Assert.AreEqual(reference.LastRollouts, subject.LastRollouts);
         }
-        Assert.IsInstanceOfType<Bots.StrongFlowCachedBot>(Profiles.Create(Bots.StrongFlowCachedBot.Profile, 7));
+        Assert.IsInstanceOfType<Bots.StrongFlowCachedBot>(Profiles.CreateForRules(Bots.StrongFlowCachedBot.Profile, 7, new Rules()));
     }
     [TestMethod]
     public void FullEngineGamesDefaultAndConfiguredMatchAndReplay()

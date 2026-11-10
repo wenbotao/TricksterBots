@@ -134,8 +134,8 @@ public class TestRuleAwareBots
     {
         foreach(var name in Names)
         {
-            var old=new Engine().Run(Enumerable.Range(0,4).Select(s=>Profiles.Create(name,31+s)).ToArray(),20291,1);
-            var updated=new Engine().Run(Enumerable.Range(0,4).Select(s=>Profiles.CreateForRules(name,31+s)).ToArray(),20291,1);
+            var old=new Engine(new Rules()).Run(Enumerable.Range(0,4).Select(s=>Profiles.Create(name,31+s)).ToArray(),20291,1);
+            var updated=new Engine(new Rules()).Run(Enumerable.Range(0,4).Select(s=>Profiles.CreateForRules(name,31+s,new Rules())).ToArray(),20291,1);
             Assert.AreEqual(JsonSerializer.Serialize(old.Rounds,ArenaCommand.Json),JsonSerializer.Serialize(updated.Rounds,ArenaCommand.Json),name);
         }
     }

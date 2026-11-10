@@ -10,10 +10,10 @@ public readonly record struct PlayingCard(Suit Suit, int Rank)
     public override string ToString() => ToBotCard().StdNotation;
 }
 
-public enum ContractKind { Normal, Misere, OpenMisere, Inkle }
+public enum ContractKind { Normal, Misere, OpenMisere, Inkle, MisereNoPickup, GrandNullo, GrandSlam, NoContractNT }
 public sealed record Contract(int Tricks, Suit Trump, ContractKind Kind = ContractKind.Normal)
 {
-    public bool IsMisere => Kind is ContractKind.Misere or ContractKind.OpenMisere;
+    public bool IsMisere => Kind is ContractKind.Misere or ContractKind.OpenMisere or ContractKind.MisereNoPickup or ContractKind.GrandNullo;
     public override string ToString() => IsMisere ? Kind.ToString() : $"{Tricks}{Trump}";
 }
 public sealed record AuctionAction(int Seat, Contract? Bid); // null = pass
@@ -26,7 +26,7 @@ public sealed record PublicPlayer(int Seat, int CardCount, int Score, IReadOnlyL
 public sealed record Observation(int Seat, int Dealer, int Round, IReadOnlyList<PlayingCard> Hand,
     IReadOnlyList<PublicPlayer> Players, IReadOnlyList<AuctionAction> Auction,
     Contract? Contract, int? Declarer, IReadOnlyList<PublicPlay> Trick,
-    IReadOnlyList<PublicPlay> History, IReadOnlyList<int> Scores, Rules Rules, IReadOnlyList<PlayingCard> OwnDiscards);
+    IReadOnlyList<PublicPlay> History, IReadOnlyList<int> Scores, Rules Rules, IReadOnlyList<PlayingCard> OwnDiscards, [property: System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)] IReadOnlyList<PrivateCardEvent>? PrivateEvents = null);
 
 public interface IPlayer
 {
@@ -38,7 +38,7 @@ public interface IPlayer
 public sealed class IllegalActionException(string message, Exception? inner = null) : Exception(message, inner);
 
 public sealed record Decision(int Seat, string Phase, Contract? Bid = null,
-    PlayingCard[]? Discards = null, PlayAction? Play = null);
+    PlayingCard[]? Discards = null, PlayAction? Play = null, [property: System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)] bool? Accepted = null);
 public sealed class RoundRecord
 {
     public int Number { get; set; }
@@ -87,4 +87,14 @@ public sealed class SeededRandom(int seed)
 public interface IJokerDeclarationPlayer
 {
     IReadOnlyList<PlayAction> DeclareJokers(Observation view);
+}
+
+// These memories are visible only to the participant who observed the exchange.
+// They are historical observations, not a claim about where those cards are now.
+public sealed record PrivateCardEvent(string Phase, IReadOnlyList<PlayingCard> Cards);
+public interface IRuleVariationPlayer
+{
+    bool RequestRedeal(Observation view);
+    bool DeclareGrandSlam(Observation view);
+    PlayingCard TransferCard(Observation view, IReadOnlyList<PlayingCard> legal);
 }

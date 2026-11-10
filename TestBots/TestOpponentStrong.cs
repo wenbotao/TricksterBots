@@ -131,7 +131,7 @@ public class TestOpponentStrong
     {
         IPlayer[] Original()=>[new StrongBot(19,Budget()),new MediumBotPlayer(),new MediumBotPlayer(),new MediumBotPlayer()];
         IPlayer[] Copied()=>[new OpponentStrong(19,options:Budget(),learn:false,fixedMedium:true),new MediumBotPlayer(),new MediumBotPlayer(),new MediumBotPlayer()];
-        var a=new Engine().Run(Original(),7211,1,3);var b=new Engine().Run(Copied(),7211,1,3);
+        var a=new Engine(new Rules()).Run(Original(),7211,1,3);var b=new Engine(new Rules()).Run(Copied(),7211,1,3);
         Assert.AreEqual(JsonSerializer.Serialize(a.Rounds,ArenaCommand.Json),JsonSerializer.Serialize(b.Rounds,ArenaCommand.Json));
     }
     private sealed class ForceSearch(OpponentStrong inner):IPlayer,IJokerDeclarationPlayer

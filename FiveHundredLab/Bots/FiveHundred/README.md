@@ -1,5 +1,7 @@
 # 正式四人 Five Hundred bot
 
+> 当前版本更新：新的澳式默认规则与 9 个对应 bot 入口位于 [V11](V11/README.md)。本文父目录各类作为冻结历史版本保留；新规则和新默认成绩见 [v1.1 迁移报告](../../../experiments/rules-v1-1-20261110/README.md)。
+
 八个主要 bot 文件（另有 RandomPass 变体）是策略开发入口：直接阅读和修改对应文件的 `Bid`、`Discard`、`Play` 及其私有方法，即可追踪动作选择。命名空间为 `FiveHundredLab.Bots.FiveHundred`，目标框架为 .NET 8。
 
 | 文件 | 策略主体 |

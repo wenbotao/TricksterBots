@@ -3,7 +3,7 @@ using Trickster.cloud;
 namespace FiveHundredArena;
 
 // A detached resolved configuration travels with saved games; no preset lookup during replay.
-public sealed record ConfiguredRules : Rules
+public sealed partial record ConfiguredRules : Rules
 {
     public required string Document
     {
@@ -13,14 +13,14 @@ public sealed record ConfiguredRules : Rules
     private static readonly System.Runtime.CompilerServices.ConditionalWeakTable<string, ParsedDocument> Documents = new();
     internal JsonElement Root => Documents.GetValue(Document, text => new(JsonSerializer.Deserialize<JsonElement>(text))).Root;
     internal JsonElement Section(string name) => Root.GetProperty(name);
-    internal JsonElement ContractOptions(Contract c) => Section("contracts").GetProperty(c.Kind switch { ContractKind.Misere => "misere", ContractKind.OpenMisere => "open_misere", _ => "normal" });
+    internal JsonElement ContractOptions(Contract c) => Section("contracts").GetProperty(ContractName(c));
     internal static string Text(JsonElement e, string key) => e.GetProperty(key).GetString()!;
     internal static bool Flag(JsonElement e, string key) => e.GetProperty(key).GetBoolean();
     internal static int Number(JsonElement e, string key) => e.GetProperty(key).GetInt32();
     internal static Suit SuitOf(string s) => s switch { "S" => Suit.Spades, "C" => Suit.Clubs, "D" => Suit.Diamonds, "H" => Suit.Hearts, _ => Suit.Unknown };
     internal static string Symbol(Suit s) => s switch { Suit.Spades => "S", Suit.Clubs => "C", Suit.Diamonds => "D", Suit.Hearts => "H", _ => "NT" };
-    internal static string Key(Contract c) => c.Kind switch { ContractKind.Misere => "misere", ContractKind.OpenMisere => "open_misere", _ => c.Tricks + Symbol(c.Trump) };
-    internal static Contract Parse(string s) => s switch { "misere" => new(0, Suit.Unknown, ContractKind.Misere), "open_misere" => new(0, Suit.Unknown, ContractKind.OpenMisere), _ => new(int.Parse(s[..(s.Length - (s.EndsWith("NT") ? 2 : 1))]), SuitOf(s.EndsWith("NT") ? "NT" : s[^1..])) };
+    internal static string Key(Contract c) => c.Kind switch { ContractKind.Misere => "misere", ContractKind.OpenMisere => "open_misere", ContractKind.MisereNoPickup => "misere_no_pickup", ContractKind.GrandNullo => "grand_nullo", _ => c.Tricks + Symbol(c.Trump) };
+    internal static Contract Parse(string s) => s switch { "misere" => new(0, Suit.Unknown, ContractKind.Misere), "open_misere" => new(0, Suit.Unknown, ContractKind.OpenMisere), "misere_no_pickup" => new(0, Suit.Unknown, ContractKind.MisereNoPickup), "grand_nullo" => new(0, Suit.Unknown, ContractKind.GrandNullo), _ => new(int.Parse(s[..(s.Length - (s.EndsWith("NT") ? 2 : 1))]), SuitOf(s.EndsWith("NT") ? "NT" : s[^1..])) };
     public override List<PlayingCard> Deck() => Section("deck").GetProperty("cards").EnumerateArray().Select(x => { var s = x.GetString()!; return s.StartsWith('X') ? new PlayingCard(Suit.Joker, 16 + int.Parse(s[1..]) - 1) : PlayingCard.FromBotCard(new Card(s.Replace("10", "T"))); }).ToList();
     public override void Validate()
     {
@@ -40,7 +40,7 @@ public sealed record ConfiguredRules : Rules
             foreach (var s in a.GetProperty("strains").EnumerateArray().Select(x => x.GetString()!))
                 if (n >= a.GetProperty("normalMinimumByPosition").EnumerateArray().Min(x => x.GetInt32()) && n <= Number(a, "normalMaximum"))
                     expected.Add(n + s);
-        foreach (var k in new[] { "misere", "open_misere" })
+        foreach (var k in IsV11 ? new[] { "misere", "open_misere", "misere_no_pickup", "grand_nullo" } : new[] { "misere", "open_misere" })
             if (Flag(Section("contracts").GetProperty(k), "enabled"))
                 expected.Add(k);
         var order = a.GetProperty("orderLowToHigh").EnumerateArray().Select(x => x.GetString()!).ToArray();
@@ -78,11 +78,12 @@ public sealed record ConfiguredRules : Rules
             if (k == "normal" && (Text(c, "target") != "team_at_least" || Text(c, "activeSeats") != "all_four" || eligibility.ValueKind != JsonValueKind.Null))
                 throw new ArgumentException("C12: invalid normal contract");
         }
+        if (IsV11) ValidateV11();
         // Reject unsupported branches rather than accepting a rule and silently playing another game.
         foreach (var k in new[] { "double_nullo", "grand_nullo" })
-            if (Flag(Section("contracts").GetProperty(k), "enabled"))
+            if (Flag(Section("contracts").GetProperty(k), "enabled") && !(IsV11 && k == "grand_nullo"))
                 throw new NotSupportedException("Team-zero contracts are not implemented");
-        if (Text(a, "selfRaise") != "forbidden" || Text(a, "passReentry") == "on_contract_change" || Text(a.GetProperty("allPass"), "action") != "redeal" || Text(d.GetProperty("redealRequest"), "mode") != "none")
+        if (Text(a, "selfRaise") != "forbidden" || Text(a, "passReentry") == "on_contract_change" || !IsV11 && (Text(a.GetProperty("allPass"), "action") != "redeal" || Text(d.GetProperty("redealRequest"), "mode") != "none"))
             throw new NotSupportedException("Self-raise, reopen, forced/no-contract hands and redeal requests are not implemented");
         if (Text(a, "mode") == "single_round" && Text(a, "finish") != "four_opportunities")
             throw new ArgumentException("C05: single round requires four opportunities");
@@ -148,13 +149,15 @@ public sealed record ConfiguredRules : Rules
                 var leads = History.Where((x, i) => i % active == 0).ToArray();
                 if (mode == "never_led")
                     choices = choices.Where(s => !leads.Any(x => LedSuit([x], c) == s));
-                if (mode == "not_shown_void")
+                if (mode == "not_shown_void" && IsV11)
+                { var voids=ShownVoids(c,CurrentSeat);choices=choices.Where(s=>!voids.Contains(s)); }
+                if (mode == "not_shown_void" && !IsV11)
                     choices = choices.Where(s => !History.Where((x, i) => i % active != 0 && x.Seat == CurrentSeat && EffectiveSuit(x.Action.Card, c) != LedSuit([History[i / active * active]], c)).Any(x => LedSuit([History[History.ToList().IndexOf(x) / active * active]], c) == s));
                 if (mode == "last_card_only" && hand.Count != 1)
                     choices = [];
-                if (mode == "previously_led_by_declarer")
-                    choices = choices.Where(s => leads.Any(x => x.Seat == DeclarerSeat && LedSuit([x], c) == s));
-                if (!choices.Any() && Text(j, "noEligibleSuit") == "any_suit" || !choices.Any() && Text(j, "noEligibleSuit") == "forbid_until_last_trick_then_any" && History.Count / active == 9)
+                if (mode == "previously_led_by_declarer" || mode == "previously_led_by_holder")
+                    choices = choices.Where(s => leads.Any(x => x.Seat == (mode == "previously_led_by_holder" ? CurrentSeat : DeclarerSeat) && LedSuit([x], c) == s));
+                if ((!IsV11 || mode!="last_card_only" || hand.Count==1) && (!choices.Any() && Text(j, "noEligibleSuit") == "any_suit" || !choices.Any() && Text(j, "noEligibleSuit") == "forbid_until_last_trick_then_any" && History.Count / active == 9))
                     choices = Suits;
                 result.AddRange(choices.Select(s => new PlayAction(card, s)));
             }
@@ -190,7 +193,15 @@ public sealed record ConfiguredRules : Rules
     {
         var opts = ContractOptions(c);
         int team = declarer % 2, won = tricks[declarer] + (Text(opts, "activeSeats") == "all_four" ? tricks[(declarer + 2) % 4] : 0);
-        bool made = c.IsMisere ? tricks[declarer] == 0 : won >= c.Tricks;
+        if (IsV11 && c.Kind == ContractKind.NoContractNT)
+            return (false, [Number(Section("auction").GetProperty("allPass"), "noContractPointsPerTrick") * (tricks[0] + tricks[2]), Number(Section("auction").GetProperty("allPass"), "noContractPointsPerTrick") * (tricks[1] + tricks[3])]);
+        if (IsV11 && c.Kind == ContractKind.GrandSlam)
+        {
+            bool soloMade = tricks[declarer] == 10;
+            return (soloMade, soloMade ? team == 0 ? [Value(c), 0] : [0, Value(c)]
+                : team == 0 ? [-Number(opts, "failurePoints"), (10 - tricks[declarer]) * 10] : [(10 - tricks[declarer]) * 10, -Number(opts, "failurePoints")]);
+        }
+        bool made = c.Kind == ContractKind.GrandNullo ? won == 0 : c.IsMisere ? tricks[declarer] == 0 : won >= c.Tricks;
         var score = Section("scoring");
         var delta = new int[2];
         int value = Value(c);
@@ -236,11 +247,21 @@ public sealed record ConfiguredRules : Rules
         }
         return (made, delta);
     }
-    public override int Value(Contract c) => c.Kind == ContractKind.Normal ? Section("scoring").GetProperty("normalTable").GetProperty(c.Tricks.ToString()).GetProperty(Symbol(c.Trump)).GetInt32() : Number(ContractOptions(c), "points");
-    public override int Order(Contract c) => Array.IndexOf(Section("auction").GetProperty("orderLowToHigh").EnumerateArray().Select(x => x.GetString()).ToArray(), Key(c));
-    public override List<Contract?> LegalBids(Contract? high, IReadOnlyList<AuctionAction> history) => Section("auction").GetProperty("orderLowToHigh").EnumerateArray().Select(x => Parse(x.GetString()!)).Where(c => high == null || Order(c) > Order(high)).Where(c => { var min = ContractOptions(c).GetProperty("eligibility").GetProperty("minimumPriorNormalLevel"); return min.ValueKind == JsonValueKind.Null || history.Any(h => h.Bid is { } b && (b.Kind == ContractKind.Normal || b.Kind == ContractKind.Inkle && Flag(Section("auction").GetProperty("inkle"), "countsAsNormalHistory")) && b.Tricks >= min.GetInt32()); }).Cast<Contract?>().Prepend(null).ToList();
+    public override int Value(Contract c) => c.Kind == ContractKind.NoContractNT ? 0 : c.Kind == ContractKind.GrandSlam ? Number(ContractOptions(c), c.Trump == Suit.Unknown ? "noTrumpPoints" : "points") : c.Kind == ContractKind.Normal ? Section("scoring").GetProperty("normalTable").GetProperty(c.Tricks.ToString()).GetProperty(Symbol(c.Trump)).GetInt32() : Number(ContractOptions(c), "points");
+    public override int Order(Contract c)
+    {
+        var order = Section("auction").GetProperty("orderLowToHigh").EnumerateArray().Select(x => x.GetString()!).ToArray();
+        if (IsV11 && c.Kind == ContractKind.OpenMisere && Section("extensions").TryGetProperty("openMisereRanking", out var mode) && mode.GetString() == "by_points_first")
+        {
+            string? tied = order.FirstOrDefault(key => char.IsDigit(key[0]) && Value(Parse(key)) == Value(c));
+            if (tied != null) return Array.IndexOf(order, tied);
+        }
+        return Array.IndexOf(order, Key(c));
+    }
+    public override List<Contract?> LegalBids(Contract? high, IReadOnlyList<AuctionAction> history) => Section("auction").GetProperty("orderLowToHigh").EnumerateArray().Select(x => Parse(x.GetString()!)).Where(c => high == null || Order(c) > Order(high)).Where(c => c.Kind != ContractKind.GrandNullo || history.Any(a => a.Seat == (CurrentSeat + 2) % 4 && a.Bid?.Kind == ContractKind.Misere)).Where(c => { var min = ContractOptions(c).GetProperty("eligibility").GetProperty("minimumPriorNormalLevel"); return min.ValueKind == JsonValueKind.Null || history.Any(h => h.Bid is { } b && (b.Kind == ContractKind.Normal || b.Kind == ContractKind.Inkle && Flag(Section("auction").GetProperty("inkle"), "countsAsNormalHistory")) && b.Tricks >= min.GetInt32()); }).Cast<Contract?>().Prepend(null).ToList();
     public override Suit EffectiveSuit(PlayingCard card, Contract c)
     {
+        if (PreparedContract == c && PreparedCards != null && PreparedCards.TryGetValue(card, out var prepared)) return prepared.Suit;
         if (c.IsMisere || c.Trump == Suit.Unknown)
             return Declarations.GetValueOrDefault(card, card.Suit);
         var p = Section("play");
@@ -252,6 +273,7 @@ public sealed record ConfiguredRules : Rules
     }
     public override int Rank(PlayingCard card, Contract c)
     {
+        if (PreparedContract == c && PreparedCards != null && PreparedCards.TryGetValue(card, out var prepared)) return prepared.Rank;
         if (card.IsJoker)
             return 200 - Array.IndexOf(Section("deck").GetProperty("jokerOrderHighToLow").EnumerateArray().Select(x => x.GetString()).ToArray(), "X" + (card.Rank - 15));
         if (!c.IsMisere && c.Trump != Suit.Unknown && card.Rank == 11 && EffectiveSuit(card, c) == c.Trump && (card.Suit == c.Trump ? Flag(Section("play"), "rightBower") : Flag(Section("play"), "leftBower")))
@@ -264,8 +286,16 @@ public static class RuleConfiguration
     public static Rules Load(string? path = null)
     {
         if (path == null)
-            return new Rules();
-        var text = File.ReadAllText(path);
+        {
+            using var stream = typeof(RuleConfiguration).Assembly.GetManifestResourceStream("au-default-v1.1.json")!;
+            using var reader = new StreamReader(stream);
+            return Parse(reader.ReadToEnd());
+        }
+        return Parse(File.ReadAllText(path));
+    }
+    public static Rules Legacy() => new Rules();
+    public static Rules Parse(string text)
+    {
         using var doc = JsonDocument.Parse(text);
         if (!doc.RootElement.TryGetProperty("schemaVersion", out _))
             return JsonSerializer.Deserialize<Rules>(text, ArenaCommand.Json) ?? throw new ArgumentException("Empty rules");

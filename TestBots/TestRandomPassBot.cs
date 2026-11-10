@@ -47,7 +47,7 @@ public class TestRandomPassBot
             Assert.IsTrue(mixed.Rounds.SelectMany(r => r.Decisions).Where(d => d.Phase == "bid" && d.Seat % 2 == 1).All(d => d.Bid == null));
             ArenaCommand.Replay(JsonSerializer.Deserialize<GameRecord>(JsonSerializer.Serialize(mixed, ArenaCommand.Json), ArenaCommand.Json)!);
         }
-        Assert.IsInstanceOfType<Bots.RandomPassBot>(Profiles.Create("random-pass-v1", 1));
+        Assert.IsInstanceOfType<Bots.RandomPassBot>(Profiles.CreateForRules("random-pass-v1", 1, new Rules()));
     }
 
     [TestMethod]

@@ -7,6 +7,13 @@ internal static class ConfigurationStructure
     {
         using var schema = JsonDocument.Parse(typeof(ConfigurationStructure).Assembly.GetManifestResourceStream("rules.schema.json")!);
         Check(root, schema.RootElement, "$");
+        if(!root.TryGetProperty("extensions",out _))
+        {
+            var contracts=root.GetProperty("contracts");
+            bool special=new[]{"misere_no_pickup","grand_slam"}.Any(name=>contracts.TryGetProperty(name,out var c)&&c.GetProperty("enabled").GetBoolean());
+            bool holder=contracts.EnumerateObject().Any(c=>c.Value.GetProperty("joker").GetProperty("predeclare").GetString()=="holder_optional");
+            if(special||holder)throw new ArgumentException("v1.1 feature flags require extensions.version=1.1; use a v1.1 complete configuration");
+        }
     }
     private static void Check(JsonElement v, JsonElement s, string path)
     {

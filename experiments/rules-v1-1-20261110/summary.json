@@ -1,0 +1,1425 @@
+{
+  "Profiles": {
+    "random-v1.1": "Random",
+    "random-pass-v1.1": "RandomPass",
+    "weak-v1.1": "Weak",
+    "medium-v1.1": "Medium",
+    "fast-v1.1": "Fast",
+    "strong-v1.1": "Strong",
+    "partner-v1.1": "Partner",
+    "strong-plus-v1.1": "StrongPlus",
+    "strong-flow-cached-v1.1": "StrongFlowCached"
+  },
+  "Matches": 180,
+  "Rounds": 1187,
+  "Redeals": 335,
+  "Wins": {
+    "random-v1.1": {
+      "Wins": 8,
+      "Appearances": 80,
+      "WinRate": 0.1,
+      "MatchBootstrap95": [
+        0.028985507246376812,
+        0.17333673469387725
+      ]
+    },
+    "random-pass-v1.1": {
+      "Wins": 31,
+      "Appearances": 80,
+      "WinRate": 0.3875,
+      "MatchBootstrap95": [
+        0.2876712328767123,
+        0.49206349206349204
+      ]
+    },
+    "weak-v1.1": {
+      "Wins": 32,
+      "Appearances": 80,
+      "WinRate": 0.4,
+      "MatchBootstrap95": [
+        0.3,
+        0.5
+      ]
+    },
+    "medium-v1.1": {
+      "Wins": 44,
+      "Appearances": 80,
+      "WinRate": 0.55,
+      "MatchBootstrap95": [
+        0.4487068965517242,
+        0.6521739130434783
+      ]
+    },
+    "fast-v1.1": {
+      "Wins": 46,
+      "Appearances": 80,
+      "WinRate": 0.575,
+      "MatchBootstrap95": [
+        0.47297297297297297,
+        0.6785714285714286
+      ]
+    },
+    "strong-v1.1": {
+      "Wins": 40,
+      "Appearances": 80,
+      "WinRate": 0.5,
+      "MatchBootstrap95": [
+        0.3918918918918919,
+        0.6103896103896104
+      ]
+    },
+    "partner-v1.1": {
+      "Wins": 53,
+      "Appearances": 80,
+      "WinRate": 0.6625,
+      "MatchBootstrap95": [
+        0.5666666666666667,
+        0.7540983606557377
+      ]
+    },
+    "strong-plus-v1.1": {
+      "Wins": 48,
+      "Appearances": 80,
+      "WinRate": 0.6,
+      "MatchBootstrap95": [
+        0.5,
+        0.6986301369863014
+      ]
+    },
+    "strong-flow-cached-v1.1": {
+      "Wins": 58,
+      "Appearances": 80,
+      "WinRate": 0.725,
+      "MatchBootstrap95": [
+        0.6341463414634146,
+        0.8148148148148148
+      ]
+    }
+  },
+  "FlowDifferences": {
+    "random-v1.1": {
+      "Difference": 0.625,
+      "MatchBootstrap95": [
+        0.49808249413522765,
+        0.7475942195059843
+      ]
+    },
+    "random-pass-v1.1": {
+      "Difference": 0.33749999999999997,
+      "MatchBootstrap95": [
+        0.19713873700654935,
+        0.47542363630412776
+      ]
+    },
+    "weak-v1.1": {
+      "Difference": 0.32499999999999996,
+      "MatchBootstrap95": [
+        0.18744890424714983,
+        0.4644409565112
+      ]
+    },
+    "medium-v1.1": {
+      "Difference": 0.17499999999999993,
+      "MatchBootstrap95": [
+        0.02777207001522061,
+        0.3219781070322866
+      ]
+    },
+    "fast-v1.1": {
+      "Difference": 0.15000000000000002,
+      "MatchBootstrap95": [
+        0.006731057692973892,
+        0.29277601134497677
+      ]
+    },
+    "strong-v1.1": {
+      "Difference": 0.22499999999999998,
+      "MatchBootstrap95": [
+        0.07618978405315621,
+        0.37198339414446524
+      ]
+    },
+    "partner-v1.1": {
+      "Difference": 0.0625,
+      "MatchBootstrap95": [
+        -0.07262043189368778,
+        0.19818123590899753
+      ]
+    },
+    "strong-plus-v1.1": {
+      "Difference": 0.125,
+      "MatchBootstrap95": [
+        -0.016066619418851857,
+        0.2630152361195595
+      ]
+    }
+  },
+  "Contracts": {
+    "strong-flow-cached-v1.1/Normal": {
+      "Attempts": 158,
+      "Made": 120
+    },
+    "random-v1.1/Normal": {
+      "Attempts": 133,
+      "Made": 8
+    },
+    "fast-v1.1/Normal": {
+      "Attempts": 65,
+      "Made": 54
+    },
+    "strong-plus-v1.1/Normal": {
+      "Attempts": 155,
+      "Made": 105
+    },
+    "partner-v1.1/Normal": {
+      "Attempts": 67,
+      "Made": 55
+    },
+    "strong-v1.1/Normal": {
+      "Attempts": 177,
+      "Made": 113
+    },
+    "medium-v1.1/Normal": {
+      "Attempts": 78,
+      "Made": 64
+    },
+    "weak-v1.1/Normal": {
+      "Attempts": 17,
+      "Made": 16
+    },
+    "random-v1.1/Misere": {
+      "Attempts": 2,
+      "Made": 0
+    }
+  },
+  "Costs": {
+    "bid": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.0037,
+        "AllocatedBytesMedian": 0.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.0019,
+        "AllocatedBytesMedian": 0.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.15475,
+        "AllocatedBytesMedian": 72000.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 0.1385,
+        "AllocatedBytesMedian": 72208.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 0.15735,
+        "AllocatedBytesMedian": 72208.0,
+        "RolloutsMedian": 0.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 265.79745,
+        "AllocatedBytesMedian": 150640776.0,
+        "RolloutsMedian": 48.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 0.15375,
+        "AllocatedBytesMedian": 72208.0,
+        "RolloutsMedian": 0.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 1023.90685,
+        "AllocatedBytesMedian": 594972560.0,
+        "RolloutsMedian": 192.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 1027.5452500000001,
+        "AllocatedBytesMedian": 593749512.0,
+        "RolloutsMedian": 192.0
+      }
+    },
+    "discard": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.011,
+        "AllocatedBytesMedian": 224.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.0052499999999999995,
+        "AllocatedBytesMedian": 224.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.01355,
+        "AllocatedBytesMedian": 644.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 3.6704499999999998,
+        "AllocatedBytesMedian": 2180144.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 16.9787,
+        "AllocatedBytesMedian": 9870816.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 83.77985,
+        "AllocatedBytesMedian": 48295640.0,
+        "RolloutsMedian": 96.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 16.6047,
+        "AllocatedBytesMedian": 9871128.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 657.0568499999999,
+        "AllocatedBytesMedian": 370618824.0,
+        "RolloutsMedian": 768.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 307.9359,
+        "AllocatedBytesMedian": 183853228.0,
+        "RolloutsMedian": 384.0
+      }
+    },
+    "early": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.0011,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.0018,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.010450000000000001,
+        "AllocatedBytesMedian": 1008.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 0.0171,
+        "AllocatedBytesMedian": 2648.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 13.8423,
+        "AllocatedBytesMedian": 7617212.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 68.08165,
+        "AllocatedBytesMedian": 37874132.0,
+        "RolloutsMedian": 80.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 13.50195,
+        "AllocatedBytesMedian": 7810896.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 267.91510000000005,
+        "AllocatedBytesMedian": 151651760.0,
+        "RolloutsMedian": 320.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 256.30615,
+        "AllocatedBytesMedian": 149675384.0,
+        "RolloutsMedian": 320.0
+      }
+    },
+    "middle": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.0011,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.00135,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.0097,
+        "AllocatedBytesMedian": 912.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 0.0111,
+        "AllocatedBytesMedian": 2168.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 12.626999999999999,
+        "AllocatedBytesMedian": 6987328.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 42.4328,
+        "AllocatedBytesMedian": 24426324.0,
+        "RolloutsMedian": 56.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 12.365400000000001,
+        "AllocatedBytesMedian": 7120884.0,
+        "RolloutsMedian": 16.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 168.14675,
+        "AllocatedBytesMedian": 97665692.0,
+        "RolloutsMedian": 224.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 165.22750000000002,
+        "AllocatedBytesMedian": 96814124.0,
+        "RolloutsMedian": 224.0
+      }
+    },
+    "late": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.0012,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.0010999999999999998,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.008,
+        "AllocatedBytesMedian": 768.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 0.0058,
+        "AllocatedBytesMedian": 1512.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 8.2527,
+        "AllocatedBytesMedian": 4680720.0,
+        "RolloutsMedian": 12.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 15.5496,
+        "AllocatedBytesMedian": 9331868.0,
+        "RolloutsMedian": 24.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 8.23425,
+        "AllocatedBytesMedian": 4740112.0,
+        "RolloutsMedian": 12.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 63.83165,
+        "AllocatedBytesMedian": 37258252.0,
+        "RolloutsMedian": 96.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 63.1227,
+        "AllocatedBytesMedian": 37135540.0,
+        "RolloutsMedian": 96.0
+      }
+    },
+    "forced": {
+      "random-v1.1": {
+        "MillisecondsMedian": 0.0004,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "random-pass-v1.1": {
+        "MillisecondsMedian": 0.0005499999999999999,
+        "AllocatedBytesMedian": 24.0,
+        "RolloutsMedian": 0.0
+      },
+      "weak-v1.1": {
+        "MillisecondsMedian": 0.0007,
+        "AllocatedBytesMedian": 0.0,
+        "RolloutsMedian": 0.0
+      },
+      "medium-v1.1": {
+        "MillisecondsMedian": 0.0005,
+        "AllocatedBytesMedian": 0.0,
+        "RolloutsMedian": 0.0
+      },
+      "fast-v1.1": {
+        "MillisecondsMedian": 0.00065,
+        "AllocatedBytesMedian": 40.0,
+        "RolloutsMedian": 0.0
+      },
+      "strong-v1.1": {
+        "MillisecondsMedian": 0.0007999999999999999,
+        "AllocatedBytesMedian": 40.0,
+        "RolloutsMedian": 0.0
+      },
+      "partner-v1.1": {
+        "MillisecondsMedian": 0.0008500000000000001,
+        "AllocatedBytesMedian": 32.0,
+        "RolloutsMedian": 0.0
+      },
+      "strong-plus-v1.1": {
+        "MillisecondsMedian": 0.001,
+        "AllocatedBytesMedian": 40.0,
+        "RolloutsMedian": 0.0
+      },
+      "strong-flow-cached-v1.1": {
+        "MillisecondsMedian": 0.00395,
+        "AllocatedBytesMedian": 328.0,
+        "RolloutsMedian": 0.0
+      }
+    }
+  },
+  "FlowTimeRatios": {
+    "bid": {
+      "fast-v1.1": {
+        "GeometricRatio": 6992.52779541123,
+        "Bootstrap95": [
+          6276.49878177909,
+          7766.952239593761
+        ]
+      },
+      "strong-v1.1": {
+        "GeometricRatio": 3.9675716848392364,
+        "Bootstrap95": [
+          3.876001592365307,
+          4.06100425538423
+        ]
+      },
+      "partner-v1.1": {
+        "GeometricRatio": 6953.3978841279195,
+        "Bootstrap95": [
+          6513.6246356229185,
+          7448.978754613145
+        ]
+      },
+      "strong-plus-v1.1": {
+        "GeometricRatio": 0.9915931721596909,
+        "Bootstrap95": [
+          0.9676698200095002,
+          1.0117854520721021
+        ]
+      }
+    },
+    "discard": {
+      "fast-v1.1": {
+        "GeometricRatio": 17.776164262243803,
+        "Bootstrap95": [
+          16.81888262049127,
+          18.75828702380275
+        ]
+      },
+      "strong-v1.1": {
+        "GeometricRatio": 3.584544554130297,
+        "Bootstrap95": [
+          3.4275316717412623,
+          3.7455205931467903
+        ]
+      },
+      "partner-v1.1": {
+        "GeometricRatio": 18.10321257144982,
+        "Bootstrap95": [
+          17.21028052951633,
+          19.12873844177481
+        ]
+      },
+      "strong-plus-v1.1": {
+        "GeometricRatio": 0.46316270868546616,
+        "Bootstrap95": [
+          0.4481635325712391,
+          0.4787322050171612
+        ]
+      }
+    },
+    "early": {
+      "fast-v1.1": {
+        "GeometricRatio": 18.248793813796382,
+        "Bootstrap95": [
+          17.36603319195329,
+          19.096925278973185
+        ]
+      },
+      "strong-v1.1": {
+        "GeometricRatio": 3.7700339543312986,
+        "Bootstrap95": [
+          3.683908695417684,
+          3.8585408706450126
+        ]
+      },
+      "partner-v1.1": {
+        "GeometricRatio": 18.547471092742327,
+        "Bootstrap95": [
+          18.104426572419065,
+          19.101126420650726
+        ]
+      },
+      "strong-plus-v1.1": {
+        "GeometricRatio": 0.9403314461054088,
+        "Bootstrap95": [
+          0.9182348178934521,
+          0.9658251657965913
+        ]
+      }
+    },
+    "middle": {
+      "fast-v1.1": {
+        "GeometricRatio": 13.086283313884158,
+        "Bootstrap95": [
+          12.380387500908698,
+          13.722504651556603
+        ]
+      },
+      "strong-v1.1": {
+        "GeometricRatio": 3.9289483771414657,
+        "Bootstrap95": [
+          3.8116548176155947,
+          4.032817382633105
+        ]
+      },
+      "partner-v1.1": {
+        "GeometricRatio": 13.384572116477388,
+        "Bootstrap95": [
+          12.89362100790663,
+          13.813264349459823
+        ]
+      },
+      "strong-plus-v1.1": {
+        "GeometricRatio": 0.975061105383461,
+        "Bootstrap95": [
+          0.9467554497508626,
+          1.0036051537527229
+        ]
+      }
+    },
+    "late": {
+      "fast-v1.1": {
+        "GeometricRatio": 7.598878835921825,
+        "Bootstrap95": [
+          7.445633487642886,
+          7.741394627618115
+        ]
+      },
+      "strong-v1.1": {
+        "GeometricRatio": 3.9590846372859585,
+        "Bootstrap95": [
+          3.822804162926694,
+          4.0827777734828485
+        ]
+      },
+      "partner-v1.1": {
+        "GeometricRatio": 7.706311814868142,
+        "Bootstrap95": [
+          7.545617684833977,
+          7.861181219578881
+        ]
+      },
+      "strong-plus-v1.1": {
+        "GeometricRatio": 0.9867803906124528,
+        "Bootstrap95": [
+          0.9714226729415564,
+          1.0010277299342647
+        ]
+      }
+    },
+    "forced": {}
+  },
+  "Ux": {
+    "random-v1.1": {
+      "Critical": {
+        "Passed": 16,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 17,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 0,
+          "Check": "prefer-pass",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 1,
+          "Check": "prefer-pass",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 2,
+          "Check": "no-high-contract",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 2,
+          "Check": "prefer-pass",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 3,
+          "Check": "no-high-contract",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Trial": 3,
+          "Check": "prefer-pass",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-passed",
+          "Trial": 0,
+          "Check": "respect-warning",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-passed",
+          "Trial": 1,
+          "Check": "respect-warning",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-passed",
+          "Trial": 2,
+          "Check": "respect-warning",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-passed",
+          "Trial": 3,
+          "Check": "respect-warning",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 0,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 1,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 2,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 3,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-can-exit",
+          "Trial": 0,
+          "Check": "leave-contract",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-partner-can-exit",
+          "Trial": 1,
+          "Check": "leave-contract",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Trial": 0,
+          "Check": "conserve-trump",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Trial": 1,
+          "Check": "conserve-trump",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 0,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 1,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 2,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 3,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 0,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 1,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 2,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 3,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Trial": 1,
+          "Check": "bury-joker",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Trial": 3,
+          "Check": "bury-joker",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-normal-joker",
+          "Trial": 0,
+          "Check": "retain-joker",
+          "Level": "Advisory"
+        }
+      ]
+    },
+    "random-pass-v1.1": {
+      "Critical": {
+        "Passed": 18,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 27,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 0,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 1,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 2,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Trial": 3,
+          "Check": "support-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Trial": 0,
+          "Check": "conserve-trump",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Trial": 1,
+          "Check": "conserve-trump",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 0,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 1,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 2,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 3,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 0,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 1,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 2,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "misere-own-lead",
+          "Trial": 3,
+          "Check": "no-certain-self-loss",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Trial": 1,
+          "Check": "bury-joker",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Trial": 3,
+          "Check": "bury-joker",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-normal-joker",
+          "Trial": 0,
+          "Check": "retain-joker",
+          "Level": "Advisory"
+        }
+      ]
+    },
+    "weak-v1.1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 26,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 0,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 1,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 2,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Trial": 3,
+          "Check": "return-requested-suit",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Trial": 0,
+          "Check": "unload-high",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Trial": 1,
+          "Check": "unload-high",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Trial": 2,
+          "Check": "unload-high",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Trial": 3,
+          "Check": "unload-high",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Trial": 0,
+          "Check": "keep-king-guard",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Trial": 2,
+          "Check": "keep-king-guard",
+          "Level": "Advisory"
+        }
+      ]
+    },
+    "medium-v1.1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        }
+      ]
+    },
+    "fast-v1.1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        }
+      ]
+    },
+    "strong-v1.1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 0,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 1,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 2,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Trial": 3,
+          "Check": "take-public-certainty",
+          "Level": "Critical"
+        }
+      ]
+    },
+    "partner-v1.1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 40,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": []
+    },
+    "strong-plus-v1.1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        }
+      ]
+    },
+    "strong-flow-cached-v1.1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 0,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 1,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 2,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Trial": 3,
+          "Check": "offer-ruff",
+          "Level": "Advisory"
+        }
+      ]
+    }
+  }
+}

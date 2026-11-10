@@ -33,7 +33,7 @@ public class TestRuleConfiguration
     public void DefaultAndCompatibilityPresetHaveIdenticalDecisionsAndScores()
     {
         IPlayer[] Players()=>Enumerable.Range(0,4).Select(s=>(IPlayer)new RandomLegalBot(10+s)).ToArray();
-        var old=new Engine().Run(Players(),5,5,3);var configured=Engine.FromConfiguration(FilePath("legacy-au-4p-v1")).Run(Players(),5,5,3);
+        var old=new Engine(new Rules()).Run(Players(),5,5,3);var configured=Engine.FromConfiguration(FilePath("legacy-au-4p-v1")).Run(Players(),5,5,3);
         Assert.AreEqual(JsonSerializer.Serialize(old.Rounds,ArenaCommand.Json),JsonSerializer.Serialize(configured.Rounds,ArenaCommand.Json));
         Assert.IsInstanceOfType<Rules>(RuleConfiguration.Load());
     }

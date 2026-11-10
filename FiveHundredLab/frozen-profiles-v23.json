@@ -1,0 +1,21 @@
+{
+  "FiveHundredLab/Bots/FiveHundred/V11/FastBot.cs": "5ba96558302ffabb549c2bccb9325e36f21ab81f14c4927e20fac59031539021",
+  "FiveHundredLab/Bots/FiveHundred/V11/FiveHundredRuleBot.cs": "fc7abd53070d6ccea325d0ec3023f11a52c1245d6f1663934eeb56d20fbcc958",
+  "FiveHundredLab/Bots/FiveHundred/V11/MediumBot.cs": "cec37eef5017c9af1ad5a080fe71c87a0805f98e56d376463bef14bee06cf05f",
+  "FiveHundredLab/Bots/FiveHundred/V11/PartnerBot.cs": "97ff349608760080d0d6273b56734981ec126bcf9e1d4da375ea4ced47616354",
+  "FiveHundredLab/Bots/FiveHundred/V11/RandomBot.cs": "edd4f7c4874d3deefed6d42f325fcc59ee5d3a58c9d37d6d5d9367ea5b2edf69",
+  "FiveHundredLab/Bots/FiveHundred/V11/RandomPassBot.cs": "88563d1f655d30d3490914ddbb51bc51a4396cc65b6e800f75e45930f4077c96",
+  "FiveHundredLab/Bots/FiveHundred/V11/RuleBotEvaluation.cs": "86a1e428ca87c348f7fb121cfb710f2ede7d0658a80e04150930bcd6b51c08e5",
+  "FiveHundredLab/Bots/FiveHundred/V11/StrongBot.cs": "2f8168cf3dca6e984fde57983d05f0d6272eed64c1cb5182ed042a65c350f750",
+  "FiveHundredLab/Bots/FiveHundred/V11/StrongFlowCachedBot.cs": "8f8c9e90fe01459b487f9e4786c4a8b52b9de925c036a730ca6138f9cb04f43b",
+  "FiveHundredLab/Bots/FiveHundred/V11/StrongPlusBot.cs": "002ad355c42c372f8c2a0a5065ea3f78d7e90bece9208d5d9791b703ab3411c1",
+  "FiveHundredLab/Bots/FiveHundred/V11/VariantRollout.cs": "42531a4f59edfe630f1bccd2228dc6b75c4c7f6fa49a17488ee2b5d9b981c4bc",
+  "FiveHundredLab/Bots/FiveHundred/V11/VariantSamples.cs": "5fe3d0142b0a605b62f388e61b77377f6999f32f8583502721d546b0c3f86563",
+  "FiveHundredLab/Bots/FiveHundred/V11/WeakBot.cs": "50e759ff2ceeb9c8b8c0d2f5d4539d73b81cba3252704de517bf44eb2fe1cfe4",
+  "FiveHundredArena/EngineV11.cs": "6c9f4e9d19f07b19811f03ebb2c4ed3e201ea8bdc08f16faff3c206680945c2a",
+  "FiveHundredArena/ConfiguredRules.V11.cs": "468ebca2a535febe0ffbdb1530a5c08af49e838f8654641b8dd6f60369d107e6",
+  "FiveHundredArena/RuleConfigurationV11.cs": "ffa488d46da611bb13cf082eae925615f4b05263b2bd968c03f4d7d7624cf093",
+  "FiveHundredRules/v1.1/presets/au-default-4p-v1-1.json": "1f9c4ee788680debadf1b0893966467c1e7ffe005d3181fd30ba28d489c31cc6",
+  "FiveHundredRules/v1.1/presets/us-default-4p-v1-1.json": "5de3440f8a810b5877befce0f2fee64c060278d47939e50ead057ffc8c337983",
+  "FiveHundredRules/v1.1/examples/all-features-4p-v1-1.json": "18c93359873837c8aa112e61e67707a6b0b918a6d8ebd098c599bdf380423946"
+}
