@@ -1,0 +1,74 @@
+{
+  "Counters": {
+    "total": "569",
+    "executed": "569",
+    "passed": "569",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "TargetedTests": [
+    {
+      "executionId": "8531b6ee-4054-40a7-b90f-9455b94e03bb",
+      "testId": "1fdb6a30-029a-877f-99d8-c4d8bc2a32c6",
+      "testName": "FullEngineGamesDefaultAndConfiguredMatchAndReplay",
+      "computerName": "a1cb378fbee4",
+      "duration": "00:00:08.6414581",
+      "startTime": "2026-11-10T01:53:32.9749744+00:00",
+      "endTime": "2026-11-10T01:53:41.6193966+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "8531b6ee-4054-40a7-b90f-9455b94e03bb"
+    },
+    {
+      "executionId": "15aa710d-141f-44a9-b5fa-347dd6274464",
+      "testId": "13dee40a-54d0-8415-95e7-19690da91522",
+      "testName": "AllPhaseContinuationTracesAndUtilitiesMatchAndBranchesRemainIsolated",
+      "computerName": "a1cb378fbee4",
+      "duration": "00:00:00.3854487",
+      "startTime": "2026-11-10T01:53:25.0199509+00:00",
+      "endTime": "2026-11-10T01:53:25.4058973+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "15aa710d-141f-44a9-b5fa-347dd6274464"
+    },
+    {
+      "executionId": "ce0c7b1f-854d-4ab7-b2eb-ad8280b3cf08",
+      "testId": "18ca1dc0-19ab-8e5d-b474-418231346554",
+      "testName": "EveryPlayPrefixAndJokerOptionMatchesUncachedMedium",
+      "computerName": "a1cb378fbee4",
+      "duration": "00:00:00.2922106",
+      "startTime": "2026-11-10T01:53:24.7056617+00:00",
+      "endTime": "2026-11-10T01:53:25.0147812+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "ce0c7b1f-854d-4ab7-b2eb-ad8280b3cf08"
+    },
+    {
+      "executionId": "7a6eaebd-2b9c-45c7-bec7-a0f14871db9c",
+      "testId": "1330fe37-f956-81f6-9893-83b8aee87ea4",
+      "testName": "RootSearchActionsBudgetsAndDiagnosticsMatchAcrossPhases",
+      "computerName": "a1cb378fbee4",
+      "duration": "00:00:07.5672318",
+      "startTime": "2026-11-10T01:53:25.4064553+00:00",
+      "endTime": "2026-11-10T01:53:32.9738429+00:00",
+      "testType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+      "outcome": "Passed",
+      "testListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+      "relativeResultsDirectory": "7a6eaebd-2b9c-45c7-bec7-a0f14871db9c"
+    }
+  ]
+}

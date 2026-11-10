@@ -1,0 +1,1336 @@
+{
+  "Profiles": {
+    "random-rules-v1": "Random",
+    "random-pass-v1": "RandomPass",
+    "weak-rules-v1": "Weak",
+    "medium-rules-v1": "Medium",
+    "fast-rules-v1": "Fast",
+    "strong-rules-v1": "Strong",
+    "partner-rules-v1": "Partner",
+    "strong-plus-v1": "StrongPlus",
+    "strong-flow-cached-v1": "StrongFlowCached"
+  },
+  "Performance": {
+    "bid": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0032500000000000003,
+        "StateMedianP95Milliseconds": 0.0036,
+        "MedianAllocatedBytes": 0.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0014,
+        "StateMedianP95Milliseconds": 0.001985,
+        "MedianAllocatedBytes": 0.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.02255,
+        "StateMedianP95Milliseconds": 0.07041499999999996,
+        "MedianAllocatedBytes": 1704.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.108,
+        "StateMedianP95Milliseconds": 0.20634999999999995,
+        "MedianAllocatedBytes": 96064.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.052199999999999996,
+        "StateMedianP95Milliseconds": 0.0721,
+        "MedianAllocatedBytes": 91624.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 74.76845,
+        "StateMedianP95Milliseconds": 103.133635,
+        "MedianAllocatedBytes": 141362444.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.07675,
+        "StateMedianP95Milliseconds": 0.09992,
+        "MedianAllocatedBytes": 92376.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 169.22375,
+        "StateMedianP95Milliseconds": 240.40362999999996,
+        "MedianAllocatedBytes": 300466300.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 164.672,
+        "StateMedianP95Milliseconds": 233.82441999999998,
+        "MedianAllocatedBytes": 318984592.0
+      }
+    },
+    "discard": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0045,
+        "StateMedianP95Milliseconds": 0.011284999999999995,
+        "MedianAllocatedBytes": 224.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00185,
+        "StateMedianP95Milliseconds": 0.008779999999999994,
+        "MedianAllocatedBytes": 224.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00925,
+        "StateMedianP95Milliseconds": 0.015585,
+        "MedianAllocatedBytes": 608.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.07715,
+        "StateMedianP95Milliseconds": 0.09484,
+        "MedianAllocatedBytes": 24208.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 11.81045,
+        "StateMedianP95Milliseconds": 14.354154999999999,
+        "MedianAllocatedBytes": 22954776.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 138.35604999999998,
+        "StateMedianP95Milliseconds": 153.092735,
+        "MedianAllocatedBytes": 264968284.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 11.84685,
+        "StateMedianP95Milliseconds": 14.232459999999998,
+        "MedianAllocatedBytes": 22855672.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 562.81855,
+        "StateMedianP95Milliseconds": 627.49217,
+        "MedianAllocatedBytes": 1049416232.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 275.29555,
+        "StateMedianP95Milliseconds": 292.664115,
+        "MedianAllocatedBytes": 564800860.0
+      }
+    },
+    "early": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.007,
+        "StateMedianP95Milliseconds": 0.011849999999999998,
+        "MedianAllocatedBytes": 1192.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0014,
+        "StateMedianP95Milliseconds": 0.0029,
+        "MedianAllocatedBytes": 1192.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0069,
+        "StateMedianP95Milliseconds": 0.018149999999999986,
+        "MedianAllocatedBytes": 616.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.1248,
+        "StateMedianP95Milliseconds": 0.159865,
+        "MedianAllocatedBytes": 189776.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 14.366499999999998,
+        "StateMedianP95Milliseconds": 23.988535,
+        "MedianAllocatedBytes": 26344728.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 80.16884999999999,
+        "StateMedianP95Milliseconds": 108.52137499999999,
+        "MedianAllocatedBytes": 160691828.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 13.37885,
+        "StateMedianP95Milliseconds": 24.300344999999997,
+        "MedianAllocatedBytes": 26377740.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 163.33175,
+        "StateMedianP95Milliseconds": 231.5252,
+        "MedianAllocatedBytes": 312070028.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 149.2058,
+        "StateMedianP95Milliseconds": 204.193635,
+        "MedianAllocatedBytes": 303498084.0
+      }
+    },
+    "middle": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00675,
+        "StateMedianP95Milliseconds": 0.010969999999999999,
+        "MedianAllocatedBytes": 776.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0012,
+        "StateMedianP95Milliseconds": 0.004094999999999998,
+        "MedianAllocatedBytes": 776.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0102,
+        "StateMedianP95Milliseconds": 0.024809999999999978,
+        "MedianAllocatedBytes": 1408.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.08940000000000001,
+        "StateMedianP95Milliseconds": 0.13033999999999998,
+        "MedianAllocatedBytes": 37040.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 7.401250000000001,
+        "StateMedianP95Milliseconds": 14.31819,
+        "MedianAllocatedBytes": 12745788.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 36.123000000000005,
+        "StateMedianP95Milliseconds": 51.125135,
+        "MedianAllocatedBytes": 70586444.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 6.73855,
+        "StateMedianP95Milliseconds": 15.638319999999997,
+        "MedianAllocatedBytes": 10259956.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 72.88365,
+        "StateMedianP95Milliseconds": 103.74280499999999,
+        "MedianAllocatedBytes": 127325976.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 54.481300000000005,
+        "StateMedianP95Milliseconds": 82.947825,
+        "MedianAllocatedBytes": 105290084.0
+      }
+    },
+    "late": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00465,
+        "StateMedianP95Milliseconds": 0.006909999999999999,
+        "MedianAllocatedBytes": 552.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0008,
+        "StateMedianP95Milliseconds": 0.0016,
+        "MedianAllocatedBytes": 552.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0035,
+        "StateMedianP95Milliseconds": 0.00847,
+        "MedianAllocatedBytes": 600.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.05685,
+        "StateMedianP95Milliseconds": 0.110275,
+        "MedianAllocatedBytes": 47380.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 2.15855,
+        "StateMedianP95Milliseconds": 3.23234,
+        "MedianAllocatedBytes": 3061272.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 7.0362,
+        "StateMedianP95Milliseconds": 8.635395,
+        "MedianAllocatedBytes": 14095192.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 1.6902,
+        "StateMedianP95Milliseconds": 3.270374999999999,
+        "MedianAllocatedBytes": 2409288.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 12.9155,
+        "StateMedianP95Milliseconds": 15.697764999999999,
+        "MedianAllocatedBytes": 22380352.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 6.0771999999999995,
+        "StateMedianP95Milliseconds": 7.743175,
+        "MedianAllocatedBytes": 11476104.0
+      }
+    },
+    "forced": {
+      "random-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00045,
+        "StateMedianP95Milliseconds": 0.0014849999999999998,
+        "MedianAllocatedBytes": 488.0
+      },
+      "random-pass-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0002,
+        "StateMedianP95Milliseconds": 0.0007849999999999998,
+        "MedianAllocatedBytes": 488.0
+      },
+      "weak-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0009,
+        "StateMedianP95Milliseconds": 0.0017849999999999997,
+        "MedianAllocatedBytes": 920.0
+      },
+      "medium-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0199,
+        "StateMedianP95Milliseconds": 0.06875499999999994,
+        "MedianAllocatedBytes": 37636.0
+      },
+      "fast-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0078,
+        "StateMedianP95Milliseconds": 0.03112,
+        "MedianAllocatedBytes": 8892.0
+      },
+      "strong-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0202,
+        "StateMedianP95Milliseconds": 0.048519999999999994,
+        "MedianAllocatedBytes": 37780.0
+      },
+      "partner-rules-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0015500000000000002,
+        "StateMedianP95Milliseconds": 0.006854999999999995,
+        "MedianAllocatedBytes": 1320.0
+      },
+      "strong-plus-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.0075,
+        "StateMedianP95Milliseconds": 0.02954,
+        "MedianAllocatedBytes": 8956.0
+      },
+      "strong-flow-cached-v1": {
+        "States": 24,
+        "MedianMilliseconds": 0.00025,
+        "StateMedianP95Milliseconds": 0.0014549999999999993,
+        "MedianAllocatedBytes": 216.0
+      }
+    }
+  },
+  "FlowRelativeTo": {
+    "bid": {
+      "fast-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 3119.8970467899267,
+          "Bootstrap95": [
+            2915.982863920286,
+            3316.3952783168074
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 3378.3893841649315,
+          "Bootstrap95": [
+            3246.9179801119108,
+            3517.379488964008
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 2.2467972283601547,
+          "Bootstrap95": [
+            2.1734233953873723,
+            2.310369221632887
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 2.2636426992943575,
+          "Bootstrap95": [
+            2.2444087000559723,
+            2.2834428738601025
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "partner-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 2157.8274854145716,
+          "Bootstrap95": [
+            1983.9940833200185,
+            2342.521658036206
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 3351.663392365502,
+          "Bootstrap95": [
+            3221.8550430981686,
+            3488.950114866892
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-plus-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.9794130604067934,
+          "Bootstrap95": [
+            0.9631556966250344,
+            0.9966351951361532
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.061083453819004,
+          "Bootstrap95": [
+            1.0594058040966123,
+            1.062682817471101
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-flow-cached-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        }
+      }
+    },
+    "discard": {
+      "fast-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 24.093116592233784,
+          "Bootstrap95": [
+            22.65632348567092,
+            25.713343063457327
+          ],
+          "SourceBlocks": 14
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 27.268659070982572,
+          "Bootstrap95": [
+            25.952322014473058,
+            28.769860511721774
+          ],
+          "SourceBlocks": 14
+        }
+      },
+      "strong-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.9786224496953693,
+          "Bootstrap95": [
+            1.9456197741116636,
+            2.0152830600614213
+          ],
+          "SourceBlocks": 14
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 2.123056075825533,
+          "Bootstrap95": [
+            2.1140706335401136,
+            2.1317621462335885
+          ],
+          "SourceBlocks": 14
+        }
+      },
+      "partner-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 24.5148708748487,
+          "Bootstrap95": [
+            23.27448743075645,
+            25.717789962810773
+          ],
+          "SourceBlocks": 14
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 28.375750630836436,
+          "Bootstrap95": [
+            26.924234781322422,
+            29.871823476094963
+          ],
+          "SourceBlocks": 14
+        }
+      },
+      "strong-plus-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.48524180254264115,
+          "Bootstrap95": [
+            0.4776144018506532,
+            0.49364544749716294
+          ],
+          "SourceBlocks": 14
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 0.5458544878018698,
+          "Bootstrap95": [
+            0.5393276786148204,
+            0.5532928474646476
+          ],
+          "SourceBlocks": 14
+        }
+      },
+      "strong-flow-cached-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 14
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 14
+        }
+      }
+    },
+    "early": {
+      "fast-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 38.17391425424097,
+          "Bootstrap95": [
+            12.018558648468579,
+            147.26054880286014
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 72.82442180675612,
+          "Bootstrap95": [
+            15.057956389661372,
+            472.253035984025
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.8348450008036306,
+          "Bootstrap95": [
+            1.7803907051199845,
+            1.888246354105862
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.8872961390853034,
+          "Bootstrap95": [
+            1.842541864723905,
+            1.9335349142500944
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "partner-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 34.88101833061148,
+          "Bootstrap95": [
+            12.053446684951275,
+            120.5453231980729
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 69.97615720667297,
+          "Bootstrap95": [
+            14.915039889779504,
+            437.8444693170386
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-plus-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.8843019142106392,
+          "Bootstrap95": [
+            0.8628001386987664,
+            0.9035700471478629
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 0.9821710768313872,
+          "Bootstrap95": [
+            0.9659056620551667,
+            0.9977666135901533
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-flow-cached-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        }
+      }
+    },
+    "middle": {
+      "fast-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 27.51559731197233,
+          "Bootstrap95": [
+            9.700673135308794,
+            87.0738862164115
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 53.7711542270332,
+          "Bootstrap95": [
+            12.648850475480048,
+            255.72793487419315
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.5547704538539664,
+          "Bootstrap95": [
+            1.502308701661745,
+            1.6046232142000394
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.532964451769989,
+          "Bootstrap95": [
+            1.477690093005524,
+            1.5771204677321922
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "partner-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 28.03113380920997,
+          "Bootstrap95": [
+            11.558520635140326,
+            74.2105767820902
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 65.34439822713253,
+          "Bootstrap95": [
+            16.849406442719193,
+            285.9980640670313
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-plus-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.762601445595805,
+          "Bootstrap95": [
+            0.7302651785564095,
+            0.790312735779087
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 0.8476565811983136,
+          "Bootstrap95": [
+            0.8260741458325346,
+            0.8632894177252817
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-flow-cached-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        }
+      }
+    },
+    "late": {
+      "fast-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 4.619925206826463,
+          "Bootstrap95": [
+            2.5128884316719304,
+            9.181413549134367
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 7.137532369132648,
+          "Bootstrap95": [
+            3.354138676239863,
+            15.899461876659748
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.5366929613465491,
+          "Bootstrap95": [
+            0.48207501728643737,
+            0.6056750223247963
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 0.4802639199164076,
+          "Bootstrap95": [
+            0.43742331779119603,
+            0.541177797254487
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "partner-rules-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 4.591912196103021,
+          "Bootstrap95": [
+            2.568200533429018,
+            8.715628972193803
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 8.034937248940015,
+          "Bootstrap95": [
+            3.446746287514749,
+            19.878497204362564
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-plus-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 0.291665803224714,
+          "Bootstrap95": [
+            0.2553443314800491,
+            0.3307709762281957
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 0.3122611321490176,
+          "Bootstrap95": [
+            0.2832755519729532,
+            0.35007031095843427
+          ],
+          "SourceBlocks": 12
+        }
+      },
+      "strong-flow-cached-v1": {
+        "Milliseconds": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        },
+        "AllocatedBytes": {
+          "GeometricRatio": 1.0,
+          "Bootstrap95": [
+            1.0,
+            1.0
+          ],
+          "SourceBlocks": 12
+        }
+      }
+    },
+    "forced": {}
+  },
+  "Ux": {
+    "random-rules-v1": {
+      "Critical": {
+        "Passed": 14,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 15,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-weak-opening",
+          "Check": "no-high-contract",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-weak-opening",
+          "Check": "prefer-pass",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-partner-passed",
+          "Check": "respect-warning",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Check": "support-suit",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-partner-can-exit",
+          "Check": "leave-contract",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "play-protect-human-winner",
+          "Check": "save-stopper",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Check": "conserve-trump",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Check": "return-requested-suit",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Check": "offer-ruff",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-own-duck",
+          "Check": "duck-available",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-defence-dont-rescue",
+          "Check": "cash-bust",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Check": "unload-high",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 1,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Check": "bury-joker",
+          "Level": "Critical",
+          "Passed": 1,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-normal-joker",
+          "Check": "retain-joker",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        }
+      ]
+    },
+    "random-pass-v1": {
+      "Critical": {
+        "Passed": 16,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 27,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-support-human-suit",
+          "Check": "support-suit",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "play-protect-human-winner",
+          "Check": "save-stopper",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "play-avoid-unneeded-ruff",
+          "Check": "conserve-trump",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        },
+        {
+          "Scenario": "signal-low-discard",
+          "Check": "return-requested-suit",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Check": "offer-ruff",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-own-duck",
+          "Check": "duck-available",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-defence-dont-rescue",
+          "Check": "cash-bust",
+          "Level": "Critical",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Check": "unload-high",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 1,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-misere-joker",
+          "Check": "bury-joker",
+          "Level": "Critical",
+          "Passed": 1,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-normal-joker",
+          "Check": "retain-joker",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        }
+      ]
+    },
+    "weak-rules-v1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 26,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-low-discard",
+          "Check": "return-requested-suit",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "signal-known-void",
+          "Check": "offer-ruff",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "misere-defence-unload",
+          "Check": "unload-high",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Check": "keep-king-guard",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        }
+      ]
+    },
+    "medium-rules-v1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 34,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-low-discard",
+          "Check": "return-requested-suit",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Check": "keep-king-guard",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        }
+      ]
+    },
+    "fast-rules-v1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 36,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "signal-low-discard",
+          "Check": "return-requested-suit",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Check": "keep-king-guard",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        }
+      ]
+    },
+    "strong-rules-v1": {
+      "Critical": {
+        "Passed": 24,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 30,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-weak-opening",
+          "Check": "prefer-pass",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Check": "support-suit",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "open-misere-forced-bust",
+          "Check": "take-public-certainty",
+          "Level": "Critical",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Check": "keep-king-guard",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        }
+      ]
+    },
+    "partner-rules-v1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 40,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": []
+    },
+    "strong-plus-v1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 35,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-weak-opening",
+          "Check": "prefer-pass",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "discard-nt-stopper",
+          "Check": "keep-king-guard",
+          "Level": "Advisory",
+          "Passed": 3,
+          "Trials": 4
+        }
+      ]
+    },
+    "strong-flow-cached-v1": {
+      "Critical": {
+        "Passed": 28,
+        "Trials": 28
+      },
+      "Advisory": {
+        "Passed": 34,
+        "Trials": 40
+      },
+      "Control": {
+        "Passed": 4,
+        "Trials": 4
+      },
+      "FailedChecks": [
+        {
+          "Scenario": "bid-weak-opening",
+          "Check": "prefer-pass",
+          "Level": "Advisory",
+          "Passed": 0,
+          "Trials": 4
+        },
+        {
+          "Scenario": "bid-support-human-suit",
+          "Check": "support-suit",
+          "Level": "Advisory",
+          "Passed": 2,
+          "Trials": 4
+        }
+      ]
+    }
+  },
+  "RuleCoverage": [
+    {
+      "File": "rules-au-reference-4p-v1.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-canadian-platform-reference-4p-v1-forced-auction.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-canadian-platform-reference-4p-v1.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 0,
+      "PlayDecisions": 0
+    },
+    {
+      "File": "rules-custom-4p.template-forced-auction.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-custom-4p.template.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 0,
+      "PlayDecisions": 0
+    },
+    {
+      "File": "rules-default.game.json",
+      "BidDecisions": 7,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-legacy-au-4p-v1-forced-auction.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-legacy-au-4p-v1.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 0,
+      "PlayDecisions": 0
+    },
+    {
+      "File": "rules-mixed-single-round-au-joker-v1.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    },
+    {
+      "File": "rules-us-single-round-4p-v1.game.json",
+      "BidDecisions": 4,
+      "DiscardDecisions": 1,
+      "PlayDecisions": 40
+    }
+  ]
+}

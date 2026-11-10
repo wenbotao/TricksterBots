@@ -1,0 +1,43 @@
+.NET SDK:
+ Version:           8.0.422
+ Commit:            34560b12f2
+ Workload version:  8.0.400-manifests.eed48583
+ MSBuild version:   17.11.48+02bf66295
+
+Runtime Environment:
+ OS Name:     debian
+ OS Version:  13
+ OS Platform: Linux
+ RID:         linux-x64
+ Base Path:   /workspace/.dotnet/sdk/8.0.422/
+
+.NET workloads installed:
+Configured to use loose manifests when installing new manifests.
+There are no installed workloads to display.
+
+Host:
+  Version:      8.0.28
+  Architecture: x64
+  Commit:       46295af582
+
+.NET SDKs installed:
+  8.0.422 [/workspace/.dotnet/sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.28 [/workspace/.dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.28 [/workspace/.dotnet/shared/Microsoft.NETCore.App]
+
+Other architectures found:
+  None
+
+Environment variables:
+  DOTNET_ROOT       [/workspace/.dotnet]
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download

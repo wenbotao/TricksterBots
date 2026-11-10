@@ -1,0 +1,14 @@
+{
+  "Implementation": "strong-flow-cached-v1",
+  "Reference": "strong-play-incremental-v1",
+  "SearchChanges": false,
+  "RetainedBudgets": {
+    "DefaultSamples": 32,
+    "DiscardCandidates": 12,
+    "ImprovementMargin": 8,
+    "StandardErrorMultiplier": 0.75
+  },
+  "ConfiguredRulePathChanged": false,
+  "OldSourceFreezeEntriesVerified": 92,
+  "CounterScope": "DataWork covers all default phases;PlayWork is exposed only in play, as in the reference."
+}

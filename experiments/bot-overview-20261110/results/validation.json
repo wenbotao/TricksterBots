@@ -1,0 +1,18 @@
+{
+  "Passed": true,
+  "Profiles": 9,
+  "PublicStates": 144,
+  "Repeats": 3,
+  "MeasuredDecisionCalls": 3888,
+  "AllMeasuredActionsLegal": true,
+  "AllRepeatedActionsDeterministic": true,
+  "FlowActionsMatchPreviousEngineeringRun": 432,
+  "UxScenarios": 17,
+  "UxDecisions": 612,
+  "UxErrors": 0,
+  "FlowConfigurationsReplayed": 7,
+  "RuleSmokeRecords": 10,
+  "EveryConfigurationHasDiscardAndPlayCoverage": true,
+  "FrozenSourceModelFiles": 95,
+  "PriorUnchangedSourceFullRegressionPassed": 569
+}

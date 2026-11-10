@@ -1,6 +1,6 @@
 # 正式四人 Five Hundred bot
 
-七个主要 bot 文件是策略开发入口：直接阅读和修改对应文件的 `Bid`、`Discard`、`Play` 及其私有方法，即可追踪动作选择。命名空间为 `FiveHundredLab.Bots.FiveHundred`，目标框架为 .NET 8。
+八个主要 bot 文件（另有 RandomPass 变体）是策略开发入口：直接阅读和修改对应文件的 `Bid`、`Discard`、`Play` 及其私有方法，即可追踪动作选择。命名空间为 `FiveHundredLab.Bots.FiveHundred`，目标框架为 .NET 8。
 
 | 文件 | 策略主体 |
 |---|---|
@@ -11,6 +11,7 @@
 | StrongBot.cs | 叫牌、弃牌、出牌搜索的候选与选择；配置路径叫牌仍为既有启发式 |
 | [StrongPlusBot.cs](StrongPlusBot.cs) | 独立的强度优先策略：32样本、24个弃牌候选、默认路径零墩证明；策略主体保存在本文件 |
 | PartnerBot.cs | 公开必破、保护搭档、信号回应、弃牌修补；组合 Fast 处理剩余搜索 |
+| [StrongFlowCachedBot.cs](StrongFlowCachedBot.cs) | 完整独立版本：32 样本、弃牌修补、公开 Misère 证明；默认续演采用根决策缓存、直接输入和每墩快照 |
 
 每类均实现 `IPlayer` 和 `IJokerDeclarationPlayer`，构造参数为 `(int seed = 1, Rules? rules = null)`，提供 `FromConfiguration(string? path = null, int seed = 1)`。推荐读取一次规则，传给引擎和所有玩家；配置不匹配会拒绝。
 
@@ -24,7 +25,7 @@ var bot = new PartnerBot(seed: 7, rules: rules);
 
 非随机 bot 顶部为公开接口，接着是 `BidConfigured` 等配置策略；`DefaultPolicy` 为保留历史行为的默认路径。Medium 的 `DefaultStrategy : BaseBot<FiveHundredOptions>` 完整包含从原 `FiveHundredBot` 迁入的逻辑，`DefaultAdapter` 将 Observation 转成平台输入；它不调用或继承原 `FiveHundredBot`。`VisibilityAdapter` / `VisibilityStrategy` 为 Fast 续演保留历史可见手牌判断。
 
-Fast/Strong/StrongPlus 的 `SelectByRollout` 负责配置路径候选比较，默认路径的搜索逻辑在同文件 `DefaultPolicy`。Partner 的 `ConfiguredPartnerPolicy` 和 `DefaultPartnerPolicy` 包含两条路径的体验判断，再组合本目录的 FastBot。修改 Fast 或 Medium 的共享基准可能影响其调用者，需一起回归。
+Fast/Strong/StrongPlus/StrongFlowCached 的 `SelectByRollout` 负责配置路径候选比较，默认路径的搜索逻辑在同文件 `DefaultPolicy`。Partner 的 `ConfiguredPartnerPolicy` 和 `DefaultPartnerPolicy` 包含两条路径的体验判断，再组合本目录的 FastBot。修改 Fast 或 Medium 的共享基准可能影响其调用者，需一起回归。
 
 ## 共享设施
 
@@ -35,13 +36,13 @@ Fast/Strong/StrongPlus 的 `SelectByRollout` 负责配置路径候选比较，�
 - `Shared/CardFrame.cs`：公开牌信息、牌表与缓存工具；保留类型名以兼容历史实验。
 - Arena 的 `HandEvaluator`、`BeliefSampler` / `RuleSamples`：弃牌组合、基础估值和隐藏牌采样。正式 bot 不依赖旧 `RuleTactics` 或 `RuleRollout` 的动作判断。
 
-省略配置与显式加载新格式配置仍使用不同策略路径；本次没有统一算法、改变预算或调参。`LastRollouts` 保留已有语义：配置路径统计最近决策实际续演数，默认路径保持原包装层的 0。
+省略配置与显式加载新格式配置仍使用不同策略路径；本次没有统一算法、改变预算或调参。原七种 bot 的 `LastRollouts` 保留已有语义：配置路径统计最近决策实际续演数，默认路径保持原包装层的 0。StrongFlowCached 默认路径统计实际续演数，并提供 LastDataWork/LastPlayWork 等诊断；不可将旧包装层的 0 当作没有搜索。
 
 ## 兼容与开发入口
 
 原 .NET Standard `Trickster.Bots.FiveHundredBot` 继续供旧 WebAPI 和历史基线使用，正式 Medium 已与其策略实现脱离。旧 `RuleAwarePlayer` 及旧 profile 留作 Arena CLI、Adapt 和回归兼容；它们不会自动转用本目录策略。
 
-实际开发应使用本目录公共类，或 `Profiles.CreateForRules`，或 Lab 的 `random-rules-v1` / `weak-rules-v1` / `medium-rules-v1` / `fast-rules-v1` / `strong-rules-v1` / `strong-plus-v1` / `partner-rules-v1` 名称。不传规则文件时，这些正式名称使用各自文件中的默认策略。历史的 `strong-v1`、`visibility-fast-v8` 等名称仍指向冻结基线，便于比较。
+实际开发应使用本目录公共类，或 `Profiles.CreateForRules`，或 Lab 的 `random-rules-v1` / `weak-rules-v1` / `medium-rules-v1` / `fast-rules-v1` / `strong-rules-v1` / `strong-plus-v1` / `strong-flow-cached-v1` / `partner-rules-v1` 名称。不传规则文件时，这些正式名称使用各自文件中的默认策略。历史的 `strong-v1`、`visibility-fast-v8` 等名称仍指向冻结基线，便于比较。
 
 旧 Legacy 策略已移至 Archive/Strategies，继续编译以兼容历史 profile；迁入前七个包装文件以 `.cs.txt` 非编译快照保存于 Archive/Snapshots。它们不再是正式 bot 的默认策略依赖。
 
@@ -98,3 +99,20 @@ var bot = new StrongPlusBot(seed: 7, rules: rules);
 
 
 `StrongPlayIncrementalBot`（`strong-play-incremental-v1`）在缓存版上增量维护公共历史摘要，保留暂时赢墩牌与缺门顺序；每个候选/世界的摘要独立，旧接口模型仍按调用新建。默认续演更新，显式配置路径不变。4 项针对性测试及 48 组小规模计量通过，全量回归按用户要求留待统一测试，见[增量历史报告](../../../experiments/play-incremental-v1-20261109/README.md)。
+
+`StrongFlowCachedBot`（`strong-flow-cached-v1`）基于增量版优化默认规则下的全流程数据准备。策略逻辑仍在 bot 文件中；`FlowPolicyCache` 负责根决策内的 Medium 策略实例/派生缓存及输入适配，`FlowCachedRollout` 负责分支隔离和每墩只读快照。规则配置路径保留原实现，详见[工程优化报告](../../../experiments/flow-cached-v1-20261110/README.md)。
+
+## StrongFlowCached 正式版本
+
+`StrongFlowCachedBot` 现作为完整正式版本保留，profile 为 `strong-flow-cached-v1`。标准构造、FromConfiguration、规则绑定、Joker 声明接口与其余正式 bot 一致；它不自动替换 Strong 或 StrongPlus。
+
+```csharp
+var rules = RuleConfiguration.Load(path);
+var bot = new StrongFlowCachedBot(seed: 7, rules: rules);
+// 或 StrongFlowCachedBot.FromConfiguration(path, seed: 7)
+// 或 Profiles.CreateForRules("strong-flow-cached-v1", 7, rules)
+```
+
+策略判断集中于本文件；`FlowPolicyCache` 与 `FlowCachedRollout` 负责输入适配及分支执行。此版本不是 StrongPlus 的逐动作等价副本：弃牌宽度、证据门槛和基准适配仍有差异。公开状态中不读隐藏牌、发牌种子或审计元数据；无预训练和在线学习。显式配置路径保留原配置策略，默认路径的缓存收益不外推到全部变体。
+
+九个已完成版本的策略、体验、成本与历史实战证据见[整体比较报告](../../../FIVEHUNDRED_BOT_COMPARISON.md)。源码与支持文件按 frozen-profiles-v22.json 固定，以后的策略或参数变化使用新命名。

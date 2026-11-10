@@ -74,3 +74,10 @@ Strong 的独立消融与阶段预算试验按用户要求提前停止，保存1
 
 
 当前增量优化版与正式 StrongPlus 已完成 32 组替换配对、8 组镜像直接对战及 46 个固定状态的成本对照。当前版替换胜率点估计较好但未确认优势，直接对战 8∶8；叫牌/前期成本仍高于 StrongPlus。565 项整体回归通过，详见[策略、实战与成本报告](../experiments/incremental-vs-strongplus-20261109/README.md)。
+
+
+新版与 StrongPlus 的扩大测试新增 128 组替换配对和 32 组镜像直接对战，共 320 场；新批次作为主要结果，旧 80 场仅作辅助合并。另在 144 个新公开局面上做 432 组串行成本对照，详见[扩大测试报告](../experiments/incremental-vs-strongplus-expanded-20261110/README.md)。
+
+新增全流程缓存工程版 `strong-flow-cached-v1`（`StrongFlowCachedBot`），基于增量版保留原搜索策略，复用根决策内的 Medium 派生缓存，并直接构造出牌续演输入。行为对照与阶段成本见[全流程缓存报告](../experiments/flow-cached-v1-20261110/README.md)。
+
+StrongFlowCached 现作为完整独立版本保留，与 Random、RandomPass、Weak、Medium、Fast、Strong、Partner、StrongPlus 一同纳入[九版整体比较](../FIVEHUNDRED_BOT_COMPARISON.md)。新评估包含统一性能、体验探针与规则回放；历史胜率按各自实验分别解读。

@@ -1,0 +1,29 @@
+{
+  "Passed": true,
+  "States": 144,
+  "PairedRepeats": 432,
+  "VersionsPerRepeat": 3,
+  "IdenticalIncrementalActions": 432,
+  "IdenticalIncrementalSearchReportsAndBudgets": 432,
+  "RepeatedDecisionsDeterministic": true,
+  "FullTestCounters": {
+    "total": "569",
+    "executed": "569",
+    "passed": "569",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "FrozenUniqueFiles": 92,
+  "AllCostsMeasuredInSameSerialRun": true
+}

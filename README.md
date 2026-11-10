@@ -41,3 +41,7 @@ Unit testing is done using the TestBots project. These are the tests that will r
 ## FiveHundred 随机对战数据
 
 [1,500场数据与胜率分析](experiments/fivehundred-random-mix-20261105/README.md)包含逐场结果、完整压缩牌谱、复现计划、统计脚本和分析图表。
+
+## FiveHundred completed bots
+
+[整体比较报告](FIVEHUNDRED_BOT_COMPARISON.md) covers the nine completed versions, including StrongFlowCached, with strategy and rule interfaces, matched-state performance, partner-experience probes, and separately qualified historical match results. [Formal bot sources](FiveHundredLab/Bots/FiveHundred/README.md).
